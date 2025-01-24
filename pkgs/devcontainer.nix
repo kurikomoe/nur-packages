@@ -67,5 +67,6 @@ stdenv.mkDerivation (finalAttrs: {
     maintainers = with maintainers; [rucadi];
     platforms = platforms.unix;
     mainProgram = "devcontainer";
+    broken = true;
   };
 })
