@@ -17,4 +17,6 @@
 
   "1password" = pkgs.callPackage ./pkgs/1password.nix {};
   devcontainer = pkgs.callPackage ./pkgs/devcontainer.nix {};
+
+  "dotnet-script" = pkgs.callPackage ./pkgs/dotnet-script.nix {};
 }
