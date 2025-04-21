@@ -11,14 +11,15 @@
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
-  example-package = pkgs.callPackage ./pkgs/example-package {};
-  kratos = pkgs.callPackage ./pkgs/kratos.nix {};
-  goctl = pkgs.callPackage ./pkgs/goctl.nix {};
+  "example-package" = pkgs.callPackage ./pkgs/example-package {};
+
+  "kratos" = pkgs.callPackage ./pkgs/kratos.nix {};
+  "goctl" = pkgs.callPackage ./pkgs/goctl.nix {};
 
   "1password" = pkgs.callPackage ./pkgs/1password.nix {};
-  devcontainer = pkgs.callPackage ./pkgs/devcontainer.nix {};
-
+  "devcontainer" = pkgs.callPackage ./pkgs/devcontainer.nix {};
   "dotnet-script" = pkgs.callPackage ./pkgs/dotnet-script.nix {};
-
   "kfonts" = pkgs.callPackage ./pkgs/kfonts.nix {};
+
+  "shellfirm" = pkgs.callPackage ./pkgs/shellfirm.nix {};
 }
