@@ -92,7 +92,24 @@
     "root": {
       "inputs": {
         "nixpkgs": "nixpkgs",
-        "pre-commit-hooks": "pre-commit-hooks"
+        "pre-commit-hooks": "pre-commit-hooks",
+        "shellfirm": "shellfirm"
+      }
+    },
+    "shellfirm": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1742891908,
+        "narHash": "sha256-Bka3U7DHUp+KyMw0KFQtJxrHbZf4RJxmhJjgyAmVHa8=",
+        "owner": "kaplanelad",
+        "repo": "shellfirm",
+        "rev": "68107796e074004451277ec3139043c64895a201",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kaplanelad",
+        "repo": "shellfirm",
+        "type": "github"
       }
     }
   },
