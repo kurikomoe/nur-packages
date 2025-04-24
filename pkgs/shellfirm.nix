@@ -6,7 +6,8 @@
   writeTextFile,
   ...
 }: let
-  repoHash = "sha256-Bka3U7DHUp+KyMw0KFQtJxrHbZf4RJxmhJjgyAmVHa8=";
+  repoHash = "sha256-jwrH2/EwiB33YoTC+pGO4Jm3tC4dp1DLZLZvhKvUy30=";
+  cargoHash = "sha256-BvASwH39Igby98teei0IOoKK6wCJ5+DR3WJuTL4FI/U=";
 
   shellfirmFishPlugin = writeTextFile {
     name = "shellfirm.plugin.fish";
@@ -21,22 +22,17 @@
 in
   rustPlatform.buildRustPackage rec {
     pname = "shellfirm";
-    # version = "0.2.11";
-    version = "unstable";
+    version = "0.2.11";
 
     src = fetchFromGitHub {
       owner = "kaplanelad";
       repo = "shellfirm";
-      # tag = "v${version}";
-      rev = "main";
+      tag = "v${version}";
       hash = repoHash;
     };
 
-    cargoLock = {
-      lockFile = "${src}/Cargo.lock";
-    };
-    # useFetchCargoVendor = true;
-    # inherit cargoHash;
+    useFetchCargoVendor = true;
+    inherit cargoHash;
 
     postInstall = ''
       # Install the fish plugin

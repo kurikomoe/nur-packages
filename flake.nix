@@ -25,7 +25,6 @@
 
     legacyPackages = forAllSystems (system:
       import ./default.nix {
-        # inherit inputs;
         pkgs = import nixpkgs {inherit system;};
       });
 
