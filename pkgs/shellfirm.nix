@@ -6,8 +6,7 @@
   writeTextFile,
   ...
 }: let
-  repoHash = "sha256-jwrH2/EwiB33YoTC+pGO4Jm3tC4dp1DLZLZvhKvUy30=";
-  # cargoHash = "sha256-BvASwH39Igby98teei0IOoKK6wCJ5+DR3WJuTL4FI/U=";
+  repoHash = "sha256-Bka3U7DHUp+KyMw0KFQtJxrHbZf4RJxmhJjgyAmVHa8=";
 
   shellfirmFishPlugin = writeTextFile {
     name = "shellfirm.plugin.fish";
