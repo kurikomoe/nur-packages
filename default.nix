@@ -7,7 +7,7 @@
 #     nix-build -A mypackage
 {
   pkgs ? import <nixpkgs> {},
-  inputs,
+  # inputs,
   ...
 }: {
   # The `lib`, `modules`, and `overlays` names are special
@@ -25,5 +25,6 @@
   "dotnet-script" = pkgs.callPackage ./pkgs/dotnet-script.nix {};
   "kfonts" = pkgs.callPackage ./pkgs/kfonts.nix {};
 
-  "shellfirm" = pkgs.callPackage ./pkgs/shellfirm.nix {inherit inputs;};
+  # "shellfirm" = pkgs.callPackage ./pkgs/shellfirm.nix { inherit inputs; };
+  "shellfirm" = pkgs.callPackage ./pkgs/shellfirm.nix {};
 }

@@ -28,8 +28,8 @@
 
     legacyPackages = forAllSystems (system:
       import ./default.nix {
+        # inherit inputs;
         pkgs = import nixpkgs {inherit system;};
-        inputs = inputs;
       });
 
     packages = forAllSystems (system: nixpkgs.lib.filterAttrs (_: v: nixpkgs.lib.isDerivation v) self.legacyPackages.${system});
