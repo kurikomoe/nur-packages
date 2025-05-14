@@ -30,10 +30,16 @@
 
     packages = forAllSystems (system: nixpkgs.lib.filterAttrs (_: v: nixpkgs.lib.isDerivation v) self.legacyPackages.${system});
 
-    devShells = forAllSystems (system: {
+    devShells = forAllSystems (system: let
+      pkgs = import nixpkgs {inherit system;};
+    in {
       default = nixpkgs.legacyPackages.${system}.mkShell {
         inherit (self.checks.${system}.pre-commit-check) shellHook;
-        buildInputs = self.checks.${system}.pre-commit-check.enabledPackages;
+        buildInputs = with pkgs;
+          [
+            dpkg
+          ]
+          ++ self.checks.${system}.pre-commit-check.enabledPackages;
       };
     });
 
