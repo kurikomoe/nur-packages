@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #7cafff;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        opacity: 0.8;
+      }
+
+      .cls-4, .cls-6 {
+        fill: none;
+      }
+
+      .cls-4 {
+        stroke: #7cafff;
+        stroke-width: 1.5px;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="new_wizard_share" transform="translate(-201 -476)">
+    <circle id="椭圆_20" data-name="椭圆 20" class="cls-1" cx="24" cy="24" r="24" transform="translate(201 476)"/>
+    <circle id="椭圆_21" data-name="椭圆 21" class="cls-2" cx="5" cy="5" r="5" transform="translate(224 489)"/>
+    <rect id="矩形_936" data-name="矩形 936" class="cls-2" width="18" height="10" rx="4" transform="translate(220 501)"/>
+    <circle id="椭圆_22" data-name="椭圆 22" class="cls-3" cx="5" cy="5" r="5" transform="translate(216 489)"/>
+    <g id="椭圆_23" data-name="椭圆 23" class="cls-4" transform="translate(216 489)">
+      <circle class="cls-5" cx="5" cy="5" r="5"/>
+      <circle class="cls-6" cx="5" cy="5" r="5.75"/>
+    </g>
+    <rect id="矩形_937" data-name="矩形 937" class="cls-3" width="18" height="10" rx="4" transform="translate(212 501)"/>
+    <g id="矩形_938" data-name="矩形 938" class="cls-4" transform="translate(212 501)">
+      <rect class="cls-5" width="18" height="10" rx="4"/>
+      <rect class="cls-6" x="-0.75" y="-0.75" width="19.5" height="11.5" rx="4.75"/>
+    </g>
+  </g>
+</svg>

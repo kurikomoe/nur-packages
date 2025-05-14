@@ -1,0 +1,14 @@
+Exit=退出
+Open Main Panel=打开主面板
+Sync Folders=同步文件夹
+Invite Friends To Sync=邀请好友同步
+Pause Sync=暂停同步
+Resume Sync=继续同步
+Preferences=设置
+Switch Account=切换账号
+Open Website=打开网页
+User Guide=用户指导
+Pack logs=打包日志
+
+# tray title
+Open=打开

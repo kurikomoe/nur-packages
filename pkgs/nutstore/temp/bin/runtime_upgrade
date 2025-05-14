@@ -1,0 +1,5 @@
+#!/bin/bash
+if [ -a ~/.nutstore/dist ]; then rm -rf ~/.nutstore/dist ; fi
+mkdir -p ~/.nutstore/dist && tar xzf $1 -C ~/.nutstore/dist || exit -1
+rm -f $1
+nohup ~/.nutstore/dist/bin/nutstore-pydaemon.py >/dev/null 2>&1 &

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #2d8cf0;
+      }
+    </style>
+  </defs>
+  <g id="info" transform="translate(-12 -10)">
+    <circle id="椭圆_31" data-name="椭圆 31" class="cls-1" cx="14" cy="14" r="14" transform="translate(18 16)"/>
+    <path id="路径_4317" data-name="路径 4317" class="cls-2" d="M52,30A20,20,0,1,0,32,50,20.059,20.059,0,0,0,52,30ZM32.5,19.1a2.3,2.3,0,1,1-2.3,2.3A2.263,2.263,0,0,1,32.5,19.1ZM27.5,40h2.7V27.3H27.5V25.5h7.3V40h2.7v1.8h-10Z"/>
+  </g>
+</svg>

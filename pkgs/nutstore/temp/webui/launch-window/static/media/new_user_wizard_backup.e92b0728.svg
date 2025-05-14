@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #7cafff;
+      }
+
+      .cls-2 {
+        fill: #c9dfff;
+      }
+
+      .cls-3 {
+        fill: #f6fdfa;
+      }
+    </style>
+  </defs>
+  <g id="new_wizard_backup" transform="translate(-201 -331)">
+    <circle id="椭圆_19" data-name="椭圆 19" class="cls-1" cx="24" cy="24" r="24" transform="translate(201 331)"/>
+    <g id="组_3983" data-name="组 3983" transform="translate(213 344)">
+      <path id="路径_4238" data-name="路径 4238" class="cls-2" d="M458,633.5h5.445v4.537H458Z" transform="translate(-448.723 -614.945)"/>
+      <path id="路径_4239" data-name="路径 4239" class="cls-3" d="M294.615,306.5h-9.231a.941.941,0,0,1,0-1.882h9.231a.941.941,0,0,1,0,1.882Zm5.538-5.176H279.846A1.863,1.863,0,0,1,278,299.441V284.382a1.863,1.863,0,0,1,1.846-1.882h20.308A1.863,1.863,0,0,1,302,284.382v15.059A1.863,1.863,0,0,1,300.154,301.323Z" transform="translate(-278 -282.5)"/>
+      <path id="路径_4240" data-name="路径 4240" class="cls-2" d="M332.617,330.258h-17.73a.824.824,0,0,1-.887-.735V319.235a.824.824,0,0,1,.887-.735h17.73a.824.824,0,0,1,.886.735v10.288A.824.824,0,0,1,332.617,330.258Z" transform="translate(-311.752 -316.144)"/>
+    </g>
+  </g>
+</svg>
