@@ -13,20 +13,44 @@
   }: let
     systems = [
       "x86_64-linux"
-      "i686-linux"
-      "aarch64-linux"
-      "armv6l-linux"
-      "armv7l-linux"
-      "x86_64-darwin"
+      # "i686-linux"
+      # "aarch64-linux"
+      # "armv6l-linux"
+      # "armv7l-linux"
+      # "x86_64-darwin"
     ];
     forAllSystems = f: nixpkgs.lib.genAttrs systems (system: f system);
   in {
     formatter = forAllSystems (system: nixpkgs.legacyPackages.${system}.alejandra);
 
-    legacyPackages = forAllSystems (system:
-      import ./default.nix {
-        pkgs = import nixpkgs {inherit system;};
-      });
+    legacyPackages = forAllSystems (
+      system: let
+        pkgs = import nixpkgs {
+          inherit system;
+          config.allowUnfree = true;
+        };
+      in (import ./default.nix {
+        inherit pkgs;
+      })
+    );
+
+    ci = forAllSystems (
+      system: let
+        pkgs = import nixpkgs {
+          inherit system;
+          config.allowUnfree = true;
+        };
+        output1 = (import ./ci.nix {inherit pkgs;}).cachePkgs;
+        output2 =
+          builtins.map (x: {
+            name = x.name;
+            value = x;
+          })
+          output1;
+        output = builtins.listToAttrs output2;
+      in
+        output
+    );
 
     packages = forAllSystems (system: nixpkgs.lib.filterAttrs (_: v: nixpkgs.lib.isDerivation v) self.legacyPackages.${system});
 

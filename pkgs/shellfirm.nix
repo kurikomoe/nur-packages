@@ -22,12 +22,12 @@
 in
   rustPlatform.buildRustPackage rec {
     pname = "shellfirm";
-    version = "0.2.11";
+    version = "unstable";
 
     src = fetchFromGitHub {
       owner = "kaplanelad";
       repo = "shellfirm";
-      tag = "v${version}";
+      rev = "main";
       hash = repoHash;
     };
 

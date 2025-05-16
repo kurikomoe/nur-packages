@@ -1,29 +1,34 @@
-{ pkgs, lib, ... }:
-let
+{
+  pkgs,
+  lib,
+  ...
+}: let
+in
+  pkgs.buildGoModule rec {
+    pname = "goctl";
+    version = "1.8.3";
 
-in pkgs.buildGoModule rec {
-  pname = "goctl";
-  version = "1.7.6";
+    src = pkgs.fetchFromGitHub {
+      owner = "zeromicro";
+      repo = "go-zero";
+      rev = "v${version}";
+      sha256 = "sha256-eh1gxVQnknu82F/8ZC9SmPh+C1pU904WJwRLMjKBrIw=";
+    };
 
-  src = pkgs.fetchFromGitHub {
-    owner = "zeromicro";
-    repo = "go-zero";
-    rev = "v${version}";
-    sha256 = "sha256-eh1gxVQnknu82F/8ZC9SmPh+C1pU904WJwRLMjKBrIw=";
-  };
+    proxyVendor = true;
+    sourceRoot = "source/tools/goctl";
 
-  proxyVendor = true;
-  sourceRoot = "source/tools/goctl";
+    preBuild = ''
+      go mod tidy
+    '';
 
-  preBuild = ''
-    go mod tidy
-  '';
+    doCheck = false;
 
-  doCheck = false;
+    # NOTE(kuriko): when updating, use lib.fakeSha first to obtain new hash,
+    #   otherwise nix will directly use the old cache (without rebuilding and comparing hash)
+    vendorHash = "sha256-ntirLpyf90N3SREgKvzkPw7kcr0FwskPKvlfGaxLS4Y=";
 
-  # NOTE(kuriko): when updating, use lib.fakeSha first to obtain new hash,
-  #   otherwise nix will directly use the old cache (without rebuilding and comparing hash)
-  vendorHash = "sha256-ntirLpyf90N3SREgKvzkPw7kcr0FwskPKvlfGaxLS4Y=";
+    ldflags = ["-s -w"];
 
-  ldflags = [ "-s -w" ];
-}
+    # latest vesion: https://github.com/go-kratos/kratos/tags
+  }
