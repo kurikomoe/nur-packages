@@ -4,6 +4,9 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     pre-commit-hooks.url = "github:cachix/git-hooks.nix";
+
+    nixos-vscode-server.url = "github:nix-community/nixos-vscode-server";
+    nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
   };
 
   outputs = inputs @ {
@@ -28,6 +31,9 @@
         pkgs = import nixpkgs {
           inherit system;
           config.allowUnfree = true;
+          overlays = [
+            inputs.nix-vscode-extensions.overlays.default
+          ];
         };
       in (import ./default.nix {
         inherit pkgs;
@@ -39,6 +45,9 @@
         pkgs = import nixpkgs {
           inherit system;
           config.allowUnfree = true;
+          overlays = [
+            inputs.nix-vscode-extensions.overlays.default
+          ];
         };
         output1 = (import ./ci.nix {inherit pkgs;}).cachePkgs;
         output2 =

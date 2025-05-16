@@ -22,4 +22,6 @@
   "kfonts" = pkgs.callPackage ./pkgs/kfonts.nix {};
 
   "shellfirm" = pkgs.callPackage ./pkgs/shellfirm.nix {};
+
+  "vscode" = pkgs.callPackage ./pkgs/vscode/default.nix {};
 }
