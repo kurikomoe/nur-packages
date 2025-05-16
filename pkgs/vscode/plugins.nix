@@ -31,8 +31,8 @@ in {
     ]
     ++ (pkgs.steam.args.multiPkgs pkgs);
 
-  extensions = with pkgs.vscode-extensions;
-  with pkgs.vscode-marketplace;
+  extensions = with pkgs.vscode-marketplace;
+  with pkgs.vscode-extensions;
     [
       # Langs
       rust-lang.rust-analyzer
@@ -54,7 +54,7 @@ in {
       ms-python.flake8
       ms-python.pylint
       ms-python.vscode-pylance
-      ms-python.mypy-type-checker
+      # ms-python.mypy-type-checker
       ms-python.debugpy
       ms-toolsai.jupyter
       ms-toolsai.jupyter-keymap
