@@ -54,7 +54,7 @@ in {
       ms-python.flake8
       ms-python.pylint
       ms-python.vscode-pylance
-      # ms-python.mypy-type-checker
+      ms-python.mypy-type-checker
       ms-python.debugpy
       ms-toolsai.jupyter
       ms-toolsai.jupyter-keymap
