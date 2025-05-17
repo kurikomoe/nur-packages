@@ -5,11 +5,7 @@
 # Having pkgs default to <nixpkgs> is fine though, and it lets you use short
 # commands such as:
 #     nix-build -A mypackage
-{
-  pkgs ? import <nixpkgs> {},
-  inputs,
-  ...
-}: rec {
+{pkgs ? import <nixpkgs> {}}: rec {
   # The `lib`, `modules`, and `overlays` names are special
   lib = import ./lib {inherit pkgs;}; # functions
   modules = import ./modules; # NixOS modules
@@ -29,5 +25,5 @@
 
   "vscode" = pkgs.callPackage ./pkgs/vscode/default.nix {};
 
-  "pwndbg" = inputs.pwndbg.packages.${pkgs.system}.default;
+  "pwndbg" = pkgs.pwndbg;
 }

@@ -25,31 +25,32 @@
       # "x86_64-darwin"
     ];
     forAllSystems = f: nixpkgs.lib.genAttrs systems (system: f system);
-  in {
+  in rec {
     formatter = forAllSystems (system: nixpkgs.legacyPackages.${system}.alejandra);
 
-    legacyPackages = forAllSystems (
+    kpkgs = forAllSystems (
       system: let
         pkgs = import nixpkgs {
           inherit system;
           config.allowUnfree = true;
           overlays = [
             inputs.nix-vscode-extensions.overlays.default
+            (final: prev: {
+              pwndbg = inputs.pwndbg.packages.${system}.default;
+            })
           ];
         };
-      in (import ./default.nix {inherit pkgs inputs;})
+      in
+        pkgs
+    );
+
+    legacyPackages = forAllSystems (
+      system: (import ./default.nix {pkgs = kpkgs.${system};})
     );
 
     ci = forAllSystems (
       system: let
-        pkgs = import nixpkgs {
-          inherit system;
-          config.allowUnfree = true;
-          overlays = [
-            inputs.nix-vscode-extensions.overlays.default
-          ];
-        };
-        output1 = (import ./ci.nix {inherit pkgs inputs;}).cachePkgs;
+        output1 = (import ./ci.nix {pkgs = kpkgs.${system};}).cachePkgs;
         output2 =
           builtins.map (x: {
             name = x.name;
