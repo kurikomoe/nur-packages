@@ -7,6 +7,8 @@
 
     nixos-vscode-server.url = "github:nix-community/nixos-vscode-server";
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
+
+    pwndbg.url = "github:pwndbg/pwndbg/2025.04.18";
   };
 
   outputs = inputs @ {
@@ -35,9 +37,7 @@
             inputs.nix-vscode-extensions.overlays.default
           ];
         };
-      in (import ./default.nix {
-        inherit pkgs;
-      })
+      in (import ./default.nix {inherit pkgs inputs system;})
     );
 
     ci = forAllSystems (
@@ -49,7 +49,7 @@
             inputs.nix-vscode-extensions.overlays.default
           ];
         };
-        output1 = (import ./ci.nix {inherit pkgs;}).cachePkgs;
+        output1 = (import ./ci.nix {inherit pkgs inputs system;}).cachePkgs;
         output2 =
           builtins.map (x: {
             name = x.name;
