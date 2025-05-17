@@ -8,7 +8,6 @@
 {
   pkgs ? import <nixpkgs> {},
   inputs,
-  system,
   ...
 }: rec {
   # The `lib`, `modules`, and `overlays` names are special
@@ -30,5 +29,5 @@
 
   "vscode" = pkgs.callPackage ./pkgs/vscode/default.nix {};
 
-  "pwndbg" = inputs.pwndbg.packages.${system}.default;
+  "pwndbg" = inputs.pwndbg.packages.${pkgs.system}.default;
 }

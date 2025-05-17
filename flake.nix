@@ -37,7 +37,7 @@
             inputs.nix-vscode-extensions.overlays.default
           ];
         };
-      in (import ./default.nix {inherit pkgs inputs system;})
+      in (import ./default.nix {inherit pkgs inputs;})
     );
 
     ci = forAllSystems (
@@ -49,7 +49,7 @@
             inputs.nix-vscode-extensions.overlays.default
           ];
         };
-        output1 = (import ./ci.nix {inherit pkgs inputs system;}).cachePkgs;
+        output1 = (import ./ci.nix {inherit pkgs inputs;}).cachePkgs;
         output2 =
           builtins.map (x: {
             name = x.name;
