@@ -1,5 +1,6 @@
 {
   pkgs,
+  lib,
   callPackage,
   vscode,
   ...
@@ -10,4 +11,12 @@
     vscodeExtensions = deps.extensions;
   };
 in
-  vscodeWithExtensions
+  {
+    inherit vscodeWithExtensions;
+    recurseForDerivations = true;
+  }
+  // lib.listToAttrs (lib.map (x: {
+      name = x.name;
+      value = x;
+    })
+    deps.extensions)

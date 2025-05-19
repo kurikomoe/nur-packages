@@ -27,12 +27,13 @@ in {
     [
       pkg-config
       icu
+      icu.dev
       zlib
     ]
     ++ (pkgs.steam.args.multiPkgs pkgs);
 
-  extensions = with pkgs.vscode-marketplace;
-  with pkgs.vscode-extensions;
+  extensions = with pkgs.vscode-extensions;
+  with pkgs.vscode-marketplace;
     [
       # Langs
       rust-lang.rust-analyzer
@@ -65,6 +66,7 @@ in {
       ms-dotnettools.csharp
       ms-dotnettools.csdevkit
       ms-dotnettools.vscodeintellicode-csharp
+      ms-dotnettools.vscode-dotnet-runtime
 
       redhat.java
       vscjava.vscode-java-debug
@@ -159,6 +161,10 @@ in {
       ryu1kn.partial-diff
       humao.rest-client
       alefragnani.project-manager
+
+      # AI
+      github.copilot-chat
+      github.copilot
     ]
     ++ kustomPluginList;
 }
