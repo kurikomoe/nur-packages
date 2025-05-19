@@ -10,8 +10,9 @@ in
     version = "6.4.1";
 
     src = fetchzip {
-      url = https://www.jianguoyun.com/static/exe/installer/nutstore_linux_src_installer.tar.gz;
-      hash = "sha256-G74Q51jCkZvNXX26aaSEzbQm3L0cGkiCfrb14JaMF/4=";
+      url = https://www.jianguoyun.com/static/exe/installer/nutstore_linux_dist_x64.tar.gz;
+      hash = "";
+      stripRoot = false;
     };
 
     nativeBuildInputs = with pkgs; [
