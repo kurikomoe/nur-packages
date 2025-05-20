@@ -9,7 +9,7 @@ on:
     # rebuild everyday at 2:51
     # TIP: Choose a random time here so not all repositories are build at once:
     # https://www.random.org/clock-times/?num=1&earliest=01%3A00&latest=08%3A00&interval=5&format=html&rnd=new
-    - cron:  '51 2 * * *'
+    - cron:  '11 10,22 * * *'
   workflow_dispatch:
 jobs:
   tests:
@@ -68,6 +68,8 @@ jobs:
     #       --drv-path --show-trace \
     #       -I nixpkgs=$(nix-instantiate --find-file nixpkgs) \
     #       -I $PWD
+    - name: update flake
+      run: nix flake update
     - name: Build nix packages
       # run: nix shell -f '<nixpkgs>' nix-build-uncached -c nix-build-uncached ci.nix -A cacheOutputs
       run: nix run -f '<nixpkgs>' nix-fast-build -- -f .#ci.x86_64-linux --no-nom
