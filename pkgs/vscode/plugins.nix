@@ -161,6 +161,7 @@ in {
       ryu1kn.partial-diff
       humao.rest-client
       alefragnani.project-manager
+      pnp.polacode
 
       # AI
       github.copilot-chat
