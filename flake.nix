@@ -11,6 +11,9 @@
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
 
     pwndbg.url = "github:pwndbg/pwndbg/2025.04.18";
+
+    kuriko-nixos.url = "github:kurikomoe/NixOS-config";
+    kuriko-nixos.flake = false;
   };
 
   outputs = inputs @ {
@@ -51,7 +54,7 @@
 
         # legacyPackages = import ./default.nix {inherit pkgs;};
         legacyPackages = let
-          output1 = (import ./ci.nix {inherit pkgs;}).cachePkgs;
+          output1 = (import ./ci.nix {inherit pkgs inputs;}).cachePkgs;
           output2 =
             builtins.map (x: {
               name = x.name;
