@@ -60,8 +60,8 @@
             output1;
           output = builtins.listToAttrs output2;
         in
-          output;
-        # builtins.trace (builtins.attrNames output) output;
+          # output;
+          builtins.trace (builtins.attrNames output) output;
 
         packages = nixpkgs.lib.filterAttrs (_: v: nixpkgs.lib.isDerivation v) legacyPackages;
 
