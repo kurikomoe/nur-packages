@@ -87,6 +87,8 @@ in {
       formulahendry.auto-rename-tag
       denoland.vscode-deno
       zignd.html-css-class-completion
+      christian-kohler.npm-intellisense
+      sporiley.css-auto-prefix
 
       blindtiger.masm
       basdp.language-gas-x86
@@ -112,6 +114,7 @@ in {
       redhat.vscode-yaml
       dotjoshjohnson.xml
       mrmlnc.vscode-json5
+      andyyaldoo.vscode-json
       ms-vscode.powershell
       andrejunges.handlebars
 
@@ -131,12 +134,18 @@ in {
       usernamehw.errorlens
       evan-buss.font-switcher
       wayou.vscode-todo-highlight
+      vincaslt.highlight-matching-tag
+      kisstkondoros.vscode-gutter-preview
+      wmaurer.change-case
+      editorconfig.editorconfig
+      tyriar.sort-lines
 
       # Git
       waderyan.gitblame
       donjayamanne.githistory
       github.vscode-github-actions
       eamodio.gitlens
+      github.vscode-pull-request-github
 
       # Env
       mkhl.direnv
@@ -161,7 +170,8 @@ in {
       ryu1kn.partial-diff
       humao.rest-client
       alefragnani.project-manager
-      pnp.polacode
+      adpyke.codesnap
+      chrmarti.regex
 
       # AI
       github.copilot-chat
