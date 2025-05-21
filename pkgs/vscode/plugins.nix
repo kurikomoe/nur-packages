@@ -29,6 +29,7 @@ in {
       icu
       icu.dev
       zlib
+      openssl
     ]
     ++ (pkgs.steam.args.multiPkgs pkgs);
 
