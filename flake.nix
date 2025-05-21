@@ -57,7 +57,7 @@
           output1 = (import ./ci.nix {inherit pkgs inputs;}).cachePkgs;
           output2 =
             builtins.map (x: {
-              name = x.name;
+              name = x.pname or x.name;
               value = x;
             })
             output1;
