@@ -23,8 +23,28 @@
     ...
   }:
     flake-parts.lib.mkFlake {inherit inputs;} {
-      flake = {};
-      imports = [];
+      imports = [
+        ({
+          flake-parts-lib,
+          lib,
+          ...
+        }: let
+          inherit (flake-parts-lib) mkTransposedPerSystemModule;
+          inherit (lib) mkOption types;
+        in
+          mkTransposedPerSystemModule {
+            name = "ci";
+            option = mkOption {
+              type = types.lazyAttrsOf types.package;
+              default = {};
+              description = ''
+                ci only packages
+                nix run -f '<nixpkgs>' nix-fast-build -- -f .#ci --skip-cached
+              '';
+            };
+            file = ./ci.nix;
+          })
+      ];
       systems = [
         "x86_64-linux"
         # "i686-linux"
@@ -49,22 +69,23 @@
             })
           ];
         };
-      in rec {
-        formatter = nixpkgs.legacyPackages.${system}.alejandra;
-
-        # legacyPackages = import ./default.nix {inherit pkgs;};
-        legacyPackages = let
-          output1 = (import ./ci.nix {inherit pkgs inputs;}).cachePkgs;
-          output2 =
-            builtins.map (x: {
+      in let
+        convert2attrset = x:
+          builtins.listToAttrs (builtins.map (x: {
               name = x.pname or x.name;
               value = x;
             })
-            output1;
-          output = builtins.listToAttrs output2;
-        in
-          # output;
-          builtins.trace (builtins.attrNames output) output;
+            x);
+
+        ci = import ./ci.nix {inherit pkgs inputs;};
+        buildOutputs = convert2attrset ci.buildOutputs;
+        cacheOutputs = convert2attrset ci.cacheOutputs;
+      in rec {
+        formatter = nixpkgs.legacyPackages.${system}.alejandra;
+
+        ci = cacheOutputs;
+
+        legacyPackages = buildOutputs;
 
         packages = nixpkgs.lib.filterAttrs (_: v: nixpkgs.lib.isDerivation v) legacyPackages;
 
@@ -81,13 +102,8 @@
             alejandra.enable = true;
             trufflehog = {
               enable = true;
-              entry = let
-                script = pkgs.writeShellScript "precommit-trufflehog" ''
-                  set -e
-                  ${pkgs.trufflehog}/bin/trufflehog git "file://$(git rev-parse --show-toplevel)" --only-verified --fail
-                '';
-              in
-                builtins.toString script;
+              entry = builtins.toString packages.precommit-trufflehog;
+              stages = ["pre-push" "pre-commit"];
             };
           };
         };

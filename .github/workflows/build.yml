@@ -71,7 +71,7 @@ jobs:
     - name: update flake to system nixpkgs
       run: nix flake update --override-input nixpkgs "$(nix eval --raw --impure --expr 'builtins.toString <nixpkgs>')"
     - name: Build nix packages
-      run: nix run -f '<nixpkgs>' nix-fast-build -- -f .#packages --no-nom --skip-cached
+      run: nix run -f '<nixpkgs>' nix-fast-build -- -f .#ci --no-nom --skip-cached
       # run: nix shell -f '<nixpkgs>' nix-build-uncached -c nix-build-uncached ci.nix -A cacheOutputs
     - name: Trigger NUR update
       # Don't replace <YOUR_REPO_NAME> here!

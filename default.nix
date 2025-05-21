@@ -17,7 +17,7 @@ in rec {
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
-  "example-package" = pkgs.callPackage ./pkgs/example-package {};
+  # "example-package" = pkgs.callPackage ./pkgs/example-package {};
 
   "kratos" = pkgs.callPackage ./pkgs/kratos.nix {};
   "goctl" = pkgs.callPackage ./pkgs/goctl.nix {};
@@ -32,4 +32,6 @@ in rec {
   "vscode" = callPackage ./pkgs/vscode/default.nix {};
 
   "pwndbg" = pkgs.pwndbg;
+
+  "precommit-trufflehog" = callPackage ./pkgs/tools/precommit-trufflehog.nix {};
 }
