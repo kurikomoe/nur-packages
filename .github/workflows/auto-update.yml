@@ -1,4 +1,4 @@
-name: "Update deps"
+name: "Auto update"
 
 permissions:
   statuses: read
@@ -15,7 +15,6 @@ on:
 jobs:
   updates:
     runs-on: ubuntu-latest
-
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -28,15 +27,26 @@ jobs:
           experimental-features = nix-command flakes
           access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
 
+    - name: Show nixpkgs version
+      run: nix-instantiate --eval -E '(import <nixpkgs> {}).lib.version'
+
     - name: Update all deps
       run: |
         nix flake update
         nix run -f '<nixpkgs>' nvfetcher
 
-    - name: Build nix packages
-      run: nix run -f '<nixpkgs>' nix-fast-build -- -f .#ci --no-nom --skip-cached
+    # - name: Reset flake.lock
+    #   run: git checkout flake.lock
 
-    - name: Commit changes
-      uses: stefanzweifel/git-auto-commit-action@v5
+    - name: Commit Changes
+      uses: EndBug/add-and-commit@v9
       with:
-        commit_message: 'auto update'
+        committer_name: GitHub Actions
+        committer_email: 41898282+github-actions[bot]@users.noreply.github.com
+        message: "Auto update"
+
+    - name: Trigger build all
+      uses: peter-evans/repository-dispatch@v3
+      with:
+        event-type: build-all-event
+
