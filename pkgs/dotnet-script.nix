@@ -1,38 +1,17 @@
 {
   lib,
   stdenv,
-  fetchzip,
+  sources,
+  dotnet-runtime,
   installShellFiles,
   autoPatchelfHook,
+  ...
 }: let
-  inherit (stdenv.hostPlatform) system;
-
-  pname = "dotnet-script";
-  version = "1.6.0";
-
-  fetch = srcPlatform: hash: let
-    args = {
-      inherit hash;
-      url = "https://github.com/dotnet-script/dotnet-script/releases/download/${version}/dotnet-script.${version}.zip";
-      stripRoot = true;
-    };
-  in
-    fetchzip args;
-
-  sources = rec {
-    x86_64-linux = fetch "linux_amd64" "sha256-Pc8+hja4OUajMLCOlieVLLvRMj74+OmecYlv3YyOvwo=";
-  };
-
-  platforms = builtins.attrNames sources;
+  res = sources.dotnet-script;
   mainProgram = "dotnet-script";
 in
   stdenv.mkDerivation rec {
-    inherit pname version;
-
-    src =
-      if (builtins.elem system platforms)
-      then sources.${system}
-      else throw "Source for ${pname} is not available for ${system}";
+    inherit (res) pname version src;
 
     nativeBuildInputs =
       [
@@ -40,7 +19,9 @@ in
       ]
       ++ lib.optional stdenv.isLinux autoPatchelfHook;
 
-    buildInputs = [];
+    buildInputs = [
+      dotnet-runtime
+    ];
 
     installPhase = ''
       runHook preInstall
@@ -57,15 +38,15 @@ in
       runHook postInstall
     '';
 
-    # doInstallCheck = false;
-    # installCheckPhase = ''
-    #   $out/bin/${mainProgram} --version
-    # '';
+    doInstallCheck = true;
+    installCheckPhase = ''
+      $out/bin/${mainProgram} --version
+    '';
 
     meta = with lib; {
       description = "Run C# scripts from the .NET CLI.";
       homepage = "https://github.com/dotnet-script/dotnet-script";
       downloadPage = "https://github.com/dotnet-script/dotnet-script/release";
-      inherit mainProgram platforms;
+      inherit mainProgram;
     };
   }

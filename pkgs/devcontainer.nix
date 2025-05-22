@@ -11,6 +11,7 @@
   docker,
   yarn,
   docker-compose,
+  ...
 }:
 stdenv.mkDerivation (finalAttrs: {
   pname = "devcontainer";

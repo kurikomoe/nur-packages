@@ -1,38 +1,27 @@
 {
   lib,
+  sources,
+  kutils,
   stdenv,
   fetchzip,
   installShellFiles,
   autoPatchelfHook,
+  ...
 }: let
-  inherit (stdenv.hostPlatform) system;
-
   pname = "1password-cli";
-  version = "2.30.3";
 
-  fetch = srcPlatform: hash: let
-    args = {
-      inherit hash;
-      url = "https://cache.agilebits.com/dist/1P/op2/pkg/v${version}/op_${srcPlatform}_v${version}.zip";
-      stripRoot = false;
-    };
-  in
-    fetchzip args;
-
-  sources = rec {
-    x86_64-linux = fetch "linux_amd64" "sha256-MsBSjJi7hJbS1wU3lVeywRrhGAZkoqxRb4FTg8fFN00=";
+  ress = rec {
+    x86_64-linux = sources."1password-cli-linux";
   };
 
-  platforms = builtins.attrNames sources;
+  res = kutils.getResBySystem pname ress;
+
+  platforms = builtins.attrNames ress;
   mainProgram = "op";
 in
   stdenv.mkDerivation rec {
-    inherit pname version;
-
-    src =
-      if (builtins.elem system platforms)
-      then sources.${system}
-      else throw "Source for ${pname} is not available for ${system}";
+    inherit pname;
+    inherit (res) version src;
 
     nativeBuildInputs = [installShellFiles] ++ lib.optional stdenv.isLinux autoPatchelfHook;
 

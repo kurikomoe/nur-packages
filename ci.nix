@@ -11,6 +11,7 @@
 {
   pkgs ? import <nixpkgs> {},
   inputs,
+  sources,
   ...
 }:
 with builtins; let
@@ -46,7 +47,7 @@ with builtins; let
 
   outputsOf = p: map (o: p.${o}) p.outputs;
 
-  nurAttrs = import ./default.nix {inherit pkgs inputs;};
+  nurAttrs = import ./default.nix {inherit pkgs inputs sources;};
 
   nurPkgs =
     flattenPkgs
@@ -55,6 +56,8 @@ with builtins; let
         (filter (n: !isReserved n)
           (attrNames nurAttrs))));
 in rec {
+  inherit nurPkgs;
+
   buildPkgs = filter isBuildable nurPkgs;
   cachePkgs = filter isCacheable buildPkgs;
 

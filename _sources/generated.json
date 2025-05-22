@@ -1,0 +1,90 @@
+{
+    "1password-cli-linux": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "1password-cli-linux",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "sha256": "sha256-MsBSjJi7hJbS1wU3lVeywRrhGAZkoqxRb4FTg8fFN00=",
+            "type": "tarball",
+            "url": "https://cache.agilebits.com/dist/1P/op2/pkg/v2.30.3/op_linux_amd64_v2.30.3.zip"
+        },
+        "version": "v2.30.3"
+    },
+    "dotnet-script": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "dotnet-script",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "sha256": "sha256-Pc8+hja4OUajMLCOlieVLLvRMj74+OmecYlv3YyOvwo=",
+            "type": "tarball",
+            "url": "https://github.com/dotnet-script/dotnet-script/releases/download/1.6.0/dotnet-script.1.6.0.zip"
+        },
+        "version": "1.6.0"
+    },
+    "goctl": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "goctl",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "zeromicro",
+            "repo": "go-zero",
+            "rev": "v1.8.3",
+            "sha256": "sha256-v5WzqMotF9C7i9hTYSjaPmTwveBVDVn+SKQXYuS4Rdc=",
+            "type": "github"
+        },
+        "version": "v1.8.3"
+    },
+    "kratos": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "kratos",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "go-kratos",
+            "repo": "kratos",
+            "rev": "v2.8.4",
+            "sha256": "sha256-N0jNIrFOTCOICL7pM1SZQJQd80hedG7XS/mrc8LrEsY=",
+            "type": "github"
+        },
+        "version": "v2.8.4"
+    },
+    "shellfirm": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "shellfirm",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "kaplanelad",
+            "repo": "shellfirm",
+            "rev": "v0.2.11",
+            "sha256": "sha256-jwrH2/EwiB33YoTC+pGO4Jm3tC4dp1DLZLZvhKvUy30=",
+            "type": "github"
+        },
+        "version": "v0.2.11"
+    }
+}

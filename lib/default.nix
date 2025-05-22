@@ -1,6 +1,7 @@
 {pkgs}:
 with pkgs.lib; {
-  # Add your library functions here
-  #
-  # hexint = x: hexvals.${toLower x};
+  getResBySystem = pname: reses:
+    if (builtins.elem system platforms)
+    then reses.${system}
+    else throw "Source for ${pname} is not available for ${system}";
 }

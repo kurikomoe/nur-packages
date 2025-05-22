@@ -2,6 +2,7 @@
   lib,
   stdenvNoCC,
   fetchurl,
+  ...
 }:
 stdenvNoCC.mkDerivation rec {
   pname = "kfonts";

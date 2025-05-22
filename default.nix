@@ -8,9 +8,11 @@
 {
   pkgs ? import <nixpkgs> {},
   inputs,
+  sources,
   ...
 }: let
-  callPackage = x: args: pkgs.callPackage x ({inherit inputs;} // args);
+  kutils = pkgs.callPackages ./helpers/kutils.nix {};
+  callPackage = x: args: pkgs.callPackage x ({inherit inputs sources kutils;} // args);
 in rec {
   # The `lib`, `modules`, and `overlays` names are special
   lib = import ./lib {inherit pkgs;}; # functions
@@ -19,15 +21,18 @@ in rec {
 
   # "example-package" = pkgs.callPackage ./pkgs/example-package {};
 
-  "kratos" = pkgs.callPackage ./pkgs/kratos.nix {};
-  "goctl" = pkgs.callPackage ./pkgs/goctl.nix {};
+  "kratos" = callPackage ./pkgs/kratos.nix {};
+  "goctl" = callPackage ./pkgs/goctl.nix {};
 
-  "1password" = pkgs.callPackage ./pkgs/1password.nix {};
-  "devcontainer" = pkgs.callPackage ./pkgs/devcontainer.nix {};
-  "dotnet-script" = pkgs.callPackage ./pkgs/dotnet-script.nix {};
-  "kfonts" = pkgs.callPackage ./pkgs/kfonts.nix {};
+  "1password-cli" = callPackage ./pkgs/1password-cli.nix {};
 
-  "shellfirm" = pkgs.callPackage ./pkgs/shellfirm.nix {};
+  # "devcontainer" = callPackage ./pkgs/devcontainer.nix {};
+
+  "dotnet-script" = callPackage ./pkgs/dotnet-script.nix {};
+
+  "kfonts" = callPackage ./pkgs/kfonts.nix {};
+
+  "shellfirm" = callPackage ./pkgs/shellfirm.nix {};
 
   "vscode" = callPackage ./pkgs/vscode/default.nix {};
 

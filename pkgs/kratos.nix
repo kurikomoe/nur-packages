@@ -1,21 +1,13 @@
 {
   pkgs,
   lib,
+  sources,
   ...
 }: let
-  repoHash = "sha256-RrB0xXLr/AstAw+t+0e/eV2FBwU7WwgOH/rpYGPIjz8=";
-  vendorHash = "sha256-lDekJQAOrCx6gsZ2J8cRmgTjL+WcWK0iejC/CbdxO6U=";
+  res = sources.kratos;
 in
   pkgs.buildGoModule rec {
-    pname = "kratos";
-    version = "2.8.4";
-
-    src = pkgs.fetchFromGitHub {
-      owner = "go-kratos";
-      repo = "kratos";
-      rev = "v${version}";
-      sha256 = repoHash;
-    };
+    inherit (res) pname version src;
 
     proxyVendor = true;
     sourceRoot = "source/cmd/kratos";
@@ -26,9 +18,9 @@ in
 
     doCheck = false;
 
-    # NOTE(kuriko): when updating, use lib.fakeSha first to obtain new hash,
+    # NOTE(kuriko): when updating, use lib.fakeHash first to obtain new hash,
     #   otherwise nix will directly use the old cache (without rebuilding and comparing hash)
-    inherit vendorHash;
+    vendorHash = "sha256-lDekJQAOrCx6gsZ2J8cRmgTjL+WcWK0iejC/CbdxO6U=";
 
     ldflags = ["-s -w"];
 

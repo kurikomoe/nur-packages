@@ -1,0 +1,28 @@
+[shellfirm]
+src.github_tag = "kaplanelad/shellfirm"
+src.from_pattern = "^(v([0-9\\.]+))$"
+src.to_pattern = "\\1"
+fetch.github = "kaplanelad/shellfirm"
+
+[kratos]
+src.github_tag = "go-kratos/kratos"
+src.from_pattern = "^(([0-9\\.]+))$"
+src.to_pattern = "\\1"
+fetch.github = "go-kratos/kratos"
+
+[goctl]
+src.github_tag = "zeromicro/go-zero"
+src.from_pattern = "^(v([0-9\\.]+))$"
+src.to_pattern = "\\1"
+fetch.github = "zeromicro/go-zero"
+
+[1password-cli-linux]
+src.manual = "v2.30.3"
+fetch.tarball = "https://cache.agilebits.com/dist/1P/op2/pkg/$ver/op_linux_amd64_$ver.zip"
+
+[dotnet-script]
+src.github_tag = "dotnet-script/dotnet-script"
+src.from_pattern = "^(([0-9\\.]+))$"
+src.to_pattern = "\\1"
+fetch.tarball = "https://github.com/dotnet-script/dotnet-script/releases/download/$ver/dotnet-script.$ver.zip"
+

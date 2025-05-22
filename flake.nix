@@ -66,6 +66,8 @@
             })
           ];
         };
+
+        sources = pkgs.callPackages ./_sources/generated.nix {};
       in let
         convert2attrset = x:
           builtins.listToAttrs (builtins.map (x: {
@@ -74,8 +76,9 @@
             })
             x);
 
-        ci = import ./ci.nix {inherit pkgs inputs;};
-        buildOutputs = convert2attrset ci.buildOutputs;
+        ci = import ./ci.nix {inherit pkgs inputs sources;};
+        _buildOutputs = convert2attrset ci.nurPkgs;
+        buildOutputs = builtins.trace (builtins.attrNames _buildOutputs) _buildOutputs;
         cacheOutputs = convert2attrset ci.cacheOutputs;
       in rec {
         formatter = nixpkgs.legacyPackages.${system}.alejandra;
@@ -89,7 +92,11 @@
         devShells = {
           default = nixpkgs.legacyPackages.${system}.mkShell {
             inherit (self.checks.${system}.pre-commit-check) shellHook;
-            buildInputs = self.checks.${system}.pre-commit-check.enabledPackages;
+            buildInputs = with pkgs;
+              [
+                nvfetcher
+              ]
+              ++ self.checks.${system}.pre-commit-check.enabledPackages;
           };
         };
 
