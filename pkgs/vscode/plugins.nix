@@ -177,6 +177,7 @@ in {
       # AI
       github.copilot-chat
       github.copilot
+      jetbrains.jetbrains-ai-assistant
     ]
     ++ kustomPluginList;
 }
