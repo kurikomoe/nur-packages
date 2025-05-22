@@ -43,6 +43,7 @@
             "repo": "go-zero",
             "rev": "v1.8.3",
             "sha256": "sha256-v5WzqMotF9C7i9hTYSjaPmTwveBVDVn+SKQXYuS4Rdc=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "v1.8.3"
@@ -63,6 +64,7 @@
             "repo": "kratos",
             "rev": "v2.8.4",
             "sha256": "sha256-N0jNIrFOTCOICL7pM1SZQJQd80hedG7XS/mrc8LrEsY=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "v2.8.4"
@@ -83,6 +85,7 @@
             "repo": "shellfirm",
             "rev": "v0.2.11",
             "sha256": "sha256-jwrH2/EwiB33YoTC+pGO4Jm3tC4dp1DLZLZvhKvUy30=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "v0.2.11"
