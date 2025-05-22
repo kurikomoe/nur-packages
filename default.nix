@@ -26,8 +26,6 @@ in rec {
 
   "1password-cli" = callPackage ./pkgs/1password-cli.nix {};
 
-  # "devcontainer" = callPackage ./pkgs/devcontainer.nix {};
-
   "dotnet-script" = callPackage ./pkgs/dotnet-script.nix {};
 
   "kfonts" = callPackage ./pkgs/kfonts.nix {};
