@@ -26,3 +26,7 @@ src.from_pattern = "^(([0-9\\.]+))$"
 src.to_pattern = "\\1"
 fetch.tarball = "https://github.com/dotnet-script/dotnet-script/releases/download/$ver/dotnet-script.$ver.zip"
 
+
+[microsoft-edge]
+src.aur = "microsoft-edge-stable-bin"
+fetch.url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_$ver-1_amd64.deb"

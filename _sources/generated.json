@@ -69,6 +69,21 @@
         },
         "version": "v2.8.4"
     },
+    "microsoft-edge": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "microsoft-edge",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-biNM1exJ/xUcmhZjH7ZcFF9cYVqsPavbbtsJnRVlyFo=",
+            "type": "url",
+            "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_136.0.3240.76-1_amd64.deb"
+        },
+        "version": "136.0.3240.76"
+    },
     "shellfirm": {
         "cargoLocks": null,
         "date": null,

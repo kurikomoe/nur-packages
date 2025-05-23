@@ -37,4 +37,6 @@ in rec {
   "pwndbg" = pkgs.pwndbg;
 
   "precommit-trufflehog" = callPackage ./pkgs/tools/precommit-trufflehog.nix {};
+
+  "microsoft-edge" = callPackage ./pkgs/microsoft-edge/package.nix {};
 }
