@@ -77,8 +77,8 @@
             x);
 
         ci = import ./ci.nix {inherit pkgs inputs sources;};
-        _buildOutputs = convert2attrset ci.nurPkgs;
-        buildOutputs = builtins.trace (builtins.attrNames _buildOutputs) _buildOutputs;
+        buildOutputs = convert2attrset ci.nurPkgs;
+        # buildOutputs = builtins.trace (builtins.attrNames _buildOutputs) _buildOutputs;
         cacheOutputs = convert2attrset ci.cacheOutputs;
       in rec {
         formatter = nixpkgs.legacyPackages.${system}.alejandra;
