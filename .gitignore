@@ -1,7 +1,11 @@
+.direnv/
+.devenv/
+
 result
 result-*
 
 /.pre-commit-config.yaml
+keyfile.toml
 
 ### Created by https://www.gitignore.io
 ### Vim ###

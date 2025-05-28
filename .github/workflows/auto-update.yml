@@ -34,6 +34,7 @@ jobs:
       run: |
         nix flake update
         nix run -f '<nixpkgs>' nvfetcher
+        nix fmt .
 
     # - name: Reset flake.lock
     #   run: git checkout flake.lock

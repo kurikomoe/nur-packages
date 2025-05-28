@@ -11,7 +11,6 @@
 {
   pkgs ? import <nixpkgs> {},
   inputs,
-  sources,
   ...
 }:
 with builtins; let
@@ -47,7 +46,10 @@ with builtins; let
 
   outputsOf = p: map (o: p.${o}) p.outputs;
 
-  nurAttrs = import ./default.nix {inherit pkgs inputs sources;};
+  nurAttrs = let
+    sources = pkgs.callPackages ./_sources/generated.nix {};
+  in
+    import ./default.nix {inherit pkgs inputs sources;};
 
   nurPkgs =
     flattenPkgs

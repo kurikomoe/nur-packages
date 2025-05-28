@@ -3,6 +3,7 @@
 
   inputs = {
     flake-parts.url = "github:hercules-ci/flake-parts";
+    devenv.url = "github:cachix/devenv";
 
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     pre-commit-hooks.url = "github:cachix/git-hooks.nix";
@@ -13,6 +14,22 @@
     pwndbg.url = "github:pwndbg/pwndbg/2025.04.18";
   };
 
+  nixConfig = {
+    substituters = [
+      https://mirrors.ustc.edu.cn/nix-channels/store
+      https://mirrors.tuna.tsinghua.edu.cn/nix-channels/store
+      https://nix-community.cachix.org
+      https://kurikomoe.cachix.org
+    ];
+    trusted-public-keys = [
+      "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
+      "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
+      "kurikomoe.cachix.org-1:NewppX3NeGxT8OwdwABq+Av7gjOum55dTAG9oG7YeEI="
+    ];
+    extra-trusted-public-keys = "devenv.cachix.org-1:w1cLUi8dv3hnoSPGAuibQv+f9TZLr6cv/Hm9XgU50cw=";
+    extra-substituters = "https://devenv.cachix.org";
+  };
+
   outputs = inputs @ {
     self,
     flake-parts,
@@ -21,6 +38,7 @@
   }:
     flake-parts.lib.mkFlake {inherit inputs;} {
       imports = [
+        inputs.devenv.flakeModule
         ({
           flake-parts-lib,
           lib,
@@ -66,8 +84,6 @@
             })
           ];
         };
-
-        sources = pkgs.callPackages ./_sources/generated.nix {};
       in let
         convert2attrset = x:
           builtins.listToAttrs (builtins.map (x: {
@@ -76,8 +92,8 @@
             })
             x);
 
-        ci = import ./ci.nix {inherit pkgs inputs sources;};
-        buildOutputs = convert2attrset ci.nurPkgs;
+        ci = import ./ci.nix {inherit pkgs inputs;};
+        buildOutputs = convert2attrset ci.buildPkgs;
         # buildOutputs = builtins.trace (builtins.attrNames _buildOutputs) _buildOutputs;
         cacheOutputs = convert2attrset ci.cacheOutputs;
       in rec {
@@ -89,20 +105,12 @@
 
         packages = nixpkgs.lib.filterAttrs (_: v: nixpkgs.lib.isDerivation v) legacyPackages;
 
-        devShells = {
-          default = nixpkgs.legacyPackages.${system}.mkShell {
-            inherit (self.checks.${system}.pre-commit-check) shellHook;
-            buildInputs = with pkgs;
-              [
-                nvfetcher
-              ]
-              ++ self.checks.${system}.pre-commit-check.enabledPackages;
-          };
-        };
+        devenv.shells.default = {
+          packages = with pkgs; [
+            nvfetcher
+          ];
 
-        checks.pre-commit-check = inputs.pre-commit-hooks.lib.${system}.run {
-          src = ./.;
-          hooks = {
+          git-hooks.hooks = {
             alejandra.enable = true;
             trufflehog = {
               enable = true;
