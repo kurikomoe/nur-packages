@@ -8,6 +8,8 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     pre-commit-hooks.url = "github:cachix/git-hooks.nix";
 
+    nixpkgs-ms-edit.url = "github:NixOS/nixpkgs/pull/409075/head";
+
     nixos-vscode-server.url = "github:nix-community/nixos-vscode-server";
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
 
@@ -81,6 +83,7 @@
             inputs.nix-vscode-extensions.overlays.default
             (final: prev: {
               pwndbg = inputs.pwndbg.packages.${system}.default;
+              ms-edit = inputs.nixpkgs-ms-edit.legacyPackages.${system}.ms-edit;
             })
           ];
         };

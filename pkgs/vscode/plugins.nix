@@ -1,8 +1,18 @@
 {
-  pkgs,
   lib,
+  pkgs,
+  sources,
+  vscode-utils,
   ...
 }: let
+  vscode-extension-kotlin-lsp = vscode-utils.buildVscodeExtension rec {
+    inherit (sources.vscode-extension-kotlin-lsp) version src;
+    pname = "kotlin-lsp";
+    vscodeExtName = pname;
+    vscodeExtPublisher = "jetbrains";
+    vscodeExtUniqueId = "${pname}-${vscodeExtPublisher}-${version}";
+  };
+
   kustomPluginDefs = {
     # "tboox.xmake-vscode" = {
     #   version = "2.4.0";
@@ -11,17 +21,20 @@
   };
 
   kustomPluginList =
-    pkgs.vscode-utils.extensionsFromVscodeMarketplace
-    (lib.attrsets.mapAttrsToList (
-        key: value: let
-          keys = builtins.elemAt (lib.strings.splitString "." key);
-        in {
-          inherit (value) version hash;
-          publisher = keys 0;
-          name = keys 1;
-        }
-      )
-      kustomPluginDefs);
+    [
+      vscode-extension-kotlin-lsp
+    ]
+    ++ (pkgs.vscode-utils.extensionsFromVscodeMarketplace
+      (lib.attrsets.mapAttrsToList (
+          key: value: let
+            keys = builtins.elemAt (lib.strings.splitString "." key);
+          in {
+            inherit (value) version hash;
+            publisher = keys 0;
+            name = keys 1;
+          }
+        )
+        kustomPluginDefs));
 in {
   libs = with pkgs;
     [

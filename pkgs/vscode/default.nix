@@ -1,18 +1,13 @@
 {
-  inputs,
-  pkgs,
   lib,
+  pkgs,
+  inputs,
+  sources,
   callPackage,
   vscode,
   ...
 }: let
-  # repos = rec {
-  #   inherit pkgs;
-  #   pkgs-unstable = pkgs;
-  #   pkgs-kuriko-nur = pkgs;
-  # };
-  # deps = callPackage "${inputs.kuriko-nixos}/home-manager/pkgs/devs/ide/vscode/plugins.nix" {inherit pkgs repos;};
-  deps = callPackage ./plugins.nix {inherit pkgs;};
+  deps = callPackage ./plugins.nix {inherit pkgs sources inputs;};
 
   vscodeWithExtensions = pkgs.vscode-with-extensions.override {
     vscodeExtensions = deps.extensions;

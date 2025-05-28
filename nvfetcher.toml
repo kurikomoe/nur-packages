@@ -26,7 +26,14 @@ src.from_pattern = "^(([0-9\\.]+))$"
 src.to_pattern = "\\1"
 fetch.tarball = "https://github.com/dotnet-script/dotnet-script/releases/download/$ver/dotnet-script.$ver.zip"
 
-
 [microsoft-edge]
 src.aur = "microsoft-edge-stable-bin"
 fetch.url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_$ver-1_amd64.deb"
+
+[vscode-extension-kotlin-lsp]
+src.github_tag = "Kotlin/kotlin-lsp"
+src.include_regex = "kotlin-lsp/v.+"
+src.from_pattern = "^kotlin-lsp/v(0.+)$"
+src.to_pattern = "\\1"
+fetch.url = "https://download-cdn.jetbrains.com/kotlin-lsp/$ver/kotlin-$ver.vsix"
+url.name = "kotlin-lsp-$ver.zip"

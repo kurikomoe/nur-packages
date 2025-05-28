@@ -62,4 +62,13 @@
       sha256 = "sha256-jwrH2/EwiB33YoTC+pGO4Jm3tC4dp1DLZLZvhKvUy30=";
     };
   };
+  vscode-extension-kotlin-lsp = {
+    pname = "vscode-extension-kotlin-lsp";
+    version = "0.252.17811";
+    src = fetchurl {
+      url = "https://download-cdn.jetbrains.com/kotlin-lsp/0.252.17811/kotlin-0.252.17811.vsix";
+      name = "kotlin-lsp-0.252.17811.zip";
+      sha256 = "sha256-jv+90PC2WQfBvvRe4XMJsMJdVFuW1HCho1qTY2NuNko=";
+    };
+  };
 }

@@ -344,6 +344,22 @@
         "type": "github"
       }
     },
+    "nixpkgs-ms-edit": {
+      "locked": {
+        "lastModified": 1747850558,
+        "narHash": "sha256-R1ktM7cZt231ZmzOR0r0FNwLUvcAHcVsRwO7TcYUh08=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "4f09843cb4edf26fac02a021eecfd9e5af0e5206",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "pull/409075/head",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "nixpkgs_2": {
       "locked": {
         "lastModified": 1717432640,
@@ -553,6 +569,7 @@
         "nix-vscode-extensions": "nix-vscode-extensions",
         "nixos-vscode-server": "nixos-vscode-server",
         "nixpkgs": "nixpkgs_6",
+        "nixpkgs-ms-edit": "nixpkgs-ms-edit",
         "pre-commit-hooks": "pre-commit-hooks",
         "pwndbg": "pwndbg"
       }

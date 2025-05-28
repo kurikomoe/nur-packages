@@ -23,20 +23,17 @@ in rec {
 
   "kratos" = callPackage ./pkgs/kratos.nix {};
   "goctl" = callPackage ./pkgs/goctl.nix {};
-
   "1password-cli" = callPackage ./pkgs/1password-cli.nix {};
-
   "dotnet-script" = callPackage ./pkgs/dotnet-script.nix {};
-
   "kfonts" = callPackage ./pkgs/kfonts.nix {};
-
   "shellfirm" = callPackage ./pkgs/shellfirm.nix {};
-
   "vscode" = callPackage ./pkgs/vscode/default.nix {};
-
-  "pwndbg" = pkgs.pwndbg;
+  "microsoft-edge" = callPackage ./pkgs/microsoft-edge/package.nix {};
 
   "precommit-trufflehog" = callPackage ./pkgs/tools/precommit-trufflehog.nix {};
 
-  "microsoft-edge" = callPackage ./pkgs/microsoft-edge/package.nix {};
+  "ms-edit" = pkgs.ms-edit.overrideAttrs (final: prev: {
+    meta.broken = true;
+  });
+  "pwndbg" = pkgs.pwndbg;
 }

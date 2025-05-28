@@ -104,5 +104,20 @@
             "type": "github"
         },
         "version": "v0.2.11"
+    },
+    "vscode-extension-kotlin-lsp": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "vscode-extension-kotlin-lsp",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": "kotlin-lsp-0.252.17811.zip",
+            "sha256": "sha256-jv+90PC2WQfBvvRe4XMJsMJdVFuW1HCho1qTY2NuNko=",
+            "type": "url",
+            "url": "https://download-cdn.jetbrains.com/kotlin-lsp/0.252.17811/kotlin-0.252.17811.vsix"
+        },
+        "version": "0.252.17811"
     }
 }
