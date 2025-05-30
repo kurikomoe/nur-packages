@@ -67,13 +67,13 @@
   };
   pwndbg = {
     pname = "pwndbg";
-    version = "2025.05.28";
+    version = "2025.05.30";
     src = fetchFromGitHub {
       owner = "pwndbg";
       repo = "pwndbg";
-      rev = "2025.05.28";
+      rev = "2025.05.30";
       fetchSubmodules = false;
-      sha256 = "sha256-oO+EtnMozV6uCcvLWL2Smml+RoNW+l9htf/gFJKjzLA=";
+      sha256 = "sha256-Y8tERNTdMrRj07d3vTN2LvEUsZUhJ4lEEqWMzF5QohU=";
     };
   };
   shellfirm = {
