@@ -1,10 +1,25 @@
 {
   lib,
   pkgs,
+  inputs,
   sources,
+  system,
   vscode-utils,
   ...
 }: let
+  res = sources.nix-vscode-extensions;
+  nix-vscode-extensions =
+    (import inputs.flake-compat {
+      inherit system;
+      src = res.src;
+    }).defaultNix;
+
+  # nix-vscode-extensions = builtins.trace
+  #   (builtins.attrNames _nix-vscode-extensions.overlays.default)
+  #   _nix-vscode-extensions;
+
+  pkgsWithVscodeExtentions = pkgs.extend nix-vscode-extensions.overlays.default;
+
   vscode-extension-kotlin-lsp = vscode-utils.buildVscodeExtension rec {
     inherit (sources.vscode-extension-kotlin-lsp) version src;
     pname = "kotlin-lsp";
@@ -47,7 +62,9 @@ in {
     ++ (pkgs.steam.args.multiPkgs pkgs);
 
   extensions = with pkgs.vscode-extensions;
-  with pkgs.vscode-marketplace;
+  with pkgsWithVscodeExtentions.open-vsx;
+  with pkgsWithVscodeExtentions.vscode-marketplace;
+  # with pkgsWithVscodeExtentions.vscode-marketplace-release;
     [
       # Langs
       rust-lang.rust-analyzer

@@ -51,6 +51,31 @@
       sha256 = "sha256-sgQcdeYdDGUw7HVlpjwkWOXlOqW7dZs1TifJ3+DYPTc=";
     };
   };
+  nix-vscode-extensions = {
+    pname = "nix-vscode-extensions";
+    version = "fbaeabcfec7ac4e583461c923f360b6da7836f16";
+    src = fetchgit {
+      url = "https://github.com/nix-community/nix-vscode-extensions.git";
+      rev = "fbaeabcfec7ac4e583461c923f360b6da7836f16";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sparseCheckout = [];
+      sha256 = "sha256-OU1Jzg0y2t6VfISh2wiXx4elwx8iV++KKStmaQLceXc=";
+    };
+    date = "2025-05-30";
+  };
+  pwndbg = {
+    pname = "pwndbg";
+    version = "2025.05.28";
+    src = fetchFromGitHub {
+      owner = "pwndbg";
+      repo = "pwndbg";
+      rev = "2025.05.28";
+      fetchSubmodules = false;
+      sha256 = "sha256-oO+EtnMozV6uCcvLWL2Smml+RoNW+l9htf/gFJKjzLA=";
+    };
+  };
   shellfirm = {
     pname = "shellfirm";
     version = "v0.2.11";

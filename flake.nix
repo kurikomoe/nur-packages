@@ -1,19 +1,15 @@
 {
-  description = "My personal NUR repository";
+  description = "Kuriko's personal NUR repository";
 
   inputs = {
-    flake-parts.url = "github:hercules-ci/flake-parts";
     devenv.url = "github:cachix/devenv";
-
-    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    flake-parts.url = "github:hercules-ci/flake-parts";
+    flake-compat.url = "github:nix-community/flake-compat";
     pre-commit-hooks.url = "github:cachix/git-hooks.nix";
 
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
+
     nixpkgs-ms-edit.url = "github:NixOS/nixpkgs/pull/409075/head";
-
-    nixos-vscode-server.url = "github:nix-community/nixos-vscode-server";
-    nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
-
-    pwndbg.url = "github:pwndbg/pwndbg/2025.04.18";
   };
 
   nixConfig = {
@@ -80,10 +76,10 @@
           inherit system;
           config.allowUnfree = true;
           overlays = [
-            inputs.nix-vscode-extensions.overlays.default
+            # inputs.nix-vscode-extensions.overlays.default
             (final: prev: {
-              pwndbg = inputs.pwndbg.packages.${system}.default;
-              ms-edit = inputs.nixpkgs-ms-edit.legacyPackages.${system}.ms-edit;
+              # pwndbg = inputs.pwndbg.packages.${system}.default;
+              ms-edit = inputs.nixpkgs-ms-edit.legacyPackages.${system}.microsoft-edit;
             })
           ];
         };

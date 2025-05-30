@@ -84,6 +84,47 @@
         },
         "version": "137.0.3296.52"
     },
+    "nix-vscode-extensions": {
+        "cargoLocks": null,
+        "date": "2025-05-30",
+        "extract": null,
+        "name": "nix-vscode-extensions",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "fbaeabcfec7ac4e583461c923f360b6da7836f16",
+            "sha256": "sha256-OU1Jzg0y2t6VfISh2wiXx4elwx8iV++KKStmaQLceXc=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/nix-community/nix-vscode-extensions.git"
+        },
+        "version": "fbaeabcfec7ac4e583461c923f360b6da7836f16"
+    },
+    "pwndbg": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "pwndbg",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "pwndbg",
+            "repo": "pwndbg",
+            "rev": "2025.05.28",
+            "sha256": "sha256-oO+EtnMozV6uCcvLWL2Smml+RoNW+l9htf/gFJKjzLA=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "2025.05.28"
+    },
     "shellfirm": {
         "cargoLocks": null,
         "date": null,

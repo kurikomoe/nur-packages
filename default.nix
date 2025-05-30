@@ -35,5 +35,6 @@ in rec {
   "ms-edit" = pkgs.ms-edit.overrideAttrs (final: prev: {
     meta.broken = true;
   });
-  "pwndbg" = pkgs.pwndbg;
+
+  "pwndbg" = callPackage ./pkgs/pwndbg.nix {};
 }

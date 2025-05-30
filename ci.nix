@@ -58,9 +58,9 @@ with builtins; let
         (filter (n: !isReserved n)
           (attrNames nurAttrs))));
 in rec {
-  inherit nurPkgs;
+  _nurPkgs = nurPkgs;
 
-  buildPkgs = filter isBuildable nurPkgs;
+  buildPkgs = filter isBuildable _nurPkgs;
   cachePkgs = filter isCacheable buildPkgs;
 
   buildOutputs = concatMap outputsOf buildPkgs;
