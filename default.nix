@@ -32,9 +32,9 @@ in rec {
 
   "precommit-trufflehog" = callPackage ./pkgs/tools/precommit-trufflehog.nix {};
 
-  # "ms-edit" = pkgs.ms-edit.overrideAttrs (final: prev: {
-  #   meta.broken = true;
-  # });
+  "ms-edit" = pkgs.ms-edit.overrideAttrs (final: prev: {
+    meta.broken = true;
+  });
 
   "pwndbg" = callPackage ./pkgs/pwndbg.nix {};
 

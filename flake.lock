@@ -285,6 +285,22 @@
         "type": "github"
       }
     },
+    "nixpkgs-ms-edit": {
+      "locked": {
+        "lastModified": 1748535610,
+        "narHash": "sha256-xwFoLrV67AsOt+cmI+hsPwjoUx1AC6bgjWUqS5EqJJQ=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "d0f6661a157a64b46ba98977106150de033f1ec0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "pull/409075/head",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "nixpkgs_2": {
       "locked": {
         "lastModified": 1717432640,
@@ -319,16 +335,16 @@
     },
     "nixpkgs_4": {
       "locked": {
-        "lastModified": 1748421225,
-        "narHash": "sha256-XXILOc80tvlvEQgYpYFnze8MkQQmp3eQxFbTzb3m/R0=",
+        "lastModified": 1748437600,
+        "narHash": "sha256-hYKMs3ilp09anGO7xzfGs3JqEgUqFMnZ8GMAqI6/k04=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "78add7b7abb61689e34fc23070a8f55e1d26185b",
+        "rev": "7282cb574e0607e65224d33be8241eae7cfe0979",
         "type": "github"
       },
       "original": {
         "owner": "NixOS",
-        "ref": "nixos-24.11",
+        "ref": "nixos-25.05",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -375,6 +391,7 @@
         "flake-compat": "flake-compat_2",
         "flake-parts": "flake-parts_2",
         "nixpkgs": "nixpkgs_4",
+        "nixpkgs-ms-edit": "nixpkgs-ms-edit",
         "pre-commit-hooks": "pre-commit-hooks"
       }
     }

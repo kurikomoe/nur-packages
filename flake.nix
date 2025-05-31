@@ -8,7 +8,10 @@
     pre-commit-hooks.url = "github:cachix/git-hooks.nix";
 
     # always use the last two to avoid frequent updates
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
+
+    # Temp
+    nixpkgs-ms-edit.url = "github:NixOS/nixpkgs/pull/409075/head";
   };
 
   nixConfig = {
@@ -79,7 +82,7 @@
             # inputs.nix-vscode-extensions.overlays.default
             (final: prev: {
               # pwndbg = inputs.pwndbg.packages.${system}.default;
-              # ms-edit = inputs.nixpkgs-ms-edit.legacyPackages.${system}.microsoft-edit;
+              ms-edit = inputs.nixpkgs-ms-edit.legacyPackages.${system}.microsoft-edit;
             })
           ];
         };
