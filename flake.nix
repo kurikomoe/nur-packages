@@ -11,7 +11,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
 
     # Temp
-    nixpkgs-ms-edit.url = "github:NixOS/nixpkgs/pull/409075/head";
+    nixpkgs-microsoft-edit.url = "github:NixOS/nixpkgs/pull/409075/head";
   };
 
   nixConfig = {
@@ -82,7 +82,7 @@
             # inputs.nix-vscode-extensions.overlays.default
             (final: prev: {
               # pwndbg = inputs.pwndbg.packages.${system}.default;
-              ms-edit = inputs.nixpkgs-ms-edit.legacyPackages.${system}.microsoft-edit;
+              microsoft-edit = inputs.nixpkgs-microsoft-edit.legacyPackages.${system}.microsoft-edit;
             })
           ];
         };

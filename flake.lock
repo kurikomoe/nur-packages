@@ -285,7 +285,7 @@
         "type": "github"
       }
     },
-    "nixpkgs-ms-edit": {
+    "nixpkgs-microsoft-edit": {
       "locked": {
         "lastModified": 1748535610,
         "narHash": "sha256-xwFoLrV67AsOt+cmI+hsPwjoUx1AC6bgjWUqS5EqJJQ=",
@@ -391,7 +391,7 @@
         "flake-compat": "flake-compat_2",
         "flake-parts": "flake-parts_2",
         "nixpkgs": "nixpkgs_4",
-        "nixpkgs-ms-edit": "nixpkgs-ms-edit",
+        "nixpkgs-microsoft-edit": "nixpkgs-microsoft-edit",
         "pre-commit-hooks": "pre-commit-hooks"
       }
     }
