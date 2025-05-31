@@ -139,12 +139,12 @@
             "name": null,
             "owner": "pwndbg",
             "repo": "pwndbg",
-            "rev": "2025.05.30",
-            "sha256": "sha256-Y8tERNTdMrRj07d3vTN2LvEUsZUhJ4lEEqWMzF5QohU=",
+            "rev": "2025.04.18",
+            "sha256": "sha256-JBunG0mRtjPrTJ7gUOJg+54P8WZEUWS5IEp6Az4hNG8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "2025.05.30"
+        "version": "2025.04.18"
     },
     "shellfirm": {
         "cargoLocks": null,
