@@ -28,6 +28,7 @@ in rec {
   "kfonts" = callPackage ./pkgs/kfonts.nix {};
   "shellfirm" = callPackage ./pkgs/shellfirm.nix {};
   "vscode" = callPackage ./pkgs/vscode/default.nix {};
+
   "microsoft-edge" = callPackage ./pkgs/microsoft-edge/package.nix {};
 
   "precommit-trufflehog" = callPackage ./pkgs/tools/precommit-trufflehog.nix {};

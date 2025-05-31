@@ -23,7 +23,13 @@ with builtins; let
       then licenseFromMeta
       else [licenseFromMeta];
   in
-    !(p.meta.broken or false) && builtins.all (license: license.free or true) licenseList;
+    !(p.meta.broken or false)
+    && builtins.all (license:
+      /*
+      license.free or
+      */
+        true)
+    licenseList;
   isCacheable = p: !(p.preferLocalBuild or false);
   shouldRecurseForDerivations = p: isAttrs p && p.recurseForDerivations or false;
 
