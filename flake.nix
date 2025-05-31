@@ -7,17 +7,17 @@
     flake-compat.url = "github:nix-community/flake-compat";
     pre-commit-hooks.url = "github:cachix/git-hooks.nix";
 
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
-
-    nixpkgs-ms-edit.url = "github:NixOS/nixpkgs/pull/409075/head";
+    # always use the last two to avoid frequent updates
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
   };
 
   nixConfig = {
     substituters = [
-      https://mirrors.ustc.edu.cn/nix-channels/store
-      https://mirrors.tuna.tsinghua.edu.cn/nix-channels/store
-      https://nix-community.cachix.org
-      https://kurikomoe.cachix.org
+      "https://nix-community.cachix.org"
+      "https://cache.nixos.org/"
+      "https://mirrors.ustc.edu.cn/nix-channels/store"
+      "https://mirrors.tuna.tsinghua.edu.cn/nix-channels/store"
+      "https://kurikomoe.cachix.org"
     ];
     trusted-public-keys = [
       "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
@@ -79,7 +79,7 @@
             # inputs.nix-vscode-extensions.overlays.default
             (final: prev: {
               # pwndbg = inputs.pwndbg.packages.${system}.default;
-              ms-edit = inputs.nixpkgs-ms-edit.legacyPackages.${system}.microsoft-edit;
+              # ms-edit = inputs.nixpkgs-ms-edit.legacyPackages.${system}.microsoft-edit;
             })
           ];
         };

@@ -22,7 +22,7 @@
 
     meta = {
       description = "scripts for pre-commit";
-      homepage = https://github.com/kurikomoe;
+      homepage = "https://github.com/kurikomoe";
       license = [];
       maintainers = [];
       broken = false;

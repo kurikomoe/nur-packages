@@ -42,7 +42,7 @@ in
 
     meta = {
       description = "Intercept any risky patterns (default or defined by you) and prompt you a small challenge for double verification";
-      homepage = https://github.com/kaplanelad/shellfirm;
+      homepage = "https://github.com/kaplanelad/shellfirm";
       license = lib.licenses.asl20;
       maintainers = [];
     };

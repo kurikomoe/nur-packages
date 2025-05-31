@@ -43,6 +43,17 @@
       sha256 = "sha256-N0jNIrFOTCOICL7pM1SZQJQd80hedG7XS/mrc8LrEsY=";
     };
   };
+  lix = {
+    pname = "lix";
+    version = "2.93.0";
+    src = fetchFromGitHub {
+      owner = "lix-project";
+      repo = "lix";
+      rev = "2.93.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-hsFe4Tsqqg4l+FfQWphDtjC79WzNCZbEFhHI8j2KJzw=";
+    };
+  };
   microsoft-edge = {
     pname = "microsoft-edge";
     version = "137.0.3296.52";

@@ -48,3 +48,8 @@ fetch.github = "pwndbg/pwndbg"
 src.git = "https://github.com/nix-community/nix-vscode-extensions.git"
 src.branch = "master"
 fetch.git = "https://github.com/nix-community/nix-vscode-extensions.git"
+
+[lix]
+src.github_tag = "lix-project/lix"
+src.include_regex = "\\d+\\.\\d+\\.\\d+"
+fetch.github = "lix-project/lix"
