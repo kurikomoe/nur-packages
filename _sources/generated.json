@@ -120,11 +120,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-X0JH6pQIkAxA+jy94Oeor9jUJ5sAZH0trpll8+aCO00=",
+            "sha256": "sha256-9fHlcCn7j4W6pUQemkWu63qmpvN1nTxFjBsVKX7RFbw=",
             "type": "url",
-            "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_137.0.3296.58-1_amd64.deb"
+            "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_137.0.3296.62-1_amd64.deb"
         },
-        "version": "137.0.3296.58"
+        "version": "137.0.3296.62"
     },
     "nix-vscode-extensions": {
         "cargoLocks": null,
