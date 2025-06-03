@@ -53,3 +53,9 @@ fetch.git = "https://github.com/nix-community/nix-vscode-extensions.git"
 src.github_tag = "lix-project/lix"
 src.include_regex = "\\d+\\.\\d+\\.\\d+"
 fetch.github = "lix-project/lix"
+
+[devenv]
+src.github_tag = "cachix/devenv"
+src.include_regex = "^latest$"
+fetch.github = "cachix/devenv"
+

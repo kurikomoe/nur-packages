@@ -13,6 +13,27 @@
         },
         "version": "v2.30.3"
     },
+    "devenv": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "devenv",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "cachix",
+            "repo": "devenv",
+            "rev": "latest",
+            "sha256": "sha256-CEVWxRaln3sp0541QpMfcfmI2w+RN72UgNLV5Dy9sco=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "latest"
+    },
     "dotnet-script": {
         "cargoLocks": null,
         "date": null,
@@ -107,7 +128,7 @@
     },
     "nix-vscode-extensions": {
         "cargoLocks": null,
-        "date": "2025-06-02",
+        "date": "2025-06-03",
         "extract": null,
         "name": "nix-vscode-extensions",
         "passthru": null,
@@ -117,13 +138,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "bb2066fbf770f0385864a9005c88e40533ffce1d",
-            "sha256": "sha256-ogPMNqKzT1gXoP7MsmKzxZPaK+oytbj4h7AlW9HZJ/M=",
+            "rev": "1599b5b404e6bbdaf088f4c8872954146f8a19bb",
+            "sha256": "sha256-xeIzrAq+HNCp6Tx+lNfoty4D3zzfqSgQGgeTHXb2zGk=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/nix-community/nix-vscode-extensions.git"
         },
-        "version": "bb2066fbf770f0385864a9005c88e40533ffce1d"
+        "version": "1599b5b404e6bbdaf088f4c8872954146f8a19bb"
     },
     "pwndbg": {
         "cargoLocks": null,

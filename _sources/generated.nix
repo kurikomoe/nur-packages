@@ -13,6 +13,17 @@
       sha256 = "sha256-MsBSjJi7hJbS1wU3lVeywRrhGAZkoqxRb4FTg8fFN00=";
     };
   };
+  devenv = {
+    pname = "devenv";
+    version = "latest";
+    src = fetchFromGitHub {
+      owner = "cachix";
+      repo = "devenv";
+      rev = "latest";
+      fetchSubmodules = false;
+      sha256 = "sha256-CEVWxRaln3sp0541QpMfcfmI2w+RN72UgNLV5Dy9sco=";
+    };
+  };
   dotnet-script = {
     pname = "dotnet-script";
     version = "1.6.0";
@@ -64,17 +75,17 @@
   };
   nix-vscode-extensions = {
     pname = "nix-vscode-extensions";
-    version = "bb2066fbf770f0385864a9005c88e40533ffce1d";
+    version = "1599b5b404e6bbdaf088f4c8872954146f8a19bb";
     src = fetchgit {
       url = "https://github.com/nix-community/nix-vscode-extensions.git";
-      rev = "bb2066fbf770f0385864a9005c88e40533ffce1d";
+      rev = "1599b5b404e6bbdaf088f4c8872954146f8a19bb";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [];
-      sha256 = "sha256-ogPMNqKzT1gXoP7MsmKzxZPaK+oytbj4h7AlW9HZJ/M=";
+      sha256 = "sha256-xeIzrAq+HNCp6Tx+lNfoty4D3zzfqSgQGgeTHXb2zGk=";
     };
-    date = "2025-06-02";
+    date = "2025-06-03";
   };
   pwndbg = {
     pname = "pwndbg";

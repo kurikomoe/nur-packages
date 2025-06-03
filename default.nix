@@ -40,4 +40,6 @@ in rec {
   "pwndbg" = callPackage ./pkgs/pwndbg.nix {};
 
   "lix" = callPackage ./pkgs/lix.nix {};
+
+  "devenv" = callPackage ./pkgs/devenv.nix {};
 }
