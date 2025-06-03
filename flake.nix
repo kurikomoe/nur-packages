@@ -2,7 +2,7 @@
   description = "Kuriko's personal NUR repository";
 
   inputs = {
-    devenv.url = "github:cachix/devenv";
+    devenv.url = "github:cachix/devenv/latest";
     flake-parts.url = "github:hercules-ci/flake-parts";
     flake-compat.url = "github:nix-community/flake-compat";
     pre-commit-hooks.url = "github:cachix/git-hooks.nix";
