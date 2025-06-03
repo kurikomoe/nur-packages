@@ -41,6 +41,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Maximize build space
+      uses: easimon/maximize-build-space@master
+      with:
+        root-reserve-mb: 8192
+        swap-size-mb: 4096
+        build-mount-path: '/nix'
+        remove-dotnet: 'true'
+        remove-android: 'true'
+        remove-haskell: 'true'
+        remove-codeql: 'true'
+        remove-docker-images: 'true'
+
     - name: Checkout repository
       uses: actions/checkout@v4
 
@@ -82,4 +94,3 @@ jobs:
     #   # Don't replace <YOUR_REPO_NAME> here!
     #   if: ${{ matrix.nurRepo != '<YOUR_REPO_NAME>' }}
     #   run: curl -XPOST "https://nur-update.nix-community.org/update?repo=${{ matrix.nurRepo }}"
-
