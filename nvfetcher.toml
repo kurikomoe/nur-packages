@@ -45,9 +45,8 @@ src.to_pattern = "\\1"
 fetch.github = "pwndbg/pwndbg"
 
 [nix-vscode-extensions]
-src.git = "https://github.com/nix-community/nix-vscode-extensions.git"
-src.branch = "master"
-fetch.git = "https://github.com/nix-community/nix-vscode-extensions.git"
+src.manual = "master"
+fetch.github = "nix-community/nix-vscode-extensions"
 
 [lix]
 src.github_tag = "lix-project/lix"
@@ -55,7 +54,9 @@ src.include_regex = "\\d+\\.\\d+\\.\\d+"
 fetch.github = "lix-project/lix"
 
 [devenv]
-src.github_tag = "cachix/devenv"
-src.include_regex = "^latest$"
+src.manual = "latest"
 fetch.github = "cachix/devenv"
 
+[python]
+src.manual = "main"
+fetch.github = "cachix/nixpkgs-python"

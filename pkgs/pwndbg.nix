@@ -6,10 +6,10 @@
   stdenv,
   ...
 }: let
-  res = sources.pwndbg.src;
+  res = sources.pwndbg;
   flake = import inputs.flake-compat {
     inherit system;
-    src = res;
+    src = res.src;
   };
 
   # pwndbg = builtins.trace (builtins.attrNames flake.defaultNix) flake.defaultNix;

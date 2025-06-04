@@ -75,17 +75,14 @@
   };
   nix-vscode-extensions = {
     pname = "nix-vscode-extensions";
-    version = "1599b5b404e6bbdaf088f4c8872954146f8a19bb";
-    src = fetchgit {
-      url = "https://github.com/nix-community/nix-vscode-extensions.git";
-      rev = "1599b5b404e6bbdaf088f4c8872954146f8a19bb";
+    version = "master";
+    src = fetchFromGitHub {
+      owner = "nix-community";
+      repo = "nix-vscode-extensions";
+      rev = "master";
       fetchSubmodules = false;
-      deepClone = false;
-      leaveDotGit = false;
-      sparseCheckout = [];
-      sha256 = "sha256-xeIzrAq+HNCp6Tx+lNfoty4D3zzfqSgQGgeTHXb2zGk=";
+      sha256 = "sha256-v9K6RyPF/+4r/YJhjEH8y07VWE6Vj7Vl88E/K5m/uJ0=";
     };
-    date = "2025-06-03";
   };
   pwndbg = {
     pname = "pwndbg";
@@ -96,6 +93,17 @@
       rev = "2025.05.30";
       fetchSubmodules = false;
       sha256 = "sha256-Y8tERNTdMrRj07d3vTN2LvEUsZUhJ4lEEqWMzF5QohU=";
+    };
+  };
+  python = {
+    pname = "python";
+    version = "main";
+    src = fetchFromGitHub {
+      owner = "cachix";
+      repo = "nixpkgs-python";
+      rev = "main";
+      fetchSubmodules = false;
+      sha256 = "sha256-BH27BJZNbR0zQAL/mFCxDPR6K6mbrmjJ66lxVDTNPXU=";
     };
   };
   shellfirm = {

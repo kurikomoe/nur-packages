@@ -42,4 +42,6 @@ in rec {
   "lix" = callPackage ./pkgs/lix.nix {};
 
   "devenv" = callPackage ./pkgs/devenv.nix {};
+
+  "python" = callPackage ./pkgs/python/default.nix {};
 }
