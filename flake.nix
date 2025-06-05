@@ -75,6 +75,13 @@
         system,
         ...
       }: let
+        root = rec {
+          base = ./.;
+          res = "${base}/res";
+          pkgs = "${base}/pkgs";
+          utils = "${base}/utils";
+        };
+
         pkgs = import nixpkgs {
           inherit system;
           config.allowUnfree = true;
@@ -86,6 +93,8 @@
             })
           ];
         };
+
+        kutils = pkgs.callPackage "${root.utils}/kutils.nix" {};
       in let
         convert2attrset = x:
           builtins.listToAttrs (builtins.map (x: {
@@ -94,9 +103,9 @@
             })
             x);
 
-        ci = import ./ci.nix {inherit pkgs inputs;};
+        ci = import ./ci.nix {inherit pkgs inputs root;};
         buildOutputs = convert2attrset ci.buildPkgs;
-        # buildOutputs = builtins.trace (builtins.attrNames _buildOutputs) _buildOutputs;
+        # buildOutputs = kutils.inspectAttrset _buildOutputs;
         cacheOutputs = convert2attrset ci.cacheOutputs;
       in rec {
         formatter = nixpkgs.legacyPackages.${system}.alejandra;

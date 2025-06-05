@@ -11,6 +11,7 @@
 {
   pkgs ? import <nixpkgs> {},
   inputs,
+  root,
   ...
 }:
 with builtins; let
@@ -55,7 +56,7 @@ with builtins; let
   nurAttrs = let
     sources = pkgs.callPackages ./_sources/generated.nix {};
   in
-    import ./default.nix {inherit pkgs inputs sources;};
+    import ./default.nix {inherit pkgs inputs sources root;};
 
   nurPkgs =
     flattenPkgs

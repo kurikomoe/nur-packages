@@ -9,39 +9,51 @@
   pkgs ? import <nixpkgs> {},
   inputs,
   sources,
+  root,
   ...
 }: let
-  kutils = pkgs.callPackages ./helpers/kutils.nix {};
-  callPackage = x: args: pkgs.callPackage x ({inherit inputs sources kutils;} // args);
-in rec {
-  # The `lib`, `modules`, and `overlays` names are special
-  lib = import ./lib {inherit pkgs;}; # functions
-  modules = import ./modules; # NixOS modules
-  overlays = import ./overlays; # nixpkgs overlays
+  lib = pkgs.lib;
+  kutils = pkgs.callPackage "${root.utils}/kutils.nix" {};
 
-  # "example-package" = pkgs.callPackage ./pkgs/example-package {};
+  params = {inherit inputs sources kutils root;};
+  kallPackage = kutils.buildCallPackage params;
 
-  "kratos" = callPackage ./pkgs/kratos.nix {};
-  "goctl" = callPackage ./pkgs/goctl.nix {};
-  "1password-cli" = callPackage ./pkgs/1password-cli.nix {};
-  "dotnet-script" = callPackage ./pkgs/dotnet-script.nix {};
-  "kfonts" = callPackage ./pkgs/kfonts.nix {};
-  "shellfirm" = callPackage ./pkgs/shellfirm.nix {};
-  "vscode" = callPackage ./pkgs/vscode/default.nix {};
+  fonts = kallPackage ./pkgs/fonts {};
 
-  "microsoft-edge" = callPackage ./pkgs/microsoft-edge/package.nix {};
+  nur-pkgs = lib.attrsets.mergeAttrsList [
+    {
+      # The `lib`, `modules`, and `overlays` names are special
+      lib = import ./lib {inherit pkgs;}; # functions
+      modules = import ./modules; # NixOS modules
+      overlays = import ./overlays; # nixpkgs overlays
 
-  "precommit-trufflehog" = callPackage ./pkgs/tools/precommit-trufflehog.nix {};
+      # "example-package" = pkgs.kallPackage ./pkgs/example-package {};
 
-  "microsoft-edit" = pkgs.microsoft-edit.overrideAttrs (final: prev: {
-    # meta.broken = true;
-  });
+      "kratos" = kallPackage ./pkgs/kratos.nix {};
+      "goctl" = kallPackage ./pkgs/goctl.nix {};
+      "1password-cli" = kallPackage ./pkgs/1password-cli.nix {};
+      "dotnet-script" = kallPackage ./pkgs/dotnet-script.nix {};
+      "kfonts" = kallPackage ./pkgs/kfonts.nix {};
+      "shellfirm" = kallPackage ./pkgs/shellfirm.nix {};
+      "vscode" = kallPackage ./pkgs/vscode/default.nix {};
 
-  "pwndbg" = callPackage ./pkgs/pwndbg.nix {};
+      "microsoft-edge" = kallPackage ./pkgs/microsoft-edge/package.nix {};
 
-  "lix" = callPackage ./pkgs/lix.nix {};
+      "precommit-trufflehog" = kallPackage ./pkgs/tools/precommit-trufflehog.nix {};
 
-  "devenv" = callPackage ./pkgs/devenv.nix {};
+      "microsoft-edit" = pkgs.microsoft-edit.overrideAttrs (final: prev: {
+        # meta.broken = true;
+      });
 
-  "python" = callPackage ./pkgs/python/default.nix {};
-}
+      "pwndbg" = kallPackage ./pkgs/pwndbg.nix {};
+
+      "lix" = kallPackage ./pkgs/lix.nix {};
+
+      "devenv" = kallPackage ./pkgs/devenv.nix {};
+
+      "python" = kallPackage ./pkgs/python/default.nix {};
+    }
+    fonts
+  ];
+in
+  kutils.inspectAttrset nur-pkgs

@@ -32,6 +32,14 @@
       sha256 = "sha256-Pc8+hja4OUajMLCOlieVLLvRMj74+OmecYlv3YyOvwo=";
     };
   };
+  font-firacode = {
+    pname = "font-firacode";
+    version = "6.2";
+    src = fetchurl {
+      url = "https://github.com/tonsky/FiraCode/releases/download/6.2/Fira_Code_v6.2.zip";
+      sha256 = "sha256-CUmRW6jrJNif2T0Qp/9iP0KDDXxf/D7L+WDk7K0+Pnk=";
+    };
+  };
   goctl = {
     pname = "goctl";
     version = "v1.8.3";
@@ -81,7 +89,7 @@
       repo = "nix-vscode-extensions";
       rev = "master";
       fetchSubmodules = false;
-      sha256 = "sha256-v9K6RyPF/+4r/YJhjEH8y07VWE6Vj7Vl88E/K5m/uJ0=";
+      sha256 = "sha256-l0nq/gnL6x+hBPuzNEBLFotPzwGyqUcPiwcmGcRyW0A=";
     };
   };
   pwndbg = {

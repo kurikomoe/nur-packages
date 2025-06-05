@@ -48,6 +48,21 @@
         },
         "version": "1.6.0"
     },
+    "font-firacode": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "font-firacode",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-CUmRW6jrJNif2T0Qp/9iP0KDDXxf/D7L+WDk7K0+Pnk=",
+            "type": "url",
+            "url": "https://github.com/tonsky/FiraCode/releases/download/6.2/Fira_Code_v6.2.zip"
+        },
+        "version": "6.2"
+    },
     "goctl": {
         "cargoLocks": null,
         "date": null,
@@ -141,7 +156,7 @@
             "owner": "nix-community",
             "repo": "nix-vscode-extensions",
             "rev": "master",
-            "sha256": "sha256-v9K6RyPF/+4r/YJhjEH8y07VWE6Vj7Vl88E/K5m/uJ0=",
+            "sha256": "sha256-l0nq/gnL6x+hBPuzNEBLFotPzwGyqUcPiwcmGcRyW0A=",
             "sparseCheckout": [],
             "type": "github"
         },

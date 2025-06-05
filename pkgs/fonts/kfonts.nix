@@ -8,7 +8,7 @@ stdenvNoCC.mkDerivation rec {
   pname = "kfonts";
   version = "1.0.0";
 
-  src = ../res/fonts;
+  src = ../../res/fonts;
 
   installPhase = ''
     runHook preInstall
