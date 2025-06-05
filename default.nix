@@ -52,6 +52,8 @@
       "devenv" = kallPackage ./pkgs/devenv.nix {};
 
       "python" = kallPackage ./pkgs/python/default.nix {};
+
+      "deploy-rs" = kallPackage ./pkgs/deploy-rs.nix {};
     }
     fonts
   ];

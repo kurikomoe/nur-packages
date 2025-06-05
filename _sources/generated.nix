@@ -13,6 +13,17 @@
       sha256 = "sha256-MsBSjJi7hJbS1wU3lVeywRrhGAZkoqxRb4FTg8fFN00=";
     };
   };
+  deploy-rs = {
+    pname = "deploy-rs";
+    version = "master";
+    src = fetchFromGitHub {
+      owner = "serokell";
+      repo = "deploy-rs";
+      rev = "master";
+      fetchSubmodules = false;
+      sha256 = "sha256-hXh76y/wDl15almBcqvjryB50B0BaiXJKk20f314RoE=";
+    };
+  };
   devenv = {
     pname = "devenv";
     version = "latest";
