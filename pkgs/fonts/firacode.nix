@@ -22,7 +22,7 @@ in
 
     installPhase = ''
       runHook preInstall
-      install -Dm644 $sourceRoot/ttf/*.ttf -t $out/share/fonts/FiraCode/
+      install -Dm644 $sourceRoot/ttf/*.ttf -t $out/share/fonts/truetype/FiraCode/
       runHook postInstall
     '';
 
