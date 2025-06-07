@@ -16,6 +16,18 @@ src.from_pattern = "^(v([0-9\\.]+))$"
 src.to_pattern = "\\1"
 fetch.github = "zeromicro/go-zero"
 
+[trzsz-ssh]
+src.github_tag = "trzsz/trzsz-ssh"
+src.from_pattern = "^(v([0-9\\.]+))$"
+src.to_pattern = "\\1"
+fetch.github = "trzsz/trzsz-ssh"
+
+[trzsz]
+src.github_tag = "trzsz/trzsz-go"
+src.from_pattern = "^(v([0-9\\.]+))$"
+src.to_pattern = "\\1"
+fetch.github = "trzsz/trzsz-go"
+
 [1password-cli-linux]
 src.manual = "v2.30.3"
 fetch.tarball = "https://cache.agilebits.com/dist/1P/op2/pkg/$ver/op_linux_amd64_$ver.zip"
@@ -69,4 +81,3 @@ fetch.url = "https://github.com/tonsky/FiraCode/releases/download/$ver/Fira_Code
 [deploy-rs]
 src.manual = "master"
 fetch.github = "serokell/deploy-rs"
-

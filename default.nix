@@ -21,6 +21,18 @@
   fonts = kallPackage ./pkgs/fonts {};
 
   nur-pkgs = lib.attrsets.mergeAttrsList [
+    (kutils.genPkgAttrset [
+      (kallPackage ./pkgs/kratos.nix {})
+      (kallPackage ./pkgs/goctl.nix {})
+      (kallPackage ./pkgs/1password-cli.nix {})
+      (kallPackage ./pkgs/dotnet-script.nix {})
+      (kallPackage ./pkgs/shellfirm.nix {})
+      (kallPackage ./pkgs/microsoft-edge/package.nix {})
+      (kallPackage ./pkgs/pwndbg.nix {})
+      (kallPackage ./pkgs/lix.nix {})
+      (kallPackage ./pkgs/deploy-rs.nix {})
+      (kallPackage ./pkgs/tools/precommit-trufflehog.nix {})
+    ])
     {
       # The `lib`, `modules`, and `overlays` names are special
       lib = import ./lib {inherit pkgs;}; # functions
@@ -28,34 +40,35 @@
       overlays = import ./overlays; # nixpkgs overlays
 
       # "example-package" = pkgs.kallPackage ./pkgs/example-package {};
-
-      "kratos" = kallPackage ./pkgs/kratos.nix {};
-      "goctl" = kallPackage ./pkgs/goctl.nix {};
-      "1password-cli" = kallPackage ./pkgs/1password-cli.nix {};
-      "dotnet-script" = kallPackage ./pkgs/dotnet-script.nix {};
-      "kfonts" = kallPackage ./pkgs/kfonts.nix {};
-      "shellfirm" = kallPackage ./pkgs/shellfirm.nix {};
-      "vscode" = kallPackage ./pkgs/vscode/default.nix {};
-
-      "microsoft-edge" = kallPackage ./pkgs/microsoft-edge/package.nix {};
-
-      "precommit-trufflehog" = kallPackage ./pkgs/tools/precommit-trufflehog.nix {};
-
       "microsoft-edit" = pkgs.microsoft-edit.overrideAttrs (final: prev: {
         # meta.broken = true;
       });
 
-      "pwndbg" = kallPackage ./pkgs/pwndbg.nix {};
-
-      "lix" = kallPackage ./pkgs/lix.nix {};
-
       "devenv" = kallPackage ./pkgs/devenv.nix {};
-
       "python" = kallPackage ./pkgs/python/default.nix {};
-
-      "deploy-rs" = kallPackage ./pkgs/deploy-rs.nix {};
+      "vscode" = kallPackage ./pkgs/vscode/default.nix {};
+      "trzsz" = kallPackage ./pkgs/trzsz-ssh.nix {};
     }
     fonts
   ];
 in
-  kutils.inspectAttrset nur-pkgs
+  nur-pkgs
+# builtins.trace
+# (let
+#   isRecursiveDerivation = x:
+#     builtins.isAttrs x
+#       && x ? recurseForDerivations
+#       && x.recurseForDerivations;
+#   deepInspect = x:
+#     x.pname
+#     or x.name
+#     or builtins.map deepInspect (
+#       builtins.filter
+#         isRecursiveDerivation
+#         (builtins.map (x: deepInspect ) (builtins.attrValues x))
+#     );
+#   el = deepInspect nur-pkgs;
+# in
+#   builtins.deepSeq el el)
+# nur-pkgs
+

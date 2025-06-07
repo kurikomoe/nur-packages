@@ -156,11 +156,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-9fHlcCn7j4W6pUQemkWu63qmpvN1nTxFjBsVKX7RFbw=",
+            "sha256": "sha256-dgmQF6zpd8dAYKoTSiidk8VU6dZ/ZWEDlYD91IPaDEE=",
             "type": "url",
-            "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_137.0.3296.62-1_amd64.deb"
+            "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_137.0.3296.68-1_amd64.deb"
         },
-        "version": "137.0.3296.62"
+        "version": "137.0.3296.68"
     },
     "nix-vscode-extensions": {
         "cargoLocks": null,
@@ -177,7 +177,7 @@
             "owner": "nix-community",
             "repo": "nix-vscode-extensions",
             "rev": "master",
-            "sha256": "sha256-l0nq/gnL6x+hBPuzNEBLFotPzwGyqUcPiwcmGcRyW0A=",
+            "sha256": "sha256-v9K6RyPF/+4r/YJhjEH8y07VWE6Vj7Vl88E/K5m/uJ0=",
             "sparseCheckout": [],
             "type": "github"
         },
@@ -219,7 +219,7 @@
             "owner": "cachix",
             "repo": "nixpkgs-python",
             "rev": "main",
-            "sha256": "sha256-4PxjidSLpNuB+/YXtbaMoqkaNpZ7IGJDi2Rbo9TqmrM=",
+            "sha256": "sha256-BH27BJZNbR0zQAL/mFCxDPR6K6mbrmjJ66lxVDTNPXU=",
             "sparseCheckout": [],
             "type": "github"
         },
@@ -245,6 +245,48 @@
             "type": "github"
         },
         "version": "v0.2.11"
+    },
+    "trzsz": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "trzsz",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "trzsz",
+            "repo": "trzsz-go",
+            "rev": "v1.1.8",
+            "sha256": "sha256-g1fbgKTFS9aPAmnTeFYoymrDEoZ6BtzUhA2Z9SNYbsU=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v1.1.8"
+    },
+    "trzsz-ssh": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "trzsz-ssh",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "trzsz",
+            "repo": "trzsz-ssh",
+            "rev": "v0.1.22",
+            "sha256": "sha256-VvPdWRP+lrhho+Bk5rT9pktEvKe01512WoDfAu5d868=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v0.1.22"
     },
     "vscode-extension-kotlin-lsp": {
         "cargoLocks": null,

@@ -86,10 +86,10 @@
   };
   microsoft-edge = {
     pname = "microsoft-edge";
-    version = "137.0.3296.62";
+    version = "137.0.3296.68";
     src = fetchurl {
-      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_137.0.3296.62-1_amd64.deb";
-      sha256 = "sha256-9fHlcCn7j4W6pUQemkWu63qmpvN1nTxFjBsVKX7RFbw=";
+      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_137.0.3296.68-1_amd64.deb";
+      sha256 = "sha256-dgmQF6zpd8dAYKoTSiidk8VU6dZ/ZWEDlYD91IPaDEE=";
     };
   };
   nix-vscode-extensions = {
@@ -100,7 +100,7 @@
       repo = "nix-vscode-extensions";
       rev = "master";
       fetchSubmodules = false;
-      sha256 = "sha256-l0nq/gnL6x+hBPuzNEBLFotPzwGyqUcPiwcmGcRyW0A=";
+      sha256 = "sha256-v9K6RyPF/+4r/YJhjEH8y07VWE6Vj7Vl88E/K5m/uJ0=";
     };
   };
   pwndbg = {
@@ -122,7 +122,7 @@
       repo = "nixpkgs-python";
       rev = "main";
       fetchSubmodules = false;
-      sha256 = "sha256-4PxjidSLpNuB+/YXtbaMoqkaNpZ7IGJDi2Rbo9TqmrM=";
+      sha256 = "sha256-BH27BJZNbR0zQAL/mFCxDPR6K6mbrmjJ66lxVDTNPXU=";
     };
   };
   shellfirm = {
@@ -134,6 +134,28 @@
       rev = "v0.2.11";
       fetchSubmodules = false;
       sha256 = "sha256-jwrH2/EwiB33YoTC+pGO4Jm3tC4dp1DLZLZvhKvUy30=";
+    };
+  };
+  trzsz = {
+    pname = "trzsz";
+    version = "v1.1.8";
+    src = fetchFromGitHub {
+      owner = "trzsz";
+      repo = "trzsz-go";
+      rev = "v1.1.8";
+      fetchSubmodules = false;
+      sha256 = "sha256-g1fbgKTFS9aPAmnTeFYoymrDEoZ6BtzUhA2Z9SNYbsU=";
+    };
+  };
+  trzsz-ssh = {
+    pname = "trzsz-ssh";
+    version = "v0.1.22";
+    src = fetchFromGitHub {
+      owner = "trzsz";
+      repo = "trzsz-ssh";
+      rev = "v0.1.22";
+      fetchSubmodules = false;
+      sha256 = "sha256-VvPdWRP+lrhho+Bk5rT9pktEvKe01512WoDfAu5d868=";
     };
   };
   vscode-extension-kotlin-lsp = {
