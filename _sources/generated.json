@@ -98,12 +98,12 @@
             "name": null,
             "owner": "zeromicro",
             "repo": "go-zero",
-            "rev": "v1.8.3",
-            "sha256": "sha256-v5WzqMotF9C7i9hTYSjaPmTwveBVDVn+SKQXYuS4Rdc=",
+            "rev": "v1.8.4",
+            "sha256": "sha256-N0U/8YbqhyD5kb14lq8JKWwfYHUZ57Z/KZyIf6kKl0U=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.8.3"
+        "version": "v1.8.4"
     },
     "kratos": {
         "cargoLocks": null,
