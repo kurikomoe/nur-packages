@@ -288,11 +288,11 @@
     },
     "nixpkgs-microsoft-edit": {
       "locked": {
-        "lastModified": 1749140913,
-        "narHash": "sha256-yKxwZp6+gziUNsCo5CSRxGTBbgtfj7vw3YZwmo1H7iw=",
+        "lastModified": 1749436652,
+        "narHash": "sha256-s4KazCp9ybZ3Lp2id+f89xhmYYaPvaaRLgg/WL5rtXU=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "c994be3b36f8e3f53cd782469891e34bca1770b9",
+        "rev": "315253afafc556fba1649264dfb379a8904ec46b",
         "type": "github"
       },
       "original": {
