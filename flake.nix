@@ -124,6 +124,7 @@
         devenv.shells.default = {
           packages = with pkgs; [
             nvfetcher
+            nix-update
           ];
 
           git-hooks.hooks = {

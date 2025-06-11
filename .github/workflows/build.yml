@@ -76,6 +76,14 @@ jobs:
         signingKey: '${{ secrets.CACHIX_SIGNING_KEY }}'
         authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
 
+    - name: "Setup direnv"
+      uses: JRMurr/direnv-nix-action@v4.2.0
+      with:
+        install-nix: "false"
+        cache-store: "false"
+
+    - run: nix-direnv-reload
+
     - name: Setup Attic cache
       uses: ryanccn/attic-action@v0
       continue-on-error: true

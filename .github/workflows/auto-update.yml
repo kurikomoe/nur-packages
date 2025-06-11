@@ -30,10 +30,22 @@ jobs:
     - name: Show nixpkgs version
       run: nix-instantiate --eval -E '(import <nixpkgs> {}).lib.version'
 
-    - name: Update all deps
+    - name: Update Flake
       run: |
         nix flake update
-        nix run -f '<nixpkgs>' nvfetcher
+
+    - name: "Setup direnv"
+      uses: JRMurr/direnv-nix-action@v4.2.0
+      with:
+        install-nix: "false"
+        cache-store: "false"
+
+    - run: nix-direnv-reload
+
+    - name: Update all deps
+      run: |
+        nvfetcher
+        ./nix-update.sh
         nix fmt .
 
     # - name: Reset flake.lock
