@@ -34,16 +34,17 @@ jobs:
       run: |
         nix flake update
 
-    - name: "Setup direnv"
-      uses: JRMurr/direnv-nix-action@v4.2.0
-      with:
-        install-nix: "false"
-        cache-store: "false"
-
-    - run: nix-direnv-reload
+    # - run: sed -i "s/nix_direnv_manual_reload//g" .envrc
+    # - name: Install direnv with Nix
+    #   uses: aldoborrero/direnv-nix-action@v2
+    #   with:
+    #     use_nix_profile: true
+    #     nix_channel: nixpkgs
 
     - name: Update all deps
       run: |
+        nix profile install nixpkgs#nvfetcher
+        nix profile install nixpkgs#nix-update
         nvfetcher
         ./nix-update.sh
         nix fmt .
@@ -58,8 +59,16 @@ jobs:
         committer_email: 41898282+github-actions[bot]@users.noreply.github.com
         message: "Auto update"
 
+    - name: Setup upterm session
+      uses: lhotari/action-upterm@v1
+      if: ${{ failure() }}
+      with:
+        wait-timeout-minutes: 5
+
     - name: Trigger build all
       uses: peter-evans/repository-dispatch@v3
+      if: ${{ !failure() }}
       with:
         event-type: build-all-event
+
 
