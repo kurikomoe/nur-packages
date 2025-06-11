@@ -102,12 +102,22 @@
               value = x;
             })
             x);
+
+        ci = import ./ci.nix {inherit pkgs inputs root;};
+        buildOutputs = convert2attrset ci.buildPkgs;
+        # buildOutputs = kutils.inspectAttrset _buildOutputs;
+        # buildOutputs = builtins.trace
+        #   (builtins.map
+        #     (x: let el = x.pname or x.name or "<no-name>"; in builtins.deepSeq el el)
+        #     (builtins.attrValues _buildOutputs))
+        #   _buildOutputs;
+        cacheOutputs = convert2attrset ci.cacheOutputs;
       in rec {
         formatter = nixpkgs.legacyPackages.${system}.alejandra;
 
-        ci = convert2attrset (import ./ci.nix {inherit pkgs inputs root;}).cacheOutputs;
+        ci = cacheOutputs;
 
-        legacyPackages = convert2attrset (import ./ci.nix {inherit pkgs inputs root;}).buildPkgs;
+        legacyPackages = buildOutputs;
 
         packages = nixpkgs.lib.filterAttrs (_: v: nixpkgs.lib.isDerivation v) legacyPackages;
 
