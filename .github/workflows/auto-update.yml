@@ -46,14 +46,27 @@ jobs:
         nix profile install nixpkgs#nvfetcher
         nix profile install nixpkgs#nix-update
         nvfetcher
+        # pre-eval to avoid parallel download same thing
+        nix eval .#example-package
         ./nix-update.sh
         nix fmt .
 
     # - name: Reset flake.lock
     #   run: git checkout flake.lock
 
+    - name: Check for uncommitted files
+      id: check-uncommitted
+      run: |
+        if [ -n "$(git status --porcelain)" ]; then
+          echo "has_uncommitted=true" >> $GITHUB_OUTPUT
+        else
+          echo "has_uncommitted=false" >> $GITHUB_OUTPUT
+        fi
+        echo $GITHUB_OUTPUT
+
     - name: Commit Changes
       uses: EndBug/add-and-commit@v9
+      if: steps.check-uncommitted.outputs.has_uncommitted == 'true'
       with:
         committer_name: GitHub Actions
         committer_email: 41898282+github-actions[bot]@users.noreply.github.com
@@ -67,7 +80,7 @@ jobs:
 
     - name: Trigger build all
       uses: peter-evans/repository-dispatch@v3
-      if: ${{ !failure() }}
+      if: ${{ !failure()  && steps.check-uncommitted.outputs.has_uncommitted == 'true' }}
       with:
         event-type: build-all-event
 

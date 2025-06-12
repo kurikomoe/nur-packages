@@ -39,7 +39,8 @@
       modules = import ./modules; # NixOS modules
       overlays = import ./overlays; # nixpkgs overlays
 
-      # "example-package" = pkgs.kallPackage ./pkgs/example-package {};
+      "example-package" = kallPackage ./pkgs/example-package {};
+
       "microsoft-edit" = pkgs.microsoft-edit.overrideAttrs (final: prev: {
         # meta.broken = true;
       });
