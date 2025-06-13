@@ -89,7 +89,7 @@
             # inputs.nix-vscode-extensions.overlays.default
             (final: prev: {
               # pwndbg = inputs.pwndbg.packages.${system}.default;
-              microsoft-edit = inputs.nixpkgs-microsoft-edit.legacyPackages.${system}.microsoft-edit;
+              microsoft-edit = inputs.nixpkgs-microsoft-edit.legacyPackages.${system}.msedit;
             })
           ];
         };
