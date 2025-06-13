@@ -53,10 +53,7 @@ with builtins; let
 
   outputsOf = p: map (o: p.${o}) p.outputs;
 
-  nurAttrs = let
-    sources = pkgs.callPackages ./_sources/generated.nix {};
-  in
-    import ./default.nix {inherit pkgs inputs sources root;};
+  nurAttrs = import ./default.nix {inherit pkgs inputs root;};
 
   nurPkgs =
     flattenPkgs

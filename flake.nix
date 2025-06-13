@@ -104,8 +104,8 @@
             x);
 
         ci = import ./ci.nix {inherit pkgs inputs root;};
-        buildOutputs = convert2attrset ci.buildPkgs;
-        # buildOutputs = kutils.inspectAttrset _buildOutputs;
+        _buildOutputs = convert2attrset ci.buildPkgs;
+        buildOutputs = kutils.inspectPkgs _buildOutputs;
         # buildOutputs = builtins.trace
         #   (builtins.map
         #     (x: let el = x.pname or x.name or "<no-name>"; in builtins.deepSeq el el)

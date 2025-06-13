@@ -21,7 +21,9 @@ in {
     {recurseForDerivations = true;}
     // (lib.listToAttrs (lib.map (x: {
         name = x.name;
-        value = x;
+        value = x.overrideAttrs (final: prev: {
+          meta = (prev.meta or {}) // {hidden = true;};
+        });
       })
       deps.extensions));
 }

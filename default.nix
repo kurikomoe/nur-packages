@@ -7,13 +7,18 @@
 #     nix-build -A mypackage
 {
   pkgs ? import <nixpkgs> {},
-  inputs,
-  sources,
+  inputs ? {
+    flake-compat = builtins.fetchTarball {
+      url = "https://github.com/edolstra/flake-compat/archive/v1.1.0.tar.gz";
+      sha256 = "19d2z6xsvpxm184m41qrpi1bplilwipgnzv9jy17fgw421785q1m";
+    };
+  },
   root,
   ...
 }: let
   lib = pkgs.lib;
   kutils = pkgs.callPackage "${root.utils}/kutils.nix" {};
+  sources = pkgs.callPackages ./_sources/generated.nix {};
 
   params = {inherit inputs sources kutils root;};
   kallPackage = kutils.buildCallPackage params;
@@ -41,7 +46,7 @@
 
       "example-package" = kallPackage ./pkgs/example-package {};
 
-      "microsoft-edit" = pkgs.microsoft-edit.overrideAttrs (final: prev: {
+      "msedit1" = pkgs.microsoft-edit.overrideAttrs (final: prev: {
         # meta.broken = true;
       });
 
@@ -52,24 +57,19 @@
     }
     fonts
   ];
+  # checkNameMatch = k: v: let
+  #   name =
+  #     if v ? pname
+  #     then v.pname
+  #     else if v ? name
+  #     then v.name
+  #     else null;
+  #   warn = name != null && name != k;
+  #
+  #   _v =
+  #     if warn
+  #     then lib.warn "包名称不匹配: 预期 '${k}' 但得到 '${name}'" v
+  #     else v;
+  # in _v;
 in
   nur-pkgs
-# builtins.trace
-# (let
-#   isRecursiveDerivation = x:
-#     builtins.isAttrs x
-#       && x ? recurseForDerivations
-#       && x.recurseForDerivations;
-#   deepInspect = x:
-#     x.pname
-#     or x.name
-#     or builtins.map deepInspect (
-#       builtins.filter
-#         isRecursiveDerivation
-#         (builtins.map (x: deepInspect ) (builtins.attrValues x))
-#     );
-#   el = deepInspect nur-pkgs;
-# in
-#   builtins.deepSeq el el)
-# nur-pkgs
-
