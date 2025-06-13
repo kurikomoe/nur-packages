@@ -34,9 +34,9 @@ jobs:
         cachixName:
           - kurikomoe
         nixPath:
-          - nixpkgs=https://github.com/NixOS/nixpkgs/archive/refs/heads/nixpkgs-unstable.tar.gz
-          - nixpkgs=https://github.com/NixOS/nixpkgs/archive/refs/heads/nixos-unstable.tar.gz
-          - nixpkgs=https://github.com/NixOS/nixpkgs/archive/refs/heads/nixos-25.05.tar.gz
+          # - https://github.com/NixOS/nixpkgs/archive/refs/heads/nixpkgs-unstable.tar.gz
+          - https://github.com/NixOS/nixpkgs/archive/refs/heads/nixos-unstable.tar.gz
+          - https://github.com/NixOS/nixpkgs/archive/refs/heads/nixos-25.05.tar.gz
 
     runs-on: ubuntu-latest
 
@@ -56,14 +56,6 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Install nix
-      uses: cachix/install-nix-action@v31
-      with:
-        nix_path: "${{ matrix.nixPath }}"
-        extra_nix_config: |
-          experimental-features = nix-command flakes
-          access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
-
     - name: Restore and save Nix store
       uses: nix-community/cache-nix-action@v6
       with:
@@ -75,6 +67,11 @@ jobs:
         purge-created: 0
         purge-last-accessed: 0
         purge-primary-key: never
+
+    - uses: nixbuild/nix-quick-install-action@v30
+    - run: |
+        nix-channel --add ${{ matrix.nixPath }} nixpkgs
+        nix-channel --update
 
     - name: Show nixpkgs version
       run: nix-instantiate --eval -E '(import <nixpkgs> {}).lib.version'
@@ -88,14 +85,6 @@ jobs:
         signingKey: '${{ secrets.CACHIX_SIGNING_KEY }}'
         authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
 
-    # TODO(kuriko):
-    # - run: sed -i "s/nix_direnv_manual_reload//g" .envrc
-    # - name: Install direnv with Nix
-    #   uses: aldoborrero/direnv-nix-action@v2
-    #   with:
-    #     use_nix_profile: true
-    #     nix_channel: nixpkgs
-
     - name: Setup Attic cache
       uses: ryanccn/attic-action@v0
       continue-on-error: true
@@ -105,7 +94,7 @@ jobs:
         token: ${{ secrets.ATTIC_TOKEN }}
 
     - name: Update flake to system nixpkgs
-      run: nix flake update --override-input nixpkgs "$(nix eval --raw --impure --expr 'builtins.toString <nixpkgs>')"
+      run: nix flake update --override-input nixpkgs ${{ matrix.nixPath }}
 
     - name: Build nix packages
       run: nix run -f '<nixpkgs>' nix-fast-build -- -f .#ci --no-nom --skip-cached -j 2

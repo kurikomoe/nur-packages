@@ -19,13 +19,17 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Install nix
-      uses: cachix/install-nix-action@v31
-      with:
-        nix_path: nixpkgs=channel:nixos-unstable
-        extra_nix_config: |
-          experimental-features = nix-command flakes
-          access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
+    # - name: Install nix
+    #   uses: cachix/install-nix-action@v31
+    #   with:
+    #     nix_path: nixpkgs=channel:nixos-unstable
+    #     extra_nix_config: |
+    #       experimental-features = nix-command flakes
+    #       access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
+    - uses: nixbuild/nix-quick-install-action@v30
+    - run: |
+        nix-channel --add https://github.com/NixOS/nixpkgs/archive/refs/heads/nixos-unstable.tar.gz nixpkgs
+        nix-channel --update
 
     - name: Restore and save Nix store
       uses: nix-community/cache-nix-action@v6
