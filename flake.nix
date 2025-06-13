@@ -18,8 +18,6 @@
     substituters = [
       "https://nix-community.cachix.org"
       "https://cache.nixos.org/"
-      "https://mirrors.ustc.edu.cn/nix-channels/store"
-      "https://mirrors.tuna.tsinghua.edu.cn/nix-channels/store"
       "https://kurikomoe.cachix.org"
     ];
     trusted-public-keys = [
