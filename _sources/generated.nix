@@ -86,10 +86,10 @@
   };
   microsoft-edge = {
     pname = "microsoft-edge";
-    version = "137.0.3296.68";
+    version = "137.0.3296.83";
     src = fetchurl {
-      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_137.0.3296.68-1_amd64.deb";
-      sha256 = "sha256-dgmQF6zpd8dAYKoTSiidk8VU6dZ/ZWEDlYD91IPaDEE=";
+      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_137.0.3296.83-1_amd64.deb";
+      sha256 = "sha256-wbiijvxzyyM9lxoMtcQHFqZYChlsHh0hNQTwdgxPpZY=";
     };
   };
   nix-vscode-extensions = {
