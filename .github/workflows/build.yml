@@ -34,7 +34,7 @@ jobs:
         cachixName:
           - kurikomoe
         nixPath:
-          # - https://github.com/NixOS/nixpkgs/archive/refs/heads/nixpkgs-unstable.tar.gz
+          - https://github.com/NixOS/nixpkgs/archive/refs/heads/nixpkgs-unstable.tar.gz
           - https://github.com/NixOS/nixpkgs/archive/refs/heads/nixos-unstable.tar.gz
           - https://github.com/NixOS/nixpkgs/archive/refs/heads/nixos-25.05.tar.gz
 
@@ -56,6 +56,8 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
+    - uses: nixbuild/nix-quick-install-action@v30
+
     - name: Restore and save Nix store
       uses: nix-community/cache-nix-action@v6
       with:
@@ -68,7 +70,6 @@ jobs:
         purge-last-accessed: 0
         purge-primary-key: never
 
-    - uses: nixbuild/nix-quick-install-action@v30
     - run: |
         nix-channel --add ${{ matrix.nixPath }} nixpkgs
         nix-channel --update
