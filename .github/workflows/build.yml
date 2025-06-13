@@ -96,7 +96,7 @@ jobs:
       run: nix flake update --override-input nixpkgs "$(nix eval --raw --impure --expr 'builtins.toString <nixpkgs>')"
 
     - name: Build nix packages
-      run: nix run -f '<nixpkgs>' nix-fast-build -- -f .#ci --no-nom --skip-cached
+      run: nix run -f '<nixpkgs>' nix-fast-build -- -f .#ci --no-nom --skip-cached -j 2
 
     # - name: Trigger NUR update
     #   # Don't replace <YOUR_REPO_NAME> here!
