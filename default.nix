@@ -51,9 +51,10 @@
       });
 
       "devenv" = kallPackage ./pkgs/devenv.nix {};
+      "trzsz" = kallPackage ./pkgs/trzsz-ssh.nix {};
       "python" = kallPackage ./pkgs/python/default.nix {};
       "vscode" = kallPackage ./pkgs/vscode/default.nix {};
-      "trzsz" = kallPackage ./pkgs/trzsz-ssh.nix {};
+      "jetbrains" = kallPackage ./pkgs/jetbrains.nix {};
     }
     fonts
   ];
