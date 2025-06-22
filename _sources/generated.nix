@@ -100,7 +100,7 @@
       repo = "nix-vscode-extensions";
       rev = "master";
       fetchSubmodules = false;
-      sha256 = "sha256-IdOUn2DcabUAa42nthbyIY+frX42tTkU9KGddbpq5H4=";
+      sha256 = "sha256-ENMzkSGVi2b1tZMz6ATO46Rcohlk8aI19b5Q90otiWg=";
     };
   };
   pwndbg = {
