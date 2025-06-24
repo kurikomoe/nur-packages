@@ -56,7 +56,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - uses: nixbuild/nix-quick-install-action@v30
+    - uses: nixbuild/nix-quick-install-action@v31
 
     - name: Restore and save Nix store
       uses: nix-community/cache-nix-action@v6
