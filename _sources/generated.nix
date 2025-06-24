@@ -75,13 +75,13 @@
   };
   lix = {
     pname = "lix";
-    version = "2.93.0";
+    version = "2.93.1";
     src = fetchFromGitHub {
       owner = "lix-project";
       repo = "lix";
-      rev = "2.93.0";
+      rev = "2.93.1";
       fetchSubmodules = false;
-      sha256 = "sha256-hsFe4Tsqqg4l+FfQWphDtjC79WzNCZbEFhHI8j2KJzw=";
+      sha256 = "sha256-LmQhjQ7c+AOkwhvR9GFgJOy8oHW35MoQRELtrwyVnPw=";
     };
   };
   microsoft-edge = {

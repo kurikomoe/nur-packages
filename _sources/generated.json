@@ -140,12 +140,12 @@
             "name": null,
             "owner": "lix-project",
             "repo": "lix",
-            "rev": "2.93.0",
-            "sha256": "sha256-hsFe4Tsqqg4l+FfQWphDtjC79WzNCZbEFhHI8j2KJzw=",
+            "rev": "2.93.1",
+            "sha256": "sha256-LmQhjQ7c+AOkwhvR9GFgJOy8oHW35MoQRELtrwyVnPw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "2.93.0"
+        "version": "2.93.1"
     },
     "microsoft-edge": {
         "cargoLocks": null,
