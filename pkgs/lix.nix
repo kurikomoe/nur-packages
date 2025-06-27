@@ -14,4 +14,6 @@
 
   lix = flake.defaultNix.packages.${system}.default;
 in
-  lix.overrideAttrs (final: prev: {})
+  lix.overrideAttrs (final: prev: {
+    meta.broken = true;
+  })
