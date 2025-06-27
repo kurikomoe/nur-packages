@@ -10,9 +10,14 @@ on:
       - main
       - master
 
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build_all:
     strategy:
+      max-parallel: 1
       matrix:
         # Set this to notify the global nur package registry that changes are
         # available.
