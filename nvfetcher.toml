@@ -29,8 +29,8 @@ src.to_pattern = "\\1"
 fetch.github = "trzsz/trzsz-go"
 
 [1password-cli-linux]
-src.manual = "v2.30.3"
-fetch.tarball = "https://cache.agilebits.com/dist/1P/op2/pkg/$ver/op_linux_amd64_$ver.zip"
+src.aur = "1password-cli"
+fetch.tarball = "https://cache.agilebits.com/dist/1P/op2/pkg/v$ver/op_linux_amd64_v$ver.zip"
 
 [dotnet-script]
 src.github_tag = "dotnet-script/dotnet-script"
