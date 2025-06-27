@@ -17,7 +17,6 @@ concurrency:
 jobs:
   build_all:
     strategy:
-      max-parallel: 1
       matrix:
         # Set this to notify the global nur package registry that changes are
         # available.
