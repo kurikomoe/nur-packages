@@ -54,7 +54,7 @@
       "trzsz" = kallPackage ./pkgs/trzsz-ssh.nix {};
       "python" = kallPackage ./pkgs/python/default.nix {};
       "vscode" = kallPackage ./pkgs/vscode/default.nix {};
-      "jetbrains" = kallPackage ./pkgs/jetbrains.nix {};
+      # "jetbrains" = kallPackage ./pkgs/jetbrains.nix {};
     }
     fonts
   ];
