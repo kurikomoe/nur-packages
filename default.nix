@@ -46,7 +46,7 @@
 
       "example-package" = kallPackage ./pkgs/example-package {};
 
-      "msedit1" = pkgs.microsoft-edit.overrideAttrs (final: prev: {
+      "msedit" = pkgs.microsoft-edit.overrideAttrs (final: prev: {
         # meta.broken = true;
       });
 

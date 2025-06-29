@@ -109,12 +109,7 @@ jobs:
       run: nix flake update --override-input nixpkgs ${{ matrix.nixPath }}
 
     - name: Build nix packages
-      uses: nick-fields/retry@v3
-      with:
-        retry_on: timeout
-        timeout_minutes: 60
-        max_attempts: 3
-        command: nix run -f '<nixpkgs>' nix-fast-build -- -f .#ci --no-nom --skip-cached --eval-max-memory-size 12288 --eval-workers 1 -j 1
+      run: nix run -f '<nixpkgs>' nix-fast-build -- -f .#ci --no-nom --skip-cached --eval-workers 4
 
     # - name: Trigger NUR update
     #   # Don't replace <YOUR_REPO_NAME> here!

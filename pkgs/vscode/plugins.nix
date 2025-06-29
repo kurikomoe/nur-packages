@@ -7,18 +7,16 @@
   vscode-utils,
   ...
 }: let
-  res = sources.nix-vscode-extensions;
-  nix-vscode-extensions =
-    (import inputs.flake-compat {
-      inherit system;
-      src = res.src;
-    }).defaultNix;
-
+  # res = sources.nix-vscode-extensions;
+  # nix-vscode-extensions =
+  #   (import inputs.flake-compat {
+  #     inherit system;
+  #     src = res.src;
+  #   }).defaultNix;
   # nix-vscode-extensions = builtins.trace
   #   (builtins.attrNames _nix-vscode-extensions.overlays.default)
   #   _nix-vscode-extensions;
-
-  pkgsWithVscodeExtentions = pkgs.extend nix-vscode-extensions.overlays.default;
+  pkgsWithVscodeExtentions = pkgs.extend inputs.nix-vscode-extensions.overlays.default;
 
   vscode-extension-kotlin-lsp = vscode-utils.buildVscodeExtension rec {
     inherit (sources.vscode-extension-kotlin-lsp) version src;

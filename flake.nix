@@ -10,6 +10,9 @@
     # always use the last two to avoid frequent updates
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
 
+    nixpkgs-python.url = "github:cachix/nixpkgs-python";
+    nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
+
     # Temp
     nixpkgs-microsoft-edit.url = "github:NixOS/nixpkgs/pull/409075/head";
   };
@@ -116,6 +119,8 @@
         ci = cacheOutputs;
 
         legacyPackages = buildOutputs;
+
+        checks = ci;
 
         packages = nixpkgs.lib.filterAttrs (_: v: nixpkgs.lib.isDerivation v) legacyPackages;
 
