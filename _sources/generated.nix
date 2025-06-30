@@ -75,13 +75,13 @@
   };
   lix = {
     pname = "lix";
-    version = "2.93.1";
+    version = "2.93.2";
     src = fetchFromGitHub {
       owner = "lix-project";
       repo = "lix";
-      rev = "2.93.1";
+      rev = "2.93.2";
       fetchSubmodules = false;
-      sha256 = "sha256-LmQhjQ7c+AOkwhvR9GFgJOy8oHW35MoQRELtrwyVnPw=";
+      sha256 = "sha256-J4ycLoXHPsoBoQtEXFCelL4xlq5pT8U9tNWNKm43+YI=";
     };
   };
   microsoft-edge = {
@@ -100,7 +100,7 @@
       repo = "nix-vscode-extensions";
       rev = "master";
       fetchSubmodules = false;
-      sha256 = "sha256-DbEJL/mglbCqTa6s1I8H3Vmrl5roDI0tj7Blx4Js5Do=";
+      sha256 = "sha256-fhbbYA8ve/DCBM0ozJ8omntguPDoZtjZL43Dnoi/tmU=";
     };
   };
   pwndbg = {
