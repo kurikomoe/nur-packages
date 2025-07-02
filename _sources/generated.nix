@@ -32,7 +32,7 @@
       repo = "devenv";
       rev = "latest";
       fetchSubmodules = false;
-      sha256 = "sha256-CEVWxRaln3sp0541QpMfcfmI2w+RN72UgNLV5Dy9sco=";
+      sha256 = "sha256-LzMVgB8izls/22g69KvWPbuQ8C7PRT9PobbvdV3/raI=";
     };
   };
   dotnet-script = {
