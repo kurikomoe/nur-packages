@@ -177,7 +177,7 @@
             "owner": "nix-community",
             "repo": "nix-vscode-extensions",
             "rev": "master",
-            "sha256": "sha256-R6ZonDO1yldt3KUDi+u8irXo09+EjisiqK4s7Je46B4=",
+            "sha256": "sha256-b9JMD1j+zqGbrWSobXq4icjOm5tdoy7dWBLSe6WTCSE=",
             "sparseCheckout": [],
             "type": "github"
         },
