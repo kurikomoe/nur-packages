@@ -26,11 +26,11 @@
   };
   devenv = {
     pname = "devenv";
-    version = "latest";
+    version = "v1.7";
     src = fetchFromGitHub {
       owner = "cachix";
       repo = "devenv";
-      rev = "latest";
+      rev = "v1.7";
       fetchSubmodules = false;
       sha256 = "sha256-LzMVgB8izls/22g69KvWPbuQ8C7PRT9PobbvdV3/raI=";
     };
@@ -100,7 +100,7 @@
       repo = "nix-vscode-extensions";
       rev = "master";
       fetchSubmodules = false;
-      sha256 = "sha256-uu5BuhtYq+UfdPJAg93Y6c6aB/OEaIfjYDIHPRWudBs=";
+      sha256 = "sha256-v9K6RyPF/+4r/YJhjEH8y07VWE6Vj7Vl88E/K5m/uJ0=";
     };
   };
   pwndbg = {
@@ -122,7 +122,7 @@
       repo = "nixpkgs-python";
       rev = "main";
       fetchSubmodules = false;
-      sha256 = "sha256-koLwnVjVrR4yS2ea1owMj6ps2sOhH67ObTIld9H27Yo=";
+      sha256 = "sha256-BH27BJZNbR0zQAL/mFCxDPR6K6mbrmjJ66lxVDTNPXU=";
     };
   };
   shellfirm = {

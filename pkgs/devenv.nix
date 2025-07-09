@@ -14,8 +14,7 @@
 
   packages = flake.defaultNix.packages.${system};
   # packages = builtins.trace (builtins.attrNames _packages) _packages;
-in
-  {
-    recurseForDerivations = true;
-  }
-  // packages
+in {
+  inherit (packages) default devenv-tasks;
+  recurseForDerivations = true;
+}
