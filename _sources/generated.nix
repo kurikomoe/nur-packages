@@ -7,10 +7,10 @@
 }: {
   "1password-cli-linux" = {
     pname = "1password-cli-linux";
-    version = "2.31.0";
+    version = "2.31.1";
     src = fetchTarball {
-      url = "https://cache.agilebits.com/dist/1P/op2/pkg/v2.31.0/op_linux_amd64_v2.31.0.zip";
-      sha256 = "sha256-hlktdQCGMtTIbd2j9x0aHKCIoIAydDj/caKaIWJfJTI=";
+      url = "https://cache.agilebits.com/dist/1P/op2/pkg/v2.31.1/op_linux_amd64_v2.31.1.zip";
+      sha256 = "sha256-jPZxqaLrtBC42bGVOByKuORyl2YFicILlQDHkNuuJuc=";
     };
   };
   deploy-rs = {
@@ -100,7 +100,7 @@
       repo = "nix-vscode-extensions";
       rev = "master";
       fetchSubmodules = false;
-      sha256 = "sha256-Rfd90Ghp/Z1B1xwi01YGvahwqQ7Y/kIu1sqzo8O1Myc=";
+      sha256 = "sha256-KWELfQtHJjNG7X485TplXmKSmZIsYXHeruAxxEnsH7M=";
     };
   };
   pwndbg = {

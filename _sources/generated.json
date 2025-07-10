@@ -7,11 +7,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-hlktdQCGMtTIbd2j9x0aHKCIoIAydDj/caKaIWJfJTI=",
+            "sha256": "sha256-jPZxqaLrtBC42bGVOByKuORyl2YFicILlQDHkNuuJuc=",
             "type": "tarball",
-            "url": "https://cache.agilebits.com/dist/1P/op2/pkg/v2.31.0/op_linux_amd64_v2.31.0.zip"
+            "url": "https://cache.agilebits.com/dist/1P/op2/pkg/v2.31.1/op_linux_amd64_v2.31.1.zip"
         },
-        "version": "2.31.0"
+        "version": "2.31.1"
     },
     "deploy-rs": {
         "cargoLocks": null,
@@ -177,7 +177,7 @@
             "owner": "nix-community",
             "repo": "nix-vscode-extensions",
             "rev": "master",
-            "sha256": "sha256-Rfd90Ghp/Z1B1xwi01YGvahwqQ7Y/kIu1sqzo8O1Myc=",
+            "sha256": "sha256-KWELfQtHJjNG7X485TplXmKSmZIsYXHeruAxxEnsH7M=",
             "sparseCheckout": [],
             "type": "github"
         },
