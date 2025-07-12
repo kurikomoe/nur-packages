@@ -53,13 +53,13 @@
   };
   goctl = {
     pname = "goctl";
-    version = "v1.8.4";
+    version = "v1.8.5";
     src = fetchFromGitHub {
       owner = "zeromicro";
       repo = "go-zero";
-      rev = "v1.8.4";
+      rev = "v1.8.5";
       fetchSubmodules = false;
-      sha256 = "sha256-N0U/8YbqhyD5kb14lq8JKWwfYHUZ57Z/KZyIf6kKl0U=";
+      sha256 = "sha256-12nlrwzzM5wPyiC3vJfs7sJ7kPiRy1H0gTeWB+9bqKI=";
     };
   };
   kratos = {
