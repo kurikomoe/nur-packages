@@ -48,12 +48,12 @@
             "name": null,
             "owner": "cachix",
             "repo": "devenv",
-            "rev": "v1.7",
-            "sha256": "sha256-LzMVgB8izls/22g69KvWPbuQ8C7PRT9PobbvdV3/raI=",
+            "rev": "v1.8",
+            "sha256": "sha256-Cg4DxHCZiXiSlbwveJpyCFzWIblWi467I2/pmsAWiAw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.7"
+        "version": "v1.8"
     },
     "dotnet-script": {
         "cargoLocks": null,
@@ -177,7 +177,7 @@
             "owner": "nix-community",
             "repo": "nix-vscode-extensions",
             "rev": "master",
-            "sha256": "sha256-iN2ufkdefeLevXWEkyLhAjdjRewnZ7CWELvYfb7qZqI=",
+            "sha256": "sha256-gl+t06pZuUqg7Z9YUP1FeGSkJOZ39+ZZUhNvk+GeSG4=",
             "sparseCheckout": [],
             "type": "github"
         },
