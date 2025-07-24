@@ -122,7 +122,7 @@
       repo = "nixpkgs-python";
       rev = "main";
       fetchSubmodules = false;
-      sha256 = "sha256-AiJkZdDFX5B2NBmOtNsOIplyctPl55uTm4IJ/dVu1uk=";
+      sha256 = "sha256-d9GpIG7qaiS74GI7GEXdEWJEMyFZrU/zF61FQHNvvZw=";
     };
   };
   shellfirm = {
