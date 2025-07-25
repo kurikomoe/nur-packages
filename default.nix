@@ -46,9 +46,9 @@
 
       "example-package" = kallPackage ./pkgs/example-package {};
 
-      "msedit" = pkgs.microsoft-edit.overrideAttrs (final: prev: {
-        # meta.broken = true;
-      });
+      # "msedit" = pkgs.microsoft-edit.overrideAttrs (final: prev: {
+      #   # meta.broken = true;
+      # });
 
       "devenv" = kallPackage ./pkgs/devenv.nix {};
       "trzsz" = kallPackage ./pkgs/trzsz-ssh.nix {};

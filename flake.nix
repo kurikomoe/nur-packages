@@ -12,9 +12,6 @@
 
     nixpkgs-python.url = "github:cachix/nixpkgs-python";
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
-
-    # Temp
-    nixpkgs-microsoft-edit.url = "github:NixOS/nixpkgs/pull/409075/head";
   };
 
   nixConfig = {
@@ -90,7 +87,7 @@
             # inputs.nix-vscode-extensions.overlays.default
             (final: prev: {
               # pwndbg = inputs.pwndbg.packages.${system}.default;
-              microsoft-edit = inputs.nixpkgs-microsoft-edit.legacyPackages.${system}.msedit;
+              # microsoft-edit = inputs.nixpkgs-microsoft-edit.legacyPackages.${system}.msedit;
             })
           ];
         };
