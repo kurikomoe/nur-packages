@@ -332,33 +332,17 @@
         "type": "github"
       }
     },
-    "nixpkgs-microsoft-edit": {
-      "locked": {
-        "lastModified": 1749760100,
-        "narHash": "sha256-jL4SMclaosmD1ci7vOwihyXk3+86ItCGOIWG/Yte8wk=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "4aaab78eee71f1b5db9c6bd630fe24452ca2faf6",
-        "type": "github"
-      },
-      "original": {
-        "owner": "NixOS",
-        "ref": "pull/409075/head",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
     "nixpkgs-python": {
       "inputs": {
         "flake-compat": "flake-compat_3",
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1753394129,
-        "narHash": "sha256-d9GpIG7qaiS74GI7GEXdEWJEMyFZrU/zF61FQHNvvZw=",
+        "lastModified": 1753457013,
+        "narHash": "sha256-y6TqJCWLOmemWchbiy/MC07N5uhiPO1bwvmVD9Gqhdc=",
         "owner": "cachix",
         "repo": "nixpkgs-python",
-        "rev": "3f7ab865676db0ef718485aff4ed012958635229",
+        "rev": "9de0c78173303413efac68f37a59a405b389bc1f",
         "type": "github"
       },
       "original": {
@@ -458,7 +442,6 @@
         "flake-parts": "flake-parts_2",
         "nix-vscode-extensions": "nix-vscode-extensions",
         "nixpkgs": "nixpkgs_3",
-        "nixpkgs-microsoft-edit": "nixpkgs-microsoft-edit",
         "nixpkgs-python": "nixpkgs-python",
         "pre-commit-hooks": "pre-commit-hooks"
       }
