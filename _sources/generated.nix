@@ -26,13 +26,13 @@
   };
   devenv = {
     pname = "devenv";
-    version = "v1.8";
+    version = "v1.8.1";
     src = fetchFromGitHub {
       owner = "cachix";
       repo = "devenv";
-      rev = "v1.8";
+      rev = "v1.8.1";
       fetchSubmodules = false;
-      sha256 = "sha256-Cg4DxHCZiXiSlbwveJpyCFzWIblWi467I2/pmsAWiAw=";
+      sha256 = "sha256-YsSFlVWUu4RSYnObqcBJ4Mr3bJVVhuFhaQAktHytBAI=";
     };
   };
   dotnet-script = {
@@ -100,7 +100,7 @@
       repo = "nix-vscode-extensions";
       rev = "master";
       fetchSubmodules = false;
-      sha256 = "sha256-+Z1eK1sBYSvov0H7gDuzfzgaDwPooua7/mR+4+Rknic=";
+      sha256 = "sha256-NyDesHCYBB+VGMaTUKj6GxLeVMcpc09OI6CIxVVPVPI=";
     };
   };
   pwndbg = {
