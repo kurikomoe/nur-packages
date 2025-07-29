@@ -100,7 +100,7 @@
       repo = "nix-vscode-extensions";
       rev = "master";
       fetchSubmodules = false;
-      sha256 = "sha256-NyDesHCYBB+VGMaTUKj6GxLeVMcpc09OI6CIxVVPVPI=";
+      sha256 = "sha256-Y2vqIx/8RsY4O8/v18OOQJh4w4Ew+u4XsbLdbtiyHYc=";
     };
   };
   pwndbg = {
@@ -122,7 +122,7 @@
       repo = "nixpkgs-python";
       rev = "main";
       fetchSubmodules = false;
-      sha256 = "sha256-FVckzNECFKn92xOFQ4fc6D9iAS6BuI1tHljdwpskCQY=";
+      sha256 = "sha256-kzC0AGQpBIqrrFvNmWuLOpWfYVeWntEBfw6Q0RlIY6M=";
     };
   };
   shellfirm = {
