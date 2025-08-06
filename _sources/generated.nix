@@ -122,7 +122,7 @@
       repo = "nixpkgs-python";
       rev = "main";
       fetchSubmodules = false;
-      sha256 = "sha256-kzC0AGQpBIqrrFvNmWuLOpWfYVeWntEBfw6Q0RlIY6M=";
+      sha256 = "sha256-5gMAYsUgl46Y9ez9CtEQrqqWKGtzjzXIMR+pcrAr7aw=";
     };
   };
   shellfirm = {
@@ -160,11 +160,11 @@
   };
   vscode-extension-kotlin-lsp = {
     pname = "vscode-extension-kotlin-lsp";
-    version = "0.252.17811";
+    version = "0.253.10629";
     src = fetchurl {
-      url = "https://download-cdn.jetbrains.com/kotlin-lsp/0.252.17811/kotlin-0.252.17811.vsix";
-      name = "kotlin-lsp-0.252.17811.zip";
-      sha256 = "sha256-jv+90PC2WQfBvvRe4XMJsMJdVFuW1HCho1qTY2NuNko=";
+      url = "https://download-cdn.jetbrains.com/kotlin-lsp/0.253.10629/kotlin-0.253.10629.vsix";
+      name = "kotlin-lsp-0.253.10629.zip";
+      sha256 = "sha256-Y47BVS/eflFY+MffBkQ8+5fFwJlXJzeQWGy9WRFb8Rw=";
     };
   };
 }
