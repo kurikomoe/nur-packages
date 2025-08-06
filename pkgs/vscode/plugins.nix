@@ -131,6 +131,9 @@ in {
       james-yu.latex-workshop
       yzhang.markdown-all-in-one
 
+      # Typst
+      myriad-dreamin.tinymist
+
       bbenoist.nix
       jnoortheen.nix-ide
       zxh404.vscode-proto3
