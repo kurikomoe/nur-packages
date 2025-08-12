@@ -17,13 +17,13 @@ in {
 
   inherit vscodeWithExtensions;
 
-  # vscode-extensions =
-  #   {recurseForDerivations = true;}
-  #   // (lib.listToAttrs (lib.map (x: {
-  #       name = x.name;
-  #       value = x.overrideAttrs (final: prev: {
-  #         meta = (prev.meta or {}) // {hidden = true;};
-  #       });
-  #     })
-  #     deps.extensions));
+  vscode-extensions =
+    {recurseForDerivations = true;}
+    // (lib.listToAttrs (lib.map (x: {
+        name = x.name;
+        value = x.overrideAttrs (final: prev: {
+          meta = (prev.meta or {}) // {hidden = true;};
+        });
+      })
+      deps.extensions));
 }
