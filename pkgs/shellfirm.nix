@@ -23,7 +23,7 @@ in
   rustPlatform.buildRustPackage rec {
     inherit (res) pname version src;
 
-    useFetchCargoVendor = true;
+    # useFetchCargoVendor = true; # default true in 25.05
     cargoLock.lockFile = "${res.src}/Cargo.lock";
 
     postInstall = ''
