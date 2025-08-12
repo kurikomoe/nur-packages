@@ -57,7 +57,7 @@ src.to_pattern = "\\1"
 fetch.github = "pwndbg/pwndbg"
 
 [nix-vscode-extensions]
-src.manual = "master"
+src.git = "https://github.com/nix-community/nix-vscode-extensions.git"
 fetch.github = "nix-community/nix-vscode-extensions"
 
 [lix]
@@ -71,7 +71,7 @@ src.include_regex = "v\\d+\\.\\d+(\\.\\d+)?"
 fetch.github = "cachix/devenv"
 
 [python]
-src.manual = "main"
+src.git = "https://github.com/cachix/nixpkgs-python.git"
 fetch.github = "cachix/nixpkgs-python"
 
 [font-firacode]
@@ -80,5 +80,5 @@ src.include_regex = "\\d+\\.\\d+"
 fetch.url = "https://github.com/tonsky/FiraCode/releases/download/$ver/Fira_Code_v$ver.zip"
 
 [deploy-rs]
-src.manual = "master"
+src.git = "https://github.com/serokell/deploy-rs.git"
 fetch.github = "serokell/deploy-rs"
