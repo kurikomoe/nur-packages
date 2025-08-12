@@ -15,7 +15,7 @@
 in {
   recurseForDerivations = true;
 
-  inherit vscodeWithExtensions;
+  # inherit vscodeWithExtensions;
 
   vscode-extensions =
     {recurseForDerivations = true;}
