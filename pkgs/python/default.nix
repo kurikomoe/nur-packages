@@ -5,14 +5,14 @@
   system,
   ...
 }: let
-  # res = sources.python;
-  #
-  # nixpkgs-python = import inputs.flake-compat {
-  #   inherit (res) src;
-  #   inherit system;
-  # };
-  #
-  # pkgs = nixpkgs-python.defaultNix.packages.${system};
+  res = sources.python;
+
+  nixpkgs-python = import inputs.flake-compat {
+    inherit (res) src;
+    inherit system;
+  };
+
+  pkgs = nixpkgs-python.defaultNix.packages.${system};
   # _pkgs = builtins.trace (builtins.attrNames _pkgs) _pkgs;
   versionList = [
     "2.7"
@@ -25,7 +25,7 @@
   pythons = builtins.listToAttrs (
     builtins.map (x: rec {
       name = builtins.replaceStrings ["."] [""] "python${x}";
-      value = inputs.nixpkgs-python.packages.${system}.${x}.overrideAttrs (final: prev: {pname = name;});
+      value = pkgs.${x}.overrideAttrs (final: prev: {pname = name;});
     })
     versionList
   );
