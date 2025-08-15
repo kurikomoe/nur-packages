@@ -8,7 +8,7 @@
     pre-commit-hooks.url = "github:cachix/git-hooks.nix";
 
     # always use the last two to avoid frequent updates
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
+    nixpkgs.url = "github:NixOS/nixpkgs/3385ca0cd7e14c1a1eb80401fe011705ff012323";
   };
 
   nixConfig = {
