@@ -156,15 +156,15 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-Q5TdmqLlRITWDRZwUTMiOOjXQm09Cq+bK6N5XNew6R8=",
+            "sha256": "sha256-rY6Q3sMIAGX/ZKOVvwSl6cxq24SB1PiCn7b1pMXMeps=",
             "type": "url",
-            "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_138.0.3351.95-1_amd64.deb"
+            "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_139.0.3405.102-1_amd64.deb"
         },
-        "version": "138.0.3351.95"
+        "version": "139.0.3405.102"
     },
     "nix-vscode-extensions": {
         "cargoLocks": null,
-        "date": "2025-08-15",
+        "date": "2025-08-16",
         "extract": null,
         "name": "nix-vscode-extensions",
         "passthru": null,
@@ -176,12 +176,12 @@
             "name": null,
             "owner": "nix-community",
             "repo": "nix-vscode-extensions",
-            "rev": "545c9c87e71fbb19682abfd8d8168584ffd07d3f",
-            "sha256": "sha256-IvGJwwEELdsc3toUO3PSQxveQDBw0xCAcXtYFYS2ky8=",
+            "rev": "73db918d57f44c8a0d8a809596863188675f9cab",
+            "sha256": "sha256-0mvqD8Cul8Bq+NqeeNy5cbi59R5w8EzaaimJBFpKJ4A=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "545c9c87e71fbb19682abfd8d8168584ffd07d3f"
+        "version": "73db918d57f44c8a0d8a809596863188675f9cab"
     },
     "pwndbg": {
         "cargoLocks": null,
