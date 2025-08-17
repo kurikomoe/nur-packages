@@ -98,12 +98,12 @@
             "name": null,
             "owner": "zeromicro",
             "repo": "go-zero",
-            "rev": "v1.8.5",
-            "sha256": "sha256-12nlrwzzM5wPyiC3vJfs7sJ7kPiRy1H0gTeWB+9bqKI=",
+            "rev": "v1.9.0",
+            "sha256": "sha256-1V/LH38H0alylKLid/nQxNF8fA02G++m6Nq2/JIen2w=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.8.5"
+        "version": "v1.9.0"
     },
     "kratos": {
         "cargoLocks": null,
@@ -164,7 +164,7 @@
     },
     "nix-vscode-extensions": {
         "cargoLocks": null,
-        "date": "2025-08-16",
+        "date": "2025-08-17",
         "extract": null,
         "name": "nix-vscode-extensions",
         "passthru": null,
@@ -176,12 +176,12 @@
             "name": null,
             "owner": "nix-community",
             "repo": "nix-vscode-extensions",
-            "rev": "73db918d57f44c8a0d8a809596863188675f9cab",
-            "sha256": "sha256-0mvqD8Cul8Bq+NqeeNy5cbi59R5w8EzaaimJBFpKJ4A=",
+            "rev": "0cf076c0bafbe7cbd33a3b7377ed24827674e8be",
+            "sha256": "sha256-92gZRDz3zEsodraI0ZxPzZrpjSqc2qjxTW9HOflzKFw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "73db918d57f44c8a0d8a809596863188675f9cab"
+        "version": "0cf076c0bafbe7cbd33a3b7377ed24827674e8be"
     },
     "pwndbg": {
         "cargoLocks": null,
