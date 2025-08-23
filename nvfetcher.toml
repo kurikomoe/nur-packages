@@ -82,3 +82,7 @@ fetch.url = "https://github.com/tonsky/FiraCode/releases/download/$ver/Fira_Code
 [deploy-rs]
 src.git = "https://github.com/serokell/deploy-rs.git"
 fetch.github = "serokell/deploy-rs"
+
+[doxx]
+src.github = "bgreenwell/doxx"
+fetch.github = "bgreenwell/doxx"

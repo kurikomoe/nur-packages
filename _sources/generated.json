@@ -69,6 +69,27 @@
         },
         "version": "1.6.0"
     },
+    "doxx": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "doxx",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "bgreenwell",
+            "repo": "doxx",
+            "rev": "v0.1.1",
+            "sha256": "sha256-EFza7BSO0vBeUWWKNRnINSq/IUl8jLFUHKMfntdksdA=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v0.1.1"
+    },
     "font-firacode": {
         "cargoLocks": null,
         "date": null,
@@ -164,7 +185,7 @@
     },
     "nix-vscode-extensions": {
         "cargoLocks": null,
-        "date": "2025-08-22",
+        "date": "2025-08-23",
         "extract": null,
         "name": "nix-vscode-extensions",
         "passthru": null,
@@ -176,12 +197,12 @@
             "name": null,
             "owner": "nix-community",
             "repo": "nix-vscode-extensions",
-            "rev": "55b18afeadde679c876620d9dbc7e01a4f4dbb77",
-            "sha256": "sha256-qY4UcgSy60Urcwp+fdWCasueERzZo5foMVMwIVEEzts=",
+            "rev": "ff42a421ff1d415caa0125e6af6f3bd82e642838",
+            "sha256": "sha256-ew98ilw4NTodKlILnr3ndsT0Aj9JhqC507JB3efa0pY=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "55b18afeadde679c876620d9dbc7e01a4f4dbb77"
+        "version": "ff42a421ff1d415caa0125e6af6f3bd82e642838"
     },
     "pwndbg": {
         "cargoLocks": null,

@@ -36,6 +36,7 @@
       (kallPackage ./pkgs/pwndbg.nix {})
       (kallPackage ./pkgs/lix.nix {})
       (kallPackage ./pkgs/deploy-rs.nix {})
+      (kallPackage ./pkgs/doxx.nix {})
       (kallPackage ./pkgs/tools/precommit-trufflehog.nix {})
     ])
     {
