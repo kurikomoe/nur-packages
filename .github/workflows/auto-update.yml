@@ -1,8 +1,9 @@
 name: "Auto update"
 
 permissions:
-  statuses: read
+  actions: write
   contents: write
+  statuses: read
 
 on:
   workflow_dispatch:
@@ -85,6 +86,8 @@ jobs:
       uses: EndBug/add-and-commit@v9
       if: steps.check-uncommitted.outputs.has_uncommitted == 'true'
       with:
+        author_name: github-actions[bot]
+        author_email: 41898282+github-actions[bot]@users.noreply.github.com
         committer_name: GitHub Actions
         committer_email: 41898282+github-actions[bot]@users.noreply.github.com
         message: "Auto update"
