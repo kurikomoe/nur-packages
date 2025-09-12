@@ -76,13 +76,13 @@
   };
   kratos = {
     pname = "kratos";
-    version = "v2.9.0";
+    version = "v2.9.1";
     src = fetchFromGitHub {
       owner = "go-kratos";
       repo = "kratos";
-      rev = "v2.9.0";
+      rev = "v2.9.1";
       fetchSubmodules = false;
-      sha256 = "sha256-tsOnCVo915wQRCVGbP7IHann4QcHcfUbbiDihqv8X2U=";
+      sha256 = "sha256-fgYhrUNivtXNjSGCGCvG35PuKtQ/U5kyC2Irl2h8zXQ=";
     };
   };
   lix = {
@@ -106,15 +106,15 @@
   };
   nix-vscode-extensions = {
     pname = "nix-vscode-extensions";
-    version = "5eaf56d3a39239b3690fd057bda981bb202a6e04";
+    version = "e2147d6840365c062114c0eae2438283897eaafb";
     src = fetchFromGitHub {
       owner = "nix-community";
       repo = "nix-vscode-extensions";
-      rev = "5eaf56d3a39239b3690fd057bda981bb202a6e04";
+      rev = "e2147d6840365c062114c0eae2438283897eaafb";
       fetchSubmodules = false;
-      sha256 = "sha256-32Tgm1H4NKhFKfGtW2Iy8X7P9TjKJ4JGGd9b+mCycE0=";
+      sha256 = "sha256-BawqTE8Hf8NJI5g0/vzMGcqFXXjYZkdz00DjsWrNUm4=";
     };
-    date = "2025-09-11";
+    date = "2025-09-12";
   };
   pwndbg = {
     pname = "pwndbg";
