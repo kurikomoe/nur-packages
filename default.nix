@@ -13,9 +13,15 @@
       sha256 = "19d2z6xsvpxm184m41qrpi1bplilwipgnzv9jy17fgw421785q1m";
     };
   },
-  root,
   ...
 }: let
+  root = rec {
+    base = ./.;
+    res = "${base}/res";
+    pkgs = "${base}/pkgs";
+    utils = "${base}/utils";
+  };
+
   lib = pkgs.lib;
   kutils = pkgs.callPackage "${root.utils}/kutils.nix" {};
   sources = pkgs.callPackages ./_sources/generated.nix {};
