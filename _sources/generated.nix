@@ -7,10 +7,10 @@
 }: {
   "1password-cli-linux" = {
     pname = "1password-cli-linux";
-    version = "2.31.1";
+    version = "2.32.0";
     src = fetchTarball {
-      url = "https://cache.agilebits.com/dist/1P/op2/pkg/v2.31.1/op_linux_amd64_v2.31.1.zip";
-      sha256 = "sha256-jPZxqaLrtBC42bGVOByKuORyl2YFicILlQDHkNuuJuc=";
+      url = "https://cache.agilebits.com/dist/1P/op2/pkg/v2.32.0/op_linux_amd64_v2.32.0.zip";
+      sha256 = "sha256-4I7lSey6I4mQ7dDtuOASnZzAItFYkIDZ8UMsqb0q5tE=";
     };
   };
   deploy-rs = {
@@ -106,15 +106,15 @@
   };
   nix-vscode-extensions = {
     pname = "nix-vscode-extensions";
-    version = "5007786714b3573b37cf3b8c4a33e2ddce86960d";
+    version = "bc962fe29193fa4b851dfaac2bfb968e33287211";
     src = fetchFromGitHub {
       owner = "nix-community";
       repo = "nix-vscode-extensions";
-      rev = "5007786714b3573b37cf3b8c4a33e2ddce86960d";
+      rev = "bc962fe29193fa4b851dfaac2bfb968e33287211";
       fetchSubmodules = false;
-      sha256 = "sha256-ewDKEXcKYF7L+EGVa+8E1nxK1pdwVrCHcj5UhuGA8V0=";
+      sha256 = "sha256-OrJRuaQCs913zFuhylKmxYRw9DZ0cq58hJwO3tempt8=";
     };
-    date = "2025-09-24";
+    date = "2025-09-26";
   };
   pwndbg = {
     pname = "pwndbg";
