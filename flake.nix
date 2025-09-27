@@ -2,28 +2,11 @@
   description = "Kuriko's personal NUR repository";
 
   inputs = {
-    devenv.url = "github:cachix/devenv/latest";
     flake-parts.url = "github:hercules-ci/flake-parts";
     flake-compat.url = "github:nix-community/flake-compat";
-    pre-commit-hooks.url = "github:cachix/git-hooks.nix";
 
     # always use the last two to avoid frequent updates
     nixpkgs.url = "github:NixOS/nixpkgs/3385ca0cd7e14c1a1eb80401fe011705ff012323";
-  };
-
-  nixConfig = {
-    substituters = [
-      "https://nix-community.cachix.org"
-      "https://cache.nixos.org/"
-      "https://kurikomoe.cachix.org"
-    ];
-    trusted-public-keys = [
-      "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
-      "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
-      "kurikomoe.cachix.org-1:NewppX3NeGxT8OwdwABq+Av7gjOum55dTAG9oG7YeEI="
-    ];
-    extra-trusted-public-keys = "devenv.cachix.org-1:w1cLUi8dv3hnoSPGAuibQv+f9TZLr6cv/Hm9XgU50cw=";
-    extra-substituters = "https://devenv.cachix.org";
   };
 
   outputs = inputs @ {
@@ -34,7 +17,6 @@
   }:
     flake-parts.lib.mkFlake {inherit inputs;} {
       imports = [
-        inputs.devenv.flakeModule
         ({
           flake-parts-lib,
           lib,
@@ -107,6 +89,11 @@
         #     (builtins.attrValues _buildOutputs))
         #   _buildOutputs;
         cacheOutputs = convert2attrset ci.cacheOutputs;
+
+        shellNix = import ./shell.nix {
+          pkgs' = pkgs;
+          inherit (buildOutputs) precommit-trufflehog;
+        };
       in rec {
         formatter = nixpkgs.legacyPackages.${system}.alejandra;
 
@@ -118,21 +105,7 @@
 
         packages = nixpkgs.lib.filterAttrs (_: v: nixpkgs.lib.isDerivation v) legacyPackages;
 
-        devenv.shells.default = {
-          packages = with pkgs; [
-            nvfetcher
-            nix-update
-          ];
-
-          git-hooks.hooks = {
-            alejandra.enable = true;
-            trufflehog = {
-              enable = true;
-              entry = builtins.toString packages.precommit-trufflehog;
-              stages = ["pre-push" "pre-commit"];
-            };
-          };
-        };
+        inherit (shellNix) devShells;
       };
     };
 }
