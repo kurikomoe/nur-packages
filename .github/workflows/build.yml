@@ -68,7 +68,7 @@ jobs:
     #       experimental-features = nix-command flakes
     #       access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
 
-    - uses: nixbuild/nix-quick-install-action@v33
+    - uses: nixbuild/nix-quick-install-action@v34
     - name: Restore and save Nix store
       uses: nix-community/cache-nix-action@v6
       with:
