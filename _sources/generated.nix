@@ -27,13 +27,13 @@
   };
   devenv = {
     pname = "devenv";
-    version = "v1.9";
+    version = "v1.9.1";
     src = fetchFromGitHub {
       owner = "cachix";
       repo = "devenv";
-      rev = "v1.9";
+      rev = "v1.9.1";
       fetchSubmodules = false;
-      sha256 = "sha256-MG+c0mo4g9UHSuqibX3OVkiADWmMn/PWDfVhD4U29PM=";
+      sha256 = "sha256-v86pQGIWHJPkRryglJSXOp0aEoU6ZtURuURsXLqfqSE=";
     };
   };
   dotnet-script = {
@@ -65,13 +65,13 @@
   };
   goctl = {
     pname = "goctl";
-    version = "v1.9.0";
+    version = "v1.9.1";
     src = fetchFromGitHub {
       owner = "zeromicro";
       repo = "go-zero";
-      rev = "v1.9.0";
+      rev = "v1.9.1";
       fetchSubmodules = false;
-      sha256 = "sha256-1V/LH38H0alylKLid/nQxNF8fA02G++m6Nq2/JIen2w=";
+      sha256 = "sha256-iTkxfMzrKbSRMyG1VWV5VbnDNwpE9t+YQzmL6DwRGHQ=";
     };
   };
   kratos = {
@@ -98,23 +98,23 @@
   };
   microsoft-edge = {
     pname = "microsoft-edge";
-    version = "140.0.3485.94";
+    version = "141.0.3537.57";
     src = fetchurl {
-      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_140.0.3485.94-1_amd64.deb";
-      sha256 = "sha256-UvnAT87X9YMlyF1i9z7bBCWpz3CU2ZWe9hoABgGSXY8=";
+      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_141.0.3537.57-1_amd64.deb";
+      sha256 = "sha256-xqHu6OdB6BFJVi+YmQJjMjh7CbL2m9drUHgtRVHBhrk=";
     };
   };
   nix-vscode-extensions = {
     pname = "nix-vscode-extensions";
-    version = "a87f796f1ed4b0a8babe9370791a66aac4864887";
+    version = "a66ad2141b1440a838ead278c6edfe8a4ce75e6c";
     src = fetchFromGitHub {
       owner = "nix-community";
       repo = "nix-vscode-extensions";
-      rev = "a87f796f1ed4b0a8babe9370791a66aac4864887";
+      rev = "a66ad2141b1440a838ead278c6edfe8a4ce75e6c";
       fetchSubmodules = false;
-      sha256 = "sha256-NbaOzcxsUxNm+Dday5DlV6P9CzRAonY2DNcp056oWWc=";
+      sha256 = "sha256-IIhaE6jAge64z+fIyi/8Vtu0JdTtapbp4CvwiuIkZ1E=";
     };
-    date = "2025-10-01";
+    date = "2025-10-02";
   };
   pwndbg = {
     pname = "pwndbg";
