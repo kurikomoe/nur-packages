@@ -2,7 +2,7 @@
   pkgs' ? null,
   pkgs-kuriko-nur' ? null,
   pre-commit-hooks' ? null,
-  precommit-trufflehog,
+  precommit-trufflehog ? null,
   ...
 }: let
   pkgs =
@@ -10,7 +10,7 @@
     then import (fetchTarball "https://github.com/NixOS/nixpkgs/tarball/nixos-25.05") {}
     else pkgs';
 
-  inherit (pkgs) lib fetchFromGitHub;
+  inherit (pkgs) lib fetchFromGitHub system;
 
   pkgs-kuriko-nur =
     if pkgs-kuriko-nur' == null
@@ -18,8 +18,7 @@
       import (fetchFromGitHub {
         owner = "kurikomoe";
         repo = "nur-packages";
-        rev = "2247608d30c46af719f894e0d5406069d2c8a7aa";
-        sha256 = "sha256-C+UhZ5BzugS8g/vhzBGrXA0v+7dOlbAoTghveDuWgp4=";
+        rev = "main";
       }) {}
     else pkgs-kuriko-nur';
 
@@ -27,6 +26,11 @@
     if pre-commit-hooks' == null
     then import (builtins.fetchTarball "https://github.com/cachix/git-hooks.nix/tarball/master")
     else pre-commit-hooks';
+
+  precommit-trufflehog' =
+    if precommit-trufflehog == null
+    then pkgs-kuriko-nur'.legacyPackages.${system}.precommit-trufflehog
+    else precommit-trufflehog;
 in rec {
   pre-commit-check = pre-commit-hooks.run {
     src = ./.;
@@ -35,7 +39,7 @@ in rec {
       alejandra.enable = true;
       trufflehog = {
         enable = true;
-        entry = builtins.toString packages.precommit-trufflehog;
+        entry = builtins.toString precommit-trufflehog;
         stages = ["pre-push" "pre-commit"];
       };
     };
