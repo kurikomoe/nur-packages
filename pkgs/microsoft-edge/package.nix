@@ -216,9 +216,6 @@ in
         --replace-fail /usr/bin/microsoft-edge-$dist $exe
       substituteInPlace $out/share/gnome-control-center/default-apps/microsoft-edge.xml \
         --replace-fail /opt/microsoft/msedge $exe
-      substituteInPlace $out/share/menu/microsoft-edge.menu \
-        --replace-fail /opt $out/share \
-        --replace-fail $out/share/microsoft/$appname/microsoft-edge $exe
 
       for icon_file in $out/share/microsoft/msedge/product_logo_[0-9]*.png; do
         num_and_suffix="''${icon_file##*logo_}"
