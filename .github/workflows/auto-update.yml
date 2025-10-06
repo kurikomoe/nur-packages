@@ -99,7 +99,7 @@ jobs:
         wait-timeout-minutes: 5
 
     - name: Trigger build all
-      uses: peter-evans/repository-dispatch@v3
+      uses: peter-evans/repository-dispatch@v4
       if: ${{ !failure()  && steps.check-uncommitted.outputs.has_uncommitted == 'true' }}
       with:
         event-type: build-all-event
