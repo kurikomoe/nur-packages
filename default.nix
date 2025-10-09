@@ -60,7 +60,7 @@
       "devenv" = kallPackage ./pkgs/devenv.nix {};
       "trzsz" = kallPackage ./pkgs/trzsz-ssh.nix {};
       "python" = kallPackage ./pkgs/python/default.nix {};
-      # "vscode" = kallPackage ./pkgs/vscode/default.nix {};
+      "vscode" = kallPackage ./pkgs/vscode/default.nix {};
       # "jetbrains" = kallPackage ./pkgs/jetbrains.nix {};
     }
     fonts
