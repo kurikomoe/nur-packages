@@ -98,46 +98,46 @@
   };
   microsoft-edge = {
     pname = "microsoft-edge";
-    version = "141.0.3537.57";
+    version = "141.0.3537.71";
     src = fetchurl {
-      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_141.0.3537.57-1_amd64.deb";
-      sha256 = "sha256-xqHu6OdB6BFJVi+YmQJjMjh7CbL2m9drUHgtRVHBhrk=";
+      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_141.0.3537.71-1_amd64.deb";
+      sha256 = "sha256-+R7c6xMBpmpVxUkr9Q9ewIGbGY8z5ZRe422sxouPzfI=";
     };
   };
   nix-vscode-extensions = {
     pname = "nix-vscode-extensions";
-    version = "abca9bff2542c7e1ad96006ad9036cfab72fdbbd";
+    version = "6c39663c00cb3041d9567cfc103c29b46d0b3c98";
     src = fetchFromGitHub {
       owner = "nix-community";
       repo = "nix-vscode-extensions";
-      rev = "abca9bff2542c7e1ad96006ad9036cfab72fdbbd";
+      rev = "6c39663c00cb3041d9567cfc103c29b46d0b3c98";
       fetchSubmodules = false;
-      sha256 = "sha256-Wz/6B3r5keAT7m2fcVPz2ZIKnmzV08UNj9vK+NPAKXE=";
+      sha256 = "sha256-8AN/Ps23Wx6CBEj7s5SKp8pVSA63BHlsAQICYF6Ac6E=";
     };
     date = "2025-10-09";
   };
   pwndbg = {
     pname = "pwndbg";
-    version = "2025.05.30";
+    version = "2025.10.10";
     src = fetchFromGitHub {
       owner = "pwndbg";
       repo = "pwndbg";
-      rev = "2025.05.30";
+      rev = "2025.10.10";
       fetchSubmodules = false;
-      sha256 = "sha256-Y8tERNTdMrRj07d3vTN2LvEUsZUhJ4lEEqWMzF5QohU=";
+      sha256 = "sha256-rQnUM/R2MuxVULvEzvQsdmjunN8opcZSvpGqwEy8G44=";
     };
   };
   python = {
     pname = "python";
-    version = "4c568014f7408f7546461b25bb8a3511eab02bec";
+    version = "5dd936b1ce299f6d230774a88b1052e47f71ab91";
     src = fetchFromGitHub {
       owner = "cachix";
       repo = "nixpkgs-python";
-      rev = "4c568014f7408f7546461b25bb8a3511eab02bec";
+      rev = "5dd936b1ce299f6d230774a88b1052e47f71ab91";
       fetchSubmodules = false;
-      sha256 = "sha256-YR+KiHC0baN0y1eppO9DXov6Chpt0GfBBNW0wQ6aMys=";
+      sha256 = "sha256-BN4nmQIKBwYQzmASIMRu1RIIsztrF2ujb24yLTHFqFo=";
     };
-    date = "2025-10-08";
+    date = "2025-10-09";
   };
   shellfirm = {
     pname = "shellfirm";

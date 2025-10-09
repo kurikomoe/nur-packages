@@ -177,11 +177,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-xqHu6OdB6BFJVi+YmQJjMjh7CbL2m9drUHgtRVHBhrk=",
+            "sha256": "sha256-+R7c6xMBpmpVxUkr9Q9ewIGbGY8z5ZRe422sxouPzfI=",
             "type": "url",
-            "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_141.0.3537.57-1_amd64.deb"
+            "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_141.0.3537.71-1_amd64.deb"
         },
-        "version": "141.0.3537.57"
+        "version": "141.0.3537.71"
     },
     "nix-vscode-extensions": {
         "cargoLocks": null,
@@ -197,12 +197,12 @@
             "name": null,
             "owner": "nix-community",
             "repo": "nix-vscode-extensions",
-            "rev": "abca9bff2542c7e1ad96006ad9036cfab72fdbbd",
-            "sha256": "sha256-Wz/6B3r5keAT7m2fcVPz2ZIKnmzV08UNj9vK+NPAKXE=",
+            "rev": "6c39663c00cb3041d9567cfc103c29b46d0b3c98",
+            "sha256": "sha256-8AN/Ps23Wx6CBEj7s5SKp8pVSA63BHlsAQICYF6Ac6E=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "abca9bff2542c7e1ad96006ad9036cfab72fdbbd"
+        "version": "6c39663c00cb3041d9567cfc103c29b46d0b3c98"
     },
     "pwndbg": {
         "cargoLocks": null,
@@ -218,16 +218,16 @@
             "name": null,
             "owner": "pwndbg",
             "repo": "pwndbg",
-            "rev": "2025.05.30",
-            "sha256": "sha256-Y8tERNTdMrRj07d3vTN2LvEUsZUhJ4lEEqWMzF5QohU=",
+            "rev": "2025.10.10",
+            "sha256": "sha256-rQnUM/R2MuxVULvEzvQsdmjunN8opcZSvpGqwEy8G44=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "2025.05.30"
+        "version": "2025.10.10"
     },
     "python": {
         "cargoLocks": null,
-        "date": "2025-10-08",
+        "date": "2025-10-09",
         "extract": null,
         "name": "python",
         "passthru": null,
@@ -239,12 +239,12 @@
             "name": null,
             "owner": "cachix",
             "repo": "nixpkgs-python",
-            "rev": "4c568014f7408f7546461b25bb8a3511eab02bec",
-            "sha256": "sha256-YR+KiHC0baN0y1eppO9DXov6Chpt0GfBBNW0wQ6aMys=",
+            "rev": "5dd936b1ce299f6d230774a88b1052e47f71ab91",
+            "sha256": "sha256-BN4nmQIKBwYQzmASIMRu1RIIsztrF2ujb24yLTHFqFo=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "4c568014f7408f7546461b25bb8a3511eab02bec"
+        "version": "5dd936b1ce299f6d230774a88b1052e47f71ab91"
     },
     "shellfirm": {
         "cargoLocks": null,
