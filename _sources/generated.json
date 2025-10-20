@@ -177,15 +177,15 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-BNLA4FeKxWZ8t5YMPbWK4z2UerjcVpbcBgotSfczVsA=",
+            "sha256": "sha256-nN/TgbaxOrALzMB56TO9ZbxIjJPTCxxWyr2WOMvY6Kg=",
             "type": "url",
-            "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_141.0.3537.85-1_amd64.deb"
+            "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_141.0.3537.92-1_amd64.deb"
         },
-        "version": "141.0.3537.85"
+        "version": "141.0.3537.92"
     },
     "nix-vscode-extensions": {
         "cargoLocks": null,
-        "date": "2025-10-19",
+        "date": "2025-10-20",
         "extract": null,
         "name": "nix-vscode-extensions",
         "passthru": null,
@@ -197,12 +197,12 @@
             "name": null,
             "owner": "nix-community",
             "repo": "nix-vscode-extensions",
-            "rev": "c6f2e8c64e3bfa8399b76ae45a4d12d2b58ecc04",
-            "sha256": "sha256-d/plMJZDlhH1F1UyQQszAx9g9inAQNSITm0HWQFEciM=",
+            "rev": "ffbbd7f46ff61967e8ad010dc08e31385abbc483",
+            "sha256": "sha256-mUEWKL7IMA0gzZlP5V/C6bFU12PcQWs1J/5Ucwzp9wY=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "c6f2e8c64e3bfa8399b76ae45a4d12d2b58ecc04"
+        "version": "ffbbd7f46ff61967e8ad010dc08e31385abbc483"
     },
     "pwndbg": {
         "cargoLocks": null,
@@ -218,12 +218,12 @@
             "name": null,
             "owner": "pwndbg",
             "repo": "pwndbg",
-            "rev": "2025.10.10",
-            "sha256": "sha256-rQnUM/R2MuxVULvEzvQsdmjunN8opcZSvpGqwEy8G44=",
+            "rev": "2025.10.20",
+            "sha256": "sha256-F36ci3+upal+LYW2nK3CrkV86PU05tLIlwJrdADWISY=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "2025.10.10"
+        "version": "2025.10.20"
     },
     "python": {
         "cargoLocks": null,
