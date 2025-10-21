@@ -46,13 +46,13 @@
   };
   doxx = {
     pname = "doxx";
-    version = "v0.1.1";
+    version = "v0.1.2";
     src = fetchFromGitHub {
       owner = "bgreenwell";
       repo = "doxx";
-      rev = "v0.1.1";
+      rev = "v0.1.2";
       fetchSubmodules = false;
-      sha256 = "sha256-EFza7BSO0vBeUWWKNRnINSq/IUl8jLFUHKMfntdksdA=";
+      sha256 = "sha256-V0pBeh9u6iNt6hS1MpUau6nYBdfn9bELhR0GAMqTRmc=";
     };
   };
   font-firacode = {
@@ -106,15 +106,15 @@
   };
   nix-vscode-extensions = {
     pname = "nix-vscode-extensions";
-    version = "ffbbd7f46ff61967e8ad010dc08e31385abbc483";
+    version = "0a74c6a180110ac18584780eeff31e302b0bf8a4";
     src = fetchFromGitHub {
       owner = "nix-community";
       repo = "nix-vscode-extensions";
-      rev = "ffbbd7f46ff61967e8ad010dc08e31385abbc483";
+      rev = "0a74c6a180110ac18584780eeff31e302b0bf8a4";
       fetchSubmodules = false;
-      sha256 = "sha256-mUEWKL7IMA0gzZlP5V/C6bFU12PcQWs1J/5Ucwzp9wY=";
+      sha256 = "sha256-p6oWYhpJGIV76tJExGUFRkir29yCTUYLsnKmnhzW2C0=";
     };
-    date = "2025-10-20";
+    date = "2025-10-21";
   };
   pwndbg = {
     pname = "pwndbg";
