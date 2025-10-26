@@ -106,15 +106,15 @@
   };
   nix-vscode-extensions = {
     pname = "nix-vscode-extensions";
-    version = "cc2e15a69d4295493a68a9a2248adc68ed42f792";
+    version = "f44f8539049c4a7df6c9ab3df1b58d98ba081325";
     src = fetchFromGitHub {
       owner = "nix-community";
       repo = "nix-vscode-extensions";
-      rev = "cc2e15a69d4295493a68a9a2248adc68ed42f792";
+      rev = "f44f8539049c4a7df6c9ab3df1b58d98ba081325";
       fetchSubmodules = false;
-      sha256 = "sha256-qheNc4YWy/lzrY69NTFlE4uXsv+IijorjjIBszHUT2s=";
+      sha256 = "sha256-xf4jaO2hvPub4acCtV5xmeMUA47+L/Dr0Ywx3wwIN7c=";
     };
-    date = "2025-10-25";
+    date = "2025-10-26";
   };
   pwndbg = {
     pname = "pwndbg";
@@ -163,13 +163,13 @@
   };
   trzsz-ssh = {
     pname = "trzsz-ssh";
-    version = "v0.1.22";
+    version = "v0.1.23";
     src = fetchFromGitHub {
       owner = "trzsz";
       repo = "trzsz-ssh";
-      rev = "v0.1.22";
+      rev = "v0.1.23";
       fetchSubmodules = false;
-      sha256 = "sha256-VvPdWRP+lrhho+Bk5rT9pktEvKe01512WoDfAu5d868=";
+      sha256 = "sha256-Cp5XI7ggpt48llojcmarYPi9mTM+YBqwjG/eNAnKTxc=";
     };
   };
   vscode-extension-kotlin-lsp = {

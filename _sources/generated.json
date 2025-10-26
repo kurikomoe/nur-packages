@@ -185,7 +185,7 @@
     },
     "nix-vscode-extensions": {
         "cargoLocks": null,
-        "date": "2025-10-25",
+        "date": "2025-10-26",
         "extract": null,
         "name": "nix-vscode-extensions",
         "passthru": null,
@@ -197,12 +197,12 @@
             "name": null,
             "owner": "nix-community",
             "repo": "nix-vscode-extensions",
-            "rev": "cc2e15a69d4295493a68a9a2248adc68ed42f792",
-            "sha256": "sha256-qheNc4YWy/lzrY69NTFlE4uXsv+IijorjjIBszHUT2s=",
+            "rev": "f44f8539049c4a7df6c9ab3df1b58d98ba081325",
+            "sha256": "sha256-xf4jaO2hvPub4acCtV5xmeMUA47+L/Dr0Ywx3wwIN7c=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "cc2e15a69d4295493a68a9a2248adc68ed42f792"
+        "version": "f44f8539049c4a7df6c9ab3df1b58d98ba081325"
     },
     "pwndbg": {
         "cargoLocks": null,
@@ -302,12 +302,12 @@
             "name": null,
             "owner": "trzsz",
             "repo": "trzsz-ssh",
-            "rev": "v0.1.22",
-            "sha256": "sha256-VvPdWRP+lrhho+Bk5rT9pktEvKe01512WoDfAu5d868=",
+            "rev": "v0.1.23",
+            "sha256": "sha256-Cp5XI7ggpt48llojcmarYPi9mTM+YBqwjG/eNAnKTxc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.1.22"
+        "version": "v0.1.23"
     },
     "vscode-extension-kotlin-lsp": {
         "cargoLocks": null,
