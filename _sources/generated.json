@@ -185,7 +185,7 @@
     },
     "nix-vscode-extensions": {
         "cargoLocks": null,
-        "date": "2025-10-26",
+        "date": "2025-10-27",
         "extract": null,
         "name": "nix-vscode-extensions",
         "passthru": null,
@@ -197,12 +197,12 @@
             "name": null,
             "owner": "nix-community",
             "repo": "nix-vscode-extensions",
-            "rev": "f44f8539049c4a7df6c9ab3df1b58d98ba081325",
-            "sha256": "sha256-xf4jaO2hvPub4acCtV5xmeMUA47+L/Dr0Ywx3wwIN7c=",
+            "rev": "88190a71e01fa68c87979a4ec1b625955d5d537b",
+            "sha256": "sha256-0O9GgpLKele6SkLEcsgaSc7JUBMdFFtVQxLb2uqPEBY=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "f44f8539049c4a7df6c9ab3df1b58d98ba081325"
+        "version": "88190a71e01fa68c87979a4ec1b625955d5d537b"
     },
     "pwndbg": {
         "cargoLocks": null,
