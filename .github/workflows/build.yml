@@ -17,6 +17,7 @@ concurrency:
 jobs:
   build_all:
     strategy:
+      fail-fast: false
       matrix:
         # Set this to notify the global nur package registry that changes are
         # available.
