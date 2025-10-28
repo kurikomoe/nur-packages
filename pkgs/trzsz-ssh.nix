@@ -8,12 +8,13 @@
   zenity,
   tmux,
   openssh,
+  go,
   ...
 }: let
   trzsz-ssh = buildGoModule rec {
     inherit (sources.trzsz-ssh) pname version src;
 
-    nativeBuildInputs = [makeWrapper];
+    nativeBuildInputs = [go makeWrapper];
     buildInputs = [trzsz zenity tmux openssh];
 
     buildPhase = ''
@@ -32,14 +33,14 @@
         --set PATH ${lib.makeBinPath buildInputs}
     '';
 
-    vendorHash = "sha256-EllXxDyWI4Dy5E6KnzYFxuYDQcdk9+01v5svpARZU44=";
+    vendorHash = "sha256-pI9BlttS9a1XrgBBmUd+h529fLbsbwSMwjKn4P50liE=";
     # latest vesion: https://github.com/trzsz/trzsz-ssh
   };
 
   trzsz = buildGoModule rec {
     inherit (sources.trzsz) pname version src;
 
-    nativeBuildInputs = [makeWrapper];
+    nativeBuildInputs = [go makeWrapper];
     buildInputs = [zenity tmux];
 
     buildPhase = ''

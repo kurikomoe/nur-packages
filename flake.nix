@@ -2,11 +2,10 @@
   description = "Kuriko's personal NUR repository";
 
   inputs = {
+    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+
     flake-parts.url = "github:hercules-ci/flake-parts";
     flake-compat.url = "github:nix-community/flake-compat";
-
-    # always use the last two to avoid frequent updates
-    nixpkgs.url = "github:NixOS/nixpkgs/3385ca0cd7e14c1a1eb80401fe011705ff012323";
   };
 
   outputs = inputs @ {
