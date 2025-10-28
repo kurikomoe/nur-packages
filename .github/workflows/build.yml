@@ -84,6 +84,7 @@ jobs:
     - run: |
         nix-channel --add ${{ matrix.nixPath }} nixpkgs
         nix-channel --update
+        ./nix-update.sh
 
     - name: Show nixpkgs version
       run: nix-instantiate --eval -E '(import <nixpkgs> {}).lib.version'
