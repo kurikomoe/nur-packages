@@ -8,13 +8,14 @@
   zenity,
   tmux,
   openssh,
-  go,
+  go_1_25,
   ...
 }: let
-  trzsz-ssh = buildGoModule rec {
+  kbuildGoModule = buildGoModule.override {go = go_1_25;};
+  trzsz-ssh = kbuildGoModule rec {
     inherit (sources.trzsz-ssh) pname version src;
 
-    nativeBuildInputs = [go makeWrapper];
+    nativeBuildInputs = [makeWrapper];
     buildInputs = [trzsz zenity tmux openssh];
 
     buildPhase = ''
@@ -37,10 +38,10 @@
     # latest vesion: https://github.com/trzsz/trzsz-ssh
   };
 
-  trzsz = buildGoModule rec {
+  trzsz = kbuildGoModule rec {
     inherit (sources.trzsz) pname version src;
 
-    nativeBuildInputs = [go makeWrapper];
+    nativeBuildInputs = [makeWrapper];
     buildInputs = [zenity tmux];
 
     buildPhase = ''
