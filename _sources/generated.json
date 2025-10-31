@@ -147,27 +147,6 @@
         },
         "version": "v2.9.1"
     },
-    "lix": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "lix",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "lix-project",
-            "repo": "lix",
-            "rev": "2.93.3",
-            "sha256": "sha256-Oqw04eboDM8rrUgAXiT7w5F2uGrQdt8sGX+Mk6mVXZQ=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "2.93.3"
-    },
     "microsoft-edge": {
         "cargoLocks": null,
         "date": null,
@@ -177,15 +156,15 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-XMFAHCa7gGsSu9nFXkgvYX+CMY9nFgQEJLNKf+TodRw=",
+            "sha256": "sha256-cSSKWxIkQe8jrv7gL5lX2Cs9roU8eD2MIHuLGQMnycM=",
             "type": "url",
-            "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_141.0.3537.99-1_amd64.deb"
+            "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_142.0.3595.53-1_amd64.deb"
         },
-        "version": "141.0.3537.99"
+        "version": "142.0.3595.53"
     },
     "nix-vscode-extensions": {
         "cargoLocks": null,
-        "date": "2025-10-29",
+        "date": "2025-10-31",
         "extract": null,
         "name": "nix-vscode-extensions",
         "passthru": null,
@@ -197,12 +176,12 @@
             "name": null,
             "owner": "nix-community",
             "repo": "nix-vscode-extensions",
-            "rev": "daf7c5026b02623d17ad74548a791c387db438d8",
-            "sha256": "sha256-+Id4G/5NRpf8Lkdr5q4PBrQo6hvVFTbrN/J+0Q0KU6s=",
+            "rev": "511f991bce92993eb8f72f07a3c3ffc59658c083",
+            "sha256": "sha256-Nw1hwnY6ljBOumT0m/lkFgZU34Y76KgwGRd11rHnOA8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "daf7c5026b02623d17ad74548a791c387db438d8"
+        "version": "511f991bce92993eb8f72f07a3c3ffc59658c083"
     },
     "pwndbg": {
         "cargoLocks": null,
@@ -227,7 +206,7 @@
     },
     "python": {
         "cargoLocks": null,
-        "date": "2025-10-24",
+        "date": "2025-10-31",
         "extract": null,
         "name": "python",
         "passthru": null,
@@ -239,12 +218,12 @@
             "name": null,
             "owner": "cachix",
             "repo": "nixpkgs-python",
-            "rev": "b06789c07f0df2498d2a7ffbf3b031c028b2826c",
-            "sha256": "sha256-aQDVB0lngWdC1rCYqtNLO7A56aHs3Bi+R9NuEZ4qrns=",
+            "rev": "6920dbc3edb4da8bca7422d67ef23cbfd559fff9",
+            "sha256": "sha256-G170bR+P+ht25dQI/yakTm/BH92ckwEPRRQShPWKKEs=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "b06789c07f0df2498d2a7ffbf3b031c028b2826c"
+        "version": "6920dbc3edb4da8bca7422d67ef23cbfd559fff9"
     },
     "shellfirm": {
         "cargoLocks": null,
