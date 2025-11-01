@@ -164,7 +164,7 @@
     },
     "nix-vscode-extensions": {
         "cargoLocks": null,
-        "date": "2025-10-31",
+        "date": "2025-11-01",
         "extract": null,
         "name": "nix-vscode-extensions",
         "passthru": null,
@@ -176,12 +176,12 @@
             "name": null,
             "owner": "nix-community",
             "repo": "nix-vscode-extensions",
-            "rev": "511f991bce92993eb8f72f07a3c3ffc59658c083",
-            "sha256": "sha256-Nw1hwnY6ljBOumT0m/lkFgZU34Y76KgwGRd11rHnOA8=",
+            "rev": "1a37285c50e143620fad2e9fb322adff5e2df1f2",
+            "sha256": "sha256-Wm9p7PpkSy6bgw9NU+NKCy1i3CQCYbTEbsHURaGnINA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "511f991bce92993eb8f72f07a3c3ffc59658c083"
+        "version": "1a37285c50e143620fad2e9fb322adff5e2df1f2"
     },
     "pwndbg": {
         "cargoLocks": null,
@@ -206,7 +206,7 @@
     },
     "python": {
         "cargoLocks": null,
-        "date": "2025-10-31",
+        "date": "2025-11-01",
         "extract": null,
         "name": "python",
         "passthru": null,
@@ -218,12 +218,12 @@
             "name": null,
             "owner": "cachix",
             "repo": "nixpkgs-python",
-            "rev": "6920dbc3edb4da8bca7422d67ef23cbfd559fff9",
-            "sha256": "sha256-G170bR+P+ht25dQI/yakTm/BH92ckwEPRRQShPWKKEs=",
+            "rev": "100c43175443402084f557154b06f2745995e742",
+            "sha256": "sha256-NEisnXdISmaM5LzX1RatpKR4fa6nlAxkR7QJniFq0vg=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "6920dbc3edb4da8bca7422d67ef23cbfd559fff9"
+        "version": "100c43175443402084f557154b06f2745995e742"
     },
     "shellfirm": {
         "cargoLocks": null,
