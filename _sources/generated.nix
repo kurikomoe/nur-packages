@@ -38,10 +38,10 @@
   };
   dotnet-script = {
     pname = "dotnet-script";
-    version = "1.6.0";
+    version = "2.0.0";
     src = fetchTarball {
-      url = "https://github.com/dotnet-script/dotnet-script/releases/download/1.6.0/dotnet-script.1.6.0.zip";
-      sha256 = "sha256-Pc8+hja4OUajMLCOlieVLLvRMj74+OmecYlv3YyOvwo=";
+      url = "https://github.com/dotnet-script/dotnet-script/releases/download/2.0.0/dotnet-script.2.0.0.zip";
+      sha256 = "sha256-WMxW6mre1lOCv9mYrtc7+qJf+JXQzmRLAt7iuqA9XiI=";
     };
   };
   doxx = {
@@ -95,15 +95,15 @@
   };
   nix-vscode-extensions = {
     pname = "nix-vscode-extensions";
-    version = "6110f762f238177ba231e8726fabcf4706c9c378";
+    version = "d493b0b522b4de069561a1e69f70288df3ec1a77";
     src = fetchFromGitHub {
       owner = "nix-community";
       repo = "nix-vscode-extensions";
-      rev = "6110f762f238177ba231e8726fabcf4706c9c378";
+      rev = "d493b0b522b4de069561a1e69f70288df3ec1a77";
       fetchSubmodules = false;
-      sha256 = "sha256-ekyaqHW6fidE5gAzO8zX+aXNMnb1O/kCsmEZ4n0PnMQ=";
+      sha256 = "sha256-q+EuxNEnkvaMavGi2DDsOO1jEQb+veQB/4ApM3662lE=";
     };
-    date = "2025-11-12";
+    date = "2025-11-14";
   };
   pwndbg = {
     pname = "pwndbg";
