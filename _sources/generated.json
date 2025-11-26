@@ -48,12 +48,12 @@
             "name": null,
             "owner": "cachix",
             "repo": "devenv",
-            "rev": "v1.11",
-            "sha256": "sha256-DB6iV7TykOE6hNaevyk9S2mmxg2w9jBbdzgONjgctBc=",
+            "rev": "v1.11.1",
+            "sha256": "sha256-xfvW7aF2bDXDXzUeaSOXE+bARfcDbf4YCMVfNp8DTv0=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.11"
+        "version": "v1.11.1"
     },
     "dotnet-script": {
         "cargoLocks": null,
@@ -164,7 +164,7 @@
     },
     "nix-vscode-extensions": {
         "cargoLocks": null,
-        "date": "2025-11-25",
+        "date": "2025-11-26",
         "extract": null,
         "name": "nix-vscode-extensions",
         "passthru": null,
@@ -176,12 +176,12 @@
             "name": null,
             "owner": "nix-community",
             "repo": "nix-vscode-extensions",
-            "rev": "3c62392b5583a9eb399e53291dc2659d5ae14e9f",
-            "sha256": "sha256-oqgJf3AiFQOJnIZPasynVAnul1E8tioWnAo9iFEjRKI=",
+            "rev": "4b5d357fd9b7ffce8fded947e3e4e883ed1b2109",
+            "sha256": "sha256-HTsPRp1Y3H5OQKocn0hKLQHU5vR5y6qlIU92l+OQWJM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "3c62392b5583a9eb399e53291dc2659d5ae14e9f"
+        "version": "4b5d357fd9b7ffce8fded947e3e4e883ed1b2109"
     },
     "pwndbg": {
         "cargoLocks": null,
