@@ -27,13 +27,13 @@
   };
   devenv = {
     pname = "devenv";
-    version = "v1.11.1";
+    version = "v1.11.2";
     src = fetchFromGitHub {
       owner = "cachix";
       repo = "devenv";
-      rev = "v1.11.1";
+      rev = "v1.11.2";
       fetchSubmodules = false;
-      sha256 = "sha256-xfvW7aF2bDXDXzUeaSOXE+bARfcDbf4YCMVfNp8DTv0=";
+      sha256 = "sha256-8Ivbm9ltg0hUGQYMuRDOI8hbHUzqB9xKZ9ubKAzzwE8=";
     };
   };
   dotnet-script = {
@@ -95,15 +95,15 @@
   };
   nix-vscode-extensions = {
     pname = "nix-vscode-extensions";
-    version = "4b5d357fd9b7ffce8fded947e3e4e883ed1b2109";
+    version = "8cd52edf9dea91d1610c50b494dc20636b61b862";
     src = fetchFromGitHub {
       owner = "nix-community";
       repo = "nix-vscode-extensions";
-      rev = "4b5d357fd9b7ffce8fded947e3e4e883ed1b2109";
+      rev = "8cd52edf9dea91d1610c50b494dc20636b61b862";
       fetchSubmodules = false;
-      sha256 = "sha256-HTsPRp1Y3H5OQKocn0hKLQHU5vR5y6qlIU92l+OQWJM=";
+      sha256 = "sha256-9cHI5OyIcTuaWYrgq3ng7W0q+wgX8II2fkqCHNot5jY=";
     };
-    date = "2025-11-26";
+    date = "2025-11-27";
   };
   pwndbg = {
     pname = "pwndbg";
