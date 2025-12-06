@@ -87,23 +87,23 @@
   };
   microsoft-edge = {
     pname = "microsoft-edge";
-    version = "142.0.3595.53";
+    version = "143.0.3650.66";
     src = fetchurl {
-      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_142.0.3595.53-1_amd64.deb";
-      sha256 = "sha256-cSSKWxIkQe8jrv7gL5lX2Cs9roU8eD2MIHuLGQMnycM=";
+      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_143.0.3650.66-1_amd64.deb";
+      sha256 = "sha256-Oak7r7ykODJsqzdb+cEmzkUrcezTUe+Xl9oo1lUrq6w=";
     };
   };
   nix-vscode-extensions = {
     pname = "nix-vscode-extensions";
-    version = "7194cfbf5b270c228ff189078e6d345ead97ae69";
+    version = "999eed994566bdeffdbb1c9d4920530767e8c93e";
     src = fetchFromGitHub {
       owner = "nix-community";
       repo = "nix-vscode-extensions";
-      rev = "7194cfbf5b270c228ff189078e6d345ead97ae69";
+      rev = "999eed994566bdeffdbb1c9d4920530767e8c93e";
       fetchSubmodules = false;
-      sha256 = "sha256-eMQ+eu5u/3AkhZ5zm3CaE7GSrP3Ca+70WzPs51uNKZ0=";
+      sha256 = "sha256-eLl4+j7Tm37XJJhYD2bTgb3x7HDfwWAr/kayb/j0TAg=";
     };
-    date = "2025-12-05";
+    date = "2025-12-06";
   };
   pwndbg = {
     pname = "pwndbg";
@@ -118,15 +118,15 @@
   };
   python = {
     pname = "python";
-    version = "82bb478d139652964cbb49d5d4461a62e1436acb";
+    version = "04b27dbad2e004cb237db202f21154eea3c4f89f";
     src = fetchFromGitHub {
       owner = "cachix";
       repo = "nixpkgs-python";
-      rev = "82bb478d139652964cbb49d5d4461a62e1436acb";
+      rev = "04b27dbad2e004cb237db202f21154eea3c4f89f";
       fetchSubmodules = false;
-      sha256 = "sha256-IG4NlQ3u4Wapnej0pazTvixcyBaXaX3smYTzUbElPwY=";
+      sha256 = "sha256-DrMjrjxMttbGDoVxr/xke0ihd5GVd6fyUVsjuepEsCc=";
     };
-    date = "2025-12-02";
+    date = "2025-12-06";
   };
   shellfirm = {
     pname = "shellfirm";
