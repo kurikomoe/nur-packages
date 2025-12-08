@@ -105,6 +105,27 @@
         },
         "version": "6.2"
     },
+    "git-hooks-nix": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "git-hooks-nix",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "cachix",
+            "repo": "git-hooks.nix",
+            "rev": "50b9238891e388c9fdc6a5c49e49c42533a1b5ce",
+            "sha256": "sha256-QlcnByMc8KBjpU37rbq5iP7Cp97HvjRP0ucfdh+M4Qc=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "50b9238891e388c9fdc6a5c49e49c42533a1b5ce"
+    },
     "goctl": {
         "cargoLocks": null,
         "date": null,
@@ -164,7 +185,7 @@
     },
     "nix-vscode-extensions": {
         "cargoLocks": null,
-        "date": "2025-12-07",
+        "date": "2025-12-08",
         "extract": null,
         "name": "nix-vscode-extensions",
         "passthru": null,
@@ -176,12 +197,12 @@
             "name": null,
             "owner": "nix-community",
             "repo": "nix-vscode-extensions",
-            "rev": "e8539a8f806b568a1075cd69f60089eba6e17ea6",
-            "sha256": "sha256-XWC5svVWK73kTMxWYUcta+aNIMn8P46mW+8+b9gJc0c=",
+            "rev": "dccd0cc3693bff67e4856b5a22445223aabc4d4b",
+            "sha256": "sha256-C+dVEekU31QPaPShMaUbs3LqOVVqzq0b4gKC1jX8Mlk=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "e8539a8f806b568a1075cd69f60089eba6e17ea6"
+        "version": "dccd0cc3693bff67e4856b5a22445223aabc4d4b"
     },
     "pwndbg": {
         "cargoLocks": null,

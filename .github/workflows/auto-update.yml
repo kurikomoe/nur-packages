@@ -82,9 +82,15 @@ jobs:
         fi
         echo $GITHUB_OUTPUT
 
+    - name: Verify Build (Smoke Test)
+      if: steps.check-uncommitted.outputs.has_uncommitted == 'true'
+      run: |
+        echo "Verifying build before commit..."
+        nix run -f '<nixpkgs>' nix-fast-build -- -f .#ci --no-nom --skip-cached --eval-workers 4
+
     - name: Commit Changes
       uses: EndBug/add-and-commit@v9
-      if: steps.check-uncommitted.outputs.has_uncommitted == 'true'
+      if: success() && steps.check-uncommitted.outputs.has_uncommitted == 'true'
       with:
         author_name: github-actions[bot]
         author_email: 41898282+github-actions[bot]@users.noreply.github.com
@@ -103,5 +109,3 @@ jobs:
       if: ${{ !failure()  && steps.check-uncommitted.outputs.has_uncommitted == 'true' }}
       with:
         event-type: build-all-event
-
-

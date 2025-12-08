@@ -44,6 +44,7 @@
       (kallPackage ./pkgs/deploy-rs.nix {})
       (kallPackage ./pkgs/doxx.nix {})
       (kallPackage ./pkgs/tools/precommit-trufflehog.nix {})
+      (kallPackage ./pkgs/git-hooks.nix {})
     ])
     {
       # The `lib`, `modules`, and `overlays` names are special

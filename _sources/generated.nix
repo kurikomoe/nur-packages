@@ -63,6 +63,17 @@
       sha256 = "sha256-CUmRW6jrJNif2T0Qp/9iP0KDDXxf/D7L+WDk7K0+Pnk=";
     };
   };
+  git-hooks-nix = {
+    pname = "git-hooks-nix";
+    version = "50b9238891e388c9fdc6a5c49e49c42533a1b5ce";
+    src = fetchFromGitHub {
+      owner = "cachix";
+      repo = "git-hooks.nix";
+      rev = "50b9238891e388c9fdc6a5c49e49c42533a1b5ce";
+      fetchSubmodules = false;
+      sha256 = "sha256-QlcnByMc8KBjpU37rbq5iP7Cp97HvjRP0ucfdh+M4Qc=";
+    };
+  };
   goctl = {
     pname = "goctl";
     version = "v1.9.3";
@@ -95,15 +106,15 @@
   };
   nix-vscode-extensions = {
     pname = "nix-vscode-extensions";
-    version = "e8539a8f806b568a1075cd69f60089eba6e17ea6";
+    version = "dccd0cc3693bff67e4856b5a22445223aabc4d4b";
     src = fetchFromGitHub {
       owner = "nix-community";
       repo = "nix-vscode-extensions";
-      rev = "e8539a8f806b568a1075cd69f60089eba6e17ea6";
+      rev = "dccd0cc3693bff67e4856b5a22445223aabc4d4b";
       fetchSubmodules = false;
-      sha256 = "sha256-XWC5svVWK73kTMxWYUcta+aNIMn8P46mW+8+b9gJc0c=";
+      sha256 = "sha256-C+dVEekU31QPaPShMaUbs3LqOVVqzq0b4gKC1jX8Mlk=";
     };
-    date = "2025-12-07";
+    date = "2025-12-08";
   };
   pwndbg = {
     pname = "pwndbg";
