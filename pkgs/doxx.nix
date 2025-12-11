@@ -3,12 +3,13 @@
   sources,
   inputs,
   kutils,
-  system,
+  stdenv,
   pkgs,
   libxcb ? pkgs.xorg.libxcb,
   rustPlatform,
   ...
 }: let
+  system = stdenv.hostPlatform.system;
   res = sources.doxx;
 in
   rustPlatform.buildRustPackage rec {

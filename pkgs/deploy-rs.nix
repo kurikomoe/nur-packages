@@ -3,9 +3,10 @@
   sources,
   inputs,
   kutils,
-  system,
+  stdenv,
   ...
 }: let
+  system = stdenv.hostPlatform.system;
   res = sources.deploy-rs;
 
   flake = import inputs.flake-compat {

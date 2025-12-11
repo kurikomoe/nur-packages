@@ -2,10 +2,10 @@
   lib,
   inputs,
   sources,
-  system,
   stdenv,
   ...
 }: let
+  system = stdenv.hostPlatform.system;
   res = sources.pwndbg;
   flake = import inputs.flake-compat {
     inherit system;

@@ -2,9 +2,10 @@
   lib,
   inputs,
   sources,
-  system,
+  stdenv,
   ...
 }: let
+  system = stdenv.hostPlatform.system;
   git-hooks-res = sources.git-hooks-nix;
 
   flake = import inputs.flake-compat {

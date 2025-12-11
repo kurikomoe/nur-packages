@@ -1,6 +1,5 @@
 {
   lib,
-  system,
   stdenv,
   callPackage,
   ...

@@ -3,10 +3,11 @@
   pkgs,
   inputs,
   sources,
-  system,
+  stdenv,
   vscode-utils,
   ...
 }: let
+  system = stdenv.hostPlatform.system;
   res = sources.nix-vscode-extensions;
   nix-vscode-extensions =
     (import inputs.flake-compat {

@@ -4,6 +4,8 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
 
+    pre-commit-hooks.url = "github:cachix/git-hooks.nix";
+
     flake-parts.url = "github:hercules-ci/flake-parts";
     flake-compat.url = "github:nix-community/flake-compat";
   };
@@ -91,6 +93,8 @@
 
         shellNix = import ./shell.nix {
           pkgs' = pkgs;
+          pkgs-kuriko-nur' = ./.;
+          pre-commit-hooks' = inputs.pre-commit-hooks;
           inherit (buildOutputs) precommit-trufflehog;
         };
       in rec {

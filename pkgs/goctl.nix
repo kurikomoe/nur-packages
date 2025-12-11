@@ -1,11 +1,12 @@
 {
   lib,
-  system,
+  stdenv,
   sources,
   buildGoModule,
   fetchFromGitHub,
   ...
 }: let
+  system = stdenv.hostPlatform.system;
   res = sources.goctl;
   # nixpkgs_go_121 = fetchFromGitHub {
   #   owner = "NixOS";

@@ -2,11 +2,11 @@
   lib,
   inputs,
   sources,
-  system,
   stdenv,
   jetbrains,
   ...
 }: let
+  system = stdenv.hostPlatform.system;
   ides = with jetbrains; [
     webstorm
     rust-rover
