@@ -106,15 +106,15 @@
   };
   nix-vscode-extensions = {
     pname = "nix-vscode-extensions";
-    version = "dccd0cc3693bff67e4856b5a22445223aabc4d4b";
+    version = "3117a5178ba33eafea691756cca52ab250f2a5a9";
     src = fetchFromGitHub {
       owner = "nix-community";
       repo = "nix-vscode-extensions";
-      rev = "dccd0cc3693bff67e4856b5a22445223aabc4d4b";
+      rev = "3117a5178ba33eafea691756cca52ab250f2a5a9";
       fetchSubmodules = false;
-      sha256 = "sha256-C+dVEekU31QPaPShMaUbs3LqOVVqzq0b4gKC1jX8Mlk=";
+      sha256 = "sha256-WMxrG7K5kQQS0dc8b8WDdwKyBYokRc0Ssa1gIcAigBs=";
     };
-    date = "2025-12-08";
+    date = "2025-12-16";
   };
   pwndbg = {
     pname = "pwndbg";
@@ -170,15 +170,6 @@
       rev = "v0.1.23";
       fetchSubmodules = false;
       sha256 = "sha256-Cp5XI7ggpt48llojcmarYPi9mTM+YBqwjG/eNAnKTxc=";
-    };
-  };
-  vscode-extension-kotlin-lsp = {
-    pname = "vscode-extension-kotlin-lsp";
-    version = "0.253.10629";
-    src = fetchurl {
-      url = "https://download-cdn.jetbrains.com/kotlin-lsp/0.253.10629/kotlin-0.253.10629.vsix";
-      name = "kotlin-lsp-0.253.10629.zip";
-      sha256 = "sha256-Y47BVS/eflFY+MffBkQ8+5fFwJlXJzeQWGy9WRFb8Rw=";
     };
   };
 }

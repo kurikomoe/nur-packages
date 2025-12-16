@@ -185,7 +185,7 @@
     },
     "nix-vscode-extensions": {
         "cargoLocks": null,
-        "date": "2025-12-08",
+        "date": "2025-12-16",
         "extract": null,
         "name": "nix-vscode-extensions",
         "passthru": null,
@@ -197,12 +197,12 @@
             "name": null,
             "owner": "nix-community",
             "repo": "nix-vscode-extensions",
-            "rev": "dccd0cc3693bff67e4856b5a22445223aabc4d4b",
-            "sha256": "sha256-C+dVEekU31QPaPShMaUbs3LqOVVqzq0b4gKC1jX8Mlk=",
+            "rev": "3117a5178ba33eafea691756cca52ab250f2a5a9",
+            "sha256": "sha256-WMxrG7K5kQQS0dc8b8WDdwKyBYokRc0Ssa1gIcAigBs=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "dccd0cc3693bff67e4856b5a22445223aabc4d4b"
+        "version": "3117a5178ba33eafea691756cca52ab250f2a5a9"
     },
     "pwndbg": {
         "cargoLocks": null,
@@ -308,20 +308,5 @@
             "type": "github"
         },
         "version": "v0.1.23"
-    },
-    "vscode-extension-kotlin-lsp": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "vscode-extension-kotlin-lsp",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": "kotlin-lsp-0.253.10629.zip",
-            "sha256": "sha256-Y47BVS/eflFY+MffBkQ8+5fFwJlXJzeQWGy9WRFb8Rw=",
-            "type": "url",
-            "url": "https://download-cdn.jetbrains.com/kotlin-lsp/0.253.10629/kotlin-0.253.10629.vsix"
-        },
-        "version": "0.253.10629"
     }
 }
