@@ -86,7 +86,8 @@ jobs:
       if: steps.check-uncommitted.outputs.has_uncommitted == 'true'
       run: |
         echo "Verifying build before commit..."
-        nix run -f '<nixpkgs>' nix-fast-build -- -f .#ci --no-nom --skip-cached --eval-workers 4
+        # nix run -f '<nixpkgs>' nix-fast-build -- -f .#ci --no-nom --skip-cached --eval-workers 4
+        nix eval .#ci
 
     - name: Commit Changes
       uses: EndBug/add-and-commit@v9
