@@ -41,6 +41,7 @@
       (kallPackage ./pkgs/microsoft-edge/package.nix {})
       (kallPackage ./pkgs/pwndbg.nix {})
       # (kallPackage ./pkgs/lix.nix {})
+      (kallPackage ./pkgs/determinate.nix {}) # determinate-nix
       (kallPackage ./pkgs/deploy-rs.nix {})
       (kallPackage ./pkgs/doxx.nix {})
       (kallPackage ./pkgs/tools/precommit-trufflehog.nix {})

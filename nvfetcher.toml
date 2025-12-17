@@ -65,6 +65,10 @@ fetch.github = "nix-community/nix-vscode-extensions"
 # src.include_regex = "\\d+\\.\\d+\\.\\d+"
 # fetch.github = "lix-project/lix"
 
+[determinate]
+src.github_tag = "DeterminateSystems/nix-src"
+fetch.github = "DeterminateSystems/nix-src"
+
 [devenv]
 src.github_tag = "cachix/devenv"
 src.include_regex = "v\\d+\\.\\d+(\\.\\d+)?"
