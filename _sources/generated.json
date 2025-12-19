@@ -48,12 +48,12 @@
             "name": null,
             "owner": "DeterminateSystems",
             "repo": "nix-src",
-            "rev": "v3.14.0",
-            "sha256": "sha256-p98D44tYJMgB5Qet5S8cTQFdffk/GmoaGkpQtZ3hqJU=",
+            "rev": "v3.15.0",
+            "sha256": "sha256-0ZofAQZNgg5nfIKsVb7g4It6ufmIyLtfFRPOf+6WRkk=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v3.14.0"
+        "version": "v3.15.0"
     },
     "devenv": {
         "cargoLocks": null,
@@ -206,7 +206,7 @@
     },
     "nix-vscode-extensions": {
         "cargoLocks": null,
-        "date": "2025-12-18",
+        "date": "2025-12-19",
         "extract": null,
         "name": "nix-vscode-extensions",
         "passthru": null,
@@ -218,12 +218,12 @@
             "name": null,
             "owner": "nix-community",
             "repo": "nix-vscode-extensions",
-            "rev": "aab3ee8ca0b88ba9f3e6c18cbbb01327c3959cbf",
-            "sha256": "sha256-OAqxc4ADFv8E3exwRyIULmqqdiiQMKT3DGcZ3wj2yOI=",
+            "rev": "909232203bc0bc4c1e3311f41be190322bb04a94",
+            "sha256": "sha256-7A0h2MCAmv/mRgZQSgTS89sXRdDN956hFkaHQ01XGRc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "aab3ee8ca0b88ba9f3e6c18cbbb01327c3959cbf"
+        "version": "909232203bc0bc4c1e3311f41be190322bb04a94"
     },
     "pwndbg": {
         "cargoLocks": null,
