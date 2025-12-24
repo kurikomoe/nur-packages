@@ -27,13 +27,13 @@
   };
   determinate = {
     pname = "determinate";
-    version = "v3.15.0";
+    version = "v3.15.1";
     src = fetchFromGitHub {
       owner = "DeterminateSystems";
       repo = "nix-src";
-      rev = "v3.15.0";
+      rev = "v3.15.1";
       fetchSubmodules = false;
-      sha256 = "sha256-0ZofAQZNgg5nfIKsVb7g4It6ufmIyLtfFRPOf+6WRkk=";
+      sha256 = "sha256-GsC52VFF9Gi2pgP/haQyPdQoF5Qe2myk1tsPcuJZI28=";
     };
   };
   devenv = {
@@ -87,13 +87,13 @@
   };
   goctl = {
     pname = "goctl";
-    version = "v1.9.3";
+    version = "v1.9.4";
     src = fetchFromGitHub {
       owner = "zeromicro";
       repo = "go-zero";
-      rev = "v1.9.3";
+      rev = "v1.9.4";
       fetchSubmodules = false;
-      sha256 = "sha256-Q5fRu7EKCPlO6yxEe/GWs4zam7MnomYJn9u0BZqDMy4=";
+      sha256 = "sha256-3EhxeN2J8xgzMrqgpts2fVrVWZBoGFPVh/DAxc4r6Vc=";
     };
   };
   kratos = {

@@ -48,12 +48,12 @@
             "name": null,
             "owner": "DeterminateSystems",
             "repo": "nix-src",
-            "rev": "v3.15.0",
-            "sha256": "sha256-0ZofAQZNgg5nfIKsVb7g4It6ufmIyLtfFRPOf+6WRkk=",
+            "rev": "v3.15.1",
+            "sha256": "sha256-GsC52VFF9Gi2pgP/haQyPdQoF5Qe2myk1tsPcuJZI28=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v3.15.0"
+        "version": "v3.15.1"
     },
     "devenv": {
         "cargoLocks": null,
@@ -161,12 +161,12 @@
             "name": null,
             "owner": "zeromicro",
             "repo": "go-zero",
-            "rev": "v1.9.3",
-            "sha256": "sha256-Q5fRu7EKCPlO6yxEe/GWs4zam7MnomYJn9u0BZqDMy4=",
+            "rev": "v1.9.4",
+            "sha256": "sha256-3EhxeN2J8xgzMrqgpts2fVrVWZBoGFPVh/DAxc4r6Vc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.9.3"
+        "version": "v1.9.4"
     },
     "kratos": {
         "cargoLocks": null,
