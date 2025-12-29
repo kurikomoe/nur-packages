@@ -117,15 +117,15 @@
   };
   nix-vscode-extensions = {
     pname = "nix-vscode-extensions";
-    version = "2b8957cca4532b30e06c1cbd0386ec4fbf3b16fa";
+    version = "6b07c9fdf88e9c1e75e164e9ef387e29e0c2a613";
     src = fetchFromGitHub {
       owner = "nix-community";
       repo = "nix-vscode-extensions";
-      rev = "2b8957cca4532b30e06c1cbd0386ec4fbf3b16fa";
+      rev = "6b07c9fdf88e9c1e75e164e9ef387e29e0c2a613";
       fetchSubmodules = false;
-      sha256 = "sha256-BA+gbbAFYY+z0WvIWu8nwOZYzHuzHbnnIH+R6vjSanI=";
+      sha256 = "sha256-6qxu2VZiPrKzFN3G6FjoiXO9cPSLDJp437/64B3M1l0=";
     };
-    date = "2025-12-28";
+    date = "2025-12-29";
   };
   pwndbg = {
     pname = "pwndbg";
