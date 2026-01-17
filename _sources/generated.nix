@@ -117,15 +117,15 @@
   };
   nix-vscode-extensions = {
     pname = "nix-vscode-extensions";
-    version = "4b49917cd4d3b31eb4e01ef3ae453f4ff9664fb3";
+    version = "91986dac376d14f3c761a21722f6ff4fc6e3e86d";
     src = fetchFromGitHub {
       owner = "nix-community";
       repo = "nix-vscode-extensions";
-      rev = "4b49917cd4d3b31eb4e01ef3ae453f4ff9664fb3";
+      rev = "91986dac376d14f3c761a21722f6ff4fc6e3e86d";
       fetchSubmodules = false;
-      sha256 = "sha256-CRTi1Sr9q2lx5sKisO7/+sPQtwULTy12BG2gYMJBLPc=";
+      sha256 = "sha256-/bL8sjJ5bic525DRL20i7XqWmSzpQ5QI2OV+etzLiUY=";
     };
-    date = "2026-01-16";
+    date = "2026-01-17";
   };
   pwndbg = {
     pname = "pwndbg";
@@ -163,24 +163,24 @@
   };
   trzsz = {
     pname = "trzsz";
-    version = "v1.1.8";
+    version = "v1.2.0";
     src = fetchFromGitHub {
       owner = "trzsz";
       repo = "trzsz-go";
-      rev = "v1.1.8";
+      rev = "v1.2.0";
       fetchSubmodules = false;
-      sha256 = "sha256-g1fbgKTFS9aPAmnTeFYoymrDEoZ6BtzUhA2Z9SNYbsU=";
+      sha256 = "sha256-CokZAXT61UKSsKnzE5mPMdAZecGX/8mgDkG4yDSat5M=";
     };
   };
   trzsz-ssh = {
     pname = "trzsz-ssh";
-    version = "v0.1.23";
+    version = "v0.1.24";
     src = fetchFromGitHub {
       owner = "trzsz";
       repo = "trzsz-ssh";
-      rev = "v0.1.23";
+      rev = "v0.1.24";
       fetchSubmodules = false;
-      sha256 = "sha256-Cp5XI7ggpt48llojcmarYPi9mTM+YBqwjG/eNAnKTxc=";
+      sha256 = "sha256-mcGsCPW8YHKCm5c+OWlKMp6k+J7ibvd6zN/76Ws5eUE=";
     };
   };
 }
