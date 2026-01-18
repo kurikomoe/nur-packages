@@ -71,8 +71,7 @@
             })
           ];
         };
-
-        kutils = pkgs.callPackage "${root.utils}/kutils.nix" {};
+        # kutils = pkgs.callPackage "${root.utils}/kutils.nix" {};
       in let
         convert2attrset = x:
           builtins.listToAttrs (builtins.map (x: {
