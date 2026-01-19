@@ -13,7 +13,9 @@ failed_targets=()
 
 for target in "${targets[@]}"; do
     echo "Building .#$target ..."
-    if ! nix build ".#$target"; then
+    nix run github:Mic92/nix-fast-build -- -f ".#ci.x86_64-linux.${target}" --skip-cached --no-nom --eval-worker 1
+    rc=$?
+    if (( rc )); then
         echo "❌ Build failed: $target"
         failed_targets+=("$target")
     else
