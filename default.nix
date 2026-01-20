@@ -59,7 +59,7 @@
       #   # meta.broken = true;
       # });
 
-      "devenv" = kallPackage ./pkgs/devenv.nix {};
+      # "devenv" = kallPackage ./pkgs/devenv.nix {};
       "trzsz" = kallPackage ./pkgs/trzsz-ssh.nix {};
       "python" = kallPackage ./pkgs/python/default.nix {};
       # "vscode" = kallPackage ./pkgs/vscode/default.nix {};
