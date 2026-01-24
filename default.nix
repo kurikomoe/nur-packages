@@ -45,6 +45,7 @@
       (kallPackage ./pkgs/deploy-rs.nix {})
       # (kallPackage ./pkgs/doxx.nix {})
       (kallPackage ./pkgs/tools/precommit-trufflehog.nix {})
+      (kallPackage ./pkgs/tools/cache-devshell.nix {})
       (kallPackage ./pkgs/git-hooks.nix {})
     ])
     {
