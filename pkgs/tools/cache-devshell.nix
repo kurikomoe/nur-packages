@@ -1,11 +1,15 @@
 {
   lib,
   writeShellScriptBin,
+  symlinkJoin,
   coreutils,
   findutils,
+  attic-client,
+  cachix,
   ...
 }: let
-  script = writeShellScriptBin "cache-devshell" ''
+  # --- 1. 定义查找脚本 (cache-devshell) ---
+  cacheDevShellScript = writeShellScriptBin "cache-devshell" ''
     export PATH="${lib.makeBinPath [coreutils findutils]}:$PATH"
 
     find_direnv_root() {
@@ -46,11 +50,32 @@
     fi
   '';
 
-  output = script.overrideAttrs (final: prev: {
+  # --- 2. 定义推送脚本 (push-shell) ---
+  pushShellScript = writeShellScriptBin "push-shell" ''
+    export PATH="${lib.makeBinPath [attic-client cachix cacheDevShellScript]}:$PATH"
+
+    set -e
+    echo "🔍 Calculating devShell path..."
+    STORE_PATH=$(cache-devshell)
+
+    set +e
+    echo "📦 Pushing to Attic (r2)..."
+    attic push r2 "$STORE_PATH"
+
+    echo "📦 Pushing to Cachix (kurikomoe)..."
+    echo "$STORE_PATH" | cachix push kurikomoe
+
+    echo "✅ All done!"
+  '';
+in
+  # --- 3. 合并输出 ---
+  # 使用 symlinkJoin 把两个脚本合并到一个包里
+  symlinkJoin {
+    name = "devshell-cache-tools";
+    paths = [cacheDevShellScript pushShellScript];
+
     meta = {
-      description = "Output devShell path by finding .direnv recursively";
+      description = "Tools to discover and push direnv devShells to binary caches";
       homepage = "https://github.com/kurikomoe";
     };
-  });
-in
-  output
+  }
