@@ -91,10 +91,9 @@
         cacheOutputs = convert2attrset ci.cacheOutputs;
 
         shellNix = import ./shell.nix {
-          pkgs' = pkgs;
-          pkgs-kuriko-nur' = ./.;
-          pre-commit-hooks' = inputs.pre-commit-hooks;
-          inherit (buildOutputs) precommit-trufflehog;
+          inherit pkgs;
+          inherit (inputs) pre-commit-hooks;
+          pkgs-kuriko-nur = buildOutputs;
         };
       in rec {
         formatter = nixpkgs.legacyPackages.${system}.alejandra;

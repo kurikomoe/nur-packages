@@ -1,38 +1,25 @@
-{
-  pkgs' ? null,
-  pkgs-kuriko-nur' ? null,
-  pre-commit-hooks' ? null,
-  precommit-trufflehog ? null,
+inputs @ {
+  pkgs ? null,
+  pre-commit-hooks ? null,
+  pkgs-kuriko-nur ? null,
 }: let
-  pkgs =
-    if pkgs' == null
-    then import (fetchTarball "https://github.com/NixOS/nixpkgs/tarball/nixos-25.11") {}
-    else pkgs';
+  pre-commit-hooks = inputs.pre-commit-hooks or
+    (import (builtins.fetchTarball "https://github.com/cachix/git-hooks.nix/tarball/master") {});
+
+  pkgs = inputs.pkgs or
+    (import (fetchTarball "https://github.com/NixOS/nixpkgs/tarball/nixos-25.11") {});
 
   inherit (pkgs) lib fetchFromGitHub;
   system = pkgs.stdenv.hostPlatform.system;
 
   pkgs-kuriko-nur =
-    if pkgs-kuriko-nur' == null
-    then
-      import (fetchFromGitHub {
-        owner = "kurikomoe";
-        repo = "nur-packages";
-        rev = "main";
-      }) {}
-    else pkgs-kuriko-nur';
+    inputs.pkgs-kuriko-nur or (import (fetchFromGitHub {
+      owner = "kurikomoe";
+      repo = "nur-packages";
+      rev = "main";
+    }) {});
 
-  pre-commit-hooks =
-    if pre-commit-hooks' == null
-    then import (builtins.fetchTarball "https://github.com/cachix/git-hooks.nix/tarball/master")
-    else pre-commit-hooks';
-
-  precommit-trufflehog' =
-    if precommit-trufflehog == null
-    # then pkgs-kuriko-nur'.legacyPackages.${system}.precommit-trufflehog
-    then pkgs.callPackage ./pkgs/tools/precommit-trufflehog.nix {}
-    else precommit-trufflehog;
-  # precommit-trufflehog' = builtins.trace _precommit-trufflehog' _precommit-trufflehog';
+  inherit (pkgs-kuriko-nur) precommit-trufflehog devshell-cache-tools;
 in rec {
   pre-commit-check = pre-commit-hooks.lib.${system}.run {
     src = ./.;
@@ -41,7 +28,7 @@ in rec {
       alejandra.enable = true;
       trufflehog = {
         enable = true;
-        entry = builtins.toString precommit-trufflehog';
+        entry = builtins.toString precommit-trufflehog;
         stages = ["pre-push" "pre-commit"];
       };
     };
@@ -58,6 +45,7 @@ in rec {
         hello
         nvfetcher
         nix-update
+        devshell-cache-tools
       ]
       ++ pre-commit-check.enabledPackages;
   };
