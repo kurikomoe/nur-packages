@@ -15,15 +15,15 @@
   };
   deploy-rs = {
     pname = "deploy-rs";
-    version = "d5eff7f948535b9c723d60cd8239f8f11ddc90fa";
+    version = "77c906c0ba56aabdbc72041bf9111b565cdd6171";
     src = fetchFromGitHub {
       owner = "serokell";
       repo = "deploy-rs";
-      rev = "d5eff7f948535b9c723d60cd8239f8f11ddc90fa";
+      rev = "77c906c0ba56aabdbc72041bf9111b565cdd6171";
       fetchSubmodules = false;
-      sha256 = "sha256-znKOwPXQnt3o7lDb3hdf19oDo0BLP4MfBOYiWkEHoik=";
+      sha256 = "sha256-hwsYgDnby50JNVpTRYlF3UR/Rrpt01OrxVuryF40CFY=";
     };
-    date = "2025-12-18";
+    date = "2026-02-02";
   };
   determinate = {
     pname = "determinate";
@@ -117,15 +117,15 @@
   };
   nix-vscode-extensions = {
     pname = "nix-vscode-extensions";
-    version = "5af91c832cdc9c055015696433b395f43f2fc9c8";
+    version = "a9bab7b9407e6e961d79abfdef3e11c1d7aacb4f";
     src = fetchFromGitHub {
       owner = "nix-community";
       repo = "nix-vscode-extensions";
-      rev = "5af91c832cdc9c055015696433b395f43f2fc9c8";
+      rev = "a9bab7b9407e6e961d79abfdef3e11c1d7aacb4f";
       fetchSubmodules = false;
-      sha256 = "sha256-SMIY+y9T9ioo+eM5XC2dE1FLjf0iUdCF3ayVlyKHDt0=";
+      sha256 = "sha256-UqnwSJvGpsVJTICQAOabn3jaPf1GntZ05/rGszlrcSA=";
     };
-    date = "2026-01-30";
+    date = "2026-02-02";
   };
   pwndbg = {
     pname = "pwndbg";

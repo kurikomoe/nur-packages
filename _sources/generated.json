@@ -15,7 +15,7 @@
     },
     "deploy-rs": {
         "cargoLock": null,
-        "date": "2025-12-18",
+        "date": "2026-02-02",
         "extract": null,
         "name": "deploy-rs",
         "passthru": null,
@@ -27,12 +27,12 @@
             "name": null,
             "owner": "serokell",
             "repo": "deploy-rs",
-            "rev": "d5eff7f948535b9c723d60cd8239f8f11ddc90fa",
-            "sha256": "sha256-znKOwPXQnt3o7lDb3hdf19oDo0BLP4MfBOYiWkEHoik=",
+            "rev": "77c906c0ba56aabdbc72041bf9111b565cdd6171",
+            "sha256": "sha256-hwsYgDnby50JNVpTRYlF3UR/Rrpt01OrxVuryF40CFY=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "d5eff7f948535b9c723d60cd8239f8f11ddc90fa"
+        "version": "77c906c0ba56aabdbc72041bf9111b565cdd6171"
     },
     "determinate": {
         "cargoLock": null,
@@ -206,7 +206,7 @@
     },
     "nix-vscode-extensions": {
         "cargoLock": null,
-        "date": "2026-01-30",
+        "date": "2026-02-02",
         "extract": null,
         "name": "nix-vscode-extensions",
         "passthru": null,
@@ -218,12 +218,12 @@
             "name": null,
             "owner": "nix-community",
             "repo": "nix-vscode-extensions",
-            "rev": "5af91c832cdc9c055015696433b395f43f2fc9c8",
-            "sha256": "sha256-SMIY+y9T9ioo+eM5XC2dE1FLjf0iUdCF3ayVlyKHDt0=",
+            "rev": "a9bab7b9407e6e961d79abfdef3e11c1d7aacb4f",
+            "sha256": "sha256-UqnwSJvGpsVJTICQAOabn3jaPf1GntZ05/rGszlrcSA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "5af91c832cdc9c055015696433b395f43f2fc9c8"
+        "version": "a9bab7b9407e6e961d79abfdef3e11c1d7aacb4f"
     },
     "pwndbg": {
         "cargoLock": null,
