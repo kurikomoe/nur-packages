@@ -1,6 +1,6 @@
 {
     "1password-cli-linux": {
-        "cargoLock": null,
+        "cargoLocks": null,
         "date": null,
         "extract": null,
         "name": "1password-cli-linux",
@@ -14,7 +14,7 @@
         "version": "2.32.0"
     },
     "deploy-rs": {
-        "cargoLock": null,
+        "cargoLocks": null,
         "date": "2026-02-02",
         "extract": null,
         "name": "deploy-rs",
@@ -35,7 +35,7 @@
         "version": "77c906c0ba56aabdbc72041bf9111b565cdd6171"
     },
     "determinate": {
-        "cargoLock": null,
+        "cargoLocks": null,
         "date": null,
         "extract": null,
         "name": "determinate",
@@ -56,7 +56,7 @@
         "version": "v3.15.2"
     },
     "devenv": {
-        "cargoLock": null,
+        "cargoLocks": null,
         "date": null,
         "extract": null,
         "name": "devenv",
@@ -77,7 +77,7 @@
         "version": "v1.11.2"
     },
     "dotnet-script": {
-        "cargoLock": null,
+        "cargoLocks": null,
         "date": null,
         "extract": null,
         "name": "dotnet-script",
@@ -91,7 +91,7 @@
         "version": "2.0.0"
     },
     "doxx": {
-        "cargoLock": null,
+        "cargoLocks": null,
         "date": null,
         "extract": null,
         "name": "doxx",
@@ -112,7 +112,7 @@
         "version": "v0.1.2"
     },
     "font-firacode": {
-        "cargoLock": null,
+        "cargoLocks": null,
         "date": null,
         "extract": null,
         "name": "font-firacode",
@@ -127,7 +127,7 @@
         "version": "6.2"
     },
     "git-hooks-nix": {
-        "cargoLock": null,
+        "cargoLocks": null,
         "date": null,
         "extract": null,
         "name": "git-hooks-nix",
@@ -148,7 +148,7 @@
         "version": "50b9238891e388c9fdc6a5c49e49c42533a1b5ce"
     },
     "goctl": {
-        "cargoLock": null,
+        "cargoLocks": null,
         "date": null,
         "extract": null,
         "name": "goctl",
@@ -169,7 +169,7 @@
         "version": "v1.9.4"
     },
     "kratos": {
-        "cargoLock": null,
+        "cargoLocks": null,
         "date": null,
         "extract": null,
         "name": "kratos",
@@ -190,7 +190,7 @@
         "version": "v2.9.2"
     },
     "microsoft-edge": {
-        "cargoLock": null,
+        "cargoLocks": null,
         "date": null,
         "extract": null,
         "name": "microsoft-edge",
@@ -205,7 +205,7 @@
         "version": "144.0.3719.104"
     },
     "nix-vscode-extensions": {
-        "cargoLock": null,
+        "cargoLocks": null,
         "date": "2026-02-02",
         "extract": null,
         "name": "nix-vscode-extensions",
@@ -226,7 +226,7 @@
         "version": "a9bab7b9407e6e961d79abfdef3e11c1d7aacb4f"
     },
     "pwndbg": {
-        "cargoLock": null,
+        "cargoLocks": null,
         "date": null,
         "extract": null,
         "name": "pwndbg",
@@ -247,7 +247,7 @@
         "version": "2025.10.20"
     },
     "python": {
-        "cargoLock": null,
+        "cargoLocks": null,
         "date": "2025-12-06",
         "extract": null,
         "name": "python",
@@ -268,7 +268,7 @@
         "version": "04b27dbad2e004cb237db202f21154eea3c4f89f"
     },
     "shellfirm": {
-        "cargoLock": null,
+        "cargoLocks": null,
         "date": null,
         "extract": null,
         "name": "shellfirm",
@@ -289,7 +289,7 @@
         "version": "v0.2.11"
     },
     "trzsz": {
-        "cargoLock": null,
+        "cargoLocks": null,
         "date": null,
         "extract": null,
         "name": "trzsz",
@@ -310,7 +310,7 @@
         "version": "v1.2.0"
     },
     "trzsz-ssh": {
-        "cargoLock": null,
+        "cargoLocks": null,
         "date": null,
         "extract": null,
         "name": "trzsz-ssh",
