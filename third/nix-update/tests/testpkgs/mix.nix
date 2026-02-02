@@ -1,5 +1,7 @@
-{ beamPackages, fetchFromGitHub }:
-
+{
+  beamPackages,
+  fetchFromGitHub,
+}:
 beamPackages.mixRelease rec {
   pname = "credo-language-server";
   version = "0.2.0";

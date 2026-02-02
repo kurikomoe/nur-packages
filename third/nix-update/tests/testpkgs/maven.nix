@@ -1,5 +1,7 @@
-{ maven, fetchFromGitHub }:
-
+{
+  maven,
+  fetchFromGitHub,
+}:
 maven.buildMavenPackage rec {
   pname = "mariadb-connector-java";
   version = "2.7.0";

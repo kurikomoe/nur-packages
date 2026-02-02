@@ -3,7 +3,6 @@
   rustPlatform,
   fetchFromGitHub,
 }:
-
 python3Packages.buildPythonPackage rec {
   pname = "pycrdt";
   version = "0.9.6";
@@ -22,5 +21,5 @@ python3Packages.buildPythonPackage rec {
     rustPlatform.maturinBuildHook
   ];
 
-  cargoDeps = rustPlatform.importCargoLock { lockFile = ./Cargo.lock; };
+  cargoDeps = rustPlatform.importCargoLock {lockFile = ./Cargo.lock;};
 }

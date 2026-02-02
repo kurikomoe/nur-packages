@@ -3,7 +3,6 @@
   fetchFromGitHub,
   gradle,
 }:
-
 stdenv.mkDerivation rec {
   pname = "armitage";
   version = "unstable-2022-12-05";

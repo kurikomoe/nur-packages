@@ -19,7 +19,7 @@
   kutils = pkgs.callPackage ./utils/kutils.nix {};
   sources = pkgs.callPackages ./_sources/generated.nix {};
 
-  params = {inherit inputs sources kutils; };
+  params = {inherit inputs sources kutils;};
   kallPackage = kutils.buildCallPackage params;
 
   fonts = kallPackage ./pkgs/fonts {};

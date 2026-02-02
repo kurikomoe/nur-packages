@@ -7,7 +7,6 @@
   makeWrapper,
   scdoc,
 }:
-
 buildGoModule rec {
   pname = "ijq";
   version = "0.3.5";
@@ -40,6 +39,6 @@ buildGoModule rec {
 
   postInstall = ''
     wrapProgram "$out/bin/ijq" \
-          --prefix PATH : "${lib.makeBinPath [ jq ]}"
+          --prefix PATH : "${lib.makeBinPath [jq]}"
   '';
 }

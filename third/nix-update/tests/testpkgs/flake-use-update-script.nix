@@ -3,7 +3,6 @@
   fetchFromGitHub,
   nix-update-script,
 }:
-
 stdenv.mkDerivation (finalAttrs: {
   pname = "equicord";
   version = "2025-08-23";

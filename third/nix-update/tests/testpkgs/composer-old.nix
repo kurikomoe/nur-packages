@@ -2,7 +2,6 @@
   fetchFromGitHub,
   php,
 }:
-
 php.buildComposerProject (finalAttrs: {
   pname = "castor";
   version = "0.10.0";

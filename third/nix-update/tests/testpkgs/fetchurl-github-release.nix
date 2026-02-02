@@ -2,7 +2,6 @@
   stdenv,
   fetchurl,
 }:
-
 stdenv.mkDerivation (finalAttrs: {
   version = "5.0.5";
   pname = "adminer";

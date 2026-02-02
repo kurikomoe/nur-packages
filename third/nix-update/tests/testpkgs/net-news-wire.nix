@@ -2,7 +2,6 @@
   stdenvNoCC,
   fetchurl,
 }:
-
 stdenvNoCC.mkDerivation rec {
   pname = "net-news-wire";
   version = "6.1.5";

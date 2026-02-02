@@ -4,8 +4,7 @@
   bun,
   fetchFromGitHub,
   writableTmpDirAsHomeHook,
-}:
-let
+}: let
   pname = "models-dev";
   version = "0-unstable-2025-11-28";
   src = fetchFromGitHub {
@@ -24,10 +23,12 @@ let
     pname = "${pname}-node_modules";
     inherit version src;
 
-    impureEnvVars = lib.fetchers.proxyImpureEnvVars ++ [
-      "GIT_PROXY_COMMAND"
-      "SOCKS_SERVER"
-    ];
+    impureEnvVars =
+      lib.fetchers.proxyImpureEnvVars
+      ++ [
+        "GIT_PROXY_COMMAND"
+        "SOCKS_SERVER"
+      ];
 
     nativeBuildInputs = [
       bun
@@ -69,39 +70,39 @@ let
     outputHashMode = "recursive";
   };
 in
-stdenvNoCC.mkDerivation (_finalAttrs: {
-  inherit
-    pname
-    version
-    src
-    node_modules
-    ;
+  stdenvNoCC.mkDerivation (_finalAttrs: {
+    inherit
+      pname
+      version
+      src
+      node_modules
+      ;
 
-  nativeBuildInputs = [ bun ];
+    nativeBuildInputs = [bun];
 
-  configurePhase = ''
-    runHook preConfigure
+    configurePhase = ''
+      runHook preConfigure
 
-    cp -R ${node_modules}/. .
+      cp -R ${node_modules}/. .
 
-    runHook postConfigure
-  '';
+      runHook postConfigure
+    '';
 
-  buildPhase = ''
-    runHook preBuild
+    buildPhase = ''
+      runHook preBuild
 
-    cd packages/web
-    bun run ./script/build.ts
+      cd packages/web
+      bun run ./script/build.ts
 
-    runHook postBuild
-  '';
+      runHook postBuild
+    '';
 
-  installPhase = ''
-    runHook preInstall
+    installPhase = ''
+      runHook preInstall
 
-    mkdir -p $out/dist
-    cp -R ./dist $out
+      mkdir -p $out/dist
+      cp -R ./dist $out
 
-    runHook postInstall
-  '';
-})
+      runHook postInstall
+    '';
+  })

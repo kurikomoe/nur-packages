@@ -6,7 +6,6 @@
   pytestCheckHook,
   hello,
 }:
-
 buildPythonPackage rec {
   pname = "python-mpd2";
   version = "2.0.0";
@@ -17,16 +16,16 @@ buildPythonPackage rec {
     sha256 = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
   };
 
-  build-system = [ setuptools ];
+  build-system = [setuptools];
 
   nativeCheckInputs = [
     pytestCheckHook
     twisted
   ];
 
-  pytestFlagsArray = [ "mpd/tests.py" ];
+  pytestFlagsArray = ["mpd/tests.py"];
 
-  pythonImportsCheck = [ "mpd" ];
+  pythonImportsCheck = ["mpd"];
 
   passthru.tests = {
     testCompile = hello;

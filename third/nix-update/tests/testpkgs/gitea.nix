@@ -1,5 +1,7 @@
-{ stdenv, fetchFromGitea }:
-
+{
+  stdenv,
+  fetchFromGitea,
+}:
 stdenv.mkDerivation rec {
   pname = "nsxiv";
   version = "29";

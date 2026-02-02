@@ -5,9 +5,7 @@
   nodejs,
   pnpm_9,
   typescript,
-}:
-
-let
+}: let
   pname = "autobrr";
   version = "1.53.0";
   src = fetchFromGitHub {
@@ -30,7 +28,8 @@ let
     sourceRoot = "${src.name}/web";
 
     pnpmDeps = pnpm_9.fetchDeps {
-      inherit (autobrr-web)
+      inherit
+        (autobrr-web)
         pname
         version
         src
@@ -49,17 +48,17 @@ let
     '';
   };
 in
-buildGoModule rec {
-  inherit
-    autobrr-web
-    pname
-    version
-    src
-    ;
+  buildGoModule rec {
+    inherit
+      autobrr-web
+      pname
+      version
+      src
+      ;
 
-  vendorHash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+    vendorHash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
 
-  preBuild = ''
-    cp -r ${autobrr-web}/* web/dist
-  '';
-}
+    preBuild = ''
+      cp -r ${autobrr-web}/* web/dist
+    '';
+  }

@@ -1,13 +1,11 @@
-{
-  pkgs ? import <nixpkgs> { },
-}:
+{pkgs ? import <nixpkgs> {}}:
 pkgs.python3Packages.buildPythonApplication {
   pname = "nix-update";
   version = "v1.14.0";
   src = ./.;
   pyproject = true;
-  buildInputs = [ pkgs.makeWrapper ];
-  build-system = [ pkgs.python3Packages.setuptools ];
+  buildInputs = [pkgs.makeWrapper];
+  build-system = [pkgs.python3Packages.setuptools];
   nativeBuildInputs = [
     pkgs.nixVersions.stable
     pkgs.nix-prefetch-git

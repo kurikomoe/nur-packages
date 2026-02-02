@@ -1,20 +1,20 @@
-{ stdenv }:
-
-let
-  fetchFromInternalGitHub =
-    {
-      githubBase,
-      owner,
-      repo,
-      hash,
-      tag ? null,
-      rev ? null,
-    }:
+{stdenv}: let
+  fetchFromInternalGitHub = {
+    githubBase,
+    owner,
+    repo,
+    hash,
+    tag ? null,
+    rev ? null,
+  }:
     stdenv.mkDerivation (finalAttrs: rec {
       # fetchFromGitHub derivation name is always "source"
       name = "source";
 
-      revWithTag = if tag != null then "refs/tags/${tag}" else rev;
+      revWithTag =
+        if tag != null
+        then "refs/tags/${tag}"
+        else rev;
       url = "https://${githubBase}/repos/${owner}/${repo}/tarball/${revWithTag}";
       src = builtins.fetchTree {
         type = "tarball";
@@ -35,15 +35,15 @@ let
       outputHash = hash;
     });
 in
-stdenv.mkDerivation rec {
-  pname = "fd";
-  version = "8.0.0";
+  stdenv.mkDerivation rec {
+    pname = "fd";
+    version = "8.0.0";
 
-  src = fetchFromInternalGitHub {
-    githubBase = "api.github.com";
-    owner = "sharkdp";
-    repo = pname;
-    rev = "v${version}";
-    hash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
-  };
-}
+    src = fetchFromInternalGitHub {
+      githubBase = "api.github.com";
+      owner = "sharkdp";
+      repo = pname;
+      rev = "v${version}";
+      hash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+    };
+  }

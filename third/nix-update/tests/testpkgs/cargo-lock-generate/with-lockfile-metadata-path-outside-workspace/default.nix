@@ -3,7 +3,6 @@
   rustPlatform,
   fetchFromGitHub,
 }:
-
 python3Packages.buildPythonPackage rec {
   pname = "pylance";
   version = "0.15.0";
@@ -22,5 +21,5 @@ python3Packages.buildPythonPackage rec {
     rustPlatform.maturinBuildHook
   ];
 
-  cargoDeps = rustPlatform.importCargoLock { lockFile = ./Cargo.lock; };
+  cargoDeps = rustPlatform.importCargoLock {lockFile = ./Cargo.lock;};
 }

@@ -2,7 +2,6 @@
   buildNpmPackage,
   fetchFromGitHub,
 }:
-
 buildNpmPackage rec {
   pname = "emmet-language-server";
   version = "2.5.0";
@@ -19,5 +18,4 @@ buildNpmPackage rec {
   postPatch = ''
     cp ${./package-lock.json} ./package-lock.json
   '';
-
 }
