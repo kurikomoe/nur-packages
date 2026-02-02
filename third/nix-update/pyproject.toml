@@ -1,0 +1,75 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nix-update"
+description = "Swiss-knife for updating nix packages"
+version = "v1.14.0"
+authors = [{ name = "Jörg Thalheim", email = "joerg@thalheim.io" }]
+license = { text = "MIT" }
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Console",
+  "Topic :: Utilities",
+  "Intended Audience :: Developers",
+]
+
+[project.urls]
+Homepage = "https://github.com/Mic92/nix-update"
+
+[project.scripts]
+nix-update = "nix_update:main"
+
+[tool.pytest.ini_options]
+addopts = "-v -n auto"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 88
+
+lint.select = ["ALL"]
+lint.ignore = [
+  # pydocstyle
+  "D",
+  # todo comments
+  "TD",
+  # fixmes
+  "FIX",
+  # Logging statement uses f-string
+  "G004",
+
+  # `subprocess` call: check for execution of untrusted input
+  "S603",
+  # Starting a process with a partial executable path
+  "S607",
+  # Audit URL open for permitted schemes
+  "S310",
+  # Using `xml` to parse untrusted data
+  "S314",
+
+  # Found commented-out code
+  "ERA001",
+
+  "E501",    # line too long
+  "T201",    # `print` found
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = ["S101"]  # Allow assert in test files
+
+[tool.mypy]
+python_version = "3.11"
+pretty = true
+warn_redundant_casts = true
+disallow_untyped_calls = true
+disallow_untyped_defs = true
+no_implicit_optional = true
+
+[[tool.mypy.overrides]]
+module = "setuptools.*"
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = "pytest.*"
+ignore_missing_imports = true
