@@ -2,13 +2,17 @@
 
 set -e
 
-# nix-update --flake goctl &
-# nix-update --flake kratos &
-# nix-update --flake trzsz &
-# nix-update --flake trzsz-ssh &
-
+function update_pkg() {
+    nix eval ".#ci.x86_64-linux.$1"
+    nix run path:third/nix-update -- -f ./. --commit --flake $1
+}
 
 targets=("goctl" "kratos" "trzsz" "trzsz-ssh")
+
+for target in "${targets[@]}"; do
+    update_pkg $target
+done
+
 failed_targets=()
 
 for target in "${targets[@]}"; do

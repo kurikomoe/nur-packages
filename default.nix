@@ -15,18 +15,11 @@
   },
   ...
 }: let
-  root = rec {
-    base = ./.;
-    res = "${base}/res";
-    pkgs = "${base}/pkgs";
-    utils = "${base}/utils";
-  };
-
   lib = pkgs.lib;
-  kutils = pkgs.callPackage "${root.utils}/kutils.nix" {};
+  kutils = pkgs.callPackage ./utils/kutils.nix {};
   sources = pkgs.callPackages ./_sources/generated.nix {};
 
-  params = {inherit inputs sources kutils root;};
+  params = {inherit inputs sources kutils; };
   kallPackage = kutils.buildCallPackage params;
 
   fonts = kallPackage ./pkgs/fonts {};

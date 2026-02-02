@@ -46,6 +46,8 @@ in rec {
         nvfetcher
         nix-update
         devshell-cache-tools
+        nix-init
+        nurl
       ]
       ++ pre-commit-check.enabledPackages;
   };

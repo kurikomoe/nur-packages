@@ -66,7 +66,8 @@ jobs:
         run: |
           nix profile install nixpkgs#nvfetcher
           nix profile install nixpkgs#nix-update
-          nvfetcher
+          nix eval .#example-package
+          nvfetcher --commit-changes
           # pre-eval to avoid parallel download same thing
           nix eval .#example-package
           ./nix-update.sh
@@ -100,6 +101,8 @@ jobs:
           committer_name: GitHub Actions
           committer_email: 41898282+github-actions[bot]@users.noreply.github.com
           message: "Auto update"
+
+      - run: git push
 
       - name: Setup upterm session
         uses: lhotari/action-upterm@v1
