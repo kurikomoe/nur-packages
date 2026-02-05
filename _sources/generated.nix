@@ -4,7 +4,8 @@
   fetchurl,
   fetchFromGitHub,
   dockerTools,
-}: {
+}:
+{
   "1password-cli-linux" = {
     pname = "1password-cli-linux";
     version = "2.32.0";
@@ -117,15 +118,15 @@
   };
   nix-vscode-extensions = {
     pname = "nix-vscode-extensions";
-    version = "8239c1145f39fe88dd1f2ed3db17b2e6e30beb2b";
+    version = "b67ce43fc8c1836e95a9b56349e6bf04b017c61b";
     src = fetchFromGitHub {
       owner = "nix-community";
       repo = "nix-vscode-extensions";
-      rev = "8239c1145f39fe88dd1f2ed3db17b2e6e30beb2b";
+      rev = "b67ce43fc8c1836e95a9b56349e6bf04b017c61b";
       fetchSubmodules = false;
-      sha256 = "sha256-c8EA8r2/8Z4kuf2ETaBuhZmpxaZWOzt3p5SsEyGxZHI=";
+      sha256 = "sha256-UhT8zgyHS38eZdyoU6cju3bzlD5UNqEGlgFLMeL75uM=";
     };
-    date = "2026-02-04";
+    date = "2026-02-05";
   };
   pwndbg = {
     pname = "pwndbg";
