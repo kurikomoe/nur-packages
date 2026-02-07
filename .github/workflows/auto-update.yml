@@ -53,10 +53,6 @@ jobs:
       - name: Show nixpkgs version
         run: nix-instantiate --eval -E '(import <nixpkgs> {}).lib.version'
 
-      - name: Update Flake
-        run: |
-          nix flake update
-
       # - run: sed -i "s/nix_direnv_manual_reload//g" .envrc
       # - name: Install direnv with Nix
       #   uses: aldoborrero/direnv-nix-action@v2
@@ -64,47 +60,57 @@ jobs:
       #     use_nix_profile: true
       #     nix_channel: nixpkgs
 
+      - name: Prepare Commit Message
+        run: |
+          echo "Auto update" > commit_message.txt
+          echo "" >> commit_message.txt
+
       - name: Update all deps
         run: |
           nix profile install nixpkgs#nvfetcher
           nix profile install nixpkgs#nix-update
-          nix eval .#example-package
-          nvfetcher --commit-changes
-          # pre-eval to avoid parallel download same thing
-          nix eval .#example-package
+
+          nix flake update
+          if git diff --name-only | grep "flake.lock"; then
+             echo "chore: update flake.lock" >> commit_message.txt
+             echo "" >> commit_message.txt
+          fi
+
+          nvfetcher --changelog nvfetcher_log.txt || true
+          if [ -s nvfetcher_log.txt ]; then
+             cat nvfetcher_log.txt >> commit_message.txt
+             echo "" >> commit_message.txt
+             rm nvfetcher_log.txt
+          fi
+
+          chmod +x ./nix-update.sh
           ./nix-update.sh
+
           nix fmt .
 
-      # - name: Reset flake.lock
-      #   run: git checkout flake.lock
-
-      - name: Check for uncommitted files
-        id: check-uncommitted
+      - name: Check for changes
+        id: check
         run: |
           if [ -n "$(git status --porcelain)" ]; then
-            echo "has_uncommitted=true" >> $GITHUB_OUTPUT
-          else
-            echo "has_uncommitted=false" >> $GITHUB_OUTPUT
+            echo "has_changes=true" >> $GITHUB_OUTPUT
           fi
-          echo $GITHUB_OUTPUT
 
       - name: Verify Build (Smoke Test)
-        if: steps.check-uncommitted.outputs.has_uncommitted == 'true'
+        if: steps.check.outputs.has_changes == 'true'
         run: |
           echo "Verifying build before commit..."
-          nix run github:Mic92/nix-fast-build -- -f .#ci --no-nom --skip-cached --eval-workers 1
+          nix run github:Mic92/nix-fast-build -- -f .#ci --no-nom --skip-cached --eval-workers 2
 
       - name: Commit Changes
         uses: EndBug/add-and-commit@v9
-        if: success() && steps.check-uncommitted.outputs.has_uncommitted == 'true'
+        if: ${{ !failure() && steps.check.outputs.has_changes == 'true' }}
         with:
           author_name: github-actions[bot]
           author_email: 41898282+github-actions[bot]@users.noreply.github.com
           committer_name: GitHub Actions
           committer_email: 41898282+github-actions[bot]@users.noreply.github.com
-          message: "Auto update"
-
-      - run: git push
+          message_file: "commit_message.txt"
+          add: "."
 
       - name: Setup upterm session
         uses: lhotari/action-upterm@v1

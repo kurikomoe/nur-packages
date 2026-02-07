@@ -1,6 +1,8 @@
 .direnv/
 .devenv/
 
+commit_message.txt
+
 result
 result-*
 
