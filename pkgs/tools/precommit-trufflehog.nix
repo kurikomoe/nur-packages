@@ -1,36 +1,24 @@
 {
   lib,
-  writeShellScript,
+  writeShellApplication,
   trufflehog,
   git,
   ...
-}: let
-  script = writeShellScript "precommit-trufflehog" ''
-    set -e
-    # ${trufflehog}/bin/trufflehog git "file://$(git rev-parse --show-toplevel)" --since-commit HEAD --results=verified --fail
-    ${trufflehog}/bin/trufflehog git "file://$(git rev-parse --show-toplevel)" \
+}:
+writeShellApplication {
+  name = "precommit-trufflehog";
+
+  runtimeInputs = [git trufflehog];
+
+  text = ''
+    trufflehog git "file://$(git rev-parse --show-toplevel)" \
       --since-commit HEAD \
       --results=unverified,verified,unknown \
       --fail --trust-local-git-config
   '';
 
-  output = script.overrideAttrs (final: prev: {
-    preferLocalBuild = true;
-
-    buildInputs =
-      (prev.buildInputs or [])
-      ++ [
-        trufflehog
-        git
-      ];
-
-    meta = {
-      description = "scripts for pre-commit";
-      homepage = "https://github.com/kurikomoe";
-      license = [];
-      maintainers = [];
-      broken = false;
-    };
-  });
-in
-  output
+  meta = {
+    description = "scripts for pre-commit";
+    homepage = "https://github.com/kurikomoe";
+  };
+}
