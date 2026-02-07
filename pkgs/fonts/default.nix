@@ -37,6 +37,6 @@
 in
   {
     recurseForDerivations = true;
-    inherit allFonts;
+    "kuriko-all-fonts" = allFonts;
   }
   // custom_fonts
