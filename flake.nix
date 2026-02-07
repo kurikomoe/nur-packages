@@ -80,31 +80,35 @@
             })
             x);
 
-        ci = import ./ci.nix {inherit pkgs inputs root;};
-        buildOutputs = convert2attrset ci.buildPkgs;
+        # ci = import ./ci.nix {inherit pkgs inputs root;};
+        # buildOutputs = convert2attrset ci.buildPkgs;
         # buildOutputs = kutils.inspectPkgs _buildOutputs;
         # buildOutputs = builtins.trace
         #   (builtins.map
         #     (x: let el = x.pname or x.name or "<no-name>"; in builtins.deepSeq el el)
         #     (builtins.attrValues _buildOutputs))
         #   _buildOutputs;
-        cacheOutputs = convert2attrset ci.cacheOutputs;
+        # cacheOutputs = convert2attrset ci.cacheOutputs;
+
+        nurPkgs = import ./default.nix {inherit pkgs inputs;};
 
         shellNix = import ./shell.nix {
           inherit pkgs;
           inherit (inputs) pre-commit-hooks;
-          pkgs-kuriko-nur = buildOutputs;
+          pkgs-kuriko-nur = nurPkgs;
         };
       in rec {
         formatter = nixpkgs.legacyPackages.${system}.alejandra;
 
-        ci = cacheOutputs;
+        legacyPackages = nurPkgs;
 
-        legacyPackages = buildOutputs;
+        packages =
+          nixpkgs.lib.filterAttrs
+          (_: v: nixpkgs.lib.isDerivation v)
+          legacyPackages;
 
-        checks = ci;
-
-        packages = nixpkgs.lib.filterAttrs (_: v: nixpkgs.lib.isDerivation v) legacyPackages;
+        ci = nurPkgs;
+        checks = nurPkgs;
 
         inherit (shellNix) devShells;
       };

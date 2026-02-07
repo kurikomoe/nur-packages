@@ -23,8 +23,13 @@
   kcallPackage = kutils.buildCallPackage extraArgs;
 
   fonts = kcallPackage ./pkgs/fonts {};
+  python = kcallPackage ./pkgs/python/default.nix {};
+  trzsz = kcallPackage ./pkgs/trzsz-ssh.nix {};
 in
-  {
+  fonts
+  // python
+  // trzsz
+  // {
     "1password-cli" = kcallPackage ./pkgs/1password-cli.nix {};
     kratos = kcallPackage ./pkgs/kratos.nix {};
     goctl = kcallPackage ./pkgs/goctl.nix {};
@@ -40,14 +45,15 @@ in
     precommit-trufflehog = kcallPackage ./pkgs/tools/precommit-trufflehog.nix {};
     cache-devshell = kcallPackage ./pkgs/tools/cache-devshell.nix {};
 
-    # 别名 (Alias)
+    # 测试用对象
     example-package = kcallPackage ./pkgs/example-package {};
-    trzsz = kcallPackage ./pkgs/trzsz-ssh.nix {};
-    python = kcallPackage ./pkgs/python/default.nix {};
+
+    # 集合
+    pythonSet = python;
+    trzszSet = trzsz;
 
     # 特殊模块保留
     lib = import ./lib {inherit pkgs;};
     modules = import ./modules;
     overlays = import ./overlays;
   }
-  // fonts
