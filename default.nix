@@ -43,7 +43,7 @@ in
 
     # 工具类
     precommit-trufflehog = kcallPackage ./pkgs/tools/precommit-trufflehog.nix {};
-    cache-devshell = kcallPackage ./pkgs/tools/cache-devshell.nix {};
+    devshell-cache-tools = kcallPackage ./pkgs/tools/cache-devshell.nix {};
 
     # 测试用对象
     example-package = kcallPackage ./pkgs/example-package {};
