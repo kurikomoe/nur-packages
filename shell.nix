@@ -31,6 +31,14 @@ in rec {
         entry = builtins.toString precommit-trufflehog;
         stages = ["pre-push" "pre-commit"];
       };
+      devshell = {
+        enable = true;
+        entry = "${devshell-cache-tools}/bin/push-shell";
+        stages = ["pre-push"];
+        verbose = true;
+        pass_filenames = false;
+        always_run = true;
+      };
     };
   };
 
