@@ -19,61 +19,35 @@
   kutils = pkgs.callPackage ./utils/kutils.nix {};
   sources = pkgs.callPackages ./_sources/generated.nix {};
 
-  params = {inherit inputs sources kutils;};
-  kallPackage = kutils.buildCallPackage params;
+  extraArgs = {inherit inputs sources kutils;};
+  kcallPackage = kutils.buildCallPackage extraArgs;
 
-  fonts = kallPackage ./pkgs/fonts {};
-
-  nur-pkgs = lib.attrsets.mergeAttrsList [
-    (kutils.genPkgAttrset [
-      (kallPackage ./pkgs/kratos.nix {})
-      (kallPackage ./pkgs/goctl.nix {})
-      (kallPackage ./pkgs/1password-cli.nix {})
-      (kallPackage ./pkgs/dotnet-script.nix {})
-      (kallPackage ./pkgs/shellfirm.nix {})
-      (kallPackage ./pkgs/microsoft-edge/package.nix {})
-      (kallPackage ./pkgs/pwndbg.nix {})
-      # (kallPackage ./pkgs/lix.nix {})
-      (kallPackage ./pkgs/determinate.nix {}) # determinate-nix
-      (kallPackage ./pkgs/deploy-rs.nix {})
-      # (kallPackage ./pkgs/doxx.nix {})
-      (kallPackage ./pkgs/tools/precommit-trufflehog.nix {})
-      (kallPackage ./pkgs/tools/cache-devshell.nix {})
-      (kallPackage ./pkgs/git-hooks.nix {})
-    ])
-    {
-      # The `lib`, `modules`, and `overlays` names are special
-      lib = import ./lib {inherit pkgs;}; # functions
-      modules = import ./modules; # NixOS modules
-      overlays = import ./overlays; # nixpkgs overlays
-
-      "example-package" = kallPackage ./pkgs/example-package {};
-
-      # "msedit" = pkgs.microsoft-edit.overrideAttrs (final: prev: {
-      #   # meta.broken = true;
-      # });
-
-      # "devenv" = kallPackage ./pkgs/devenv.nix {};
-      "trzsz" = kallPackage ./pkgs/trzsz-ssh.nix {};
-      "python" = kallPackage ./pkgs/python/default.nix {};
-      # "vscode" = kallPackage ./pkgs/vscode/default.nix {};
-      # "jetbrains" = kallPackage ./pkgs/jetbrains.nix {};
-    }
-    fonts
-  ];
-  # checkNameMatch = k: v: let
-  #   name =
-  #     if v ? pname
-  #     then v.pname
-  #     else if v ? name
-  #     then v.name
-  #     else null;
-  #   warn = name != null && name != k;
-  #
-  #   _v =
-  #     if warn
-  #     then lib.warn "包名称不匹配: 预期 '${k}' 但得到 '${name}'" v
-  #     else v;
-  # in _v;
+  fonts = kcallPackage ./pkgs/fonts {};
 in
-  nur-pkgs
+  {
+    "1password-cli" = kcallPackage ./pkgs/1password-cli.nix {};
+    kratos = kcallPackage ./pkgs/kratos.nix {};
+    goctl = kcallPackage ./pkgs/goctl.nix {};
+    dotnet-script = kcallPackage ./pkgs/dotnet-script.nix {};
+    shellfirm = kcallPackage ./pkgs/shellfirm.nix {};
+    microsoft-edge = kcallPackage ./pkgs/microsoft-edge/package.nix {};
+    pwndbg = kcallPackage ./pkgs/pwndbg.nix {};
+    determinate = kcallPackage ./pkgs/determinate.nix {};
+    deploy-rs = kcallPackage ./pkgs/deploy-rs.nix {};
+    git-hooks = kcallPackage ./pkgs/git-hooks.nix {};
+
+    # 工具类
+    precommit-trufflehog = kcallPackage ./pkgs/tools/precommit-trufflehog.nix {};
+    cache-devshell = kcallPackage ./pkgs/tools/cache-devshell.nix {};
+
+    # 别名 (Alias)
+    example-package = kcallPackage ./pkgs/example-package {};
+    trzsz = kcallPackage ./pkgs/trzsz-ssh.nix {};
+    python = kcallPackage ./pkgs/python/default.nix {};
+
+    # 特殊模块保留
+    lib = import ./lib {inherit pkgs;};
+    modules = import ./modules;
+    overlays = import ./overlays;
+  }
+  // fonts

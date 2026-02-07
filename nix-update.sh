@@ -25,6 +25,7 @@ function update_pkg() {
 }
 
 targets=("goctl" "kratos" "trzsz" "trzsz-ssh")
+# targets=("goctl")
 
 # --- 阶段 1: 批量更新 ---
 for target in "${targets[@]}"; do
