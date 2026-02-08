@@ -28,12 +28,12 @@ in rec {
       alejandra.enable = true;
       trufflehog = {
         enable = true;
-        entry = builtins.toString precommit-trufflehog;
+        entry = lib.getExe precommit-trufflehog;
         stages = ["pre-push" "pre-commit"];
       };
       devshell = {
         enable = true;
-        entry = "${devshell-cache-tools}/bin/push-shell";
+        entry = lib.getExe devshell-cache-tools;
         stages = ["pre-push"];
         verbose = true;
         pass_filenames = false;

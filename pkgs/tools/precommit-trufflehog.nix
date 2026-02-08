@@ -20,5 +20,6 @@ writeShellApplication {
   meta = {
     description = "scripts for pre-commit";
     homepage = "https://github.com/kurikomoe";
+    mainProgram = "precommit-trufflehog";
   };
 }

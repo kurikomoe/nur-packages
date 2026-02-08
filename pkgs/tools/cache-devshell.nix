@@ -77,5 +77,6 @@ in
     meta = {
       description = "Tools to discover and push direnv devShells to binary caches";
       homepage = "https://github.com/kurikomoe";
+      mainProgram = "push-shell";
     };
   }
