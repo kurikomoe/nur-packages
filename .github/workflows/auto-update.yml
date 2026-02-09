@@ -116,6 +116,16 @@ jobs:
           echo "Verifying build before commit..."
           nix run github:Mic92/nix-fast-build -- -f .#ci --no-nom --skip-cached --eval-workers 2
 
+      - name: Show commit messages
+        run: cat commit_message.txt
+
+      - name: Read commit message from file
+        id: read_commit_message
+        run: |
+          echo "COMMIT_MSG<<EOF" >> $GITHUB_ENV
+          cat commit_message.txt >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
+
       - name: Commit Changes
         uses: EndBug/add-and-commit@v9
         if: ${{ !failure() && steps.check.outputs.has_changes == 'true' }}
@@ -124,7 +134,7 @@ jobs:
           author_email: 41898282+github-actions[bot]@users.noreply.github.com
           committer_name: GitHub Actions
           committer_email: 41898282+github-actions[bot]@users.noreply.github.com
-          message_file: "commit_message.txt"
+          message: "${{ env.COMMIT_MSG }}"
           add: "."
 
       - name: Setup upterm session
