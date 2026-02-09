@@ -91,6 +91,7 @@
         # cacheOutputs = convert2attrset ci.cacheOutputs;
 
         nurPkgs = import ./default.nix {inherit pkgs inputs;};
+        buildOutputs = import ./ci.nix {inherit pkgs inputs;};
 
         shellNix = import ./shell.nix {
           inherit pkgs;
@@ -107,8 +108,9 @@
           (_: v: nixpkgs.lib.isDerivation v)
           legacyPackages;
 
-        ci = nurPkgs;
         checks = nurPkgs;
+
+        ci = buildOutputs;
 
         inherit (shellNix) devShells;
       };
