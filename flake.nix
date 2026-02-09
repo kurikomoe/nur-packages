@@ -53,13 +53,6 @@
         system,
         ...
       }: let
-        root = rec {
-          base = ./.;
-          res = "${base}/res";
-          pkgs = "${base}/pkgs";
-          utils = "${base}/utils";
-        };
-
         pkgs = import nixpkgs {
           inherit system;
           config.allowUnfree = true;
@@ -71,7 +64,6 @@
             })
           ];
         };
-        # kutils = pkgs.callPackage "${root.utils}/kutils.nix" {};
       in let
         convert2attrset = x:
           builtins.listToAttrs (builtins.map (x: {
@@ -80,35 +72,32 @@
             })
             x);
 
-        # ci = import ./ci.nix {inherit pkgs inputs root;};
-        # buildOutputs = convert2attrset ci.buildPkgs;
+        ci = import ./ci.nix {inherit pkgs inputs;};
+        buildOutputs = convert2attrset ci.buildPkgs;
         # buildOutputs = kutils.inspectPkgs _buildOutputs;
         # buildOutputs = builtins.trace
         #   (builtins.map
         #     (x: let el = x.pname or x.name or "<no-name>"; in builtins.deepSeq el el)
         #     (builtins.attrValues _buildOutputs))
         #   _buildOutputs;
-        # cacheOutputs = convert2attrset ci.cacheOutputs;
-
-        nurPkgs = import ./default.nix {inherit pkgs inputs;};
-        buildOutputs = import ./ci.nix {inherit pkgs inputs;};
+        cacheOutputs = convert2attrset ci.cacheOutputs;
 
         shellNix = import ./shell.nix {
           inherit pkgs;
           inherit (inputs) pre-commit-hooks;
-          pkgs-kuriko-nur = nurPkgs;
+          pkgs-kuriko-nur = ci.buildPkgs;
         };
       in rec {
         formatter = nixpkgs.legacyPackages.${system}.alejandra;
 
-        legacyPackages = nurPkgs;
+        legacyPackages = buildOutputs;
 
         packages =
           nixpkgs.lib.filterAttrs
           (_: v: nixpkgs.lib.isDerivation v)
           legacyPackages;
 
-        checks = nurPkgs;
+        checks = buildOutputs;
 
         ci = buildOutputs;
 

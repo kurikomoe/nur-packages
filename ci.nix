@@ -40,17 +40,17 @@ with builtins; let
 
   concatMap = builtins.concatMap or (f: xs: concatLists (map f xs));
 
-  # flattenPkgs = s: let
-  #   f = p:
-  #     if shouldRecurseForDerivations p
-  #     then flattenPkgs p
-  #     else if isDerivation p
-  #     then [p]
-  #     else [];
-  # in
-  #   concatMap f (attrValues s);
+  flattenPkgs = s: let
+    f = p:
+      if shouldRecurseForDerivations p
+      then flattenPkgs p
+      else if isDerivation p
+      then [p]
+      else [];
+  in
+    concatMap f (attrValues s);
 
-  flattenPkgs = s: s;
+  # flattenPkgs = s: s;
 
   outputsOf = p: map (o: p.${o}) p.outputs;
 
@@ -63,6 +63,7 @@ with builtins; let
         (filter (n: !isReserved n)
           (attrNames nurAttrs))));
 in rec {
+  # _nurPkgs = builtins.trace nurPkgs nurPkgs;
   _nurPkgs = nurPkgs;
 
   buildPkgs = filter isBuildable _nurPkgs;
