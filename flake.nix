@@ -85,7 +85,7 @@
         shellNix = import ./shell.nix {
           inherit pkgs;
           inherit (inputs) pre-commit-hooks;
-          pkgs-kuriko-nur = ci.buildPkgs;
+          pkgs-kuriko-nur = buildOutputs;
         };
       in rec {
         formatter = nixpkgs.legacyPackages.${system}.alejandra;
