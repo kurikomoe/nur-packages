@@ -15,7 +15,8 @@ function update_pkg() {
     echo -e "${GREEN}Checking updates for $pkg...${NC}"
 
     nix build ".#$pkg.src"
-    nix run path:third/nix-update -- -f ./. --flake "$pkg" --print-commit-message > "$tmp_msg"
+    nix run -f '<nixpkgs>' nix-update -- \
+        -f ./. --flake "$pkg" --write-commit-message "$tmp_msg"
 
     if [ -s "$tmp_msg" ] && [ -n "$(git status --porcelain)" ]; then
         echo -e "${GREEN}Update found for $pkg.${NC}"
