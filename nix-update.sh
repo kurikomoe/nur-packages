@@ -21,7 +21,6 @@ function update_pkg() {
     if [ -s "$tmp_msg" ] && [ -n "$(git status --porcelain)" ]; then
         echo -e "${GREEN}Update found for $pkg.${NC}"
         cat "$tmp_msg" >> "$MSG_FILE"
-        echo "" >> "$MSG_FILE"
     fi
     rm -f "$tmp_msg"
 }

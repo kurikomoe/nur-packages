@@ -89,14 +89,12 @@ jobs:
           nix flake update
           if git diff --name-only | grep "flake.lock"; then
              echo "chore: update flake.lock" >> commit_message.txt
-             echo "" >> commit_message.txt
           fi
 
           echo "======== Update nvfetcher ============="
           nvfetcher --changelog nvfetcher_log.txt || true
           if [ -s nvfetcher_log.txt ]; then
              cat nvfetcher_log.txt >> commit_message.txt
-             echo "" >> commit_message.txt
              rm nvfetcher_log.txt
           fi
 
