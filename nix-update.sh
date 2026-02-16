@@ -20,7 +20,7 @@ function update_pkg() {
 
     if [ -s "$tmp_msg" ] && [ -n "$(git status --porcelain)" ]; then
         echo -e "${GREEN}Update found for $pkg.${NC}"
-        cat "$tmp_msg" >> "$MSG_FILE"
+        cat "$tmp_msg" | grep -v '^$' filename | grep -v Diff >> "$MSG_FILE"
     fi
     rm -f "$tmp_msg"
 }
