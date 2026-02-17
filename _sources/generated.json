@@ -206,7 +206,7 @@
     },
     "nix-vscode-extensions": {
         "cargoLock": null,
-        "date": "2026-02-16",
+        "date": "2026-02-17",
         "extract": null,
         "name": "nix-vscode-extensions",
         "passthru": null,
@@ -218,12 +218,12 @@
             "name": null,
             "owner": "nix-community",
             "repo": "nix-vscode-extensions",
-            "rev": "789fa907861bb589b5f02a415704053787a63a03",
-            "sha256": "sha256-mytNukB0eNll+bEU5J5vQpENlhvGufdEDkDeyHCLQA0=",
+            "rev": "b82f1bb23901ac24bf973a4a3cbddf5857245c09",
+            "sha256": "sha256-nm8qOdnVz/4C/WlmYQkvBXWn+TxlTxPPmUYyN3duLu0=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "789fa907861bb589b5f02a415704053787a63a03"
+        "version": "b82f1bb23901ac24bf973a4a3cbddf5857245c09"
     },
     "pwndbg": {
         "cargoLock": null,
@@ -239,12 +239,12 @@
             "name": null,
             "owner": "pwndbg",
             "repo": "pwndbg",
-            "rev": "2025.10.20",
-            "sha256": "sha256-F36ci3+upal+LYW2nK3CrkV86PU05tLIlwJrdADWISY=",
+            "rev": "2026.02.17",
+            "sha256": "sha256-x4GQNxxZorxHtFIP2Iex1xMiXiMo/mDqkmB9UmJS5a8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "2025.10.20"
+        "version": "2026.02.17"
     },
     "python": {
         "cargoLock": null,
