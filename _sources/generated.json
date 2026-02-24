@@ -48,12 +48,12 @@
             "name": null,
             "owner": "DeterminateSystems",
             "repo": "nix-src",
-            "rev": "v3.16.1",
-            "sha256": "sha256-UAvzXk5s7y6RPYB7isRFDe/Y20U9iK8f0NH+sfV7yPU=",
+            "rev": "v3.16.3",
+            "sha256": "sha256-yMI4VhuahG1027I+x/xy0F5FUM7ntwB/hDouCmpwEb8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v3.16.1"
+        "version": "v3.16.3"
     },
     "devenv": {
         "cargoLock": null,
@@ -206,7 +206,7 @@
     },
     "nix-vscode-extensions": {
         "cargoLock": null,
-        "date": "2026-02-23",
+        "date": "2026-02-24",
         "extract": null,
         "name": "nix-vscode-extensions",
         "passthru": null,
@@ -218,12 +218,12 @@
             "name": null,
             "owner": "nix-community",
             "repo": "nix-vscode-extensions",
-            "rev": "bb5de7821ffd2b60d70b920cd6b0debca83cdda4",
-            "sha256": "sha256-Ia+HnBpJKGMoiwZxJb2aUqh8cZnA8sO+34jkUJ2J6Yk=",
+            "rev": "c22e7adea9adec98b3dc79be954ee17d56a232bd",
+            "sha256": "sha256-b5eSke+C8UeR5Er+TZOzHCDStBJ68yyFlqAUc6fNBX0=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "bb5de7821ffd2b60d70b920cd6b0debca83cdda4"
+        "version": "c22e7adea9adec98b3dc79be954ee17d56a232bd"
     },
     "pwndbg": {
         "cargoLock": null,
@@ -248,7 +248,7 @@
     },
     "python": {
         "cargoLock": null,
-        "date": "2026-02-19",
+        "date": "2026-02-24",
         "extract": null,
         "name": "python",
         "passthru": null,
@@ -260,12 +260,12 @@
             "name": null,
             "owner": "cachix",
             "repo": "nixpkgs-python",
-            "rev": "7d828f3a6acb63582c6a642e3b0ce0e2ecb03749",
-            "sha256": "sha256-M5hvivITtG0wnuCRsIXf8d6MYEs5bIF8eTY2TCNRZj4=",
+            "rev": "2571ebc7280fea24ae8827c33f0a644ae515efe2",
+            "sha256": "sha256-yO2VQ/PUCb3A3wx0Q06AhXjhTzGECpLAtCPK2KA96po=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "7d828f3a6acb63582c6a642e3b0ce0e2ecb03749"
+        "version": "2571ebc7280fea24ae8827c33f0a644ae515efe2"
     },
     "shellfirm": {
         "cargoLock": null,
