@@ -78,7 +78,6 @@ jobs:
       - run: |
           nix-channel --add ${{ matrix.nixPath }} nixpkgs
           nix-channel --update
-          ./nix-update.sh
 
       - name: Show nixpkgs version
         run: nix-instantiate --eval -E '(import <nixpkgs> {}).lib.version'
@@ -104,7 +103,9 @@ jobs:
         run: nix flake update --override-input nixpkgs ${{ matrix.nixPath }}
 
       - name: Build nix packages
-        run: nix run github:Mic92/nix-fast-build -- -f .#ci --no-nom --skip-cached --eval-workers 1
+        run: |
+          nix run github:Mic92/nix-fast-build -- -f .#ci --no-nom --skip-cached --eval-workers 1
+          ./nix-update.sh
 
       # - name: Trigger NUR update
       #   # Don't replace <YOUR_REPO_NAME> here!
