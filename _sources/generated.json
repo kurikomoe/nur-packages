@@ -198,11 +198,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-gUyh9AD1ntnZb2iLRwKLxy0PxY0Dist73oT9AC2pFQI=",
+            "sha256": "sha256-KejSggcs88eY5STNG9F7TueZgvBnmxesoNbtUNjSrfk=",
             "type": "url",
-            "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_145.0.3800.70-1_amd64.deb"
+            "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_145.0.3800.82-1_amd64.deb"
         },
-        "version": "145.0.3800.70"
+        "version": "145.0.3800.82"
     },
     "nix-vscode-extensions": {
         "cargoLock": null,
@@ -281,12 +281,12 @@
             "name": null,
             "owner": "kaplanelad",
             "repo": "shellfirm",
-            "rev": "v0.3.1",
-            "sha256": "sha256-J1YsNNsK4TWDYGgh9gNS0tzLumSgWNVOK4DWVTvXDL8=",
+            "rev": "v0.3.3",
+            "sha256": "sha256-ZRtd0UTQ922Wf5U7AbvDeBTk70JcUp3Cs6htjv3k+Zw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.3.1"
+        "version": "v0.3.3"
     },
     "trzsz": {
         "cargoLock": null,
