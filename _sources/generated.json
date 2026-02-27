@@ -206,7 +206,7 @@
     },
     "nix-vscode-extensions": {
         "cargoLock": null,
-        "date": "2026-02-25",
+        "date": "2026-02-27",
         "extract": null,
         "name": "nix-vscode-extensions",
         "passthru": null,
@@ -218,12 +218,12 @@
             "name": null,
             "owner": "nix-community",
             "repo": "nix-vscode-extensions",
-            "rev": "7c957808d97e3a738f420935ec4bc48ae766392d",
-            "sha256": "sha256-yuxNWLYBNfRIvRPhYMr3gAbi6WcoUilNyL5XyhGVPTA=",
+            "rev": "104487aa06fdff228f52fc05f12808ea69c7daab",
+            "sha256": "sha256-ZA8B+3MPfHmpZqzEzyjV8j3qQKq8LQitu5qEjSyZ+dQ=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "7c957808d97e3a738f420935ec4bc48ae766392d"
+        "version": "104487aa06fdff228f52fc05f12808ea69c7daab"
     },
     "pwndbg": {
         "cargoLock": null,
@@ -281,12 +281,12 @@
             "name": null,
             "owner": "kaplanelad",
             "repo": "shellfirm",
-            "rev": "v0.2.11",
-            "sha256": "sha256-jwrH2/EwiB33YoTC+pGO4Jm3tC4dp1DLZLZvhKvUy30=",
+            "rev": "v0.3.1",
+            "sha256": "sha256-J1YsNNsK4TWDYGgh9gNS0tzLumSgWNVOK4DWVTvXDL8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.2.11"
+        "version": "v0.3.1"
     },
     "trzsz": {
         "cargoLock": null,
