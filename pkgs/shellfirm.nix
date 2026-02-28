@@ -29,7 +29,7 @@
       end
       bind \r _shellfirm_check
       # Also bind in vi insert mode if active
-      bind -M insert \r _shellfirm_check 2>/dev/null"
+      bind -M insert \r _shellfirm_check 2>/dev/null
 
       # My custom check
       # function check_command --on-event fish_preexec
@@ -38,6 +38,12 @@
       #     shellfirm pre-command --command "$argv"
       # end
     '';
+    # My custom check
+    # function check_command --on-event fish_preexec
+    #     stty sane
+    #     set -l cmd (commandline)
+    #     shellfirm pre-command --command "$argv"
+    # end
   };
 in
   rustPlatform.buildRustPackage rec {
@@ -61,8 +67,11 @@ in
 
     postInstall = ''
       # Install the fish plugin
-      mkdir -p $out/share/fish/vendor_functions.d
-      cp -r ${shellfirmFishPlugin} $out/share/fish/vendor_functions.d/${shellfirmFishPlugin.name}
+      # mkdir -p $out/share/fish/vendor_functions.d
+      # cp -r ${shellfirmFishPlugin} $out/share/fish/vendor_functions.d/${shellfirmFishPlugin.name}
+
+      mkdir -p $out/share/fish/vendor_conf.d
+      cp -r ${shellfirmFishPlugin} $out/share/fish/vendor_conf.d/shellfirm.fish
 
       # Install the bash plugin
       # mkdir -p $out/share/fish/vendor_functions.d
