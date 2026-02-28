@@ -62,6 +62,17 @@
               # pwndbg = inputs.pwndbg.packages.${system}.default;
               # microsoft-edit = inputs.nixpkgs-microsoft-edit.legacyPackages.${system}.msedit;
             })
+            (final: prev: {
+              pythonPackagesExtensions =
+                prev.pythonPackagesExtensions
+                ++ [
+                  (python-final: python-prev: {
+                    picosvg = python-prev.picosvg.overridePythonAttrs (oldAttrs: {
+                      doCheck = false;
+                    });
+                  })
+                ];
+            })
           ];
         };
       in let
