@@ -117,15 +117,15 @@
   };
   nix-vscode-extensions = {
     pname = "nix-vscode-extensions";
-    version = "56e29b45cf55aa208eb7e67d7bff6f7ec301485c";
+    version = "96e284c58556366535781d9a476121b2b5e839f1";
     src = fetchFromGitHub {
       owner = "nix-community";
       repo = "nix-vscode-extensions";
-      rev = "56e29b45cf55aa208eb7e67d7bff6f7ec301485c";
+      rev = "96e284c58556366535781d9a476121b2b5e839f1";
       fetchSubmodules = false;
-      sha256 = "sha256-3Zf3U1MS865xg2SdhKeJ8LldAgPtNndahZzPr7k1BSU=";
+      sha256 = "sha256-+IjvRKrbSQX9/ikWy1ptPJBqG+RildNl7Cd9yypyzU0=";
     };
-    date = "2026-03-01";
+    date = "2026-03-02";
   };
   pwndbg = {
     pname = "pwndbg";
@@ -152,13 +152,13 @@
   };
   shellfirm = {
     pname = "shellfirm";
-    version = "v0.3.3";
+    version = "v0.3.4";
     src = fetchFromGitHub {
       owner = "kaplanelad";
       repo = "shellfirm";
-      rev = "v0.3.3";
+      rev = "v0.3.4";
       fetchSubmodules = false;
-      sha256 = "sha256-ZRtd0UTQ922Wf5U7AbvDeBTk70JcUp3Cs6htjv3k+Zw=";
+      sha256 = "sha256-UnqcMvtGMj5BBjaPwdUbj9j8S1P7JZ2aodfKDL21O/U=";
     };
   };
   trzsz = {
