@@ -69,12 +69,12 @@
             "name": null,
             "owner": "cachix",
             "repo": "devenv",
-            "rev": "v2.0.2",
-            "sha256": "sha256-38crLoAfEOdnEDDZD2NyAEDVlBSFn+MlZyLwztAsC8Q=",
+            "rev": "v2.0.3",
+            "sha256": "sha256-1DpF5F7zgOZ7QrRjz23315pUoF532dHnsU/V4UQithk=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2.0.2"
+        "version": "v2.0.3"
     },
     "dotnet-script": {
         "cargoLock": null,
@@ -206,7 +206,7 @@
     },
     "nix-vscode-extensions": {
         "cargoLock": null,
-        "date": "2026-03-05",
+        "date": "2026-03-06",
         "extract": null,
         "name": "nix-vscode-extensions",
         "passthru": null,
@@ -218,12 +218,12 @@
             "name": null,
             "owner": "nix-community",
             "repo": "nix-vscode-extensions",
-            "rev": "5521856f37c3d2654fe9b20b03331a6594f855c6",
-            "sha256": "sha256-1VZ1hg1YHW+WyBXIOfrQ9Oq+qLL0w93lkdKAiRRHEuI=",
+            "rev": "3c9c62e3505bcb2331f2e36d19dfea4a74d4d962",
+            "sha256": "sha256-YVPSIbuS7BdahPNgUEK2zt3qoQvMKpvxLmDCOXRfnGY=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "5521856f37c3d2654fe9b20b03331a6594f855c6"
+        "version": "3c9c62e3505bcb2331f2e36d19dfea4a74d4d962"
     },
     "pwndbg": {
         "cargoLock": null,
@@ -281,12 +281,12 @@
             "name": null,
             "owner": "kaplanelad",
             "repo": "shellfirm",
-            "rev": "v0.3.4",
-            "sha256": "sha256-UnqcMvtGMj5BBjaPwdUbj9j8S1P7JZ2aodfKDL21O/U=",
+            "rev": "v0.3.6",
+            "sha256": "sha256-WRKU/ezZwfw6/0pjk700O1b92KpsxVNgONgMgvtqKJA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.3.4"
+        "version": "v0.3.6"
     },
     "trzsz": {
         "cargoLock": null,
