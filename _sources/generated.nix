@@ -109,23 +109,23 @@
   };
   microsoft-edge = {
     pname = "microsoft-edge";
-    version = "145.0.3800.82";
+    version = "145.0.3800.97";
     src = fetchurl {
-      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_145.0.3800.82-1_amd64.deb";
-      sha256 = "sha256-KejSggcs88eY5STNG9F7TueZgvBnmxesoNbtUNjSrfk=";
+      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_145.0.3800.97-1_amd64.deb";
+      sha256 = "sha256-Zih/MOiE1AptZBOtR5V7IRd50JVokzzXQb1V6pUK0VI=";
     };
   };
   nix-vscode-extensions = {
     pname = "nix-vscode-extensions";
-    version = "3c9c62e3505bcb2331f2e36d19dfea4a74d4d962";
+    version = "22f084d4c280dfc8a9d764f7b85af38e5d69c3dc";
     src = fetchFromGitHub {
       owner = "nix-community";
       repo = "nix-vscode-extensions";
-      rev = "3c9c62e3505bcb2331f2e36d19dfea4a74d4d962";
+      rev = "22f084d4c280dfc8a9d764f7b85af38e5d69c3dc";
       fetchSubmodules = false;
-      sha256 = "sha256-YVPSIbuS7BdahPNgUEK2zt3qoQvMKpvxLmDCOXRfnGY=";
+      sha256 = "sha256-Ga19zlfMpakCY4GMwBSOljNLOF0nEYrYBXv0hP/d4rw=";
     };
-    date = "2026-03-06";
+    date = "2026-03-07";
   };
   pwndbg = {
     pname = "pwndbg";
