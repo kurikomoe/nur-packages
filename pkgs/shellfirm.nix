@@ -8,48 +8,10 @@
   ...
 }: let
   res = sources.shellfirm;
-
-  shellfirmFishPlugin = writeTextFile {
-    name = "shellfirm.plugin.fish";
-    text = ''
-      # shellfirm hook for fish — intercepts Enter via key binding
-      function _shellfirm_check
-          set -l cmd (commandline)
-          if test -z "$cmd"; or string match -q '*shellfirm pre-command*' -- $cmd
-              commandline -f execute
-              return
-          end
-          stty sane
-          shellfirm pre-command -c "$cmd"
-          if test $status -eq 0
-              commandline -f execute
-          else
-              commandline -f repaint
-          end
-      end
-      bind \r _shellfirm_check
-      # Also bind in vi insert mode if active
-      bind -M insert \r _shellfirm_check 2>/dev/null
-
-      # My custom check
-      # function check_command --on-event fish_preexec
-      #     stty sane
-      #     set -l cmd (commandline)
-      #     shellfirm pre-command --command "$argv"
-      # end
-    '';
-    # My custom check
-    # function check_command --on-event fish_preexec
-    #     stty sane
-    #     set -l cmd (commandline)
-    #     shellfirm pre-command --command "$argv"
-    # end
-  };
 in
   rustPlatform.buildRustPackage rec {
     inherit (res) pname version src;
 
-    # useFetchCargoVendor = true; # default true in 25.05
     nativeBuildInputs = with pkgs; [
       pkg-config
     ];
@@ -66,20 +28,23 @@ in
     cargoLock.lockFile = "${res.src}/Cargo.lock";
 
     postInstall = ''
-      # Install the fish plugin
-      # mkdir -p $out/share/fish/vendor_functions.d
-      # cp -r ${shellfirmFishPlugin} $out/share/fish/vendor_functions.d/${shellfirmFishPlugin.name}
-
+      # === fish plugin ===
       mkdir -p $out/share/fish/vendor_conf.d
-      cp -r ${shellfirmFishPlugin} $out/share/fish/vendor_conf.d/shellfirm.fish
+      cat > $out/share/fish/vendor_conf.d/shellfirm.fish << EOF
+        $out/bin/shellfirm init fish | source
+      EOF
 
-      # Install the bash plugin
-      # mkdir -p $out/share/fish/vendor_functions.d
-      # cp -r ./shell-plugins/shellfirm.plugin.fish $out/share/fish/vendor_functions.d/
+      # === bash plugin ===
+      mkdir -p $out/share/bash-completion/completions
+      cat > $out/share/bash-completion/completions/shellfirm.bash <<EOF
+        eval "\$($out/bin/shellfirm init bash)"
+      EOF
 
-      # Install the zsh plugin
-      # mkdir -p $out/share/zsh/site-functions
-      # cp -r ./shell-plugins/shellfirm.plugin.zsh $out/share/zsh/site-functions/
+      # === zsh plugin ===
+      mkdir -p $out/share/zsh/site-functions
+      cat > $out/share/zsh/site-functions/_shellfirm_init <<EOF
+        eval "\$($out/bin/shellfirm init zsh)"
+      EOF
     '';
 
     meta = {
