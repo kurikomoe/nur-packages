@@ -69,12 +69,12 @@
             "name": null,
             "owner": "cachix",
             "repo": "devenv",
-            "rev": "v2.0.4",
-            "sha256": "sha256-wPH6q2PSP64doUXHqdEAmY68X4IAeC2UjSIyqzoUYwE=",
+            "rev": "v2.0.5",
+            "sha256": "sha256-8tO3NLG9Lc/NUee0Owcf/z63TNTrUcx7eVRxSb294rk=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2.0.4"
+        "version": "v2.0.5"
     },
     "dotnet-script": {
         "cargoLock": null,
@@ -206,7 +206,7 @@
     },
     "nix-vscode-extensions": {
         "cargoLock": null,
-        "date": "2026-03-16",
+        "date": "2026-03-17",
         "extract": null,
         "name": "nix-vscode-extensions",
         "passthru": null,
@@ -218,12 +218,12 @@
             "name": null,
             "owner": "nix-community",
             "repo": "nix-vscode-extensions",
-            "rev": "03d7cf5a70217d449b8b6a9fbf40c28b03111695",
-            "sha256": "sha256-AL+7e6SXmXsKQfuBawbv6rsOO1tIbD415JHcAK4DCwk=",
+            "rev": "6be632a6181baaec1c5ed52a6d00eee18f076d6c",
+            "sha256": "sha256-hFmQxA4JDWDGdr3GwcwYcIZgNw+yPVhn2ucutTfaEGQ=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "03d7cf5a70217d449b8b6a9fbf40c28b03111695"
+        "version": "6be632a6181baaec1c5ed52a6d00eee18f076d6c"
     },
     "pwndbg": {
         "cargoLock": null,
@@ -248,7 +248,7 @@
     },
     "python": {
         "cargoLock": null,
-        "date": "2026-03-03",
+        "date": "2026-03-17",
         "extract": null,
         "name": "python",
         "passthru": null,
@@ -260,12 +260,12 @@
             "name": null,
             "owner": "cachix",
             "repo": "nixpkgs-python",
-            "rev": "188ffc273f679a2d95a1c8aba0be083545417bdd",
-            "sha256": "sha256-1cWCYOnOz3K7FchI9IbIbu1qhi68mSNZSuYlE5jEv1I=",
+            "rev": "f31232bde73682c38a6f60dd52f8ae861ef9594a",
+            "sha256": "sha256-IXbPHwycQyYcccnNJShLGeUxCPPIgigpE5EzPuNDqoo=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "188ffc273f679a2d95a1c8aba0be083545417bdd"
+        "version": "f31232bde73682c38a6f60dd52f8ae861ef9594a"
     },
     "shellfirm": {
         "cargoLock": null,
