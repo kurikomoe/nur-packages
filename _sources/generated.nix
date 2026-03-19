@@ -27,13 +27,13 @@
   };
   determinate = {
     pname = "determinate";
-    version = "v3.17.0";
+    version = "v3.17.1";
     src = fetchFromGitHub {
       owner = "DeterminateSystems";
       repo = "nix-src";
-      rev = "v3.17.0";
+      rev = "v3.17.1";
       fetchSubmodules = false;
-      sha256 = "sha256-RtKKd4aefzHEzV9sKa8bQdZIY67GJMV0nRS1QZ2E94g=";
+      sha256 = "sha256-1jyfMm6q7LY0mZQgN3TeHryTkT6XhtloOwuY0rNu1HQ=";
     };
   };
   devenv = {
@@ -117,15 +117,15 @@
   };
   nix-vscode-extensions = {
     pname = "nix-vscode-extensions";
-    version = "af36c53062b124e097e2a545c68eacfde3fc715b";
+    version = "eda58049f4ec57d2bd4e639cafeae6220a24f8b9";
     src = fetchFromGitHub {
       owner = "nix-community";
       repo = "nix-vscode-extensions";
-      rev = "af36c53062b124e097e2a545c68eacfde3fc715b";
+      rev = "eda58049f4ec57d2bd4e639cafeae6220a24f8b9";
       fetchSubmodules = false;
-      sha256 = "sha256-yA91ySZRw9x7aLSy79LCWXt3l05lwNIfuNnGqz7Jy5A=";
+      sha256 = "sha256-8fpGtfDHrBADYZ8F7YKAv5VzwbBPK03VgncXj3hdTFc=";
     };
-    date = "2026-03-18";
+    date = "2026-03-19";
   };
   pwndbg = {
     pname = "pwndbg";
