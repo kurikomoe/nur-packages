@@ -56,9 +56,9 @@ src.from_pattern = "^(\\d\\d\\d\\d\\.\\d\\d\\.\\d\\d)$"
 src.to_pattern = "\\1"
 fetch.github = "pwndbg/pwndbg"
 
-[nix-vscode-extensions]
-src.git = "https://github.com/nix-community/nix-vscode-extensions.git"
-fetch.github = "nix-community/nix-vscode-extensions"
+# [nix-vscode-extensions]
+# src.git = "https://github.com/nix-community/nix-vscode-extensions.git"
+# fetch.github = "nix-community/nix-vscode-extensions"
 
 # [lix]
 # src.github_tag = "lix-project/lix"
