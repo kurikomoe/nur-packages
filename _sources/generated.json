@@ -69,12 +69,12 @@
             "name": null,
             "owner": "cachix",
             "repo": "devenv",
-            "rev": "v2.0.5",
-            "sha256": "sha256-8tO3NLG9Lc/NUee0Owcf/z63TNTrUcx7eVRxSb294rk=",
+            "rev": "v2.0.6",
+            "sha256": "sha256-i1G6n/7Z5fO9RhplzXQSTiLyh1Cs0GhoCoEStFLARtA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2.0.5"
+        "version": "v2.0.6"
     },
     "dotnet-script": {
         "cargoLock": null,
