@@ -129,7 +129,7 @@ jobs:
           echo "EOF" >> $GITHUB_ENV
 
       - name: Commit Changes
-        uses: EndBug/add-and-commit@v9
+        uses: EndBug/add-and-commit@v10
         if: ${{ !failure() && steps.check.outputs.has_changes == 'true' }}
         with:
           author_name: github-actions[bot]
