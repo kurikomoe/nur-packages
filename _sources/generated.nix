@@ -140,13 +140,13 @@
   };
   shellfirm = {
     pname = "shellfirm";
-    version = "v0.3.7";
+    version = "v0.3.8";
     src = fetchFromGitHub {
       owner = "kaplanelad";
       repo = "shellfirm";
-      rev = "v0.3.7";
+      rev = "v0.3.8";
       fetchSubmodules = false;
-      sha256 = "sha256-1OKVlfG8AJGyCu0YrU4pTAME1xQNdoPrvoz3yMMC7Xg=";
+      sha256 = "sha256-iM4kYesvhrhmIe9BhCrV6e/SRefKVudIwOV5a3E234Y=";
     };
   };
   trzsz = {

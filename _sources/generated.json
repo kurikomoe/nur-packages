@@ -260,12 +260,12 @@
             "name": null,
             "owner": "kaplanelad",
             "repo": "shellfirm",
-            "rev": "v0.3.7",
-            "sha256": "sha256-1OKVlfG8AJGyCu0YrU4pTAME1xQNdoPrvoz3yMMC7Xg=",
+            "rev": "v0.3.8",
+            "sha256": "sha256-iM4kYesvhrhmIe9BhCrV6e/SRefKVudIwOV5a3E234Y=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.3.7"
+        "version": "v0.3.8"
     },
     "trzsz": {
         "cargoLock": null,
