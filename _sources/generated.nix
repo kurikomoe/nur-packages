@@ -27,13 +27,13 @@
   };
   determinate = {
     pname = "determinate";
-    version = "v3.17.1";
+    version = "v3.17.2";
     src = fetchFromGitHub {
       owner = "DeterminateSystems";
       repo = "nix-src";
-      rev = "v3.17.1";
+      rev = "v3.17.2";
       fetchSubmodules = false;
-      sha256 = "sha256-1jyfMm6q7LY0mZQgN3TeHryTkT6XhtloOwuY0rNu1HQ=";
+      sha256 = "sha256-5pg3HyPEUj/AXXwOQAwyieyDx0c1/1rf7+EsOCa1rJM=";
     };
   };
   devenv = {
@@ -109,10 +109,10 @@
   };
   microsoft-edge = {
     pname = "microsoft-edge";
-    version = "146.0.3856.72";
+    version = "146.0.3856.84";
     src = fetchurl {
-      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_146.0.3856.72-1_amd64.deb";
-      sha256 = "sha256-oQ14rZbuhuGlXCu4EFUb6ei59Tgt5mXwQYz9aVW7GBc=";
+      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_146.0.3856.84-1_amd64.deb";
+      sha256 = "sha256-fiUkxQagvoKHbGy1preQecYnlGyH0fvbz7AbFLuqbrI=";
     };
   };
   pwndbg = {
