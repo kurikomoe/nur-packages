@@ -7,11 +7,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-v5U6uvpKUdeUFZHX+caIWpO/AjkRGJhAcMvdIAAPcic=",
+            "sha256": "sha256-ge+4thdTnymQYFQ2G9qwh9i3zsY13W1M5za1CXybUqI=",
             "type": "tarball",
-            "url": "https://cache.agilebits.com/dist/1P/op2/pkg/v2.32.1/op_linux_amd64_v2.32.1.zip"
+            "url": "https://cache.agilebits.com/dist/1P/op2/pkg/v2.33.1/op_linux_amd64_v2.33.1.zip"
         },
-        "version": "2.32.1"
+        "version": "2.33.1"
     },
     "deploy-rs": {
         "cargoLock": null,
@@ -161,12 +161,12 @@
             "name": null,
             "owner": "zeromicro",
             "repo": "go-zero",
-            "rev": "v1.10.0",
-            "sha256": "sha256-BTO5ThZduI2zNlwUPWvMb6oPgnTzBRC7w1uXhDXKp/w=",
+            "rev": "v1.10.1",
+            "sha256": "sha256-oGIhyrz8oodtmjJF48i3DD0N1kLMVXNfMx1mmaBrjGE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.10.0"
+        "version": "v1.10.1"
     },
     "kratos": {
         "cargoLock": null,
@@ -260,12 +260,12 @@
             "name": null,
             "owner": "kaplanelad",
             "repo": "shellfirm",
-            "rev": "v0.3.8",
-            "sha256": "sha256-iM4kYesvhrhmIe9BhCrV6e/SRefKVudIwOV5a3E234Y=",
+            "rev": "v0.3.9",
+            "sha256": "sha256-jXzB0SHmCvI+TyYzYeNCCIXr7xFR7q27ftET0Yzcfwg=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.3.8"
+        "version": "v0.3.9"
     },
     "trzsz": {
         "cargoLock": null,

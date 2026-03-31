@@ -7,10 +7,10 @@
 }: {
   "1password-cli-linux" = {
     pname = "1password-cli-linux";
-    version = "2.32.1";
+    version = "2.33.1";
     src = fetchTarball {
-      url = "https://cache.agilebits.com/dist/1P/op2/pkg/v2.32.1/op_linux_amd64_v2.32.1.zip";
-      sha256 = "sha256-v5U6uvpKUdeUFZHX+caIWpO/AjkRGJhAcMvdIAAPcic=";
+      url = "https://cache.agilebits.com/dist/1P/op2/pkg/v2.33.1/op_linux_amd64_v2.33.1.zip";
+      sha256 = "sha256-ge+4thdTnymQYFQ2G9qwh9i3zsY13W1M5za1CXybUqI=";
     };
   };
   deploy-rs = {
@@ -87,13 +87,13 @@
   };
   goctl = {
     pname = "goctl";
-    version = "v1.10.0";
+    version = "v1.10.1";
     src = fetchFromGitHub {
       owner = "zeromicro";
       repo = "go-zero";
-      rev = "v1.10.0";
+      rev = "v1.10.1";
       fetchSubmodules = false;
-      sha256 = "sha256-BTO5ThZduI2zNlwUPWvMb6oPgnTzBRC7w1uXhDXKp/w=";
+      sha256 = "sha256-oGIhyrz8oodtmjJF48i3DD0N1kLMVXNfMx1mmaBrjGE=";
     };
   };
   kratos = {
@@ -140,13 +140,13 @@
   };
   shellfirm = {
     pname = "shellfirm";
-    version = "v0.3.8";
+    version = "v0.3.9";
     src = fetchFromGitHub {
       owner = "kaplanelad";
       repo = "shellfirm";
-      rev = "v0.3.8";
+      rev = "v0.3.9";
       fetchSubmodules = false;
-      sha256 = "sha256-iM4kYesvhrhmIe9BhCrV6e/SRefKVudIwOV5a3E234Y=";
+      sha256 = "sha256-jXzB0SHmCvI+TyYzYeNCCIXr7xFR7q27ftET0Yzcfwg=";
     };
   };
   trzsz = {
