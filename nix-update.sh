@@ -14,13 +14,19 @@ function update_pkg() {
 
     echo -e "${GREEN}Checking updates for $pkg...${NC}"
 
+    # 尝试构建源码，确保网络和 hash 没问题
     nix build ".#$pkg.src"
+
+    # 运行 nix-update
     nix run -f '<nixpkgs>' nix-update -- \
         -f ./. --flake "$pkg" --write-commit-message "$tmp_msg"
 
+    # 检查是否有更新消息且 git 仓库有变动
     if [ -s "$tmp_msg" ] && [ -n "$(git status --porcelain)" ]; then
         echo -e "${GREEN}Update found for $pkg.${NC}"
-        cat "$tmp_msg" | grep -v '^$' filename | grep -v Diff >> "$MSG_FILE"
+        # 修正：直接从 $tmp_msg 读取，过滤空行和包含 Diff 的行
+        grep -v '^$' "$tmp_msg" | grep -v "Diff" >> "$MSG_FILE"
+        echo "" >> "$MSG_FILE" # 建议加个换行，防止多个 pkg 的消息粘在一起
     fi
     rm -f "$tmp_msg"
 }
