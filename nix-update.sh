@@ -26,7 +26,6 @@ function update_pkg() {
         echo -e "${GREEN}Update found for $pkg.${NC}"
         # 修正：直接从 $tmp_msg 读取，过滤空行和包含 Diff 的行
         grep -v '^$' "$tmp_msg" | grep -v "Diff" >> "$MSG_FILE"
-        echo "" >> "$MSG_FILE" # 建议加个换行，防止多个 pkg 的消息粘在一起
     fi
     rm -f "$tmp_msg"
 }
