@@ -27,13 +27,13 @@
   };
   determinate = {
     pname = "determinate";
-    version = "v3.17.2";
+    version = "v3.17.3";
     src = fetchFromGitHub {
       owner = "DeterminateSystems";
       repo = "nix-src";
-      rev = "v3.17.2";
+      rev = "v3.17.3";
       fetchSubmodules = false;
-      sha256 = "sha256-5pg3HyPEUj/AXXwOQAwyieyDx0c1/1rf7+EsOCa1rJM=";
+      sha256 = "sha256-/shs/3GA4R3rxhhqpPbEMnDZKbCvf3VpwnHB75nkTcI=";
     };
   };
   devenv = {
