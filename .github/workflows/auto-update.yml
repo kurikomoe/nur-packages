@@ -107,10 +107,23 @@ jobs:
       - name: Check for changes
         id: check
         run: |
-          git status --porcelain
-          if [ -n "$(git status --porcelain)" ]; then
-            echo "has_changes=true" >> $GITHUB_OUTPUT
+          CHANGES=$(git status --porcelain)
+          if [ -z "$CHANGES" ]; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            COUNT=$(echo "$CHANGES" | wc -l)
+            FILES=$(echo "$CHANGES" | awk '{print $2}')
+            if [ "$COUNT" -eq 1 ] && [ "$FILES" = "flake.lock" ]; then
+              echo "Only flake.lock changed. Ignoring."
+              echo "has_changes=false" >> $GITHUB_OUTPUT
+            else
+              echo "has_changes=true" >> $GITHUB_OUTPUT
+            fi
           fi
+          # git status --porcelain
+          # if [ -n "$(git status --porcelain)" ]; then
+          #   echo "has_changes=true" >> $GITHUB_OUTPUT
+          # fi
 
       - name: Verify Build (Smoke Test)
         if: steps.check.outputs.has_changes == 'true'
