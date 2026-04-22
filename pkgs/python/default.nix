@@ -2,9 +2,10 @@
   lib,
   sources,
   inputs,
-  system,
+  stdenv,
   ...
 }: let
+  system = stdenv.hostPlatform.system;
   res = sources.python;
 
   nixpkgs-python = import inputs.flake-compat {

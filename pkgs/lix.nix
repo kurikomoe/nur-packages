@@ -2,9 +2,10 @@
   lib,
   inputs,
   sources,
-  system,
+  stdenv,
   ...
 }: let
+  system = stdenv.hostPlatform.system;
   lix-res = sources.lix;
 
   flake = import inputs.flake-compat {

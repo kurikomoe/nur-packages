@@ -2,9 +2,10 @@
   lib,
   inputs,
   sources,
-  system,
+  stdenv,
   ...
 }: let
+  system = stdenv.hostPlatform.system;
   determinate-res = sources.determinate;
 
   flake = import inputs.flake-compat {
