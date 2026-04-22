@@ -204,6 +204,36 @@
         },
         "version": "147.0.3912.72"
     },
+    "opencode-linux-arm64": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "opencode-linux-arm64",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-PKUJBE4GuOfazwjec1rd7kAHiPgHKcMz+/RYHQ93tNM=",
+            "type": "url",
+            "url": "https://github.com/anomalyco/opencode/releases/download/v1.14.20/opencode-linux-arm64.tar.gz"
+        },
+        "version": "1.14.20"
+    },
+    "opencode-linux-x64": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "opencode-linux-x64",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-FwcTMCI4LqjIzFvEerHbUvoga9m6+NOtTYYrSJ27RI8=",
+            "type": "url",
+            "url": "https://github.com/anomalyco/opencode/releases/download/v1.14.20/opencode-linux-x64.tar.gz"
+        },
+        "version": "1.14.20"
+    },
     "pwndbg": {
         "cargoLock": null,
         "date": null,

@@ -33,6 +33,7 @@ in
     "1password-cli" = kcallPackage ./pkgs/1password-cli.nix {};
     kratos = kcallPackage ./pkgs/kratos.nix {};
     goctl = kcallPackage ./pkgs/goctl.nix {};
+    opencode = kcallPackage ./pkgs/opencode.nix {};
     dotnet-script = kcallPackage ./pkgs/dotnet-script.nix {};
     shellfirm = kcallPackage ./pkgs/shellfirm.nix {};
     microsoft-edge = kcallPackage ./pkgs/microsoft-edge/package.nix {};

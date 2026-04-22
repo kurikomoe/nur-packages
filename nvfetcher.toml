@@ -83,6 +83,20 @@ src.github_tag = "tonsky/FiraCode"
 src.include_regex = "\\d+\\.\\d+"
 fetch.url = "https://github.com/tonsky/FiraCode/releases/download/$ver/Fira_Code_v$ver.zip"
 
+[opencode-linux-x64]
+src.github_tag = "anomalyco/opencode"
+src.include_regex = "v\\d+\\.\\d+\\.\\d+"
+src.from_pattern = "^v(([0-9\\.]+))$"
+src.to_pattern = "\\1"
+fetch.url = "https://github.com/anomalyco/opencode/releases/download/v$ver/opencode-linux-x64.tar.gz"
+
+[opencode-linux-arm64]
+src.github_tag = "anomalyco/opencode"
+src.include_regex = "v\\d+\\.\\d+\\.\\d+"
+src.from_pattern = "^v(([0-9\\.]+))$"
+src.to_pattern = "\\1"
+fetch.url = "https://github.com/anomalyco/opencode/releases/download/v$ver/opencode-linux-arm64.tar.gz"
+
 [deploy-rs]
 src.git = "https://github.com/serokell/deploy-rs.git"
 fetch.github = "serokell/deploy-rs"

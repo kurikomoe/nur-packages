@@ -115,6 +115,22 @@
       sha256 = "sha256-3lGlt379zbF/Cl+ltBK4QPM94Nq05dfrByzyOPWSZfw=";
     };
   };
+  opencode-linux-arm64 = {
+    pname = "opencode-linux-arm64";
+    version = "1.14.20";
+    src = fetchurl {
+      url = "https://github.com/anomalyco/opencode/releases/download/v1.14.20/opencode-linux-arm64.tar.gz";
+      sha256 = "sha256-PKUJBE4GuOfazwjec1rd7kAHiPgHKcMz+/RYHQ93tNM=";
+    };
+  };
+  opencode-linux-x64 = {
+    pname = "opencode-linux-x64";
+    version = "1.14.20";
+    src = fetchurl {
+      url = "https://github.com/anomalyco/opencode/releases/download/v1.14.20/opencode-linux-x64.tar.gz";
+      sha256 = "sha256-FwcTMCI4LqjIzFvEerHbUvoga9m6+NOtTYYrSJ27RI8=";
+    };
+  };
   pwndbg = {
     pname = "pwndbg";
     version = "2026.02.18";
