@@ -27,13 +27,13 @@
   };
   determinate = {
     pname = "determinate";
-    version = "v3.18.0";
+    version = "v3.18.1";
     src = fetchFromGitHub {
       owner = "DeterminateSystems";
       repo = "nix-src";
-      rev = "v3.18.0";
+      rev = "v3.18.1";
       fetchSubmodules = false;
-      sha256 = "sha256-VsZF/2XmjVd/pRHy+7gxLM6MNmzIKbSuR/b4s/adpVU=";
+      sha256 = "sha256-6dtDAH38Jn658Vty5tULesSWvYj79cK+rtJtJgCUbW0=";
     };
   };
   devenv = {
@@ -117,18 +117,18 @@
   };
   opencode-linux-arm64 = {
     pname = "opencode-linux-arm64";
-    version = "1.14.21";
+    version = "1.14.22";
     src = fetchurl {
-      url = "https://github.com/anomalyco/opencode/releases/download/v1.14.21/opencode-linux-arm64.tar.gz";
-      sha256 = "sha256-exYk8q6OMJ1Xhmhy3oTMBxKG3lngASHwGvMVpGKLoxo=";
+      url = "https://github.com/anomalyco/opencode/releases/download/v1.14.22/opencode-linux-arm64.tar.gz";
+      sha256 = "sha256-uLs89JU0i9QSM+0587nQm+dWCSRwW5wOokW77x1Fl8I=";
     };
   };
   opencode-linux-x64 = {
     pname = "opencode-linux-x64";
-    version = "1.14.21";
+    version = "1.14.22";
     src = fetchurl {
-      url = "https://github.com/anomalyco/opencode/releases/download/v1.14.21/opencode-linux-x64.tar.gz";
-      sha256 = "sha256-yEBCYHd9zdhtXGnUA7V3TRqsxrOXV5k1ZwAypdRl8VQ=";
+      url = "https://github.com/anomalyco/opencode/releases/download/v1.14.22/opencode-linux-x64.tar.gz";
+      sha256 = "sha256-aUbNIJicdzajIbm603Ew3MMidGexeP054gpKAoTugWU=";
     };
   };
   pwndbg = {
