@@ -97,6 +97,13 @@ src.from_pattern = "^v(([0-9\\.]+))$"
 src.to_pattern = "\\1"
 fetch.url = "https://github.com/anomalyco/opencode/releases/download/v$ver/opencode-linux-arm64.tar.gz"
 
+[cc-switch-cli]
+src.github_tag = "SaladDay/cc-switch-cli"
+src.include_regex = "v\\d+\\.\\d+\\.\\d+"
+src.from_pattern = "^v(([0-9\\.]+))$"
+src.to_pattern = "\\1"
+fetch.url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v$ver/cc-switch-cli-v$ver-linux-x64-musl.tar.gz"
+
 [deploy-rs]
 src.git = "https://github.com/serokell/deploy-rs.git"
 fetch.github = "serokell/deploy-rs"

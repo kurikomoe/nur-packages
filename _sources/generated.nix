@@ -4,13 +4,22 @@
   fetchurl,
   fetchFromGitHub,
   dockerTools,
-}: {
+}:
+{
   "1password-cli-linux" = {
     pname = "1password-cli-linux";
     version = "2.34.0";
     src = fetchTarball {
       url = "https://cache.agilebits.com/dist/1P/op2/pkg/v2.34.0/op_linux_amd64_v2.34.0.zip";
       sha256 = "sha256-sbydXPoT0Vo3r2gyZBdl4OMtOejbhvra5JM4wB6Ex5s=";
+    };
+  };
+  cc-switch-cli = {
+    pname = "cc-switch-cli";
+    version = "5.3.4";
+    src = fetchurl {
+      url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.3.4/cc-switch-cli-v5.3.4-linux-x64-musl.tar.gz";
+      sha256 = "sha256-v/A2c8UfOcaUfBTouHIqsHh0zpGJfIx9+WCx8DN1HKA=";
     };
   };
   deploy-rs = {
@@ -117,18 +126,18 @@
   };
   opencode-linux-arm64 = {
     pname = "opencode-linux-arm64";
-    version = "1.14.22";
+    version = "1.14.23";
     src = fetchurl {
-      url = "https://github.com/anomalyco/opencode/releases/download/v1.14.22/opencode-linux-arm64.tar.gz";
-      sha256 = "sha256-uLs89JU0i9QSM+0587nQm+dWCSRwW5wOokW77x1Fl8I=";
+      url = "https://github.com/anomalyco/opencode/releases/download/v1.14.23/opencode-linux-arm64.tar.gz";
+      sha256 = "sha256-7xDpTaru0d2uvrLoyIr1BGeiA3Bz9/LFNbQnwl/5D84=";
     };
   };
   opencode-linux-x64 = {
     pname = "opencode-linux-x64";
-    version = "1.14.22";
+    version = "1.14.23";
     src = fetchurl {
-      url = "https://github.com/anomalyco/opencode/releases/download/v1.14.22/opencode-linux-x64.tar.gz";
-      sha256 = "sha256-aUbNIJicdzajIbm603Ew3MMidGexeP054gpKAoTugWU=";
+      url = "https://github.com/anomalyco/opencode/releases/download/v1.14.23/opencode-linux-x64.tar.gz";
+      sha256 = "sha256-dlgb6qeFtukUmZUqoOsRhaF7FcnGa5Qxu+Rh+KipiTY=";
     };
   };
   pwndbg = {

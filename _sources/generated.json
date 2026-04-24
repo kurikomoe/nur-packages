@@ -13,6 +13,21 @@
         },
         "version": "2.34.0"
     },
+    "cc-switch-cli": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "cc-switch-cli",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-v/A2c8UfOcaUfBTouHIqsHh0zpGJfIx9+WCx8DN1HKA=",
+            "type": "url",
+            "url": "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.3.4/cc-switch-cli-v5.3.4-linux-x64-musl.tar.gz"
+        },
+        "version": "5.3.4"
+    },
     "deploy-rs": {
         "cargoLock": null,
         "date": "2026-02-02",
@@ -213,11 +228,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-uLs89JU0i9QSM+0587nQm+dWCSRwW5wOokW77x1Fl8I=",
+            "sha256": "sha256-7xDpTaru0d2uvrLoyIr1BGeiA3Bz9/LFNbQnwl/5D84=",
             "type": "url",
-            "url": "https://github.com/anomalyco/opencode/releases/download/v1.14.22/opencode-linux-arm64.tar.gz"
+            "url": "https://github.com/anomalyco/opencode/releases/download/v1.14.23/opencode-linux-arm64.tar.gz"
         },
-        "version": "1.14.22"
+        "version": "1.14.23"
     },
     "opencode-linux-x64": {
         "cargoLock": null,
@@ -228,11 +243,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-aUbNIJicdzajIbm603Ew3MMidGexeP054gpKAoTugWU=",
+            "sha256": "sha256-dlgb6qeFtukUmZUqoOsRhaF7FcnGa5Qxu+Rh+KipiTY=",
             "type": "url",
-            "url": "https://github.com/anomalyco/opencode/releases/download/v1.14.22/opencode-linux-x64.tar.gz"
+            "url": "https://github.com/anomalyco/opencode/releases/download/v1.14.23/opencode-linux-x64.tar.gz"
         },
-        "version": "1.14.22"
+        "version": "1.14.23"
     },
     "pwndbg": {
         "cargoLock": null,
