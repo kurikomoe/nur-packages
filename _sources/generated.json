@@ -228,11 +228,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-DO4hWJ1JNmGbzWExNCEhwNIO8kX77DFACcibP5M4NI0=",
+            "sha256": "sha256-mwYLPMwrFXvT15IZl2hX9SuE4tG80C8ajm89AYlwQY8=",
             "type": "url",
-            "url": "https://github.com/anomalyco/opencode/releases/download/v1.14.25/opencode-linux-arm64.tar.gz"
+            "url": "https://github.com/anomalyco/opencode/releases/download/v1.14.26/opencode-linux-arm64.tar.gz"
         },
-        "version": "1.14.25"
+        "version": "1.14.26"
     },
     "opencode-linux-x64": {
         "cargoLock": null,
@@ -243,11 +243,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-ZULblz+/QEcH0nXYJPzX7vIKgAN4gRTrhQZ0Atr3MNs=",
+            "sha256": "sha256-73rr5pkFQKjdE/KKLq5HburvprrZUPpfI7cz7yn8tdU=",
             "type": "url",
-            "url": "https://github.com/anomalyco/opencode/releases/download/v1.14.25/opencode-linux-x64.tar.gz"
+            "url": "https://github.com/anomalyco/opencode/releases/download/v1.14.26/opencode-linux-x64.tar.gz"
         },
-        "version": "1.14.25"
+        "version": "1.14.26"
     },
     "pwndbg": {
         "cargoLock": null,
