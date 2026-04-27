@@ -125,18 +125,18 @@
   };
   opencode-linux-arm64 = {
     pname = "opencode-linux-arm64";
-    version = "1.14.26";
+    version = "1.14.28";
     src = fetchurl {
-      url = "https://github.com/anomalyco/opencode/releases/download/v1.14.26/opencode-linux-arm64.tar.gz";
-      sha256 = "sha256-mwYLPMwrFXvT15IZl2hX9SuE4tG80C8ajm89AYlwQY8=";
+      url = "https://github.com/anomalyco/opencode/releases/download/v1.14.28/opencode-linux-arm64.tar.gz";
+      sha256 = "sha256-PCasJ5BJsTQylvEnxWt35wF4GG0hu6ADYQ1JPuggnxU=";
     };
   };
   opencode-linux-x64 = {
     pname = "opencode-linux-x64";
-    version = "1.14.26";
+    version = "1.14.28";
     src = fetchurl {
-      url = "https://github.com/anomalyco/opencode/releases/download/v1.14.26/opencode-linux-x64.tar.gz";
-      sha256 = "sha256-73rr5pkFQKjdE/KKLq5HburvprrZUPpfI7cz7yn8tdU=";
+      url = "https://github.com/anomalyco/opencode/releases/download/v1.14.28/opencode-linux-x64.tar.gz";
+      sha256 = "sha256-P5pxOWEtRCGkZAjUbu7Se9lYvb5/Q1FM1eWhCtFUDls=";
     };
   };
   pwndbg = {
@@ -152,15 +152,15 @@
   };
   python = {
     pname = "python";
-    version = "8b6d4103312761d4144b7bf9aebcc2f394b7e325";
+    version = "0a64f05ab0bc39dd83f544c3f00c2b32dab4ab85";
     src = fetchFromGitHub {
       owner = "cachix";
       repo = "nixpkgs-python";
-      rev = "8b6d4103312761d4144b7bf9aebcc2f394b7e325";
+      rev = "0a64f05ab0bc39dd83f544c3f00c2b32dab4ab85";
       fetchSubmodules = false;
-      sha256 = "sha256-UBBQYhyAKayDCi6iCIKShQXWRvwyj5omLPOuSeVjtOY=";
+      sha256 = "sha256-gb9ZqzELCkn6pcRZkC4A8mIm3KQxjoheTRyfodOwMeo=";
     };
-    date = "2026-03-20";
+    date = "2026-04-27";
   };
   shellfirm = {
     pname = "shellfirm";
