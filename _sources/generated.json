@@ -1,6 +1,6 @@
 {
     "1password-cli-linux": {
-        "cargoLock": null,
+        "cargoLocks": null,
         "date": null,
         "extract": null,
         "name": "1password-cli-linux",
@@ -14,7 +14,7 @@
         "version": "2.34.0"
     },
     "cc-switch-cli": {
-        "cargoLock": null,
+        "cargoLocks": null,
         "date": null,
         "extract": null,
         "name": "cc-switch-cli",
@@ -28,8 +28,23 @@
         },
         "version": "5.4.0"
     },
+    "codex": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "codex",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-iGuF5hGMC0MjRDfKAH++kjYRpTsQPQDg0650rvsg4jo=",
+            "type": "url",
+            "url": "https://github.com/openai/codex/releases/download/rust-v0.128.0/codex-x86_64-unknown-linux-musl.tar.gz"
+        },
+        "version": "0.128.0"
+    },
     "deploy-rs": {
-        "cargoLock": null,
+        "cargoLocks": null,
         "date": "2026-02-02",
         "extract": null,
         "name": "deploy-rs",
@@ -50,7 +65,7 @@
         "version": "77c906c0ba56aabdbc72041bf9111b565cdd6171"
     },
     "determinate": {
-        "cargoLock": null,
+        "cargoLocks": null,
         "date": null,
         "extract": null,
         "name": "determinate",
@@ -71,7 +86,7 @@
         "version": "v3.19.1"
     },
     "devenv": {
-        "cargoLock": null,
+        "cargoLocks": null,
         "date": null,
         "extract": null,
         "name": "devenv",
@@ -84,15 +99,15 @@
             "name": null,
             "owner": "cachix",
             "repo": "devenv",
-            "rev": "v2.0.6",
-            "sha256": "sha256-i1G6n/7Z5fO9RhplzXQSTiLyh1Cs0GhoCoEStFLARtA=",
+            "rev": "v2.1",
+            "sha256": "sha256-U7rb9FufadyCBLLsxVY6AJfy6TN24+uwaBBh8JVOP8s=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2.0.6"
+        "version": "v2.1"
     },
     "dotnet-script": {
-        "cargoLock": null,
+        "cargoLocks": null,
         "date": null,
         "extract": null,
         "name": "dotnet-script",
@@ -106,7 +121,7 @@
         "version": "2.0.0"
     },
     "doxx": {
-        "cargoLock": null,
+        "cargoLocks": null,
         "date": null,
         "extract": null,
         "name": "doxx",
@@ -127,7 +142,7 @@
         "version": "v0.1.2"
     },
     "font-firacode": {
-        "cargoLock": null,
+        "cargoLocks": null,
         "date": null,
         "extract": null,
         "name": "font-firacode",
@@ -142,7 +157,7 @@
         "version": "6.2"
     },
     "git-hooks-nix": {
-        "cargoLock": null,
+        "cargoLocks": null,
         "date": null,
         "extract": null,
         "name": "git-hooks-nix",
@@ -163,7 +178,7 @@
         "version": "50b9238891e388c9fdc6a5c49e49c42533a1b5ce"
     },
     "goctl": {
-        "cargoLock": null,
+        "cargoLocks": null,
         "date": null,
         "extract": null,
         "name": "goctl",
@@ -184,7 +199,7 @@
         "version": "v1.10.1"
     },
     "kratos": {
-        "cargoLock": null,
+        "cargoLocks": null,
         "date": null,
         "extract": null,
         "name": "kratos",
@@ -205,7 +220,7 @@
         "version": "v2.9.2"
     },
     "microsoft-edge": {
-        "cargoLock": null,
+        "cargoLocks": null,
         "date": null,
         "extract": null,
         "name": "microsoft-edge",
@@ -220,7 +235,7 @@
         "version": "147.0.3912.98"
     },
     "opencode": {
-        "cargoLock": null,
+        "cargoLocks": null,
         "date": null,
         "extract": null,
         "name": "opencode",
@@ -241,7 +256,7 @@
         "version": "v1.14.39"
     },
     "pwndbg": {
-        "cargoLock": null,
+        "cargoLocks": null,
         "date": null,
         "extract": null,
         "name": "pwndbg",
@@ -262,7 +277,7 @@
         "version": "2026.02.18"
     },
     "python": {
-        "cargoLock": null,
+        "cargoLocks": null,
         "date": "2026-05-01",
         "extract": null,
         "name": "python",
@@ -283,7 +298,7 @@
         "version": "0e0fd8c0fb36b707d0f90c38b13265d366db8798"
     },
     "shellfirm": {
-        "cargoLock": null,
+        "cargoLocks": null,
         "date": null,
         "extract": null,
         "name": "shellfirm",
@@ -304,7 +319,7 @@
         "version": "v0.3.9"
     },
     "trzsz": {
-        "cargoLock": null,
+        "cargoLocks": null,
         "date": null,
         "extract": null,
         "name": "trzsz",
@@ -325,7 +340,7 @@
         "version": "v1.2.0"
     },
     "trzsz-ssh": {
-        "cargoLock": null,
+        "cargoLocks": null,
         "date": null,
         "extract": null,
         "name": "trzsz-ssh",

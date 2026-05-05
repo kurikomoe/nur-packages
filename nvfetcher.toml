@@ -95,6 +95,13 @@ src.from_pattern = "^v(([0-9\\.]+))$"
 src.to_pattern = "\\1"
 fetch.url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v$ver/cc-switch-cli-v$ver-linux-x64-musl.tar.gz"
 
+[codex]
+src.github_tag = "openai/codex"
+src.include_regex = "rust-v\\d+\\.\\d+\\.\\d+"
+src.from_pattern = "^rust-v(([0-9\\.]+))$"
+src.to_pattern = "\\1"
+fetch.url = "https://github.com/openai/codex/releases/download/rust-v$ver/codex-x86_64-unknown-linux-musl.tar.gz"
+
 [deploy-rs]
 src.git = "https://github.com/serokell/deploy-rs.git"
 fetch.github = "serokell/deploy-rs"

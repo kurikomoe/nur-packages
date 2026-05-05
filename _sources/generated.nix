@@ -21,6 +21,14 @@
       sha256 = "sha256-vPXsVfoCYvqw5ATBbWICoUZe7tW1aTWjzDkdTbpwyb4=";
     };
   };
+  codex = {
+    pname = "codex";
+    version = "0.128.0";
+    src = fetchurl {
+      url = "https://github.com/openai/codex/releases/download/rust-v0.128.0/codex-x86_64-unknown-linux-musl.tar.gz";
+      sha256 = "sha256-iGuF5hGMC0MjRDfKAH++kjYRpTsQPQDg0650rvsg4jo=";
+    };
+  };
   deploy-rs = {
     pname = "deploy-rs";
     version = "77c906c0ba56aabdbc72041bf9111b565cdd6171";
@@ -46,13 +54,13 @@
   };
   devenv = {
     pname = "devenv";
-    version = "v2.0.6";
+    version = "v2.1";
     src = fetchFromGitHub {
       owner = "cachix";
       repo = "devenv";
-      rev = "v2.0.6";
+      rev = "v2.1";
       fetchSubmodules = false;
-      sha256 = "sha256-i1G6n/7Z5fO9RhplzXQSTiLyh1Cs0GhoCoEStFLARtA=";
+      sha256 = "sha256-U7rb9FufadyCBLLsxVY6AJfy6TN24+uwaBBh8JVOP8s=";
     };
   };
   dotnet-script = {
