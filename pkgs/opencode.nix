@@ -1,54 +1,64 @@
 {
   lib,
   sources,
+  inputs,
   kutils,
   stdenv,
   autoPatchelfHook,
   ...
 }: let
-  pname = "opencode";
+  inherit (stdenv.hostPlatform) system;
 
-  ress = rec {
-    x86_64-linux = sources.opencode-linux-x64;
-    aarch64-linux = sources.opencode-linux-arm64;
+  res = sources.opencode;
+
+  flake = import inputs.flake-compat {
+    inherit system;
+    src = res.src;
   };
 
-  res = kutils.getResBySystem pname ress;
-
-  platforms = builtins.attrNames ress;
-  mainProgram = "opencode";
+  opencode = flake.defaultNix.packages.${system}.default;
 in
-  stdenv.mkDerivation rec {
-    inherit pname;
-    inherit (res) version src;
-
-    sourceRoot = ".";
-
-    nativeBuildInputs = lib.optional stdenv.isLinux autoPatchelfHook;
-
-    buildInputs = [];
-
-    dontStrip = true;
-
-    installPhase = ''
-      runHook preInstall
-      install -D ${mainProgram} $out/bin/${mainProgram}
-      runHook postInstall
-    '';
-
-    doInstallCheck = true;
-
-    installCheckPhase = ''
-      HOME=$TMPDIR
-      $out/bin/${mainProgram} --version
-    '';
-
+  opencode.overrideAttrs (final: prev: {
     meta = with lib; {
       description = "AI-powered coding agent for the terminal";
       homepage = "https://opencode.ai";
       downloadPage = "https://github.com/anomalyco/opencode/releases";
       sourceProvenance = with sourceTypes; [binaryNativeCode];
       license = licenses.mit;
-      inherit mainProgram platforms;
     };
-  }
+  })
+# stdenv.mkDerivation rec {
+#   inherit pname;
+#   inherit (res) version src;
+#
+#   sourceRoot = ".";
+#
+#   nativeBuildInputs = lib.optional stdenv.isLinux autoPatchelfHook;
+#
+#   buildInputs = [];
+#
+#   dontStrip = true;
+#
+#   installPhase = ''
+#     runHook preInstall
+#     install -D ${mainProgram} $out/bin/${mainProgram}
+#     runHook postInstall
+#   '';
+#
+#   doInstallCheck = true;
+#
+#   installCheckPhase = ''
+#     HOME=$TMPDIR
+#     $out/bin/${mainProgram} --version
+#   '';
+#
+#   meta = with lib; {
+#     description = "AI-powered coding agent for the terminal";
+#     homepage = "https://opencode.ai";
+#     downloadPage = "https://github.com/anomalyco/opencode/releases";
+#     sourceProvenance = with sourceTypes; [binaryNativeCode];
+#     license = licenses.mit;
+#     inherit mainProgram platforms;
+#   };
+# }
+

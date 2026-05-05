@@ -35,13 +35,13 @@
   };
   determinate = {
     pname = "determinate";
-    version = "v3.19.0";
+    version = "v3.19.1";
     src = fetchFromGitHub {
       owner = "DeterminateSystems";
       repo = "nix-src";
-      rev = "v3.19.0";
+      rev = "v3.19.1";
       fetchSubmodules = false;
-      sha256 = "sha256-h6WzecM2+aBt0rrcvG5+8d11q+nZoDm60na/48NcJ6w=";
+      sha256 = "sha256-Zl229Ynd484malKv6UPbbjIgRZHThLH3NugvUD63M6M=";
     };
   };
   devenv = {
@@ -117,26 +117,21 @@
   };
   microsoft-edge = {
     pname = "microsoft-edge";
-    version = "147.0.3912.86";
+    version = "147.0.3912.98";
     src = fetchurl {
-      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_147.0.3912.86-1_amd64.deb";
-      sha256 = "sha256-uDcVM2zYTLmiwxv6Bb2QQ8qurkf+Mr3L96Bbr8f52cY=";
+      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_147.0.3912.98-1_amd64.deb";
+      sha256 = "sha256-GD5bXeEWVQHr+u+B3SUjoNCJIp9hwyCW6sYMDbGUBls=";
     };
   };
-  opencode-linux-arm64 = {
-    pname = "opencode-linux-arm64";
-    version = "1.14.30";
-    src = fetchurl {
-      url = "https://github.com/anomalyco/opencode/releases/download/v1.14.30/opencode-linux-arm64.tar.gz";
-      sha256 = "sha256-yoauIrHbmGZQ6sTjAXU54VVwVpaJ+2cky48zwOTN9mg=";
-    };
-  };
-  opencode-linux-x64 = {
-    pname = "opencode-linux-x64";
-    version = "1.14.30";
-    src = fetchurl {
-      url = "https://github.com/anomalyco/opencode/releases/download/v1.14.30/opencode-linux-x64.tar.gz";
-      sha256 = "sha256-E7LdMsVUn3sDHou2f7jW6Nh6qeB71vABdiCDbx+3zc4=";
+  opencode = {
+    pname = "opencode";
+    version = "v1.14.39";
+    src = fetchFromGitHub {
+      owner = "anomalyco";
+      repo = "opencode";
+      rev = "v1.14.39";
+      fetchSubmodules = false;
+      sha256 = "sha256-PeLARnAFsbdrm9gsDzAdJcP74QBT8IgJupu8Z4xYbPo=";
     };
   };
   pwndbg = {
@@ -152,15 +147,15 @@
   };
   python = {
     pname = "python";
-    version = "0a64f05ab0bc39dd83f544c3f00c2b32dab4ab85";
+    version = "0e0fd8c0fb36b707d0f90c38b13265d366db8798";
     src = fetchFromGitHub {
       owner = "cachix";
       repo = "nixpkgs-python";
-      rev = "0a64f05ab0bc39dd83f544c3f00c2b32dab4ab85";
+      rev = "0e0fd8c0fb36b707d0f90c38b13265d366db8798";
       fetchSubmodules = false;
-      sha256 = "sha256-gb9ZqzELCkn6pcRZkC4A8mIm3KQxjoheTRyfodOwMeo=";
+      sha256 = "sha256-6eDIurv/KtJPS/oUT2ZPYzbTq7Qr4GEn3w7JNgObidY=";
     };
-    date = "2026-04-27";
+    date = "2026-05-01";
   };
   shellfirm = {
     pname = "shellfirm";
@@ -186,13 +181,13 @@
   };
   trzsz-ssh = {
     pname = "trzsz-ssh";
-    version = "v0.1.24";
+    version = "v0.1.25";
     src = fetchFromGitHub {
       owner = "trzsz";
       repo = "trzsz-ssh";
-      rev = "v0.1.24";
+      rev = "v0.1.25";
       fetchSubmodules = false;
-      sha256 = "sha256-mcGsCPW8YHKCm5c+OWlKMp6k+J7ibvd6zN/76Ws5eUE=";
+      sha256 = "sha256-s2WBSEu2A26/VxEFROMGJ5n8piEKgvV2YJZrX8MC9H0=";
     };
   };
 }
