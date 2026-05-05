@@ -4,6 +4,7 @@
   kutils,
   stdenvNoCC,
   makeBinaryWrapper,
+  bubblewrap,
   ripgrep,
   ...
 }: let
@@ -29,7 +30,7 @@ in
       runHook preInstall
       install -Dm755 ${mainProgram}-x86_64-unknown-linux-musl $out/libexec/${mainProgram}
       makeBinaryWrapper $out/libexec/${mainProgram} $out/bin/${mainProgram} \
-        --prefix PATH : ${lib.makeBinPath [ripgrep]}
+        --prefix PATH : ${lib.makeBinPath [ripgrep bubblewrap]}
       runHook postInstall
     '';
 
