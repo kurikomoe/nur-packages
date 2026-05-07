@@ -23,10 +23,10 @@
   };
   codex = {
     pname = "codex";
-    version = "0.128.0";
+    version = "0.129.0";
     src = fetchurl {
-      url = "https://github.com/openai/codex/releases/download/rust-v0.128.0/codex-x86_64-unknown-linux-musl.tar.gz";
-      sha256 = "sha256-iGuF5hGMC0MjRDfKAH++kjYRpTsQPQDg0650rvsg4jo=";
+      url = "https://github.com/openai/codex/releases/download/rust-v0.129.0/codex-x86_64-unknown-linux-musl.tar.gz";
+      sha256 = "sha256-Skoo0i3R+HTix7I9m6E9sCv3rU7ppwucTqq2GHCNBYI=";
     };
   };
   deploy-rs = {
@@ -43,13 +43,13 @@
   };
   determinate = {
     pname = "determinate";
-    version = "v3.19.1";
+    version = "v3.20.0";
     src = fetchFromGitHub {
       owner = "DeterminateSystems";
       repo = "nix-src";
-      rev = "v3.19.1";
+      rev = "v3.20.0";
       fetchSubmodules = false;
-      sha256 = "sha256-Zl229Ynd484malKv6UPbbjIgRZHThLH3NugvUD63M6M=";
+      sha256 = "sha256-oyHvP5HDRe59opmjTrq2ED9lh+R9FrHyaCGPPNfBqWM=";
     };
   };
   devenv = {
@@ -125,21 +125,21 @@
   };
   microsoft-edge = {
     pname = "microsoft-edge";
-    version = "147.0.3912.98";
+    version = "148.0.3967.54";
     src = fetchurl {
-      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_147.0.3912.98-1_amd64.deb";
-      sha256 = "sha256-GD5bXeEWVQHr+u+B3SUjoNCJIp9hwyCW6sYMDbGUBls=";
+      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_148.0.3967.54-1_amd64.deb";
+      sha256 = "sha256-ccMYxwaQ70p+za3LoM0vT+lXiRIlYmoldVDqsHT7I9o=";
     };
   };
   opencode = {
     pname = "opencode";
-    version = "v1.14.39";
+    version = "v1.14.41";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v1.14.39";
+      rev = "v1.14.41";
       fetchSubmodules = false;
-      sha256 = "sha256-PeLARnAFsbdrm9gsDzAdJcP74QBT8IgJupu8Z4xYbPo=";
+      sha256 = "sha256-F3085YQFlVB+xF8lzFcN4PgAbIqQeFzSUFjeV8U7py4=";
     };
   };
   pwndbg = {
@@ -167,13 +167,13 @@
   };
   shellfirm = {
     pname = "shellfirm";
-    version = "v0.3.9";
+    version = "v0.3.10";
     src = fetchFromGitHub {
       owner = "kaplanelad";
       repo = "shellfirm";
-      rev = "v0.3.9";
+      rev = "v0.3.10";
       fetchSubmodules = false;
-      sha256 = "sha256-jXzB0SHmCvI+TyYzYeNCCIXr7xFR7q27ftET0Yzcfwg=";
+      sha256 = "sha256-nfNK7r+y9KGYb1txHPtUXP7SnipHg94SF3IQhZwZcD0=";
     };
   };
   trzsz = {
