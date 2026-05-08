@@ -22,13 +22,16 @@
   extraArgs = {inherit inputs sources kutils;};
   kcallPackage = kutils.buildCallPackage extraArgs;
 
-  fonts = kcallPackage ./pkgs/fonts {};
-  python = kcallPackage ./pkgs/python/default.nix {};
-  trzsz = kcallPackage ./pkgs/trzsz-ssh.nix {};
+  font-set = kcallPackage ./pkgs/fonts {};
+  python-set = kcallPackage ./pkgs/python/default.nix {};
+  trzsz-set = kcallPackage ./pkgs/trzsz-ssh.nix {};
+  hermes-agent-set = kcallPackage ./pkgs/hermes-agent.nix {};
 in
-  fonts
-  // python
-  // trzsz
+  {}
+  // font-set
+  // python-set
+  // trzsz-set
+  // hermes-agent-set
   // {
     "1password-cli" = kcallPackage ./pkgs/1password-cli.nix {};
     kratos = kcallPackage ./pkgs/kratos.nix {};
@@ -52,8 +55,10 @@ in
     example-package = kcallPackage ./pkgs/example-package {};
 
     # 集合
-    pythonSet = python;
-    trzszSet = trzsz;
+    fontSet = font-set;
+    pythonSet = python-set;
+    trzszSet = trzsz-set;
+    hermesAgentSet = hermes-agent-set;
 
     # 特殊模块保留
     lib = import ./lib {inherit pkgs;};

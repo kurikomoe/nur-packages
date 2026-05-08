@@ -112,6 +112,17 @@
       sha256 = "sha256-oGIhyrz8oodtmjJF48i3DD0N1kLMVXNfMx1mmaBrjGE=";
     };
   };
+  hermes-agent = {
+    pname = "hermes-agent";
+    version = "v2026.5.7";
+    src = fetchFromGitHub {
+      owner = "NousResearch";
+      repo = "hermes-agent";
+      rev = "v2026.5.7";
+      fetchSubmodules = false;
+      sha256 = "sha256-YQQUEDUim2CiYpL3uG7Wi1fWPsT2wtIqoBeJuAj9hUk=";
+    };
+  };
   kratos = {
     pname = "kratos";
     version = "v2.9.2";
