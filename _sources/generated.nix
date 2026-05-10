@@ -15,10 +15,10 @@
   };
   cc-switch-cli = {
     pname = "cc-switch-cli";
-    version = "5.4.0";
+    version = "5.5.0";
     src = fetchurl {
-      url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.4.0/cc-switch-cli-v5.4.0-linux-x64-musl.tar.gz";
-      sha256 = "sha256-vPXsVfoCYvqw5ATBbWICoUZe7tW1aTWjzDkdTbpwyb4=";
+      url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.5.0/cc-switch-cli-v5.5.0-linux-x64-musl.tar.gz";
+      sha256 = "sha256-mvqgJvm8JKeVo+AeVpCuI2iVaJw0n2GjPEdrGGe5rNI=";
     };
   };
   codex = {
@@ -144,13 +144,13 @@
   };
   opencode = {
     pname = "opencode";
-    version = "v1.14.44";
+    version = "v1.14.46";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v1.14.44";
+      rev = "v1.14.46";
       fetchSubmodules = false;
-      sha256 = "sha256-CLwov9H07Re8gAdUt5bz986WhSUeO8iEZ1MppngNQ2g=";
+      sha256 = "sha256-4qyCmYDTNnWuSgDYQuvawhRj2Nh06sAAjSVp78aTKlI=";
     };
   };
   pwndbg = {
