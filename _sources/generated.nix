@@ -144,13 +144,13 @@
   };
   opencode = {
     pname = "opencode";
-    version = "v1.14.46";
+    version = "v1.14.48";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v1.14.46";
+      rev = "v1.14.48";
       fetchSubmodules = false;
-      sha256 = "sha256-4qyCmYDTNnWuSgDYQuvawhRj2Nh06sAAjSVp78aTKlI=";
+      sha256 = "sha256-gyybqabTco+5ZeWv4lCX8t/R9Jm3tYsA8wVvkrxkEYQ=";
     };
   };
   pwndbg = {
