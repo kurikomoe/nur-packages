@@ -54,13 +54,13 @@
   };
   devenv = {
     pname = "devenv";
-    version = "v2.1";
+    version = "v2.1.1";
     src = fetchFromGitHub {
       owner = "cachix";
       repo = "devenv";
-      rev = "v2.1";
+      rev = "v2.1.1";
       fetchSubmodules = false;
-      sha256 = "sha256-U7rb9FufadyCBLLsxVY6AJfy6TN24+uwaBBh8JVOP8s=";
+      sha256 = "sha256-j+Vh1tQx+JQc6psaykHUX8rFpnHHvJdwHo4bVUswTxg=";
     };
   };
   dotnet-script = {
@@ -166,15 +166,15 @@
   };
   python = {
     pname = "python";
-    version = "0e0fd8c0fb36b707d0f90c38b13265d366db8798";
+    version = "00d979a8b233ff145848f7dc79d35a417528a1c5";
     src = fetchFromGitHub {
       owner = "cachix";
       repo = "nixpkgs-python";
-      rev = "0e0fd8c0fb36b707d0f90c38b13265d366db8798";
+      rev = "00d979a8b233ff145848f7dc79d35a417528a1c5";
       fetchSubmodules = false;
-      sha256 = "sha256-6eDIurv/KtJPS/oUT2ZPYzbTq7Qr4GEn3w7JNgObidY=";
+      sha256 = "sha256-kDAQf9uIzU3r0xvs8Uigtaj+5WPhFcZLR/AtH+RZ6TQ=";
     };
-    date = "2026-05-01";
+    date = "2026-05-12";
   };
   shellfirm = {
     pname = "shellfirm";

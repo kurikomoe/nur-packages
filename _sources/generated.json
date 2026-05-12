@@ -99,12 +99,12 @@
             "name": null,
             "owner": "cachix",
             "repo": "devenv",
-            "rev": "v2.1",
-            "sha256": "sha256-U7rb9FufadyCBLLsxVY6AJfy6TN24+uwaBBh8JVOP8s=",
+            "rev": "v2.1.1",
+            "sha256": "sha256-j+Vh1tQx+JQc6psaykHUX8rFpnHHvJdwHo4bVUswTxg=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2.1"
+        "version": "v2.1.1"
     },
     "dotnet-script": {
         "cargoLock": null,
@@ -299,7 +299,7 @@
     },
     "python": {
         "cargoLock": null,
-        "date": "2026-05-01",
+        "date": "2026-05-12",
         "extract": null,
         "name": "python",
         "passthru": null,
@@ -311,12 +311,12 @@
             "name": null,
             "owner": "cachix",
             "repo": "nixpkgs-python",
-            "rev": "0e0fd8c0fb36b707d0f90c38b13265d366db8798",
-            "sha256": "sha256-6eDIurv/KtJPS/oUT2ZPYzbTq7Qr4GEn3w7JNgObidY=",
+            "rev": "00d979a8b233ff145848f7dc79d35a417528a1c5",
+            "sha256": "sha256-kDAQf9uIzU3r0xvs8Uigtaj+5WPhFcZLR/AtH+RZ6TQ=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "0e0fd8c0fb36b707d0f90c38b13265d366db8798"
+        "version": "00d979a8b233ff145848f7dc79d35a417528a1c5"
     },
     "shellfirm": {
         "cargoLock": null,
