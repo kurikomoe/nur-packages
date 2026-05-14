@@ -54,13 +54,13 @@
   };
   devenv = {
     pname = "devenv";
-    version = "v2.1.1";
+    version = "v2.1.2";
     src = fetchFromGitHub {
       owner = "cachix";
       repo = "devenv";
-      rev = "v2.1.1";
+      rev = "v2.1.2";
       fetchSubmodules = false;
-      sha256 = "sha256-j+Vh1tQx+JQc6psaykHUX8rFpnHHvJdwHo4bVUswTxg=";
+      sha256 = "sha256-EQnZCy7r4VMO6KDoytxHBa0mFbM1D9g1kaDfs/s0YZA=";
     };
   };
   dotnet-script = {
@@ -144,13 +144,13 @@
   };
   opencode = {
     pname = "opencode";
-    version = "v1.14.48";
+    version = "v1.14.50";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v1.14.48";
+      rev = "v1.14.50";
       fetchSubmodules = false;
-      sha256 = "sha256-gyybqabTco+5ZeWv4lCX8t/R9Jm3tYsA8wVvkrxkEYQ=";
+      sha256 = "sha256-SMWJb0Ykxklnh8DQ6UcSv1JIeuqK2qKyUgrwB8ioZCI=";
     };
   };
   pwndbg = {

@@ -99,12 +99,12 @@
             "name": null,
             "owner": "cachix",
             "repo": "devenv",
-            "rev": "v2.1.1",
-            "sha256": "sha256-j+Vh1tQx+JQc6psaykHUX8rFpnHHvJdwHo4bVUswTxg=",
+            "rev": "v2.1.2",
+            "sha256": "sha256-EQnZCy7r4VMO6KDoytxHBa0mFbM1D9g1kaDfs/s0YZA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2.1.1"
+        "version": "v2.1.2"
     },
     "dotnet-script": {
         "cargoLock": null,
@@ -269,12 +269,12 @@
             "name": null,
             "owner": "anomalyco",
             "repo": "opencode",
-            "rev": "v1.14.48",
-            "sha256": "sha256-gyybqabTco+5ZeWv4lCX8t/R9Jm3tYsA8wVvkrxkEYQ=",
+            "rev": "v1.14.50",
+            "sha256": "sha256-SMWJb0Ykxklnh8DQ6UcSv1JIeuqK2qKyUgrwB8ioZCI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.14.48"
+        "version": "v1.14.50"
     },
     "pwndbg": {
         "cargoLock": null,
