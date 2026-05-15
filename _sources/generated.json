@@ -269,12 +269,12 @@
             "name": null,
             "owner": "anomalyco",
             "repo": "opencode",
-            "rev": "v1.14.50",
-            "sha256": "sha256-SMWJb0Ykxklnh8DQ6UcSv1JIeuqK2qKyUgrwB8ioZCI=",
+            "rev": "v1.15.0",
+            "sha256": "sha256-qVkOgLXUU/vaWDZIkBeR3Fhkcz7cPshpyQIkuxwKUEM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.14.50"
+        "version": "v1.15.0"
     },
     "pwndbg": {
         "cargoLock": null,
