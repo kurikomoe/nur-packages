@@ -114,13 +114,13 @@
   };
   hermes-agent = {
     pname = "hermes-agent";
-    version = "v2026.5.7";
+    version = "v2026.5.16";
     src = fetchFromGitHub {
       owner = "NousResearch";
       repo = "hermes-agent";
-      rev = "v2026.5.7";
+      rev = "v2026.5.16";
       fetchSubmodules = false;
-      sha256 = "sha256-YQQUEDUim2CiYpL3uG7Wi1fWPsT2wtIqoBeJuAj9hUk=";
+      sha256 = "sha256-d9qhrTy45Q5UsmjapqMHOVi9e+gR9zE8Nq9Z0wObLmc=";
     };
   };
   kratos = {
@@ -136,21 +136,21 @@
   };
   microsoft-edge = {
     pname = "microsoft-edge";
-    version = "148.0.3967.54";
+    version = "148.0.3967.70";
     src = fetchurl {
-      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_148.0.3967.54-1_amd64.deb";
-      sha256 = "sha256-ccMYxwaQ70p+za3LoM0vT+lXiRIlYmoldVDqsHT7I9o=";
+      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_148.0.3967.70-1_amd64.deb";
+      sha256 = "sha256-rwG3zPxMHjC00P591/CZIWRIHb4td4q3Rfz4fvf89k0=";
     };
   };
   opencode = {
     pname = "opencode";
-    version = "v1.15.0";
+    version = "v1.15.3";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v1.15.0";
+      rev = "v1.15.3";
       fetchSubmodules = false;
-      sha256 = "sha256-qVkOgLXUU/vaWDZIkBeR3Fhkcz7cPshpyQIkuxwKUEM=";
+      sha256 = "sha256-OKQR76q7trKQTvlMxH8tG2jNnRtBe3YeFfvNw8c3+8I=";
     };
   };
   pwndbg = {

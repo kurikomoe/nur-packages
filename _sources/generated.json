@@ -212,12 +212,12 @@
             "name": null,
             "owner": "NousResearch",
             "repo": "hermes-agent",
-            "rev": "v2026.5.7",
-            "sha256": "sha256-YQQUEDUim2CiYpL3uG7Wi1fWPsT2wtIqoBeJuAj9hUk=",
+            "rev": "v2026.5.16",
+            "sha256": "sha256-d9qhrTy45Q5UsmjapqMHOVi9e+gR9zE8Nq9Z0wObLmc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2026.5.7"
+        "version": "v2026.5.16"
     },
     "kratos": {
         "cargoLock": null,
@@ -249,11 +249,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-ccMYxwaQ70p+za3LoM0vT+lXiRIlYmoldVDqsHT7I9o=",
+            "sha256": "sha256-rwG3zPxMHjC00P591/CZIWRIHb4td4q3Rfz4fvf89k0=",
             "type": "url",
-            "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_148.0.3967.54-1_amd64.deb"
+            "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_148.0.3967.70-1_amd64.deb"
         },
-        "version": "148.0.3967.54"
+        "version": "148.0.3967.70"
     },
     "opencode": {
         "cargoLock": null,
@@ -269,12 +269,12 @@
             "name": null,
             "owner": "anomalyco",
             "repo": "opencode",
-            "rev": "v1.15.0",
-            "sha256": "sha256-qVkOgLXUU/vaWDZIkBeR3Fhkcz7cPshpyQIkuxwKUEM=",
+            "rev": "v1.15.3",
+            "sha256": "sha256-OKQR76q7trKQTvlMxH8tG2jNnRtBe3YeFfvNw8c3+8I=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.15.0"
+        "version": "v1.15.3"
     },
     "pwndbg": {
         "cargoLock": null,
