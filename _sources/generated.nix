@@ -144,21 +144,21 @@
   };
   opencode = {
     pname = "opencode";
-    version = "v1.15.5";
+    version = "v1.15.6";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v1.15.5";
+      rev = "v1.15.6";
       fetchSubmodules = false;
-      sha256 = "sha256-HZiqia9QzkJMfRQ6bzFBsiGXNHv1WFLUdwhekE+rXM8=";
+      sha256 = "sha256-neISh7Gs1y8+2M0/5erhhNip5ZBYlUFqbgOsVljZ2Gc=";
     };
   };
   opencode-bin = {
     pname = "opencode-bin";
-    version = "v1.15.5";
+    version = "v1.15.6";
     src = fetchurl {
-      url = "https://github.com/anomalyco/opencode/releases/download/v1.15.5/opencode-linux-x64-musl.tar.gz";
-      sha256 = "sha256-J3XwZmz6s875VKQcUVyC05KqCeQ5IbNaXKs6PX7GpGE=";
+      url = "https://github.com/anomalyco/opencode/releases/download/v1.15.6/opencode-linux-x64-musl.tar.gz";
+      sha256 = "sha256-PSHzgR5dW+0x32IX2Wy78wnwQ7PIqgwGRobJmZbnGVU=";
     };
   };
   pwndbg = {
