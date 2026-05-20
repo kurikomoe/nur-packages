@@ -37,6 +37,7 @@ in
     kratos = kcallPackage ./pkgs/kratos.nix {};
     goctl = kcallPackage ./pkgs/goctl.nix {};
     opencode = kcallPackage ./pkgs/opencode.nix {};
+    opencode-bin = kcallPackage ./pkgs/opencode-bin.nix {};
     codex = kcallPackage ./pkgs/codex.nix {};
     "cc-switch-cli" = kcallPackage ./pkgs/cc-switch-cli.nix {};
     dotnet-script = kcallPackage ./pkgs/dotnet-script.nix {};

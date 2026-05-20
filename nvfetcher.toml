@@ -88,6 +88,11 @@ src.github_tag = "anomalyco/opencode"
 src.include_regex = "v\\d+\\.\\d+\\.\\d+"
 fetch.github = "anomalyco/opencode"
 
+[opencode-bin]
+src.github_tag = "anomalyco/opencode"
+src.include_regex = "v\\d+\\.\\d+\\.\\d+"
+fetch.url = "https://github.com/anomalyco/opencode/releases/download/$ver/opencode-linux-x64-musl.tar.gz"
+
 [cc-switch-cli]
 src.github_tag = "SaladDay/cc-switch-cli"
 src.include_regex = "v\\d+\\.\\d+\\.\\d+"

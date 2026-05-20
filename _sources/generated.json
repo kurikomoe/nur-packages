@@ -37,11 +37,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-Fneee3hXUIp2ijbX1OCE7sM27COUbtcKmwlIm4+GEZA=",
+            "sha256": "sha256-i2RDLuTvWx19GXqtRTWidryFIj9OQWN2nA4QFc2og7I=",
             "type": "url",
-            "url": "https://github.com/openai/codex/releases/download/rust-v0.130.0/codex-x86_64-unknown-linux-musl.tar.gz"
+            "url": "https://github.com/openai/codex/releases/download/rust-v0.132.0/codex-x86_64-unknown-linux-musl.tar.gz"
         },
-        "version": "0.130.0"
+        "version": "0.132.0"
     },
     "deploy-rs": {
         "cargoLock": null,
@@ -269,12 +269,27 @@
             "name": null,
             "owner": "anomalyco",
             "repo": "opencode",
-            "rev": "v1.15.4",
-            "sha256": "sha256-aCoajfdfNsEq5YGFwX+YKkC6Bo19f34BbKt3wJ1FNmA=",
+            "rev": "v1.15.5",
+            "sha256": "sha256-HZiqia9QzkJMfRQ6bzFBsiGXNHv1WFLUdwhekE+rXM8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.15.4"
+        "version": "v1.15.5"
+    },
+    "opencode-bin": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "opencode-bin",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-J3XwZmz6s875VKQcUVyC05KqCeQ5IbNaXKs6PX7GpGE=",
+            "type": "url",
+            "url": "https://github.com/anomalyco/opencode/releases/download/v1.15.5/opencode-linux-x64-musl.tar.gz"
+        },
+        "version": "v1.15.5"
     },
     "pwndbg": {
         "cargoLock": null,
@@ -299,7 +314,7 @@
     },
     "python": {
         "cargoLock": null,
-        "date": "2026-05-12",
+        "date": "2026-05-18",
         "extract": null,
         "name": "python",
         "passthru": null,
@@ -311,12 +326,12 @@
             "name": null,
             "owner": "cachix",
             "repo": "nixpkgs-python",
-            "rev": "00d979a8b233ff145848f7dc79d35a417528a1c5",
-            "sha256": "sha256-kDAQf9uIzU3r0xvs8Uigtaj+5WPhFcZLR/AtH+RZ6TQ=",
+            "rev": "a0f88fb785debcb0a201d0ce311a2e3d829e4a1b",
+            "sha256": "sha256-iKhNJH1ABTrPvDF6Sd1U+GCVYSh8Xn88ee10ko7PvvE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "00d979a8b233ff145848f7dc79d35a417528a1c5"
+        "version": "a0f88fb785debcb0a201d0ce311a2e3d829e4a1b"
     },
     "shellfirm": {
         "cargoLock": null,
