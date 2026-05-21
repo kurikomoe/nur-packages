@@ -15,18 +15,18 @@
   };
   cc-switch-cli = {
     pname = "cc-switch-cli";
-    version = "5.5.0";
+    version = "5.6.0";
     src = fetchurl {
-      url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.5.0/cc-switch-cli-v5.5.0-linux-x64-musl.tar.gz";
-      sha256 = "sha256-mvqgJvm8JKeVo+AeVpCuI2iVaJw0n2GjPEdrGGe5rNI=";
+      url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.6.0/cc-switch-cli-v5.6.0-linux-x64-musl.tar.gz";
+      sha256 = "sha256-VoECi9EgrObiD5+o6lvjsTfWpM1DFFqtGoi+qF26TLA=";
     };
   };
   codex = {
     pname = "codex";
-    version = "0.132.0";
+    version = "0.133.0";
     src = fetchurl {
-      url = "https://github.com/openai/codex/releases/download/rust-v0.132.0/codex-x86_64-unknown-linux-musl.tar.gz";
-      sha256 = "sha256-i2RDLuTvWx19GXqtRTWidryFIj9OQWN2nA4QFc2og7I=";
+      url = "https://github.com/openai/codex/releases/download/rust-v0.133.0/codex-x86_64-unknown-linux-musl.tar.gz";
+      sha256 = "sha256-0GAZq5w10oG3jcLrsq5VwruX6hG/f0Urr+OQ7dsANO8=";
     };
   };
   deploy-rs = {
@@ -144,21 +144,21 @@
   };
   opencode = {
     pname = "opencode";
-    version = "v1.15.6";
+    version = "v1.15.7";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v1.15.6";
+      rev = "v1.15.7";
       fetchSubmodules = false;
-      sha256 = "sha256-neISh7Gs1y8+2M0/5erhhNip5ZBYlUFqbgOsVljZ2Gc=";
+      sha256 = "sha256-fk8GDVE+bQfOkZCQ1YEc3V7YIXDHfNC/srcZs/MrE38=";
     };
   };
   opencode-bin = {
     pname = "opencode-bin";
-    version = "v1.15.6";
+    version = "v1.15.7";
     src = fetchurl {
-      url = "https://github.com/anomalyco/opencode/releases/download/v1.15.6/opencode-linux-x64-musl.tar.gz";
-      sha256 = "sha256-PSHzgR5dW+0x32IX2Wy78wnwQ7PIqgwGRobJmZbnGVU=";
+      url = "https://github.com/anomalyco/opencode/releases/download/v1.15.7/opencode-linux-x64-musl.tar.gz";
+      sha256 = "sha256-eWbm8vzeB7g5DVdZ1ddgl/bDuOKhyKR5l3tR5fYBq9s=";
     };
   };
   pwndbg = {
