@@ -78,12 +78,12 @@
             "name": null,
             "owner": "DeterminateSystems",
             "repo": "nix-src",
-            "rev": "v3.20.0",
-            "sha256": "sha256-oyHvP5HDRe59opmjTrq2ED9lh+R9FrHyaCGPPNfBqWM=",
+            "rev": "v3.21.0",
+            "sha256": "sha256-nV5OHwivEf392cB5MDwoVdDHSvy6Q+rRYZBHd9sePj4=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v3.20.0"
+        "version": "v3.21.0"
     },
     "devenv": {
         "cargoLock": null,
@@ -269,12 +269,12 @@
             "name": null,
             "owner": "anomalyco",
             "repo": "opencode",
-            "rev": "v1.15.7",
-            "sha256": "sha256-fk8GDVE+bQfOkZCQ1YEc3V7YIXDHfNC/srcZs/MrE38=",
+            "rev": "v1.15.9",
+            "sha256": "sha256-ZC6oA3KQDcdffqDYph5x4/TzUQ7NGa1JDSK1irqamcU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.15.7"
+        "version": "v1.15.9"
     },
     "opencode-bin": {
         "cargoLock": null,
@@ -285,11 +285,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-b3+V8TkXuaq4Qh27fhIavy/s/s3M0W/VtJf1IvRU+Sg=",
+            "sha256": "sha256-t7vIRYegW0STzKcu0fLux7df7DF1okpFWtzKO4GljOM=",
             "type": "url",
-            "url": "https://github.com/anomalyco/opencode/releases/download/v1.15.7/opencode-linux-x64.tar.gz"
+            "url": "https://github.com/anomalyco/opencode/releases/download/v1.15.9/opencode-linux-x64.tar.gz"
         },
-        "version": "v1.15.7"
+        "version": "v1.15.9"
     },
     "pwndbg": {
         "cargoLock": null,
