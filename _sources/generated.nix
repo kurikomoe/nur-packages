@@ -157,8 +157,8 @@
     pname = "opencode-bin";
     version = "v1.15.7";
     src = fetchurl {
-      url = "https://github.com/anomalyco/opencode/releases/download/v1.15.7/opencode-linux-x64-musl.tar.gz";
-      sha256 = "sha256-eWbm8vzeB7g5DVdZ1ddgl/bDuOKhyKR5l3tR5fYBq9s=";
+      url = "https://github.com/anomalyco/opencode/releases/download/v1.15.7/opencode-linux-x64.tar.gz";
+      sha256 = "sha256-b3+V8TkXuaq4Qh27fhIavy/s/s3M0W/VtJf1IvRU+Sg=";
     };
   };
   pwndbg = {

@@ -2,9 +2,8 @@
   lib,
   sources,
   kutils,
-  stdenvNoCC,
-  runtimeShell,
-  pkgsMusl,
+  stdenv,
+  autoPatchelfHook,
   ...
 }: let
   pname = "opencode-bin";
@@ -17,30 +16,22 @@
 
   platforms = builtins.attrNames ress;
   mainProgram = "opencode";
-  libraryPath = lib.makeLibraryPath [
-    pkgsMusl.stdenv.cc.cc.lib
-    pkgsMusl.stdenv.cc.cc.libgcc
-    pkgsMusl.musl
-  ];
 in
-  stdenvNoCC.mkDerivation rec {
+  stdenv.mkDerivation rec {
     inherit pname;
     inherit (res) version src;
 
     sourceRoot = ".";
 
+    nativeBuildInputs = lib.optional stdenv.isLinux autoPatchelfHook;
+
+    buildInputs = [];
+
     dontStrip = true;
-    dontFixup = true;
 
     installPhase = ''
       runHook preInstall
-      install -D ${mainProgram} $out/libexec/${mainProgram}
-      mkdir -p $out/bin
-      cat > $out/bin/${mainProgram} <<EOF
-      #!${runtimeShell}
-      exec ${pkgsMusl.musl}/lib/ld-musl-x86_64.so.1 --library-path ${libraryPath} $out/libexec/${mainProgram} "\$@"
-      EOF
-      chmod +x $out/bin/${mainProgram}
+      install -D ${mainProgram} $out/bin/${mainProgram}
       runHook postInstall
     '';
 
