@@ -249,11 +249,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-rwG3zPxMHjC00P591/CZIWRIHb4td4q3Rfz4fvf89k0=",
+            "sha256": "sha256-EFKJQROzVN0t1srIFUiC2NIlTiouFGkkIcRDaLS17OA=",
             "type": "url",
-            "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_148.0.3967.70-1_amd64.deb"
+            "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_148.0.3967.83-1_amd64.deb"
         },
-        "version": "148.0.3967.70"
+        "version": "148.0.3967.83"
     },
     "opencode": {
         "cargoLock": null,
@@ -269,12 +269,12 @@
             "name": null,
             "owner": "anomalyco",
             "repo": "opencode",
-            "rev": "v1.15.9",
-            "sha256": "sha256-ZC6oA3KQDcdffqDYph5x4/TzUQ7NGa1JDSK1irqamcU=",
+            "rev": "v1.15.10",
+            "sha256": "sha256-qp67k8Z+VA81uukZYuu3yqqmg/L8pkxYZQrJBoE25tU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.15.9"
+        "version": "v1.15.10"
     },
     "opencode-bin": {
         "cargoLock": null,
@@ -285,11 +285,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-t7vIRYegW0STzKcu0fLux7df7DF1okpFWtzKO4GljOM=",
+            "sha256": "sha256-pMDJSn/b9jfjrkecBGyknpJTcLTO5QPfunq2d6E80MU=",
             "type": "url",
-            "url": "https://github.com/anomalyco/opencode/releases/download/v1.15.9/opencode-linux-x64.tar.gz"
+            "url": "https://github.com/anomalyco/opencode/releases/download/v1.15.10/opencode-linux-x64.tar.gz"
         },
-        "version": "v1.15.9"
+        "version": "v1.15.10"
     },
     "pwndbg": {
         "cargoLock": null,
