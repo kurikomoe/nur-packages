@@ -23,10 +23,10 @@
   };
   codex = {
     pname = "codex";
-    version = "0.133.0";
+    version = "0.134.0";
     src = fetchurl {
-      url = "https://github.com/openai/codex/releases/download/rust-v0.133.0/codex-x86_64-unknown-linux-musl.tar.gz";
-      sha256 = "sha256-0GAZq5w10oG3jcLrsq5VwruX6hG/f0Urr+OQ7dsANO8=";
+      url = "https://github.com/openai/codex/releases/download/rust-v0.134.0/codex-x86_64-unknown-linux-musl.tar.gz";
+      sha256 = "sha256-5UuYPDq1ypktqO3eg7sppUV2GnLE+jnxihZdnnkuHHE=";
     };
   };
   deploy-rs = {
@@ -73,13 +73,13 @@
   };
   doxx = {
     pname = "doxx";
-    version = "v0.1.2";
+    version = "v0.1.4";
     src = fetchFromGitHub {
       owner = "bgreenwell";
       repo = "doxx";
-      rev = "v0.1.2";
+      rev = "v0.1.4";
       fetchSubmodules = false;
-      sha256 = "sha256-V0pBeh9u6iNt6hS1MpUau6nYBdfn9bELhR0GAMqTRmc=";
+      sha256 = "sha256-0+7R0kdCcw+PdX4UfYuacCv86nzJW+LgTVml9drGZXE=";
     };
   };
   font-firacode = {
