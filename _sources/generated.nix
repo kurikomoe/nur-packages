@@ -15,10 +15,10 @@
   };
   cc-switch-cli = {
     pname = "cc-switch-cli";
-    version = "5.6.1";
+    version = "5.7.0";
     src = fetchurl {
-      url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.6.1/cc-switch-cli-v5.6.1-linux-x64-musl.tar.gz";
-      sha256 = "sha256-AYlNyL/uEDpzdtRNV5h9cpXsO2j0+DqndErgOvXqDM4=";
+      url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.7.0/cc-switch-cli-v5.7.0-linux-x64-musl.tar.gz";
+      sha256 = "sha256-ITHC5JiW+Xhyu62gVvlUbSkaajxXczaJ7kDlc40t9BM=";
     };
   };
   codex = {
@@ -144,21 +144,21 @@
   };
   opencode = {
     pname = "opencode";
-    version = "v1.15.10";
+    version = "v1.15.11";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v1.15.10";
+      rev = "v1.15.11";
       fetchSubmodules = false;
-      sha256 = "sha256-qp67k8Z+VA81uukZYuu3yqqmg/L8pkxYZQrJBoE25tU=";
+      sha256 = "sha256-SIRE+x1YCSAX1L89237RN9owJkC4hgCIy1Q93Iy9GzM=";
     };
   };
   opencode-bin = {
     pname = "opencode-bin";
-    version = "v1.15.10";
+    version = "v1.15.11";
     src = fetchurl {
-      url = "https://github.com/anomalyco/opencode/releases/download/v1.15.10/opencode-linux-x64.tar.gz";
-      sha256 = "sha256-pMDJSn/b9jfjrkecBGyknpJTcLTO5QPfunq2d6E80MU=";
+      url = "https://github.com/anomalyco/opencode/releases/download/v1.15.11/opencode-linux-x64.tar.gz";
+      sha256 = "sha256-STFyU3IsaYOUmA4ZIf8o6RnXm7KdXD9M8xSkra9wN80=";
     };
   };
   pwndbg = {
