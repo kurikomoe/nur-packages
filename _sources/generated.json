@@ -37,11 +37,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-5UuYPDq1ypktqO3eg7sppUV2GnLE+jnxihZdnnkuHHE=",
+            "sha256": "sha256-oV59rWV9pKDhIO7eKVVv7m1Q6MkZdZzC7Lo8mQmTY+I=",
             "type": "url",
-            "url": "https://github.com/openai/codex/releases/download/rust-v0.134.0/codex-x86_64-unknown-linux-musl.tar.gz"
+            "url": "https://github.com/openai/codex/releases/download/rust-v0.135.0/codex-x86_64-unknown-linux-musl.tar.gz"
         },
-        "version": "0.134.0"
+        "version": "0.135.0"
     },
     "deploy-rs": {
         "cargoLock": null,
@@ -114,11 +114,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-WMxW6mre1lOCv9mYrtc7+qJf+JXQzmRLAt7iuqA9XiI=",
+            "sha256": "sha256-2d0O5P5A/a/cwbEZwlRCZKvYSeeZ2CoHD/02VU3N/fw=",
             "type": "tarball",
-            "url": "https://github.com/dotnet-script/dotnet-script/releases/download/2.0.0/dotnet-script.2.0.0.zip"
+            "url": "https://github.com/dotnet-script/dotnet-script/releases/download/2.0.1/dotnet-script.2.0.1.zip"
         },
-        "version": "2.0.0"
+        "version": "2.0.1"
     },
     "doxx": {
         "cargoLock": null,
@@ -212,12 +212,12 @@
             "name": null,
             "owner": "NousResearch",
             "repo": "hermes-agent",
-            "rev": "v2026.5.16",
-            "sha256": "sha256-d9qhrTy45Q5UsmjapqMHOVi9e+gR9zE8Nq9Z0wObLmc=",
+            "rev": "v2026.5.28",
+            "sha256": "sha256-xga5EYW+P/nP6OstGQ5W/XButRZK0ua41t1+9mbYOys=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2026.5.16"
+        "version": "v2026.5.28"
     },
     "kratos": {
         "cargoLock": null,
@@ -269,12 +269,12 @@
             "name": null,
             "owner": "anomalyco",
             "repo": "opencode",
-            "rev": "v1.15.11",
-            "sha256": "sha256-SIRE+x1YCSAX1L89237RN9owJkC4hgCIy1Q93Iy9GzM=",
+            "rev": "v1.15.12",
+            "sha256": "sha256-ecSZVJ1uyubWcIhp29FS0MA2MCgURN2jo6CFRJ1mm2I=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.15.11"
+        "version": "v1.15.12"
     },
     "opencode-bin": {
         "cargoLock": null,
@@ -285,11 +285,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-STFyU3IsaYOUmA4ZIf8o6RnXm7KdXD9M8xSkra9wN80=",
+            "sha256": "sha256-7W+Lzg/qH7K+eJv+DPvnpKgZdw6ZjjKDawcIwBUwOmc=",
             "type": "url",
-            "url": "https://github.com/anomalyco/opencode/releases/download/v1.15.11/opencode-linux-x64.tar.gz"
+            "url": "https://github.com/anomalyco/opencode/releases/download/v1.15.12/opencode-linux-x64.tar.gz"
         },
-        "version": "v1.15.11"
+        "version": "v1.15.12"
     },
     "pwndbg": {
         "cargoLock": null,
@@ -314,7 +314,7 @@
     },
     "python": {
         "cargoLock": null,
-        "date": "2026-05-18",
+        "date": "2026-05-28",
         "extract": null,
         "name": "python",
         "passthru": null,
@@ -326,12 +326,12 @@
             "name": null,
             "owner": "cachix",
             "repo": "nixpkgs-python",
-            "rev": "a0f88fb785debcb0a201d0ce311a2e3d829e4a1b",
-            "sha256": "sha256-iKhNJH1ABTrPvDF6Sd1U+GCVYSh8Xn88ee10ko7PvvE=",
+            "rev": "19c4e97edc9c8c997fa38df64f18edf561a104d2",
+            "sha256": "sha256-56ERaj2N/iB5HinNa2poCQxlB5QkAt87MUdHXafZTGs=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "a0f88fb785debcb0a201d0ce311a2e3d829e4a1b"
+        "version": "19c4e97edc9c8c997fa38df64f18edf561a104d2"
     },
     "shellfirm": {
         "cargoLock": null,

@@ -23,10 +23,10 @@
   };
   codex = {
     pname = "codex";
-    version = "0.134.0";
+    version = "0.135.0";
     src = fetchurl {
-      url = "https://github.com/openai/codex/releases/download/rust-v0.134.0/codex-x86_64-unknown-linux-musl.tar.gz";
-      sha256 = "sha256-5UuYPDq1ypktqO3eg7sppUV2GnLE+jnxihZdnnkuHHE=";
+      url = "https://github.com/openai/codex/releases/download/rust-v0.135.0/codex-x86_64-unknown-linux-musl.tar.gz";
+      sha256 = "sha256-oV59rWV9pKDhIO7eKVVv7m1Q6MkZdZzC7Lo8mQmTY+I=";
     };
   };
   deploy-rs = {
@@ -65,10 +65,10 @@
   };
   dotnet-script = {
     pname = "dotnet-script";
-    version = "2.0.0";
+    version = "2.0.1";
     src = fetchTarball {
-      url = "https://github.com/dotnet-script/dotnet-script/releases/download/2.0.0/dotnet-script.2.0.0.zip";
-      sha256 = "sha256-WMxW6mre1lOCv9mYrtc7+qJf+JXQzmRLAt7iuqA9XiI=";
+      url = "https://github.com/dotnet-script/dotnet-script/releases/download/2.0.1/dotnet-script.2.0.1.zip";
+      sha256 = "sha256-2d0O5P5A/a/cwbEZwlRCZKvYSeeZ2CoHD/02VU3N/fw=";
     };
   };
   doxx = {
@@ -114,13 +114,13 @@
   };
   hermes-agent = {
     pname = "hermes-agent";
-    version = "v2026.5.16";
+    version = "v2026.5.28";
     src = fetchFromGitHub {
       owner = "NousResearch";
       repo = "hermes-agent";
-      rev = "v2026.5.16";
+      rev = "v2026.5.28";
       fetchSubmodules = false;
-      sha256 = "sha256-d9qhrTy45Q5UsmjapqMHOVi9e+gR9zE8Nq9Z0wObLmc=";
+      sha256 = "sha256-xga5EYW+P/nP6OstGQ5W/XButRZK0ua41t1+9mbYOys=";
     };
   };
   kratos = {
@@ -144,21 +144,21 @@
   };
   opencode = {
     pname = "opencode";
-    version = "v1.15.11";
+    version = "v1.15.12";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v1.15.11";
+      rev = "v1.15.12";
       fetchSubmodules = false;
-      sha256 = "sha256-SIRE+x1YCSAX1L89237RN9owJkC4hgCIy1Q93Iy9GzM=";
+      sha256 = "sha256-ecSZVJ1uyubWcIhp29FS0MA2MCgURN2jo6CFRJ1mm2I=";
     };
   };
   opencode-bin = {
     pname = "opencode-bin";
-    version = "v1.15.11";
+    version = "v1.15.12";
     src = fetchurl {
-      url = "https://github.com/anomalyco/opencode/releases/download/v1.15.11/opencode-linux-x64.tar.gz";
-      sha256 = "sha256-STFyU3IsaYOUmA4ZIf8o6RnXm7KdXD9M8xSkra9wN80=";
+      url = "https://github.com/anomalyco/opencode/releases/download/v1.15.12/opencode-linux-x64.tar.gz";
+      sha256 = "sha256-7W+Lzg/qH7K+eJv+DPvnpKgZdw6ZjjKDawcIwBUwOmc=";
     };
   };
   pwndbg = {
@@ -174,15 +174,15 @@
   };
   python = {
     pname = "python";
-    version = "a0f88fb785debcb0a201d0ce311a2e3d829e4a1b";
+    version = "19c4e97edc9c8c997fa38df64f18edf561a104d2";
     src = fetchFromGitHub {
       owner = "cachix";
       repo = "nixpkgs-python";
-      rev = "a0f88fb785debcb0a201d0ce311a2e3d829e4a1b";
+      rev = "19c4e97edc9c8c997fa38df64f18edf561a104d2";
       fetchSubmodules = false;
-      sha256 = "sha256-iKhNJH1ABTrPvDF6Sd1U+GCVYSh8Xn88ee10ko7PvvE=";
+      sha256 = "sha256-56ERaj2N/iB5HinNa2poCQxlB5QkAt87MUdHXafZTGs=";
     };
-    date = "2026-05-18";
+    date = "2026-05-28";
   };
   shellfirm = {
     pname = "shellfirm";
