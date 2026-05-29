@@ -212,12 +212,12 @@
             "name": null,
             "owner": "NousResearch",
             "repo": "hermes-agent",
-            "rev": "v2026.5.28",
-            "sha256": "sha256-xga5EYW+P/nP6OstGQ5W/XButRZK0ua41t1+9mbYOys=",
+            "rev": "v2026.5.29",
+            "sha256": "sha256-4SwFC4IjwdQi27dHXTd8QYS1eJHiQY0ja2LxyeW6KjE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2026.5.28"
+        "version": "v2026.5.29"
     },
     "kratos": {
         "cargoLock": null,
@@ -314,7 +314,7 @@
     },
     "python": {
         "cargoLock": null,
-        "date": "2026-05-28",
+        "date": "2026-05-29",
         "extract": null,
         "name": "python",
         "passthru": null,
@@ -326,12 +326,12 @@
             "name": null,
             "owner": "cachix",
             "repo": "nixpkgs-python",
-            "rev": "19c4e97edc9c8c997fa38df64f18edf561a104d2",
-            "sha256": "sha256-56ERaj2N/iB5HinNa2poCQxlB5QkAt87MUdHXafZTGs=",
+            "rev": "5030393c8dfde39bddef22ef7e0415f687a96e8f",
+            "sha256": "sha256-0vpCyIhcBe1bD3MyZd5DCsevmXkKFZd0HYaLCSU+su8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "19c4e97edc9c8c997fa38df64f18edf561a104d2"
+        "version": "5030393c8dfde39bddef22ef7e0415f687a96e8f"
     },
     "shellfirm": {
         "cargoLock": null,
