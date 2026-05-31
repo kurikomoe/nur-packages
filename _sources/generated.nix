@@ -103,13 +103,13 @@
   };
   goctl = {
     pname = "goctl";
-    version = "v1.10.1";
+    version = "v1.10.2";
     src = fetchFromGitHub {
       owner = "zeromicro";
       repo = "go-zero";
-      rev = "v1.10.1";
+      rev = "v1.10.2";
       fetchSubmodules = false;
-      sha256 = "sha256-oGIhyrz8oodtmjJF48i3DD0N1kLMVXNfMx1mmaBrjGE=";
+      sha256 = "sha256-he/c3l8+LptW09wMR6qvQ03686dguKB3n9o4ja85nK8=";
     };
   };
   hermes-agent = {
@@ -144,21 +144,21 @@
   };
   opencode = {
     pname = "opencode";
-    version = "v1.15.12";
+    version = "v1.15.13";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v1.15.12";
+      rev = "v1.15.13";
       fetchSubmodules = false;
-      sha256 = "sha256-ecSZVJ1uyubWcIhp29FS0MA2MCgURN2jo6CFRJ1mm2I=";
+      sha256 = "sha256-+zHwO5ZY8D2s1gZzxoYI7c8yWmQSduPwv4MoFruhhPA=";
     };
   };
   opencode-bin = {
     pname = "opencode-bin";
-    version = "v1.15.12";
+    version = "v1.15.13";
     src = fetchurl {
-      url = "https://github.com/anomalyco/opencode/releases/download/v1.15.12/opencode-linux-x64.tar.gz";
-      sha256 = "sha256-7W+Lzg/qH7K+eJv+DPvnpKgZdw6ZjjKDawcIwBUwOmc=";
+      url = "https://github.com/anomalyco/opencode/releases/download/v1.15.13/opencode-linux-x64.tar.gz";
+      sha256 = "sha256-UXhaB8AJ8nxRJaUjXFoP94Qz2s4H9z+8ROtnLq1LPXk=";
     };
   };
   pwndbg = {

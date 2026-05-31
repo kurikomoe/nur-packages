@@ -14,7 +14,7 @@ in
     sourceRoot = "source/tools/goctl";
 
     doCheck = false;
-    vendorHash = "sha256-MD9w/Q1dRBn/kUMm7dLnLawTr31t71VSVjwnssS01UE=";
+    vendorHash = "sha256-i2dOY/incZ4JdYui8PZvN8eWdNHbHi3a38Zkqy8+lRM=";
 
     ldflags = ["-s -w"];
     # latest vesion: https://github.com/go-kratos/kratos/tags
