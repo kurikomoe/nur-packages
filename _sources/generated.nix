@@ -15,10 +15,10 @@
   };
   cc-switch-cli = {
     pname = "cc-switch-cli";
-    version = "5.7.0";
+    version = "5.8.0";
     src = fetchurl {
-      url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.7.0/cc-switch-cli-v5.7.0-linux-x64-musl.tar.gz";
-      sha256 = "sha256-ITHC5JiW+Xhyu62gVvlUbSkaajxXczaJ7kDlc40t9BM=";
+      url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.8.0/cc-switch-cli-v5.8.0-linux-x64-musl.tar.gz";
+      sha256 = "sha256-ULGIwhAnWU3BRonil69nYHev2bpQAkAOF+NqAbA62hM=";
     };
   };
   codex = {
@@ -114,13 +114,13 @@
   };
   hermes-agent = {
     pname = "hermes-agent";
-    version = "v2026.5.29";
+    version = "v2026.6.5";
     src = fetchFromGitHub {
       owner = "NousResearch";
       repo = "hermes-agent";
-      rev = "v2026.5.29";
+      rev = "v2026.6.5";
       fetchSubmodules = false;
-      sha256 = "sha256-4SwFC4IjwdQi27dHXTd8QYS1eJHiQY0ja2LxyeW6KjE=";
+      sha256 = "sha256-ngpkopVczNrT0bfCXHm38QjgrZT96Bm/rO89NA/ls3Y=";
     };
   };
   kratos = {

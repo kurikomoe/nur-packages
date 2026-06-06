@@ -22,11 +22,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-ITHC5JiW+Xhyu62gVvlUbSkaajxXczaJ7kDlc40t9BM=",
+            "sha256": "sha256-ULGIwhAnWU3BRonil69nYHev2bpQAkAOF+NqAbA62hM=",
             "type": "url",
-            "url": "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.7.0/cc-switch-cli-v5.7.0-linux-x64-musl.tar.gz"
+            "url": "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.8.0/cc-switch-cli-v5.8.0-linux-x64-musl.tar.gz"
         },
-        "version": "5.7.0"
+        "version": "5.8.0"
     },
     "codex": {
         "cargoLock": null,
@@ -212,12 +212,12 @@
             "name": null,
             "owner": "NousResearch",
             "repo": "hermes-agent",
-            "rev": "v2026.5.29",
-            "sha256": "sha256-4SwFC4IjwdQi27dHXTd8QYS1eJHiQY0ja2LxyeW6KjE=",
+            "rev": "v2026.6.5",
+            "sha256": "sha256-ngpkopVczNrT0bfCXHm38QjgrZT96Bm/rO89NA/ls3Y=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2026.5.29"
+        "version": "v2026.6.5"
     },
     "kratos": {
         "cargoLock": null,
