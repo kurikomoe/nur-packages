@@ -23,33 +23,33 @@
   };
   codex = {
     pname = "codex";
-    version = "0.137.0";
+    version = "0.139.0";
     src = fetchurl {
-      url = "https://github.com/openai/codex/releases/download/rust-v0.137.0/codex-x86_64-unknown-linux-musl.tar.gz";
-      sha256 = "sha256-2W6IMTuVWX6cu4cE9tsW27gcBxQrCM+2KEeatDNpaTE=";
+      url = "https://github.com/openai/codex/releases/download/rust-v0.139.0/codex-x86_64-unknown-linux-musl.tar.gz";
+      sha256 = "sha256-Euv3DfQdyDEGGGKRKrXn6s3RErsX6M6bIJjLPZIYAIE=";
     };
   };
   deploy-rs = {
     pname = "deploy-rs";
-    version = "77c906c0ba56aabdbc72041bf9111b565cdd6171";
+    version = "2ce9051767ee4d1a3c43b52ba327431783bfd463";
     src = fetchFromGitHub {
       owner = "serokell";
       repo = "deploy-rs";
-      rev = "77c906c0ba56aabdbc72041bf9111b565cdd6171";
+      rev = "2ce9051767ee4d1a3c43b52ba327431783bfd463";
       fetchSubmodules = false;
-      sha256 = "sha256-hwsYgDnby50JNVpTRYlF3UR/Rrpt01OrxVuryF40CFY=";
+      sha256 = "sha256-Gt+qFANcrDRjl3xzidLYrAUQCd3808iuAsLwZbYYAEU=";
     };
-    date = "2026-02-02";
+    date = "2026-06-09";
   };
   determinate = {
     pname = "determinate";
-    version = "v3.21.0";
+    version = "v3.21.1";
     src = fetchFromGitHub {
       owner = "DeterminateSystems";
       repo = "nix-src";
-      rev = "v3.21.0";
+      rev = "v3.21.1";
       fetchSubmodules = false;
-      sha256 = "sha256-nV5OHwivEf392cB5MDwoVdDHSvy6Q+rRYZBHd9sePj4=";
+      sha256 = "sha256-/JuW5C6sWuC836Y9b7hga3ZvhRiY4k4Zs73RRg5KVWM=";
     };
   };
   devenv = {
