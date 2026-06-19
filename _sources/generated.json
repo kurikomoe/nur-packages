@@ -7,11 +7,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-sbydXPoT0Vo3r2gyZBdl4OMtOejbhvra5JM4wB6Ex5s=",
+            "sha256": "sha256-oAABMlwwv5X91TT6FK2aPpg+e2CvmHT1rqIVRTjQNCQ=",
             "type": "tarball",
-            "url": "https://cache.agilebits.com/dist/1P/op2/pkg/v2.34.0/op_linux_amd64_v2.34.0.zip"
+            "url": "https://cache.agilebits.com/dist/1P/op2/pkg/v2.34.1/op_linux_amd64_v2.34.1.zip"
         },
-        "version": "2.34.0"
+        "version": "2.34.1"
     },
     "cc-switch-cli": {
         "cargoLock": null,
@@ -22,11 +22,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-PasqYHjDiy8LA7sON3XCw/UFineR1VqJ6PzZx/Ef+vg=",
+            "sha256": "sha256-EHVe5WVplaqDvsrvxUG0zu/4kAy6AiUKWwDNy/DwHOg=",
             "type": "url",
-            "url": "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.8.1/cc-switch-cli-v5.8.1-linux-x64-musl.tar.gz"
+            "url": "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.8.4/cc-switch-cli-v5.8.4-linux-x64-musl.tar.gz"
         },
-        "version": "5.8.1"
+        "version": "5.8.4"
     },
     "codex": {
         "cargoLock": null,
@@ -37,15 +37,15 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-Euv3DfQdyDEGGGKRKrXn6s3RErsX6M6bIJjLPZIYAIE=",
+            "sha256": "sha256-8eK/n6C6brghGdYhtrcbw47dM8BtwoZ7MaAnBSNYlX0=",
             "type": "url",
-            "url": "https://github.com/openai/codex/releases/download/rust-v0.139.0/codex-x86_64-unknown-linux-musl.tar.gz"
+            "url": "https://github.com/openai/codex/releases/download/rust-v0.141.0/codex-x86_64-unknown-linux-musl.tar.gz"
         },
-        "version": "0.139.0"
+        "version": "0.141.0"
     },
     "deploy-rs": {
         "cargoLock": null,
-        "date": "2026-06-09",
+        "date": "2026-06-16",
         "extract": null,
         "name": "deploy-rs",
         "passthru": null,
@@ -57,12 +57,12 @@
             "name": null,
             "owner": "serokell",
             "repo": "deploy-rs",
-            "rev": "2ce9051767ee4d1a3c43b52ba327431783bfd463",
-            "sha256": "sha256-Gt+qFANcrDRjl3xzidLYrAUQCd3808iuAsLwZbYYAEU=",
+            "rev": "6d3087eedff75a715b40c0e124ba15d2dd7bec28",
+            "sha256": "sha256-5yHuAh9k7rT7rtf3uRaXkiUyYvQE9oaCgzhprLm2mr8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "2ce9051767ee4d1a3c43b52ba327431783bfd463"
+        "version": "6d3087eedff75a715b40c0e124ba15d2dd7bec28"
     },
     "determinate": {
         "cargoLock": null,
@@ -78,12 +78,12 @@
             "name": null,
             "owner": "DeterminateSystems",
             "repo": "nix-src",
-            "rev": "v3.21.1",
-            "sha256": "sha256-/JuW5C6sWuC836Y9b7hga3ZvhRiY4k4Zs73RRg5KVWM=",
+            "rev": "v3.21.2",
+            "sha256": "sha256-MPHJbzoPE/YEym8JiJdhN1Ma+zRptFaHqHNHBooyB7w=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v3.21.1"
+        "version": "v3.21.2"
     },
     "devenv": {
         "cargoLock": null,
@@ -212,12 +212,12 @@
             "name": null,
             "owner": "NousResearch",
             "repo": "hermes-agent",
-            "rev": "v2026.6.5",
-            "sha256": "sha256-ngpkopVczNrT0bfCXHm38QjgrZT96Bm/rO89NA/ls3Y=",
+            "rev": "v2026.6.19",
+            "sha256": "sha256-Oyl6Cpg2bTiX9MyBxFT5q4yVdYf3lCIptzFdiVULmjo=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2026.6.5"
+        "version": "v2026.6.19"
     },
     "kratos": {
         "cargoLock": null,
@@ -249,11 +249,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-3lFhfxkS80P59dk00lpBp+8IIFUvSEJVGGTfAghxw4g=",
+            "sha256": "sha256-5rHSMX9HdxvQOQ03DnLJF7NTHY5Ybt7sSU5MrcGzRnY=",
             "type": "url",
-            "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_149.0.4022.52-1_amd64.deb"
+            "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_149.0.4022.80-1_amd64.deb"
         },
-        "version": "149.0.4022.52"
+        "version": "149.0.4022.80"
     },
     "opencode": {
         "cargoLock": null,
@@ -269,12 +269,12 @@
             "name": null,
             "owner": "anomalyco",
             "repo": "opencode",
-            "rev": "v1.16.2",
-            "sha256": "sha256-IpTD4YCgGNtYlZ6EoyY+YLD81rIFR0D2A4W3uhWSSfo=",
+            "rev": "v1.17.8",
+            "sha256": "sha256-iReCFIJeJIOIs95v0ReVR/X1PnT5dSnR9O0TniyvPR8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.16.2"
+        "version": "v1.17.8"
     },
     "opencode-bin": {
         "cargoLock": null,
@@ -285,11 +285,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-BqecW7f40BcWskQHEs9n+s0221kYiAmusjI3SyBr1Ck=",
+            "sha256": "sha256-E//8KSJwk0YrfRR3fqa4BM/ZTCYSgZwQG7+TPYYrHl8=",
             "type": "url",
-            "url": "https://github.com/anomalyco/opencode/releases/download/v1.16.2/opencode-linux-x64.tar.gz"
+            "url": "https://github.com/anomalyco/opencode/releases/download/v1.17.8/opencode-linux-x64.tar.gz"
         },
-        "version": "v1.16.2"
+        "version": "v1.17.8"
     },
     "pwndbg": {
         "cargoLock": null,
@@ -314,7 +314,7 @@
     },
     "python": {
         "cargoLock": null,
-        "date": "2026-05-29",
+        "date": "2026-06-10",
         "extract": null,
         "name": "python",
         "passthru": null,
@@ -326,12 +326,12 @@
             "name": null,
             "owner": "cachix",
             "repo": "nixpkgs-python",
-            "rev": "5030393c8dfde39bddef22ef7e0415f687a96e8f",
-            "sha256": "sha256-0vpCyIhcBe1bD3MyZd5DCsevmXkKFZd0HYaLCSU+su8=",
+            "rev": "23629493653be6df0472a46b1be1d65cbd6df55b",
+            "sha256": "sha256-wXAybU+2LlbXm9cfRDHRPASakq60rLvZBXVT2Ahkj1U=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "5030393c8dfde39bddef22ef7e0415f687a96e8f"
+        "version": "23629493653be6df0472a46b1be1d65cbd6df55b"
     },
     "shellfirm": {
         "cargoLock": null,
