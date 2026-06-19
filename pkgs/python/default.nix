@@ -16,7 +16,7 @@
   pkgs = nixpkgs-python.defaultNix.packages.${system};
   # _pkgs = builtins.trace (builtins.attrNames _pkgs) _pkgs;
   versionList = [
-    "2.7"
+    # "2.7"
     "3.6"
     "3.7"
     "3.8"
