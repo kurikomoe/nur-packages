@@ -15,18 +15,18 @@
   };
   cc-switch-cli = {
     pname = "cc-switch-cli";
-    version = "5.8.4";
+    version = "5.8.5";
     src = fetchurl {
-      url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.8.4/cc-switch-cli-v5.8.4-linux-x64-musl.tar.gz";
-      sha256 = "sha256-EHVe5WVplaqDvsrvxUG0zu/4kAy6AiUKWwDNy/DwHOg=";
+      url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.8.5/cc-switch-cli-v5.8.5-linux-x64-musl.tar.gz";
+      sha256 = "sha256-8OjIJooX8TR03ZscEeSek4WEMSL215st5ohjfjOhz64=";
     };
   };
   codex = {
     pname = "codex";
-    version = "0.142.0";
+    version = "0.142.2";
     src = fetchurl {
-      url = "https://github.com/openai/codex/releases/download/rust-v0.142.0/codex-x86_64-unknown-linux-musl.tar.gz";
-      sha256 = "sha256-LjrLOaJ3/xHDFNgyz90kb66+6ia/Aa/46eEGQebeqAE=";
+      url = "https://github.com/openai/codex/releases/download/rust-v0.142.2/codex-x86_64-unknown-linux-musl.tar.gz";
+      sha256 = "sha256-EskAXId46fdiOxe3fzy/VugFmAmsaAJ7NWDBqBOapOI=";
     };
   };
   deploy-rs = {
@@ -144,21 +144,21 @@
   };
   opencode = {
     pname = "opencode";
-    version = "v1.17.10";
+    version = "v1.17.11";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v1.17.10";
+      rev = "v1.17.11";
       fetchSubmodules = false;
-      sha256 = "sha256-QWdAKbyu/fV6Ejh+x63xDZMPVDoWDha0vk298Fv8IDc=";
+      sha256 = "sha256-ZgmRHoI3rxsSM10sA4cZu/FxqwmgawQvlW3eykXQsqQ=";
     };
   };
   opencode-bin = {
     pname = "opencode-bin";
-    version = "v1.17.10";
+    version = "v1.17.11";
     src = fetchurl {
-      url = "https://github.com/anomalyco/opencode/releases/download/v1.17.10/opencode-linux-x64.tar.gz";
-      sha256 = "sha256-rCT/J2R7V8ROSw0A/+TZ6dsy8Ui2iGs5qDVVYE+zgs0=";
+      url = "https://github.com/anomalyco/opencode/releases/download/v1.17.11/opencode-linux-x64.tar.gz";
+      sha256 = "sha256-au/Lu38EzbRkK+Ugjdv6uzw9J0+Ba/Qr/3LupcJE3KI=";
     };
   };
   pwndbg = {
