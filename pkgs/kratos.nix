@@ -20,7 +20,7 @@ in
 
     # NOTE(kuriko): when updating, use lib.fakeHash first to obtain new hash,
     #   otherwise nix will directly use the old cache (without rebuilding and comparing hash)
-    vendorHash = "sha256-lDekJQAOrCx6gsZ2J8cRmgTjL+WcWK0iejC/CbdxO6U=";
+    vendorHash = "sha256-UYkV3W8tyF3dr+ebH3jN3UhEckjicE3G8jK2EsOcsPc=";
 
     ldflags = ["-s -w"];
 

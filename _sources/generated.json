@@ -37,11 +37,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-EskAXId46fdiOxe3fzy/VugFmAmsaAJ7NWDBqBOapOI=",
+            "sha256": "sha256-+WgT9BaStNiuRNCBIWWi/MQpGW6zSB9rwiGv3slqF/g=",
             "type": "url",
-            "url": "https://github.com/openai/codex/releases/download/rust-v0.142.2/codex-x86_64-unknown-linux-musl.tar.gz"
+            "url": "https://github.com/openai/codex/releases/download/rust-v0.142.3/codex-x86_64-unknown-linux-musl.tar.gz"
         },
-        "version": "0.142.2"
+        "version": "0.142.3"
     },
     "deploy-rs": {
         "cargoLock": null,
@@ -233,12 +233,12 @@
             "name": null,
             "owner": "go-kratos",
             "repo": "kratos",
-            "rev": "v2.9.2",
-            "sha256": "sha256-I2q/4Q2QkJnjnFggfpr8hCK9LKGyGStfXRT1BPVP7bs=",
+            "rev": "v3.0.0",
+            "sha256": "sha256-BVxBKDUDkaBCdy/ySeJp4d5/jyOhwxDBZ48o+fy5rQQ=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2.9.2"
+        "version": "v3.0.0"
     },
     "microsoft-edge": {
         "cargoLock": null,
@@ -249,11 +249,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-5rHSMX9HdxvQOQ03DnLJF7NTHY5Ybt7sSU5MrcGzRnY=",
+            "sha256": "sha256-GzewFPCYhl45bZ5ILNJHCQ0seKFfsNhUN9WBuXzaDyM=",
             "type": "url",
-            "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_149.0.4022.80-1_amd64.deb"
+            "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_149.0.4022.96-1_amd64.deb"
         },
-        "version": "149.0.4022.80"
+        "version": "149.0.4022.96"
     },
     "opencode": {
         "cargoLock": null,

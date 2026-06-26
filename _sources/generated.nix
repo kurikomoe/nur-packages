@@ -23,10 +23,10 @@
   };
   codex = {
     pname = "codex";
-    version = "0.142.2";
+    version = "0.142.3";
     src = fetchurl {
-      url = "https://github.com/openai/codex/releases/download/rust-v0.142.2/codex-x86_64-unknown-linux-musl.tar.gz";
-      sha256 = "sha256-EskAXId46fdiOxe3fzy/VugFmAmsaAJ7NWDBqBOapOI=";
+      url = "https://github.com/openai/codex/releases/download/rust-v0.142.3/codex-x86_64-unknown-linux-musl.tar.gz";
+      sha256 = "sha256-+WgT9BaStNiuRNCBIWWi/MQpGW6zSB9rwiGv3slqF/g=";
     };
   };
   deploy-rs = {
@@ -125,21 +125,21 @@
   };
   kratos = {
     pname = "kratos";
-    version = "v2.9.2";
+    version = "v3.0.0";
     src = fetchFromGitHub {
       owner = "go-kratos";
       repo = "kratos";
-      rev = "v2.9.2";
+      rev = "v3.0.0";
       fetchSubmodules = false;
-      sha256 = "sha256-I2q/4Q2QkJnjnFggfpr8hCK9LKGyGStfXRT1BPVP7bs=";
+      sha256 = "sha256-BVxBKDUDkaBCdy/ySeJp4d5/jyOhwxDBZ48o+fy5rQQ=";
     };
   };
   microsoft-edge = {
     pname = "microsoft-edge";
-    version = "149.0.4022.80";
+    version = "149.0.4022.96";
     src = fetchurl {
-      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_149.0.4022.80-1_amd64.deb";
-      sha256 = "sha256-5rHSMX9HdxvQOQ03DnLJF7NTHY5Ybt7sSU5MrcGzRnY=";
+      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_149.0.4022.96-1_amd64.deb";
+      sha256 = "sha256-GzewFPCYhl45bZ5ILNJHCQ0seKFfsNhUN9WBuXzaDyM=";
     };
   };
   opencode = {
