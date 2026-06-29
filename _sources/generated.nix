@@ -15,18 +15,18 @@
   };
   cc-switch-cli = {
     pname = "cc-switch-cli";
-    version = "5.8.5";
+    version = "5.8.6";
     src = fetchurl {
-      url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.8.5/cc-switch-cli-v5.8.5-linux-x64-musl.tar.gz";
-      sha256 = "sha256-8OjIJooX8TR03ZscEeSek4WEMSL215st5ohjfjOhz64=";
+      url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.8.6/cc-switch-cli-v5.8.6-linux-x64-musl.tar.gz";
+      sha256 = "sha256-a219Fj1kNV5dDQRyRPpqdTi1TMUBfZwuuXv5ur0zmXg=";
     };
   };
   codex = {
     pname = "codex";
-    version = "0.142.3";
+    version = "0.142.4";
     src = fetchurl {
-      url = "https://github.com/openai/codex/releases/download/rust-v0.142.3/codex-x86_64-unknown-linux-musl.tar.gz";
-      sha256 = "sha256-+WgT9BaStNiuRNCBIWWi/MQpGW6zSB9rwiGv3slqF/g=";
+      url = "https://github.com/openai/codex/releases/download/rust-v0.142.4/codex-x86_64-unknown-linux-musl.tar.gz";
+      sha256 = "sha256-8KxDdRxtOympc6hgqN5SitecsgzBKWYRkwo9XJHd75U=";
     };
   };
   deploy-rs = {
