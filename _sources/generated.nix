@@ -144,21 +144,21 @@
   };
   opencode = {
     pname = "opencode";
-    version = "v1.17.11";
+    version = "v1.17.12";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v1.17.11";
+      rev = "v1.17.12";
       fetchSubmodules = false;
-      sha256 = "sha256-ZgmRHoI3rxsSM10sA4cZu/FxqwmgawQvlW3eykXQsqQ=";
+      sha256 = "sha256-eM+K/JrSjM5OtDLvPAXLQQx45K15rCxkac+HA8nq5gw=";
     };
   };
   opencode-bin = {
     pname = "opencode-bin";
-    version = "v1.17.11";
+    version = "v1.17.12";
     src = fetchurl {
-      url = "https://github.com/anomalyco/opencode/releases/download/v1.17.11/opencode-linux-x64.tar.gz";
-      sha256 = "sha256-au/Lu38EzbRkK+Ugjdv6uzw9J0+Ba/Qr/3LupcJE3KI=";
+      url = "https://github.com/anomalyco/opencode/releases/download/v1.17.12/opencode-linux-x64.tar.gz";
+      sha256 = "sha256-tB465ptQM/b7qLn89MsZ8NyAk9RJJm7wGlzRQvb3Bk0=";
     };
   };
   pwndbg = {
@@ -174,15 +174,15 @@
   };
   python = {
     pname = "python";
-    version = "23629493653be6df0472a46b1be1d65cbd6df55b";
+    version = "2731df9c2ce7a05e079416f3580bacf1a2bade09";
     src = fetchFromGitHub {
       owner = "cachix";
       repo = "nixpkgs-python";
-      rev = "23629493653be6df0472a46b1be1d65cbd6df55b";
+      rev = "2731df9c2ce7a05e079416f3580bacf1a2bade09";
       fetchSubmodules = false;
-      sha256 = "sha256-wXAybU+2LlbXm9cfRDHRPASakq60rLvZBXVT2Ahkj1U=";
+      sha256 = "sha256-e6yzmOYb7N64k5g4bvIvA21TIzhUHjGKaWbKQxBt8bg=";
     };
-    date = "2026-06-10";
+    date = "2026-06-30";
   };
   shellfirm = {
     pname = "shellfirm";

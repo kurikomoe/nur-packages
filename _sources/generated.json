@@ -269,12 +269,12 @@
             "name": null,
             "owner": "anomalyco",
             "repo": "opencode",
-            "rev": "v1.17.11",
-            "sha256": "sha256-ZgmRHoI3rxsSM10sA4cZu/FxqwmgawQvlW3eykXQsqQ=",
+            "rev": "v1.17.12",
+            "sha256": "sha256-eM+K/JrSjM5OtDLvPAXLQQx45K15rCxkac+HA8nq5gw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.17.11"
+        "version": "v1.17.12"
     },
     "opencode-bin": {
         "cargoLock": null,
@@ -285,11 +285,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-au/Lu38EzbRkK+Ugjdv6uzw9J0+Ba/Qr/3LupcJE3KI=",
+            "sha256": "sha256-tB465ptQM/b7qLn89MsZ8NyAk9RJJm7wGlzRQvb3Bk0=",
             "type": "url",
-            "url": "https://github.com/anomalyco/opencode/releases/download/v1.17.11/opencode-linux-x64.tar.gz"
+            "url": "https://github.com/anomalyco/opencode/releases/download/v1.17.12/opencode-linux-x64.tar.gz"
         },
-        "version": "v1.17.11"
+        "version": "v1.17.12"
     },
     "pwndbg": {
         "cargoLock": null,
@@ -314,7 +314,7 @@
     },
     "python": {
         "cargoLock": null,
-        "date": "2026-06-10",
+        "date": "2026-06-30",
         "extract": null,
         "name": "python",
         "passthru": null,
@@ -326,12 +326,12 @@
             "name": null,
             "owner": "cachix",
             "repo": "nixpkgs-python",
-            "rev": "23629493653be6df0472a46b1be1d65cbd6df55b",
-            "sha256": "sha256-wXAybU+2LlbXm9cfRDHRPASakq60rLvZBXVT2Ahkj1U=",
+            "rev": "2731df9c2ce7a05e079416f3580bacf1a2bade09",
+            "sha256": "sha256-e6yzmOYb7N64k5g4bvIvA21TIzhUHjGKaWbKQxBt8bg=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "23629493653be6df0472a46b1be1d65cbd6df55b"
+        "version": "2731df9c2ce7a05e079416f3580bacf1a2bade09"
     },
     "shellfirm": {
         "cargoLock": null,
