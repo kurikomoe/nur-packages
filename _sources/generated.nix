@@ -23,10 +23,10 @@
   };
   codex = {
     pname = "codex";
-    version = "0.142.4";
+    version = "0.142.5";
     src = fetchurl {
-      url = "https://github.com/openai/codex/releases/download/rust-v0.142.4/codex-x86_64-unknown-linux-musl.tar.gz";
-      sha256 = "sha256-8KxDdRxtOympc6hgqN5SitecsgzBKWYRkwo9XJHd75U=";
+      url = "https://github.com/openai/codex/releases/download/rust-v0.142.5/codex-x86_64-unknown-linux-musl.tar.gz";
+      sha256 = "sha256-y5M+w8thv0tfyI7s9eYUmCn6phclNbbvCvsBVL60qrg=";
     };
   };
   deploy-rs = {
@@ -114,13 +114,13 @@
   };
   hermes-agent = {
     pname = "hermes-agent";
-    version = "v2026.6.19";
+    version = "v2026.7.1";
     src = fetchFromGitHub {
       owner = "NousResearch";
       repo = "hermes-agent";
-      rev = "v2026.6.19";
+      rev = "v2026.7.1";
       fetchSubmodules = false;
-      sha256 = "sha256-Oyl6Cpg2bTiX9MyBxFT5q4yVdYf3lCIptzFdiVULmjo=";
+      sha256 = "sha256-Wt72AQtA6Eizi7Ubj23JBhwZ7GKYcjY4mcV6upqHOaU=";
     };
   };
   kratos = {
@@ -144,21 +144,21 @@
   };
   opencode = {
     pname = "opencode";
-    version = "v1.17.12";
+    version = "v1.17.13";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v1.17.12";
+      rev = "v1.17.13";
       fetchSubmodules = false;
-      sha256 = "sha256-eM+K/JrSjM5OtDLvPAXLQQx45K15rCxkac+HA8nq5gw=";
+      sha256 = "sha256-WE8+O+Od8M71fKoOOhE9CbTsJ0JMAi0ZajmYd//VG2k=";
     };
   };
   opencode-bin = {
     pname = "opencode-bin";
-    version = "v1.17.12";
+    version = "v1.17.13";
     src = fetchurl {
-      url = "https://github.com/anomalyco/opencode/releases/download/v1.17.12/opencode-linux-x64.tar.gz";
-      sha256 = "sha256-tB465ptQM/b7qLn89MsZ8NyAk9RJJm7wGlzRQvb3Bk0=";
+      url = "https://github.com/anomalyco/opencode/releases/download/v1.17.13/opencode-linux-x64.tar.gz";
+      sha256 = "sha256-FXr6KJ0ajZNy3gzhmscmEZuTeh9rIBgI1G8G5OWbs0g=";
     };
   };
   pwndbg = {
