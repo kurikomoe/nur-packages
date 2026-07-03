@@ -15,10 +15,10 @@
   };
   cc-switch-cli = {
     pname = "cc-switch-cli";
-    version = "5.8.6";
+    version = "5.8.7";
     src = fetchurl {
-      url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.8.6/cc-switch-cli-v5.8.6-linux-x64-musl.tar.gz";
-      sha256 = "sha256-a219Fj1kNV5dDQRyRPpqdTi1TMUBfZwuuXv5ur0zmXg=";
+      url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.8.7/cc-switch-cli-v5.8.7-linux-x64-musl.tar.gz";
+      sha256 = "sha256-2l9ClwzkBN1YvzokssZfCqF1cJ7muFHnwvMQf6Nd/sE=";
     };
   };
   codex = {
@@ -136,10 +136,10 @@
   };
   microsoft-edge = {
     pname = "microsoft-edge";
-    version = "149.0.4022.98";
+    version = "150.0.4078.48";
     src = fetchurl {
-      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_149.0.4022.98-1_amd64.deb";
-      sha256 = "sha256-tM5RsesBd3CyaCrkXa/wn5OF05k3OlRwzKGzg2lxNtI=";
+      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_150.0.4078.48-1_amd64.deb";
+      sha256 = "sha256-bAkdpsBhuDtKsOOplGEn3JGujzoGMsThwLbV4xd19LU=";
     };
   };
   opencode = {

@@ -22,11 +22,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-a219Fj1kNV5dDQRyRPpqdTi1TMUBfZwuuXv5ur0zmXg=",
+            "sha256": "sha256-2l9ClwzkBN1YvzokssZfCqF1cJ7muFHnwvMQf6Nd/sE=",
             "type": "url",
-            "url": "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.8.6/cc-switch-cli-v5.8.6-linux-x64-musl.tar.gz"
+            "url": "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.8.7/cc-switch-cli-v5.8.7-linux-x64-musl.tar.gz"
         },
-        "version": "5.8.6"
+        "version": "5.8.7"
     },
     "codex": {
         "cargoLock": null,
@@ -249,11 +249,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-tM5RsesBd3CyaCrkXa/wn5OF05k3OlRwzKGzg2lxNtI=",
+            "sha256": "sha256-bAkdpsBhuDtKsOOplGEn3JGujzoGMsThwLbV4xd19LU=",
             "type": "url",
-            "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_149.0.4022.98-1_amd64.deb"
+            "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_150.0.4078.48-1_amd64.deb"
         },
-        "version": "149.0.4022.98"
+        "version": "150.0.4078.48"
     },
     "opencode": {
         "cargoLock": null,
