@@ -15,18 +15,18 @@
   };
   cc-switch-cli = {
     pname = "cc-switch-cli";
-    version = "5.8.7";
+    version = "5.9.0";
     src = fetchurl {
-      url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.8.7/cc-switch-cli-v5.8.7-linux-x64-musl.tar.gz";
-      sha256 = "sha256-2l9ClwzkBN1YvzokssZfCqF1cJ7muFHnwvMQf6Nd/sE=";
+      url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.9.0/cc-switch-cli-v5.9.0-linux-x64-musl.tar.gz";
+      sha256 = "sha256-3DOC3U9rijzpv5nbhbcib3uj/KA4Ge8RVgmDLN+nh4I=";
     };
   };
   codex = {
     pname = "codex";
-    version = "0.142.5";
+    version = "0.143.0";
     src = fetchurl {
-      url = "https://github.com/openai/codex/releases/download/rust-v0.142.5/codex-x86_64-unknown-linux-musl.tar.gz";
-      sha256 = "sha256-y5M+w8thv0tfyI7s9eYUmCn6phclNbbvCvsBVL60qrg=";
+      url = "https://github.com/openai/codex/releases/download/rust-v0.143.0/codex-x86_64-unknown-linux-musl.tar.gz";
+      sha256 = "sha256-2dxzHcZuInsXWxPAcb6eoSbMdnL8rIqHgj2lCw0rL/4=";
     };
   };
   deploy-rs = {
@@ -43,13 +43,13 @@
   };
   determinate = {
     pname = "determinate";
-    version = "v3.21.3";
+    version = "v3.21.5";
     src = fetchFromGitHub {
       owner = "DeterminateSystems";
       repo = "nix-src";
-      rev = "v3.21.3";
+      rev = "v3.21.5";
       fetchSubmodules = false;
-      sha256 = "sha256-F5J6HHJoJXTsAQsXh2Grrw+zi5PFxJ4xP6PX7YvJQYM=";
+      sha256 = "sha256-oR+h2cF6jderMyM+CMvGu/gbh8s3xceSY+oFqYOcrGg=";
     };
   };
   devenv = {
@@ -114,13 +114,13 @@
   };
   hermes-agent = {
     pname = "hermes-agent";
-    version = "v2026.7.1";
+    version = "v2026.7.7";
     src = fetchFromGitHub {
       owner = "NousResearch";
       repo = "hermes-agent";
-      rev = "v2026.7.1";
+      rev = "v2026.7.7";
       fetchSubmodules = false;
-      sha256 = "sha256-Wt72AQtA6Eizi7Ubj23JBhwZ7GKYcjY4mcV6upqHOaU=";
+      sha256 = "sha256-Yk/BXRlNJgfeqjy8hDOT/HbKgevWTH786Df+sQ3g9MU=";
     };
   };
   kratos = {

@@ -22,11 +22,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-2l9ClwzkBN1YvzokssZfCqF1cJ7muFHnwvMQf6Nd/sE=",
+            "sha256": "sha256-3DOC3U9rijzpv5nbhbcib3uj/KA4Ge8RVgmDLN+nh4I=",
             "type": "url",
-            "url": "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.8.7/cc-switch-cli-v5.8.7-linux-x64-musl.tar.gz"
+            "url": "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.9.0/cc-switch-cli-v5.9.0-linux-x64-musl.tar.gz"
         },
-        "version": "5.8.7"
+        "version": "5.9.0"
     },
     "codex": {
         "cargoLock": null,
@@ -37,11 +37,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-y5M+w8thv0tfyI7s9eYUmCn6phclNbbvCvsBVL60qrg=",
+            "sha256": "sha256-2dxzHcZuInsXWxPAcb6eoSbMdnL8rIqHgj2lCw0rL/4=",
             "type": "url",
-            "url": "https://github.com/openai/codex/releases/download/rust-v0.142.5/codex-x86_64-unknown-linux-musl.tar.gz"
+            "url": "https://github.com/openai/codex/releases/download/rust-v0.143.0/codex-x86_64-unknown-linux-musl.tar.gz"
         },
-        "version": "0.142.5"
+        "version": "0.143.0"
     },
     "deploy-rs": {
         "cargoLock": null,
@@ -78,12 +78,12 @@
             "name": null,
             "owner": "DeterminateSystems",
             "repo": "nix-src",
-            "rev": "v3.21.3",
-            "sha256": "sha256-F5J6HHJoJXTsAQsXh2Grrw+zi5PFxJ4xP6PX7YvJQYM=",
+            "rev": "v3.21.5",
+            "sha256": "sha256-oR+h2cF6jderMyM+CMvGu/gbh8s3xceSY+oFqYOcrGg=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v3.21.3"
+        "version": "v3.21.5"
     },
     "devenv": {
         "cargoLock": null,
@@ -212,12 +212,12 @@
             "name": null,
             "owner": "NousResearch",
             "repo": "hermes-agent",
-            "rev": "v2026.7.1",
-            "sha256": "sha256-Wt72AQtA6Eizi7Ubj23JBhwZ7GKYcjY4mcV6upqHOaU=",
+            "rev": "v2026.7.7",
+            "sha256": "sha256-Yk/BXRlNJgfeqjy8hDOT/HbKgevWTH786Df+sQ3g9MU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2026.7.1"
+        "version": "v2026.7.7"
     },
     "kratos": {
         "cargoLock": null,
