@@ -23,10 +23,10 @@
   };
   codex = {
     pname = "codex";
-    version = "0.143.0";
+    version = "0.144.1";
     src = fetchurl {
-      url = "https://github.com/openai/codex/releases/download/rust-v0.143.0/codex-x86_64-unknown-linux-musl.tar.gz";
-      sha256 = "sha256-2dxzHcZuInsXWxPAcb6eoSbMdnL8rIqHgj2lCw0rL/4=";
+      url = "https://github.com/openai/codex/releases/download/rust-v0.144.1/codex-x86_64-unknown-linux-musl.tar.gz";
+      sha256 = "sha256-hAka4gxl/MfUEg25fRvVfX/435x2Cft4HHjC671PWig=";
     };
   };
   deploy-rs = {
@@ -136,29 +136,29 @@
   };
   microsoft-edge = {
     pname = "microsoft-edge";
-    version = "150.0.4078.48";
+    version = "150.0.4078.65";
     src = fetchurl {
-      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_150.0.4078.48-1_amd64.deb";
-      sha256 = "sha256-bAkdpsBhuDtKsOOplGEn3JGujzoGMsThwLbV4xd19LU=";
+      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_150.0.4078.65-1_amd64.deb";
+      sha256 = "sha256-mt8fx6gJE5PGFiMLeceJ5rmLmwmQXaxx7VY8yPIQqyE=";
     };
   };
   opencode = {
     pname = "opencode";
-    version = "v1.17.15";
+    version = "v1.17.18";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v1.17.15";
+      rev = "v1.17.18";
       fetchSubmodules = false;
-      sha256 = "sha256-SBAKl0bsiSUDwvi+XCCgDL2SuP7NZAqx4iGyaMZz5N4=";
+      sha256 = "sha256-Y0rcO6r9yqhYux8IS5oAtgzcMXfJE8I1Lre4HdJ5nBg=";
     };
   };
   opencode-bin = {
     pname = "opencode-bin";
-    version = "v1.17.15";
+    version = "v1.17.18";
     src = fetchurl {
-      url = "https://github.com/anomalyco/opencode/releases/download/v1.17.15/opencode-linux-x64.tar.gz";
-      sha256 = "sha256-DhNTdxGSx9LcDGENYf9wZou4pEINxNnjXP0z1yRfPmc=";
+      url = "https://github.com/anomalyco/opencode/releases/download/v1.17.18/opencode-linux-x64.tar.gz";
+      sha256 = "sha256-4UnTLuVmfAzV+4TQv4OTsxLpN4LutNdNKbuwOS3nEzw=";
     };
   };
   pwndbg = {
