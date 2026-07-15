@@ -22,11 +22,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-3DOC3U9rijzpv5nbhbcib3uj/KA4Ge8RVgmDLN+nh4I=",
+            "sha256": "sha256-Wh1aqS9/WNrJeqTVDNY8N5ri89ET4N4NyGGD4ZoY0+E=",
             "type": "url",
-            "url": "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.9.0/cc-switch-cli-v5.9.0-linux-x64-musl.tar.gz"
+            "url": "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.9.1/cc-switch-cli-v5.9.1-linux-x64-musl.tar.gz"
         },
-        "version": "5.9.0"
+        "version": "5.9.1"
     },
     "codex": {
         "cargoLock": null,
@@ -78,12 +78,12 @@
             "name": null,
             "owner": "DeterminateSystems",
             "repo": "nix-src",
-            "rev": "v3.21.5",
-            "sha256": "sha256-oR+h2cF6jderMyM+CMvGu/gbh8s3xceSY+oFqYOcrGg=",
+            "rev": "v3.21.7",
+            "sha256": "sha256-2/DfNkCVKAv/Zbj7bW+8+aH39Ybc5DE3OEUZCEzzqc4=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v3.21.5"
+        "version": "v3.21.7"
     },
     "devenv": {
         "cargoLock": null,
@@ -269,12 +269,12 @@
             "name": null,
             "owner": "anomalyco",
             "repo": "opencode",
-            "rev": "v1.18.1",
-            "sha256": "sha256-ESKM2u46KQI5wq736D2RTd8IZH2SdOKtGUCDnMJQGVc=",
+            "rev": "v1.18.2",
+            "sha256": "sha256-dtokh2AJCnrp07jtx+0vOYjQzfxNA+3pajIFFNYuI24=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.18.1"
+        "version": "v1.18.2"
     },
     "opencode-bin": {
         "cargoLock": null,
@@ -285,11 +285,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-nszifPUpreXxd/q0eLSHa1wx2d3IIWuZSBas8ZIVlRE=",
+            "sha256": "sha256-l8leAEu3PSA5+VfqM74GNepOIrjc6u348Jg3ZZUM8bY=",
             "type": "url",
-            "url": "https://github.com/anomalyco/opencode/releases/download/v1.18.1/opencode-linux-x64.tar.gz"
+            "url": "https://github.com/anomalyco/opencode/releases/download/v1.18.2/opencode-linux-x64.tar.gz"
         },
-        "version": "v1.18.1"
+        "version": "v1.18.2"
     },
     "pwndbg": {
         "cargoLock": null,

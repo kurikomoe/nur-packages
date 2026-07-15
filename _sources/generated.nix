@@ -15,10 +15,10 @@
   };
   cc-switch-cli = {
     pname = "cc-switch-cli";
-    version = "5.9.0";
+    version = "5.9.1";
     src = fetchurl {
-      url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.9.0/cc-switch-cli-v5.9.0-linux-x64-musl.tar.gz";
-      sha256 = "sha256-3DOC3U9rijzpv5nbhbcib3uj/KA4Ge8RVgmDLN+nh4I=";
+      url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.9.1/cc-switch-cli-v5.9.1-linux-x64-musl.tar.gz";
+      sha256 = "sha256-Wh1aqS9/WNrJeqTVDNY8N5ri89ET4N4NyGGD4ZoY0+E=";
     };
   };
   codex = {
@@ -43,13 +43,13 @@
   };
   determinate = {
     pname = "determinate";
-    version = "v3.21.5";
+    version = "v3.21.7";
     src = fetchFromGitHub {
       owner = "DeterminateSystems";
       repo = "nix-src";
-      rev = "v3.21.5";
+      rev = "v3.21.7";
       fetchSubmodules = false;
-      sha256 = "sha256-oR+h2cF6jderMyM+CMvGu/gbh8s3xceSY+oFqYOcrGg=";
+      sha256 = "sha256-2/DfNkCVKAv/Zbj7bW+8+aH39Ybc5DE3OEUZCEzzqc4=";
     };
   };
   devenv = {
@@ -144,21 +144,21 @@
   };
   opencode = {
     pname = "opencode";
-    version = "v1.18.1";
+    version = "v1.18.2";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v1.18.1";
+      rev = "v1.18.2";
       fetchSubmodules = false;
-      sha256 = "sha256-ESKM2u46KQI5wq736D2RTd8IZH2SdOKtGUCDnMJQGVc=";
+      sha256 = "sha256-dtokh2AJCnrp07jtx+0vOYjQzfxNA+3pajIFFNYuI24=";
     };
   };
   opencode-bin = {
     pname = "opencode-bin";
-    version = "v1.18.1";
+    version = "v1.18.2";
     src = fetchurl {
-      url = "https://github.com/anomalyco/opencode/releases/download/v1.18.1/opencode-linux-x64.tar.gz";
-      sha256 = "sha256-nszifPUpreXxd/q0eLSHa1wx2d3IIWuZSBas8ZIVlRE=";
+      url = "https://github.com/anomalyco/opencode/releases/download/v1.18.2/opencode-linux-x64.tar.gz";
+      sha256 = "sha256-l8leAEu3PSA5+VfqM74GNepOIrjc6u348Jg3ZZUM8bY=";
     };
   };
   pwndbg = {
