@@ -15,18 +15,18 @@
   };
   cc-switch-cli = {
     pname = "cc-switch-cli";
-    version = "5.9.1";
+    version = "5.9.2";
     src = fetchurl {
-      url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.9.1/cc-switch-cli-v5.9.1-linux-x64-musl.tar.gz";
-      sha256 = "sha256-Wh1aqS9/WNrJeqTVDNY8N5ri89ET4N4NyGGD4ZoY0+E=";
+      url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.9.2/cc-switch-cli-v5.9.2-linux-x64-musl.tar.gz";
+      sha256 = "sha256-owVM2RAQLFr7AkzENnVk7bk1HC3v1qO1O3US5wyKgQg=";
     };
   };
   codex = {
     pname = "codex";
-    version = "0.144.5";
+    version = "0.144.6";
     src = fetchurl {
-      url = "https://github.com/openai/codex/releases/download/rust-v0.144.5/codex-x86_64-unknown-linux-musl.tar.gz";
-      sha256 = "sha256-tr6hO+30kyMvZxdxTEXng3iMaVztzzfDRPc6/Jex7J8=";
+      url = "https://github.com/openai/codex/releases/download/rust-v0.144.6/codex-x86_64-unknown-linux-musl.tar.gz";
+      sha256 = "sha256-ap3vUaCtjOpmhNjrO/AzyJ8z47xc/kkvGh4KcYRRocY=";
     };
   };
   deploy-rs = {
@@ -136,10 +136,10 @@
   };
   microsoft-edge = {
     pname = "microsoft-edge";
-    version = "150.0.4078.80";
+    version = "150.0.4078.83";
     src = fetchurl {
-      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_150.0.4078.80-1_amd64.deb";
-      sha256 = "sha256-4QNffRrqg6aS4Rn+6Gs+W51SA7tlW2/Lez97i7n3+eQ=";
+      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_150.0.4078.83-1_amd64.deb";
+      sha256 = "sha256-uTn6/f4Q9eifaJr5/U6i7KmJAtJKxHeaUsdV+omcqlQ=";
     };
   };
   opencode = {
