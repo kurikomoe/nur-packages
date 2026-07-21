@@ -23,10 +23,10 @@
   };
   codex = {
     pname = "codex";
-    version = "0.144.6";
+    version = "0.145.0";
     src = fetchurl {
-      url = "https://github.com/openai/codex/releases/download/rust-v0.144.6/codex-x86_64-unknown-linux-musl.tar.gz";
-      sha256 = "sha256-ap3vUaCtjOpmhNjrO/AzyJ8z47xc/kkvGh4KcYRRocY=";
+      url = "https://github.com/openai/codex/releases/download/rust-v0.145.0/codex-x86_64-unknown-linux-musl.tar.gz";
+      sha256 = "sha256-v68Tybo08q12TkqRbEnPcXeuujKc8PcZ4iJ1ZvyNZio=";
     };
   };
   deploy-rs = {
@@ -43,13 +43,13 @@
   };
   determinate = {
     pname = "determinate";
-    version = "v3.21.7";
+    version = "v3.21.8";
     src = fetchFromGitHub {
       owner = "DeterminateSystems";
       repo = "nix-src";
-      rev = "v3.21.7";
+      rev = "v3.21.8";
       fetchSubmodules = false;
-      sha256 = "sha256-2/DfNkCVKAv/Zbj7bW+8+aH39Ybc5DE3OEUZCEzzqc4=";
+      sha256 = "sha256-Ri/OBH1gg42wgC02OuFKBZu68niiRkHyBphK0pxJLfQ=";
     };
   };
   devenv = {
