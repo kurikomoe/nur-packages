@@ -174,15 +174,15 @@
   };
   python = {
     pname = "python";
-    version = "2731df9c2ce7a05e079416f3580bacf1a2bade09";
+    version = "8d51e95247ca71680b72cdd308fdf1dbeb031313";
     src = fetchFromGitHub {
       owner = "cachix";
       repo = "nixpkgs-python";
-      rev = "2731df9c2ce7a05e079416f3580bacf1a2bade09";
+      rev = "8d51e95247ca71680b72cdd308fdf1dbeb031313";
       fetchSubmodules = false;
-      sha256 = "sha256-e6yzmOYb7N64k5g4bvIvA21TIzhUHjGKaWbKQxBt8bg=";
+      sha256 = "sha256-HpbHqOrLbDS+ZTK2u9iojvWfMlWnuPzGb9XGcEipIxE=";
     };
-    date = "2026-06-30";
+    date = "2026-07-21";
   };
   shellfirm = {
     pname = "shellfirm";
