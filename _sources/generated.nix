@@ -7,10 +7,10 @@
 }: {
   "1password-cli-linux" = {
     pname = "1password-cli-linux";
-    version = "2.34.1";
+    version = "2.35.0";
     src = fetchTarball {
-      url = "https://cache.agilebits.com/dist/1P/op2/pkg/v2.34.1/op_linux_amd64_v2.34.1.zip";
-      sha256 = "sha256-oAABMlwwv5X91TT6FK2aPpg+e2CvmHT1rqIVRTjQNCQ=";
+      url = "https://cache.agilebits.com/dist/1P/op2/pkg/v2.35.0/op_linux_amd64_v2.35.0.zip";
+      sha256 = "sha256-xv3pFMKflVFgrleh6tMLpcyqASJjYxPRMWrd9p8+rhc=";
     };
   };
   cc-switch-cli = {
@@ -208,13 +208,13 @@
   };
   trzsz-ssh = {
     pname = "trzsz-ssh";
-    version = "v0.1.25";
+    version = "v0.1.26";
     src = fetchFromGitHub {
       owner = "trzsz";
       repo = "trzsz-ssh";
-      rev = "v0.1.25";
+      rev = "v0.1.26";
       fetchSubmodules = false;
-      sha256 = "sha256-s2WBSEu2A26/VxEFROMGJ5n8piEKgvV2YJZrX8MC9H0=";
+      sha256 = "sha256-96xISHU0/C473Ohi3obsO1ihkxa0Q7Z39JIKzt5R7iM=";
     };
   };
 }

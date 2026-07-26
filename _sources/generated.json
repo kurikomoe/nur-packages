@@ -7,11 +7,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-oAABMlwwv5X91TT6FK2aPpg+e2CvmHT1rqIVRTjQNCQ=",
+            "sha256": "sha256-xv3pFMKflVFgrleh6tMLpcyqASJjYxPRMWrd9p8+rhc=",
             "type": "tarball",
-            "url": "https://cache.agilebits.com/dist/1P/op2/pkg/v2.34.1/op_linux_amd64_v2.34.1.zip"
+            "url": "https://cache.agilebits.com/dist/1P/op2/pkg/v2.35.0/op_linux_amd64_v2.35.0.zip"
         },
-        "version": "2.34.1"
+        "version": "2.35.0"
     },
     "cc-switch-cli": {
         "cargoLock": null,
@@ -389,11 +389,11 @@
             "name": null,
             "owner": "trzsz",
             "repo": "trzsz-ssh",
-            "rev": "v0.1.25",
-            "sha256": "sha256-s2WBSEu2A26/VxEFROMGJ5n8piEKgvV2YJZrX8MC9H0=",
+            "rev": "v0.1.26",
+            "sha256": "sha256-96xISHU0/C473Ohi3obsO1ihkxa0Q7Z39JIKzt5R7iM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.1.25"
+        "version": "v0.1.26"
     }
 }

@@ -35,7 +35,7 @@
         --set PATH ${lib.makeBinPath buildInputs}
     '';
 
-    vendorHash = "sha256-neaTWLaOvH54pg4RXOPy1N0Fcr8TZE8lBJO+pwXHGjM=";
+    vendorHash = "sha256-t/uJ+YyemTsDbuO+7VlOjFY8DvizkSZCE6uloA4mNqY=";
     # latest vesion: https://github.com/trzsz/trzsz-ssh
   };
 
