@@ -45,7 +45,7 @@
     },
     "deploy-rs": {
         "cargoLock": null,
-        "date": "2026-06-16",
+        "date": "2026-07-27",
         "extract": null,
         "name": "deploy-rs",
         "passthru": null,
@@ -57,12 +57,12 @@
             "name": null,
             "owner": "serokell",
             "repo": "deploy-rs",
-            "rev": "6d3087eedff75a715b40c0e124ba15d2dd7bec28",
-            "sha256": "sha256-5yHuAh9k7rT7rtf3uRaXkiUyYvQE9oaCgzhprLm2mr8=",
+            "rev": "4f4179edae9a9dd31339284c8334072e3a110528",
+            "sha256": "sha256-O5bnHIzOkp2SQl0eCqKIqKzjgy2u0GXirTKSUdwER4Q=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "6d3087eedff75a715b40c0e124ba15d2dd7bec28"
+        "version": "4f4179edae9a9dd31339284c8334072e3a110528"
     },
     "determinate": {
         "cargoLock": null,
@@ -269,12 +269,12 @@
             "name": null,
             "owner": "anomalyco",
             "repo": "opencode",
-            "rev": "v1.18.5",
-            "sha256": "sha256-qO26isOZNzdVX0Pd6IYRhhnOtcrvL3nI0C34kczzW0k=",
+            "rev": "v1.18.7",
+            "sha256": "sha256-IgSKccqdmdfyWc+kVcV23FCF07KIOwDSidVLa4djIHE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.18.5"
+        "version": "v1.18.7"
     },
     "opencode-bin": {
         "cargoLock": null,
@@ -285,11 +285,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-zUolV6PWVQ8ny1wCV+vo1zOIuzS+2othIeZCinTB6uI=",
+            "sha256": "sha256-y12dbS+PvvCpyXXtRJT3Oypi9OT/1Qi8wyEtpPp2w9o=",
             "type": "url",
-            "url": "https://github.com/anomalyco/opencode/releases/download/v1.18.5/opencode-linux-x64.tar.gz"
+            "url": "https://github.com/anomalyco/opencode/releases/download/v1.18.7/opencode-linux-x64.tar.gz"
         },
-        "version": "v1.18.5"
+        "version": "v1.18.7"
     },
     "pwndbg": {
         "cargoLock": null,
@@ -305,12 +305,12 @@
             "name": null,
             "owner": "pwndbg",
             "repo": "pwndbg",
-            "rev": "2026.02.18",
-            "sha256": "sha256-fXceU1vTwNubHeKGjRQnCaB9HR5taXxJotrYp3u0HU4=",
+            "rev": "2026.07.27",
+            "sha256": "sha256-G++A7b9qAsrzHC5pT2QO14DSYKFUd0GATMRzfio5xA0=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "2026.02.18"
+        "version": "2026.07.27"
     },
     "python": {
         "cargoLock": null,

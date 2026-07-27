@@ -31,15 +31,15 @@
   };
   deploy-rs = {
     pname = "deploy-rs";
-    version = "6d3087eedff75a715b40c0e124ba15d2dd7bec28";
+    version = "4f4179edae9a9dd31339284c8334072e3a110528";
     src = fetchFromGitHub {
       owner = "serokell";
       repo = "deploy-rs";
-      rev = "6d3087eedff75a715b40c0e124ba15d2dd7bec28";
+      rev = "4f4179edae9a9dd31339284c8334072e3a110528";
       fetchSubmodules = false;
-      sha256 = "sha256-5yHuAh9k7rT7rtf3uRaXkiUyYvQE9oaCgzhprLm2mr8=";
+      sha256 = "sha256-O5bnHIzOkp2SQl0eCqKIqKzjgy2u0GXirTKSUdwER4Q=";
     };
-    date = "2026-06-16";
+    date = "2026-07-27";
   };
   determinate = {
     pname = "determinate";
@@ -144,32 +144,32 @@
   };
   opencode = {
     pname = "opencode";
-    version = "v1.18.5";
+    version = "v1.18.7";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v1.18.5";
+      rev = "v1.18.7";
       fetchSubmodules = false;
-      sha256 = "sha256-qO26isOZNzdVX0Pd6IYRhhnOtcrvL3nI0C34kczzW0k=";
+      sha256 = "sha256-IgSKccqdmdfyWc+kVcV23FCF07KIOwDSidVLa4djIHE=";
     };
   };
   opencode-bin = {
     pname = "opencode-bin";
-    version = "v1.18.5";
+    version = "v1.18.7";
     src = fetchurl {
-      url = "https://github.com/anomalyco/opencode/releases/download/v1.18.5/opencode-linux-x64.tar.gz";
-      sha256 = "sha256-zUolV6PWVQ8ny1wCV+vo1zOIuzS+2othIeZCinTB6uI=";
+      url = "https://github.com/anomalyco/opencode/releases/download/v1.18.7/opencode-linux-x64.tar.gz";
+      sha256 = "sha256-y12dbS+PvvCpyXXtRJT3Oypi9OT/1Qi8wyEtpPp2w9o=";
     };
   };
   pwndbg = {
     pname = "pwndbg";
-    version = "2026.02.18";
+    version = "2026.07.27";
     src = fetchFromGitHub {
       owner = "pwndbg";
       repo = "pwndbg";
-      rev = "2026.02.18";
+      rev = "2026.07.27";
       fetchSubmodules = false;
-      sha256 = "sha256-fXceU1vTwNubHeKGjRQnCaB9HR5taXxJotrYp3u0HU4=";
+      sha256 = "sha256-G++A7b9qAsrzHC5pT2QO14DSYKFUd0GATMRzfio5xA0=";
     };
   };
   python = {
