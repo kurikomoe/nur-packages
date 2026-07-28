@@ -54,13 +54,13 @@
   };
   devenv = {
     pname = "devenv";
-    version = "v2.1.2";
+    version = "v2.2";
     src = fetchFromGitHub {
       owner = "cachix";
       repo = "devenv";
-      rev = "v2.1.2";
+      rev = "v2.2";
       fetchSubmodules = false;
-      sha256 = "sha256-EQnZCy7r4VMO6KDoytxHBa0mFbM1D9g1kaDfs/s0YZA=";
+      sha256 = "sha256-9ewHcbuOk7wvBRBM28g06MkjcEIWyqoD04QZKouiRKI=";
     };
   };
   dotnet-script = {
@@ -144,32 +144,32 @@
   };
   opencode = {
     pname = "opencode";
-    version = "v1.18.7";
+    version = "v1.18.9";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v1.18.7";
+      rev = "v1.18.9";
       fetchSubmodules = false;
-      sha256 = "sha256-IgSKccqdmdfyWc+kVcV23FCF07KIOwDSidVLa4djIHE=";
+      sha256 = "sha256-uvKzjPquhjm5OdDdoqexJQfDkN0OOXOW8RbdSka12NQ=";
     };
   };
   opencode-bin = {
     pname = "opencode-bin";
-    version = "v1.18.7";
+    version = "v1.18.9";
     src = fetchurl {
-      url = "https://github.com/anomalyco/opencode/releases/download/v1.18.7/opencode-linux-x64.tar.gz";
-      sha256 = "sha256-y12dbS+PvvCpyXXtRJT3Oypi9OT/1Qi8wyEtpPp2w9o=";
+      url = "https://github.com/anomalyco/opencode/releases/download/v1.18.9/opencode-linux-x64.tar.gz";
+      sha256 = "sha256-oPpLe4vay9AT55pfadQiDTa1Rc0+opa6dl8wFvpQG1s=";
     };
   };
   pwndbg = {
     pname = "pwndbg";
-    version = "2026.07.27";
+    version = "2026.02.18";
     src = fetchFromGitHub {
       owner = "pwndbg";
       repo = "pwndbg";
-      rev = "2026.07.27";
+      rev = "2026.02.18";
       fetchSubmodules = false;
-      sha256 = "sha256-G++A7b9qAsrzHC5pT2QO14DSYKFUd0GATMRzfio5xA0=";
+      sha256 = "sha256-fXceU1vTwNubHeKGjRQnCaB9HR5taXxJotrYp3u0HU4=";
     };
   };
   python = {

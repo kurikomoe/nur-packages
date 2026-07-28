@@ -99,12 +99,12 @@
             "name": null,
             "owner": "cachix",
             "repo": "devenv",
-            "rev": "v2.1.2",
-            "sha256": "sha256-EQnZCy7r4VMO6KDoytxHBa0mFbM1D9g1kaDfs/s0YZA=",
+            "rev": "v2.2",
+            "sha256": "sha256-9ewHcbuOk7wvBRBM28g06MkjcEIWyqoD04QZKouiRKI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2.1.2"
+        "version": "v2.2"
     },
     "dotnet-script": {
         "cargoLock": null,
@@ -269,12 +269,12 @@
             "name": null,
             "owner": "anomalyco",
             "repo": "opencode",
-            "rev": "v1.18.7",
-            "sha256": "sha256-IgSKccqdmdfyWc+kVcV23FCF07KIOwDSidVLa4djIHE=",
+            "rev": "v1.18.9",
+            "sha256": "sha256-uvKzjPquhjm5OdDdoqexJQfDkN0OOXOW8RbdSka12NQ=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.18.7"
+        "version": "v1.18.9"
     },
     "opencode-bin": {
         "cargoLock": null,
@@ -285,11 +285,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-y12dbS+PvvCpyXXtRJT3Oypi9OT/1Qi8wyEtpPp2w9o=",
+            "sha256": "sha256-oPpLe4vay9AT55pfadQiDTa1Rc0+opa6dl8wFvpQG1s=",
             "type": "url",
-            "url": "https://github.com/anomalyco/opencode/releases/download/v1.18.7/opencode-linux-x64.tar.gz"
+            "url": "https://github.com/anomalyco/opencode/releases/download/v1.18.9/opencode-linux-x64.tar.gz"
         },
-        "version": "v1.18.7"
+        "version": "v1.18.9"
     },
     "pwndbg": {
         "cargoLock": null,
@@ -305,12 +305,12 @@
             "name": null,
             "owner": "pwndbg",
             "repo": "pwndbg",
-            "rev": "2026.07.27",
-            "sha256": "sha256-G++A7b9qAsrzHC5pT2QO14DSYKFUd0GATMRzfio5xA0=",
+            "rev": "2026.02.18",
+            "sha256": "sha256-fXceU1vTwNubHeKGjRQnCaB9HR5taXxJotrYp3u0HU4=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "2026.07.27"
+        "version": "2026.02.18"
     },
     "python": {
         "cargoLock": null,
