@@ -23,10 +23,10 @@
   };
   codex = {
     pname = "codex";
-    version = "0.145.0";
+    version = "0.146.0";
     src = fetchurl {
-      url = "https://github.com/openai/codex/releases/download/rust-v0.145.0/codex-x86_64-unknown-linux-musl.tar.gz";
-      sha256 = "sha256-v68Tybo08q12TkqRbEnPcXeuujKc8PcZ4iJ1ZvyNZio=";
+      url = "https://github.com/openai/codex/releases/download/rust-v0.146.0/codex-x86_64-unknown-linux-musl.tar.gz";
+      sha256 = "sha256-W6O5QFVDlTCB9mHQhU0mb3biq75R1BNJNVo23nZzd2o=";
     };
   };
   deploy-rs = {
@@ -136,10 +136,10 @@
   };
   microsoft-edge = {
     pname = "microsoft-edge";
-    version = "150.0.4078.99";
+    version = "150.0.4078.105";
     src = fetchurl {
-      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_150.0.4078.99-1_amd64.deb";
-      sha256 = "sha256-Rqg9yvkQ4iunLTs9brVP0VWv5dt0pDm09GXGI7ZyZlw=";
+      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_150.0.4078.105-1_amd64.deb";
+      sha256 = "sha256-cRQZLix+jBKu7LYEsnMjVeklcWA1cp6/igr+aJXNwBs=";
     };
   };
   opencode = {
@@ -163,13 +163,13 @@
   };
   pwndbg = {
     pname = "pwndbg";
-    version = "2026.02.18";
+    version = "2026.07.29";
     src = fetchFromGitHub {
       owner = "pwndbg";
       repo = "pwndbg";
-      rev = "2026.02.18";
+      rev = "2026.07.29";
       fetchSubmodules = false;
-      sha256 = "sha256-fXceU1vTwNubHeKGjRQnCaB9HR5taXxJotrYp3u0HU4=";
+      sha256 = "sha256-OkUJtFFvJ00/Ai7DsGqg+KA91Vt+17weJX/hrw0c03c=";
     };
   };
   python = {
