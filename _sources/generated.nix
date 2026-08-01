@@ -31,13 +31,13 @@
   };
   deploy-rs = {
     pname = "deploy-rs";
-    version = "145da05e26235784581a31ba83beb9949b24da84";
+    version = "b974715a27b49fadbf3bf6d85e26bcb3109daa6d";
     src = fetchFromGitHub {
       owner = "serokell";
       repo = "deploy-rs";
-      rev = "145da05e26235784581a31ba83beb9949b24da84";
+      rev = "b974715a27b49fadbf3bf6d85e26bcb3109daa6d";
       fetchSubmodules = false;
-      sha256 = "sha256-pD8rBn57pNLOnWCz07D2HLzVE/DUFuuh0bzdEhc/dkw=";
+      sha256 = "sha256-anlq3YQDCsNrkNlu3HTg4dEIpRugwnyAVUxoPcBmA/U=";
     };
     date = "2026-07-31";
   };
@@ -103,24 +103,24 @@
   };
   goctl = {
     pname = "goctl";
-    version = "v1.10.2";
+    version = "v1.10.3";
     src = fetchFromGitHub {
       owner = "zeromicro";
       repo = "go-zero";
-      rev = "v1.10.2";
+      rev = "v1.10.3";
       fetchSubmodules = false;
-      sha256 = "sha256-he/c3l8+LptW09wMR6qvQ03686dguKB3n9o4ja85nK8=";
+      sha256 = "sha256-y3eYLBm7Zj0x3qf3D5CQMuvOUdaXnXY2mFF74p4nzYo=";
     };
   };
   hermes-agent = {
     pname = "hermes-agent";
-    version = "v2026.7.20";
+    version = "v2026.7.30";
     src = fetchFromGitHub {
       owner = "NousResearch";
       repo = "hermes-agent";
-      rev = "v2026.7.20";
+      rev = "v2026.7.30";
       fetchSubmodules = false;
-      sha256 = "sha256-QJEiBOLAVGeYBym4EUtnDgeIyJyDQWgmat70/yujiz4=";
+      sha256 = "sha256-JVpdkcgrx+TGKayql/hzhTx+zuyaFATGEtVkBo1aPCc=";
     };
   };
   kratos = {
@@ -144,21 +144,21 @@
   };
   opencode = {
     pname = "opencode";
-    version = "v1.18.10";
+    version = "v1.18.11";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v1.18.10";
+      rev = "v1.18.11";
       fetchSubmodules = false;
-      sha256 = "sha256-S90dh9+Xvpqva2L+gfIFJfSoL+mobXZZWMNkeegEYRE=";
+      sha256 = "sha256-Rg+NeRLeu0e+WSTZd8oJzV3XMMxXZCZ5LImDcCraX8g=";
     };
   };
   opencode-bin = {
     pname = "opencode-bin";
-    version = "v1.18.10";
+    version = "v1.18.11";
     src = fetchurl {
-      url = "https://github.com/anomalyco/opencode/releases/download/v1.18.10/opencode-linux-x64.tar.gz";
-      sha256 = "sha256-axET2nBCU/tNoStB5CNqzsufK2KUnJRfburKoVERuXY=";
+      url = "https://github.com/anomalyco/opencode/releases/download/v1.18.11/opencode-linux-x64.tar.gz";
+      sha256 = "sha256-pN/8wApakyVsa9BqoMmEMgUo9WTbUqH0vs1cfen7WaE=";
     };
   };
   pwndbg = {
