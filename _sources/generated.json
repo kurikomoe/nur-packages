@@ -22,11 +22,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-pYHsJu/aeVGClJJDZl6nJdQgKcWLtLkTfQcIslWk+5E=",
+            "sha256": "sha256-Aoc4Miz59/j7+JrNNKDDebGOgVWWIsPwO5UGqXB4sxM=",
             "type": "url",
-            "url": "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.9.3/cc-switch-cli-v5.9.3-linux-x64-musl.tar.gz"
+            "url": "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.10.0/cc-switch-cli-v5.10.0-linux-x64-musl.tar.gz"
         },
-        "version": "5.9.3"
+        "version": "5.10.0"
     },
     "codex": {
         "cargoLock": null,
@@ -99,12 +99,12 @@
             "name": null,
             "owner": "cachix",
             "repo": "devenv",
-            "rev": "v2.2",
-            "sha256": "sha256-9ewHcbuOk7wvBRBM28g06MkjcEIWyqoD04QZKouiRKI=",
+            "rev": "v2.2.1",
+            "sha256": "sha256-S4baMekJYJGWDCo1yOYxZkmgBlAruQ5MLi+h3Zo8als=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2.2"
+        "version": "v2.2.1"
     },
     "dotnet-script": {
         "cargoLock": null,

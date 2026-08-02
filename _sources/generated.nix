@@ -15,10 +15,10 @@
   };
   cc-switch-cli = {
     pname = "cc-switch-cli";
-    version = "5.9.3";
+    version = "5.10.0";
     src = fetchurl {
-      url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.9.3/cc-switch-cli-v5.9.3-linux-x64-musl.tar.gz";
-      sha256 = "sha256-pYHsJu/aeVGClJJDZl6nJdQgKcWLtLkTfQcIslWk+5E=";
+      url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.10.0/cc-switch-cli-v5.10.0-linux-x64-musl.tar.gz";
+      sha256 = "sha256-Aoc4Miz59/j7+JrNNKDDebGOgVWWIsPwO5UGqXB4sxM=";
     };
   };
   codex = {
@@ -54,13 +54,13 @@
   };
   devenv = {
     pname = "devenv";
-    version = "v2.2";
+    version = "v2.2.1";
     src = fetchFromGitHub {
       owner = "cachix";
       repo = "devenv";
-      rev = "v2.2";
+      rev = "v2.2.1";
       fetchSubmodules = false;
-      sha256 = "sha256-9ewHcbuOk7wvBRBM28g06MkjcEIWyqoD04QZKouiRKI=";
+      sha256 = "sha256-S4baMekJYJGWDCo1yOYxZkmgBlAruQ5MLi+h3Zo8als=";
     };
   };
   dotnet-script = {
