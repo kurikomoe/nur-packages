@@ -31,15 +31,15 @@
   };
   deploy-rs = {
     pname = "deploy-rs";
-    version = "b974715a27b49fadbf3bf6d85e26bcb3109daa6d";
+    version = "5059116c0bae73dbd9277cbc340f5b8a21ccaaa9";
     src = fetchFromGitHub {
       owner = "serokell";
       repo = "deploy-rs";
-      rev = "b974715a27b49fadbf3bf6d85e26bcb3109daa6d";
+      rev = "5059116c0bae73dbd9277cbc340f5b8a21ccaaa9";
       fetchSubmodules = false;
-      sha256 = "sha256-anlq3YQDCsNrkNlu3HTg4dEIpRugwnyAVUxoPcBmA/U=";
+      sha256 = "sha256-uuwNrx8lOb/w2TUllumBSyW/3eH8Zx5An0ZgD8slPHY=";
     };
-    date = "2026-07-31";
+    date = "2026-08-04";
   };
   determinate = {
     pname = "determinate";
@@ -114,13 +114,13 @@
   };
   hermes-agent = {
     pname = "hermes-agent";
-    version = "v2026.7.30";
+    version = "v2026.8.3";
     src = fetchFromGitHub {
       owner = "NousResearch";
       repo = "hermes-agent";
-      rev = "v2026.7.30";
+      rev = "v2026.8.3";
       fetchSubmodules = false;
-      sha256 = "sha256-JVpdkcgrx+TGKayql/hzhTx+zuyaFATGEtVkBo1aPCc=";
+      sha256 = "sha256-S6TSGgpf37N8YgbTv70dT+LaPiiaQ4/lJV+js2hnCPk=";
     };
   };
   kratos = {
@@ -144,21 +144,21 @@
   };
   opencode = {
     pname = "opencode";
-    version = "v1.18.11";
+    version = "v1.18.13";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v1.18.11";
+      rev = "v1.18.13";
       fetchSubmodules = false;
-      sha256 = "sha256-Rg+NeRLeu0e+WSTZd8oJzV3XMMxXZCZ5LImDcCraX8g=";
+      sha256 = "sha256-xjzxTsMN4dMax3rL+2+4og0E7LovwYFvpU7Ea2sh6tM=";
     };
   };
   opencode-bin = {
     pname = "opencode-bin";
-    version = "v1.18.11";
+    version = "v1.18.13";
     src = fetchurl {
-      url = "https://github.com/anomalyco/opencode/releases/download/v1.18.11/opencode-linux-x64.tar.gz";
-      sha256 = "sha256-pN/8wApakyVsa9BqoMmEMgUo9WTbUqH0vs1cfen7WaE=";
+      url = "https://github.com/anomalyco/opencode/releases/download/v1.18.13/opencode-linux-x64.tar.gz";
+      sha256 = "sha256-jVALIP7S0m5TfiIYlbGldUdlcbTwCJuyn7E+64656Tc=";
     };
   };
   pwndbg = {

@@ -45,7 +45,7 @@
     },
     "deploy-rs": {
         "cargoLock": null,
-        "date": "2026-07-31",
+        "date": "2026-08-04",
         "extract": null,
         "name": "deploy-rs",
         "passthru": null,
@@ -57,12 +57,12 @@
             "name": null,
             "owner": "serokell",
             "repo": "deploy-rs",
-            "rev": "b974715a27b49fadbf3bf6d85e26bcb3109daa6d",
-            "sha256": "sha256-anlq3YQDCsNrkNlu3HTg4dEIpRugwnyAVUxoPcBmA/U=",
+            "rev": "5059116c0bae73dbd9277cbc340f5b8a21ccaaa9",
+            "sha256": "sha256-uuwNrx8lOb/w2TUllumBSyW/3eH8Zx5An0ZgD8slPHY=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "b974715a27b49fadbf3bf6d85e26bcb3109daa6d"
+        "version": "5059116c0bae73dbd9277cbc340f5b8a21ccaaa9"
     },
     "determinate": {
         "cargoLock": null,
@@ -212,12 +212,12 @@
             "name": null,
             "owner": "NousResearch",
             "repo": "hermes-agent",
-            "rev": "v2026.7.30",
-            "sha256": "sha256-JVpdkcgrx+TGKayql/hzhTx+zuyaFATGEtVkBo1aPCc=",
+            "rev": "v2026.8.3",
+            "sha256": "sha256-S6TSGgpf37N8YgbTv70dT+LaPiiaQ4/lJV+js2hnCPk=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2026.7.30"
+        "version": "v2026.8.3"
     },
     "kratos": {
         "cargoLock": null,
@@ -269,12 +269,12 @@
             "name": null,
             "owner": "anomalyco",
             "repo": "opencode",
-            "rev": "v1.18.11",
-            "sha256": "sha256-Rg+NeRLeu0e+WSTZd8oJzV3XMMxXZCZ5LImDcCraX8g=",
+            "rev": "v1.18.13",
+            "sha256": "sha256-xjzxTsMN4dMax3rL+2+4og0E7LovwYFvpU7Ea2sh6tM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.18.11"
+        "version": "v1.18.13"
     },
     "opencode-bin": {
         "cargoLock": null,
@@ -285,11 +285,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-pN/8wApakyVsa9BqoMmEMgUo9WTbUqH0vs1cfen7WaE=",
+            "sha256": "sha256-jVALIP7S0m5TfiIYlbGldUdlcbTwCJuyn7E+64656Tc=",
             "type": "url",
-            "url": "https://github.com/anomalyco/opencode/releases/download/v1.18.11/opencode-linux-x64.tar.gz"
+            "url": "https://github.com/anomalyco/opencode/releases/download/v1.18.13/opencode-linux-x64.tar.gz"
         },
-        "version": "v1.18.11"
+        "version": "v1.18.13"
     },
     "pwndbg": {
         "cargoLock": null,
