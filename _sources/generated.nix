@@ -15,18 +15,18 @@
   };
   cc-switch-cli = {
     pname = "cc-switch-cli";
-    version = "5.10.0";
+    version = "5.10.1";
     src = fetchurl {
-      url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.10.0/cc-switch-cli-v5.10.0-linux-x64-musl.tar.gz";
-      sha256 = "sha256-Aoc4Miz59/j7+JrNNKDDebGOgVWWIsPwO5UGqXB4sxM=";
+      url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.10.1/cc-switch-cli-v5.10.1-linux-x64-musl.tar.gz";
+      sha256 = "sha256-vmg260LPZ0ezgwsV2HkC/GoTMcNSY6p1kO0KN6RDB5A=";
     };
   };
   codex = {
     pname = "codex";
-    version = "0.146.1";
+    version = "0.147.0";
     src = fetchurl {
-      url = "https://github.com/openai/codex/releases/download/rust-v0.146.1/codex-x86_64-unknown-linux-musl.tar.gz";
-      sha256 = "sha256-9VgQWuwSv2+zNXB5Ot/Aifi0HcMqztYLi0+6m0UYJKw=";
+      url = "https://github.com/openai/codex/releases/download/rust-v0.147.0/codex-x86_64-unknown-linux-musl.tar.gz";
+      sha256 = "sha256-Akbi53ODTgfw+1JJ7W660S5FkeYI+Me7l91qlpBUTDY=";
     };
   };
   deploy-rs = {
@@ -43,13 +43,13 @@
   };
   determinate = {
     pname = "determinate";
-    version = "v3.21.9";
+    version = "v3.22.0";
     src = fetchFromGitHub {
       owner = "DeterminateSystems";
       repo = "nix-src";
-      rev = "v3.21.9";
+      rev = "v3.22.0";
       fetchSubmodules = false;
-      sha256 = "sha256-wfaiSRLM1wDb4MV+NEzbyheK9Y03/oe56NR2I84UF7E=";
+      sha256 = "sha256-Quqthts9sCdYDCelos6cVrlxgJgkGcJNtQmWwFwvPQw=";
     };
   };
   devenv = {
@@ -144,21 +144,21 @@
   };
   opencode = {
     pname = "opencode";
-    version = "v1.18.14";
+    version = "v1.18.15";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v1.18.14";
+      rev = "v1.18.15";
       fetchSubmodules = false;
-      sha256 = "sha256-Sxbchn8AuIcQaqfOT5QESk+rju6aryl4TZsiW4r7v0w=";
+      sha256 = "sha256-yUPwXDv93O0Ub/giX78FJyFxZyaUzSguDoK2y/YIPBM=";
     };
   };
   opencode-bin = {
     pname = "opencode-bin";
-    version = "v1.18.14";
+    version = "v1.18.15";
     src = fetchurl {
-      url = "https://github.com/anomalyco/opencode/releases/download/v1.18.14/opencode-linux-x64.tar.gz";
-      sha256 = "sha256-8jmAuirr+/pTlI5V4hPT8qU3QP1zJlU4KOia0n6XBXI=";
+      url = "https://github.com/anomalyco/opencode/releases/download/v1.18.15/opencode-linux-x64.tar.gz";
+      sha256 = "sha256-2ELg6MYixnKkgbfcbwMpAJtk25ayumBB5W9Pk/ApOxw=";
     };
   };
   pwndbg = {
