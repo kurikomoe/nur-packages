@@ -54,13 +54,13 @@
   };
   devenv = {
     pname = "devenv";
-    version = "v2.2.1";
+    version = "v2.2.2";
     src = fetchFromGitHub {
       owner = "cachix";
       repo = "devenv";
-      rev = "v2.2.1";
+      rev = "v2.2.2";
       fetchSubmodules = false;
-      sha256 = "sha256-S4baMekJYJGWDCo1yOYxZkmgBlAruQ5MLi+h3Zo8als=";
+      sha256 = "sha256-UXA2rr/JNIrbTrhPcmbC2y4Uit8NzeAMZAlUfBQ45uw=";
     };
   };
   dotnet-script = {
@@ -114,13 +114,13 @@
   };
   hermes-agent = {
     pname = "hermes-agent";
-    version = "v2026.8.3";
+    version = "v2026.8.13";
     src = fetchFromGitHub {
       owner = "NousResearch";
       repo = "hermes-agent";
-      rev = "v2026.8.3";
+      rev = "v2026.8.13";
       fetchSubmodules = false;
-      sha256 = "sha256-S6TSGgpf37N8YgbTv70dT+LaPiiaQ4/lJV+js2hnCPk=";
+      sha256 = "sha256-A+pprddWqewhUjD8d+PLdTHAO5SZV6YwPhJrC2T2dFE=";
     };
   };
   kratos = {
@@ -144,21 +144,21 @@
   };
   opencode = {
     pname = "opencode";
-    version = "v1.18.17";
+    version = "v1.18.18";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v1.18.17";
+      rev = "v1.18.18";
       fetchSubmodules = false;
-      sha256 = "sha256-3BqRG9zuA2Od1+l/FVEeCtggwGAcR0rrlsU/s5gaw5Q=";
+      sha256 = "sha256-rDVcv8j9KghTDwooPYriTloOMgTyVutud7xKLG2mTmk=";
     };
   };
   opencode-bin = {
     pname = "opencode-bin";
-    version = "v1.18.17";
+    version = "v1.18.18";
     src = fetchurl {
-      url = "https://github.com/anomalyco/opencode/releases/download/v1.18.17/opencode-linux-x64.tar.gz";
-      sha256 = "sha256-PxSkxhx/aw07bZM9HSEuZOGWg+um+kU62Y5GMDr+FEo=";
+      url = "https://github.com/anomalyco/opencode/releases/download/v1.18.18/opencode-linux-x64.tar.gz";
+      sha256 = "sha256-DN3CIkGLhVNmmQWomAwM2nCI8A2iTYPWrHawHJ/bKq8=";
     };
   };
   pwndbg = {

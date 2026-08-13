@@ -99,12 +99,12 @@
             "name": null,
             "owner": "cachix",
             "repo": "devenv",
-            "rev": "v2.2.1",
-            "sha256": "sha256-S4baMekJYJGWDCo1yOYxZkmgBlAruQ5MLi+h3Zo8als=",
+            "rev": "v2.2.2",
+            "sha256": "sha256-UXA2rr/JNIrbTrhPcmbC2y4Uit8NzeAMZAlUfBQ45uw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2.2.1"
+        "version": "v2.2.2"
     },
     "dotnet-script": {
         "cargoLock": null,
@@ -212,12 +212,12 @@
             "name": null,
             "owner": "NousResearch",
             "repo": "hermes-agent",
-            "rev": "v2026.8.3",
-            "sha256": "sha256-S6TSGgpf37N8YgbTv70dT+LaPiiaQ4/lJV+js2hnCPk=",
+            "rev": "v2026.8.13",
+            "sha256": "sha256-A+pprddWqewhUjD8d+PLdTHAO5SZV6YwPhJrC2T2dFE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2026.8.3"
+        "version": "v2026.8.13"
     },
     "kratos": {
         "cargoLock": null,
@@ -269,12 +269,12 @@
             "name": null,
             "owner": "anomalyco",
             "repo": "opencode",
-            "rev": "v1.18.17",
-            "sha256": "sha256-3BqRG9zuA2Od1+l/FVEeCtggwGAcR0rrlsU/s5gaw5Q=",
+            "rev": "v1.18.18",
+            "sha256": "sha256-rDVcv8j9KghTDwooPYriTloOMgTyVutud7xKLG2mTmk=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.18.17"
+        "version": "v1.18.18"
     },
     "opencode-bin": {
         "cargoLock": null,
@@ -285,11 +285,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-PxSkxhx/aw07bZM9HSEuZOGWg+um+kU62Y5GMDr+FEo=",
+            "sha256": "sha256-DN3CIkGLhVNmmQWomAwM2nCI8A2iTYPWrHawHJ/bKq8=",
             "type": "url",
-            "url": "https://github.com/anomalyco/opencode/releases/download/v1.18.17/opencode-linux-x64.tar.gz"
+            "url": "https://github.com/anomalyco/opencode/releases/download/v1.18.18/opencode-linux-x64.tar.gz"
         },
-        "version": "v1.18.17"
+        "version": "v1.18.18"
     },
     "pwndbg": {
         "cargoLock": null,
