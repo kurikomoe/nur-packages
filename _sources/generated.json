@@ -7,11 +7,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-xv3pFMKflVFgrleh6tMLpcyqASJjYxPRMWrd9p8+rhc=",
+            "sha256": "sha256-i2lzaEoJP/Re3DJvTgHNwZ9UXXxHKd6UIF3CmASt2N8=",
             "type": "tarball",
-            "url": "https://cache.agilebits.com/dist/1P/op2/pkg/v2.35.0/op_linux_amd64_v2.35.0.zip"
+            "url": "https://cache.agilebits.com/dist/1P/op2/pkg/v2.39.0/op_linux_amd64_v2.39.0.zip"
         },
-        "version": "2.35.0"
+        "version": "2.39.0"
     },
     "cc-switch-cli": {
         "cargoLock": null,
@@ -22,11 +22,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-vmg260LPZ0ezgwsV2HkC/GoTMcNSY6p1kO0KN6RDB5A=",
+            "sha256": "sha256-gGXFuuntonB0fBdmzvuyCR2WJWVdv0Ca13ZOtHwKhjU=",
             "type": "url",
-            "url": "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.10.1/cc-switch-cli-v5.10.1-linux-x64-musl.tar.gz"
+            "url": "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.10.2/cc-switch-cli-v5.10.2-linux-x64-musl.tar.gz"
         },
-        "version": "5.10.1"
+        "version": "5.10.2"
     },
     "codex": {
         "cargoLock": null,
@@ -37,11 +37,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-Akbi53ODTgfw+1JJ7W660S5FkeYI+Me7l91qlpBUTDY=",
+            "sha256": "sha256-c2iyBV7QIVf+omlbufWvPuew5AxaO+vIHfxZZwQkTP0=",
             "type": "url",
-            "url": "https://github.com/openai/codex/releases/download/rust-v0.147.0/codex-x86_64-unknown-linux-musl.tar.gz"
+            "url": "https://github.com/openai/codex/releases/download/rust-v0.149.0/codex-x86_64-unknown-linux-musl.tar.gz"
         },
-        "version": "0.147.0"
+        "version": "0.149.0"
     },
     "deploy-rs": {
         "cargoLock": null,
@@ -78,12 +78,12 @@
             "name": null,
             "owner": "DeterminateSystems",
             "repo": "nix-src",
-            "rev": "v3.22.0",
-            "sha256": "sha256-Quqthts9sCdYDCelos6cVrlxgJgkGcJNtQmWwFwvPQw=",
+            "rev": "v3.22.1",
+            "sha256": "sha256-zKZlnOTtMHwri2kxYPziIGkLL7Q9go0CrwGbZ/7wD6s=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v3.22.0"
+        "version": "v3.22.1"
     },
     "devenv": {
         "cargoLock": null,
@@ -212,12 +212,12 @@
             "name": null,
             "owner": "NousResearch",
             "repo": "hermes-agent",
-            "rev": "v2026.8.13",
-            "sha256": "sha256-A+pprddWqewhUjD8d+PLdTHAO5SZV6YwPhJrC2T2dFE=",
+            "rev": "v2026.8.18",
+            "sha256": "sha256-LyI50ipeOVOcQ7tpoh+ofiEhxW3qW9pTJNUK7deJkYE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2026.8.13"
+        "version": "v2026.8.18"
     },
     "kratos": {
         "cargoLock": null,
@@ -249,11 +249,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-cRQZLix+jBKu7LYEsnMjVeklcWA1cp6/igr+aJXNwBs=",
+            "sha256": "sha256-CeOBn80B5SbPTCbauKAoZ5ztDP1zzolBjHc8R8o2br8=",
             "type": "url",
-            "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_150.0.4078.105-1_amd64.deb"
+            "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_151.0.4129.93-1_amd64.deb"
         },
-        "version": "150.0.4078.105"
+        "version": "151.0.4129.93"
     },
     "opencode": {
         "cargoLock": null,
@@ -269,12 +269,12 @@
             "name": null,
             "owner": "anomalyco",
             "repo": "opencode",
-            "rev": "v1.18.18",
-            "sha256": "sha256-rDVcv8j9KghTDwooPYriTloOMgTyVutud7xKLG2mTmk=",
+            "rev": "v1.18.19",
+            "sha256": "sha256-yf1lZGXaEQ9LNU5zd32+nTlgeSaWMVYdsViQbr3ZmQA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.18.18"
+        "version": "v1.18.19"
     },
     "opencode-bin": {
         "cargoLock": null,
@@ -285,11 +285,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-DN3CIkGLhVNmmQWomAwM2nCI8A2iTYPWrHawHJ/bKq8=",
+            "sha256": "sha256-e7NUh8VfmVf12RrmC+b6SfyPdGKcIQwXGe11/b9+K9k=",
             "type": "url",
-            "url": "https://github.com/anomalyco/opencode/releases/download/v1.18.18/opencode-linux-x64.tar.gz"
+            "url": "https://github.com/anomalyco/opencode/releases/download/v1.18.19/opencode-linux-x64.tar.gz"
         },
-        "version": "v1.18.18"
+        "version": "v1.18.19"
     },
     "pwndbg": {
         "cargoLock": null,
