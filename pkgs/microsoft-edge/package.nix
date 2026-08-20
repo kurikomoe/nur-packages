@@ -242,8 +242,12 @@ in
         --add-flags "--simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'" \
         --add-flags ${lib.escapeShellArg commandLineArgs}
 
-      # Make sure that libGL and libvulkan are found by ANGLE libGLESv2.so
-      patchelf --set-rpath $rpath $out/share/microsoft/$appname/lib*GL*
+      # Make sure that libGL and libvulkan are found by ANGLE libraries when bundled.
+      for elf in $out/share/microsoft/$appname/lib*GL*; do
+        if [ -e "$elf" ]; then
+          patchelf --set-rpath $rpath "$elf"
+        fi
+      done
 
       # Edge specific set liboneauth
       patchelf --set-rpath $rpath $out/share/microsoft/$appname/liboneauth.so
