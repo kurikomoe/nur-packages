@@ -250,7 +250,7 @@ in
       done
 
       # Edge specific set liboneauth
-      patchelf --set-rpath $rpath $out/share/microsoft/$appname/liboneauth.so
+      # patchelf --set-rpath $rpath $out/share/microsoft/$appname/liboneauth.so
 
       for elf in $out/share/microsoft/$appname/{msedge,msedge-sandbox,msedge_crashpad_handler}; do
         patchelf --set-rpath $rpath $elf
