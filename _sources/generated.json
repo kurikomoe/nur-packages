@@ -22,11 +22,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-gGXFuuntonB0fBdmzvuyCR2WJWVdv0Ca13ZOtHwKhjU=",
+            "sha256": "sha256-H3X727rEDJ/wfHyDW4LOl0nwnlc6Rzos/KqbSWyMwZE=",
             "type": "url",
-            "url": "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.10.2/cc-switch-cli-v5.10.2-linux-x64-musl.tar.gz"
+            "url": "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.10.3/cc-switch-cli-v5.10.3-linux-x64-musl.tar.gz"
         },
-        "version": "5.10.2"
+        "version": "5.10.3"
     },
     "codex": {
         "cargoLock": null,
@@ -264,11 +264,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-vXYEAlQkkUphwGKTy2vyaRQaKdjFTPGZcRC8ltM2XWA=",
+            "sha256": "sha256-EZPi3hWIwUr/hnBMtHn1EpVc/WxfLVwrtU/1Nqd/Ykw=",
             "type": "url",
-            "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_151.0.4129.101-1_amd64.deb"
+            "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_151.0.4129.107-1_amd64.deb"
         },
-        "version": "151.0.4129.101"
+        "version": "151.0.4129.107"
     },
     "opencode": {
         "cargoLock": null,
@@ -284,12 +284,12 @@
             "name": null,
             "owner": "anomalyco",
             "repo": "opencode",
-            "rev": "v1.18.22",
-            "sha256": "sha256-EvhjSETkOL4s4PlUB2zvALU4eD2iCHZ3AFh+3ro95dw=",
+            "rev": "v1.18.23",
+            "sha256": "sha256-1iMdRFkZh6J82EDoPq3mFLXMGmdtbnLBgURtgrJRAlw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.18.22"
+        "version": "v1.18.23"
     },
     "opencode-bin": {
         "cargoLock": null,
@@ -300,11 +300,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-I+ymqJLGtTwPm6IzO2kGvcMZAmNGMdVM8XUA5+jL+iA=",
+            "sha256": "sha256-q3AVzYET4BGkYfMKDCt32CmaFE/2iMti6T6IAoNdcog=",
             "type": "url",
-            "url": "https://github.com/anomalyco/opencode/releases/download/v1.18.22/opencode-linux-x64.tar.gz"
+            "url": "https://github.com/anomalyco/opencode/releases/download/v1.18.23/opencode-linux-x64.tar.gz"
         },
-        "version": "v1.18.22"
+        "version": "v1.18.23"
     },
     "pwndbg": {
         "cargoLock": null,

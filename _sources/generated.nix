@@ -15,10 +15,10 @@
   };
   cc-switch-cli = {
     pname = "cc-switch-cli";
-    version = "5.10.2";
+    version = "5.10.3";
     src = fetchurl {
-      url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.10.2/cc-switch-cli-v5.10.2-linux-x64-musl.tar.gz";
-      sha256 = "sha256-gGXFuuntonB0fBdmzvuyCR2WJWVdv0Ca13ZOtHwKhjU=";
+      url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.10.3/cc-switch-cli-v5.10.3-linux-x64-musl.tar.gz";
+      sha256 = "sha256-H3X727rEDJ/wfHyDW4LOl0nwnlc6Rzos/KqbSWyMwZE=";
     };
   };
   codex = {
@@ -144,29 +144,29 @@
   };
   microsoft-edge = {
     pname = "microsoft-edge";
-    version = "151.0.4129.101";
+    version = "151.0.4129.107";
     src = fetchurl {
-      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_151.0.4129.101-1_amd64.deb";
-      sha256 = "sha256-vXYEAlQkkUphwGKTy2vyaRQaKdjFTPGZcRC8ltM2XWA=";
+      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_151.0.4129.107-1_amd64.deb";
+      sha256 = "sha256-EZPi3hWIwUr/hnBMtHn1EpVc/WxfLVwrtU/1Nqd/Ykw=";
     };
   };
   opencode = {
     pname = "opencode";
-    version = "v1.18.22";
+    version = "v1.18.23";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v1.18.22";
+      rev = "v1.18.23";
       fetchSubmodules = false;
-      sha256 = "sha256-EvhjSETkOL4s4PlUB2zvALU4eD2iCHZ3AFh+3ro95dw=";
+      sha256 = "sha256-1iMdRFkZh6J82EDoPq3mFLXMGmdtbnLBgURtgrJRAlw=";
     };
   };
   opencode-bin = {
     pname = "opencode-bin";
-    version = "v1.18.22";
+    version = "v1.18.23";
     src = fetchurl {
-      url = "https://github.com/anomalyco/opencode/releases/download/v1.18.22/opencode-linux-x64.tar.gz";
-      sha256 = "sha256-I+ymqJLGtTwPm6IzO2kGvcMZAmNGMdVM8XUA5+jL+iA=";
+      url = "https://github.com/anomalyco/opencode/releases/download/v1.18.23/opencode-linux-x64.tar.gz";
+      sha256 = "sha256-q3AVzYET4BGkYfMKDCt32CmaFE/2iMti6T6IAoNdcog=";
     };
   };
   pwndbg = {
