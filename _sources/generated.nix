@@ -144,29 +144,29 @@
   };
   microsoft-edge = {
     pname = "microsoft-edge";
-    version = "151.0.4129.107";
+    version = "152.0.4191.53";
     src = fetchurl {
-      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_151.0.4129.107-1_amd64.deb";
-      sha256 = "sha256-EZPi3hWIwUr/hnBMtHn1EpVc/WxfLVwrtU/1Nqd/Ykw=";
+      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_152.0.4191.53-1_amd64.deb";
+      sha256 = "sha256-szIkRfvmzh4Lz/hOu+Dt6jZeDq9Jix72E23aUt6m46c=";
     };
   };
   opencode = {
     pname = "opencode";
-    version = "v1.18.23";
+    version = "v1.18.25";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v1.18.23";
+      rev = "v1.18.25";
       fetchSubmodules = false;
-      sha256 = "sha256-1iMdRFkZh6J82EDoPq3mFLXMGmdtbnLBgURtgrJRAlw=";
+      sha256 = "sha256-uVW11r2tyGUTzMn1Y+HweD68H7u05UN6EQcXFJbNyS4=";
     };
   };
   opencode-bin = {
     pname = "opencode-bin";
-    version = "v1.18.23";
+    version = "v1.18.25";
     src = fetchurl {
-      url = "https://github.com/anomalyco/opencode/releases/download/v1.18.23/opencode-linux-x64.tar.gz";
-      sha256 = "sha256-q3AVzYET4BGkYfMKDCt32CmaFE/2iMti6T6IAoNdcog=";
+      url = "https://github.com/anomalyco/opencode/releases/download/v1.18.25/opencode-linux-x64.tar.gz";
+      sha256 = "sha256-WKNymm80Mt1tKRf8xKlJeIiRoDWBhkatSA4SyUf1bng=";
     };
   };
   pwndbg = {
