@@ -23,18 +23,18 @@
   };
   codex = {
     pname = "codex";
-    version = "0.150.0";
+    version = "0.150.1";
     src = fetchurl {
-      url = "https://github.com/openai/codex/releases/download/rust-v0.150.0/codex-x86_64-unknown-linux-musl.tar.gz";
-      sha256 = "sha256-XpxACnQO5CoAl0NpnQp4qaRWdytTro/5O2OB1Vlnb7I=";
+      url = "https://github.com/openai/codex/releases/download/rust-v0.150.1/codex-x86_64-unknown-linux-musl.tar.gz";
+      sha256 = "sha256-qzCIcLx/wEjCPcSdA/a4r5zn/Jm52ogtZoi+epAVXHo=";
     };
   };
   codex-host-runner = {
     pname = "codex-host-runner";
-    version = "0.150.0";
+    version = "0.150.1";
     src = fetchurl {
-      url = "https://github.com/openai/codex/releases/download/rust-v0.150.0/codex-code-mode-host-x86_64-unknown-linux-musl.tar.gz";
-      sha256 = "sha256-cfutnzG8BwwulSOd7nQUg+NdpG9TTeWTOEjo1DEEuSA=";
+      url = "https://github.com/openai/codex/releases/download/rust-v0.150.1/codex-code-mode-host-x86_64-unknown-linux-musl.tar.gz";
+      sha256 = "sha256-tHZnhGElzfbbxGDG/cQYr7LvOSbFT02Zm7++sI3uT8U=";
     };
   };
   deploy-rs = {
@@ -122,13 +122,13 @@
   };
   hermes-agent = {
     pname = "hermes-agent";
-    version = "v2026.8.19";
+    version = "v2026.8.27";
     src = fetchFromGitHub {
       owner = "NousResearch";
       repo = "hermes-agent";
-      rev = "v2026.8.19";
+      rev = "v2026.8.27";
       fetchSubmodules = false;
-      sha256 = "sha256-oeFJlEoFybqKkbuWT4mW8PRauusjt3y44ZJXAcA7TPY=";
+      sha256 = "sha256-4EQ3GD5S3UHItPD/R/0WzSamkmtgDXM3AUq/MWZ7qMo=";
     };
   };
   kratos = {
