@@ -23,18 +23,18 @@
   };
   codex = {
     pname = "codex";
-    version = "0.150.1";
+    version = "0.151.0";
     src = fetchurl {
-      url = "https://github.com/openai/codex/releases/download/rust-v0.150.1/codex-x86_64-unknown-linux-musl.tar.gz";
-      sha256 = "sha256-qzCIcLx/wEjCPcSdA/a4r5zn/Jm52ogtZoi+epAVXHo=";
+      url = "https://github.com/openai/codex/releases/download/rust-v0.151.0/codex-x86_64-unknown-linux-musl.tar.gz";
+      sha256 = "sha256-YFtLGD8ixkX13vY6W3GRdnQH+2am/q7E6vELW34AWPY=";
     };
   };
   codex-host-runner = {
     pname = "codex-host-runner";
-    version = "0.150.1";
+    version = "0.151.0";
     src = fetchurl {
-      url = "https://github.com/openai/codex/releases/download/rust-v0.150.1/codex-code-mode-host-x86_64-unknown-linux-musl.tar.gz";
-      sha256 = "sha256-tHZnhGElzfbbxGDG/cQYr7LvOSbFT02Zm7++sI3uT8U=";
+      url = "https://github.com/openai/codex/releases/download/rust-v0.151.0/codex-code-mode-host-x86_64-unknown-linux-musl.tar.gz";
+      sha256 = "sha256-My2mghXwcDIctS6+eS7M6N/WFNAupVQTCdCl3wHhSJQ=";
     };
   };
   deploy-rs = {
