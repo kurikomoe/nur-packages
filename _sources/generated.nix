@@ -15,10 +15,10 @@
   };
   cc-switch-cli = {
     pname = "cc-switch-cli";
-    version = "5.10.3";
+    version = "5.10.4";
     src = fetchurl {
-      url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.10.3/cc-switch-cli-v5.10.3-linux-x64-musl.tar.gz";
-      sha256 = "sha256-H3X727rEDJ/wfHyDW4LOl0nwnlc6Rzos/KqbSWyMwZE=";
+      url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.10.4/cc-switch-cli-v5.10.4-linux-x64-musl.tar.gz";
+      sha256 = "sha256-qaVp2FywphFpCCpVj4Z4bg5+6cJyWQDn1uh2hz60FsM=";
     };
   };
   codex = {

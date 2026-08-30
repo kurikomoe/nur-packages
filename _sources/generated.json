@@ -22,11 +22,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-H3X727rEDJ/wfHyDW4LOl0nwnlc6Rzos/KqbSWyMwZE=",
+            "sha256": "sha256-qaVp2FywphFpCCpVj4Z4bg5+6cJyWQDn1uh2hz60FsM=",
             "type": "url",
-            "url": "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.10.3/cc-switch-cli-v5.10.3-linux-x64-musl.tar.gz"
+            "url": "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.10.4/cc-switch-cli-v5.10.4-linux-x64-musl.tar.gz"
         },
-        "version": "5.10.3"
+        "version": "5.10.4"
     },
     "codex": {
         "cargoLock": null,
