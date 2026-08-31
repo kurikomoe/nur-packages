@@ -227,12 +227,12 @@
             "name": null,
             "owner": "NousResearch",
             "repo": "hermes-agent",
-            "rev": "v2026.8.27",
-            "sha256": "sha256-4EQ3GD5S3UHItPD/R/0WzSamkmtgDXM3AUq/MWZ7qMo=",
+            "rev": "v2026.8.31",
+            "sha256": "sha256-Ii9xP2fKUpvCcwWZuxJ0g3CZ+IL2UZH14pUNvBfdclc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2026.8.27"
+        "version": "v2026.8.31"
     },
     "kratos": {
         "cargoLock": null,

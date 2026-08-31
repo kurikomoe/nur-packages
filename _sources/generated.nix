@@ -122,13 +122,13 @@
   };
   hermes-agent = {
     pname = "hermes-agent";
-    version = "v2026.8.27";
+    version = "v2026.8.31";
     src = fetchFromGitHub {
       owner = "NousResearch";
       repo = "hermes-agent";
-      rev = "v2026.8.27";
+      rev = "v2026.8.31";
       fetchSubmodules = false;
-      sha256 = "sha256-4EQ3GD5S3UHItPD/R/0WzSamkmtgDXM3AUq/MWZ7qMo=";
+      sha256 = "sha256-Ii9xP2fKUpvCcwWZuxJ0g3CZ+IL2UZH14pUNvBfdclc=";
     };
   };
   kratos = {
