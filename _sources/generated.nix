@@ -23,41 +23,41 @@
   };
   codex = {
     pname = "codex";
-    version = "0.151.0";
+    version = "0.152.1";
     src = fetchurl {
-      url = "https://github.com/openai/codex/releases/download/rust-v0.151.0/codex-x86_64-unknown-linux-musl.tar.gz";
-      sha256 = "sha256-YFtLGD8ixkX13vY6W3GRdnQH+2am/q7E6vELW34AWPY=";
+      url = "https://github.com/openai/codex/releases/download/rust-v0.152.1/codex-x86_64-unknown-linux-musl.tar.gz";
+      sha256 = "sha256-oO0bQLHVl7NA8JrgDs68RmcLBstSqsMVudyE/tAon9A=";
     };
   };
   codex-host-runner = {
     pname = "codex-host-runner";
-    version = "0.151.0";
+    version = "0.152.1";
     src = fetchurl {
-      url = "https://github.com/openai/codex/releases/download/rust-v0.151.0/codex-code-mode-host-x86_64-unknown-linux-musl.tar.gz";
-      sha256 = "sha256-My2mghXwcDIctS6+eS7M6N/WFNAupVQTCdCl3wHhSJQ=";
+      url = "https://github.com/openai/codex/releases/download/rust-v0.152.1/codex-code-mode-host-x86_64-unknown-linux-musl.tar.gz";
+      sha256 = "sha256-DxpUTVweia7XaakdjmNCHrju+dtVToYe2QcEEmpBke0=";
     };
   };
   deploy-rs = {
     pname = "deploy-rs";
-    version = "16901271e5b30b591e56f7a84f25f186fb20f3e1";
+    version = "c03082a563c010c03a5c3d5e1507ccd9dd53d341";
     src = fetchFromGitHub {
       owner = "serokell";
       repo = "deploy-rs";
-      rev = "16901271e5b30b591e56f7a84f25f186fb20f3e1";
+      rev = "c03082a563c010c03a5c3d5e1507ccd9dd53d341";
       fetchSubmodules = false;
-      sha256 = "sha256-IxaZkb9rCGEZ+yGndxKXONeIEcKMzoFUsvLTB5G/caw=";
+      sha256 = "sha256-bd0u33vaHEUE09rt10Qb8p6xXltuee3z+kZBi3z7y9A=";
     };
-    date = "2026-08-10";
+    date = "2026-09-02";
   };
   determinate = {
     pname = "determinate";
-    version = "v3.22.2";
+    version = "v3.22.3";
     src = fetchFromGitHub {
       owner = "DeterminateSystems";
       repo = "nix-src";
-      rev = "v3.22.2";
+      rev = "v3.22.3";
       fetchSubmodules = false;
-      sha256 = "sha256-wmwgSBcAGJe/e+FrLwJxlghYV12F7UkIodm0j6cosYg=";
+      sha256 = "sha256-bv8yt03cVAPdAc6/9nntqW2/QJeFsvuuYK0bbT99MDA=";
     };
   };
   devenv = {
@@ -152,21 +152,21 @@
   };
   opencode = {
     pname = "opencode";
-    version = "v1.18.25";
+    version = "v1.18.27";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v1.18.25";
+      rev = "v1.18.27";
       fetchSubmodules = false;
-      sha256 = "sha256-uVW11r2tyGUTzMn1Y+HweD68H7u05UN6EQcXFJbNyS4=";
+      sha256 = "sha256-whpu6YnWe82VXYzHib22OZx/TAlzSWi2D7HAW+1GMII=";
     };
   };
   opencode-bin = {
     pname = "opencode-bin";
-    version = "v1.18.25";
+    version = "v1.18.27";
     src = fetchurl {
-      url = "https://github.com/anomalyco/opencode/releases/download/v1.18.25/opencode-linux-x64.tar.gz";
-      sha256 = "sha256-WKNymm80Mt1tKRf8xKlJeIiRoDWBhkatSA4SyUf1bng=";
+      url = "https://github.com/anomalyco/opencode/releases/download/v1.18.27/opencode-linux-x64.tar.gz";
+      sha256 = "sha256-SvVJT5Qz9Z24weNEGY8O5ypQwG7ACftKiuq0wtSr1wI=";
     };
   };
   pwndbg = {
