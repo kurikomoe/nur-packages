@@ -23,29 +23,29 @@
   };
   codex = {
     pname = "codex";
-    version = "0.152.1";
+    version = "0.153.1";
     src = fetchurl {
-      url = "https://github.com/openai/codex/releases/download/rust-v0.152.1/codex-x86_64-unknown-linux-musl.tar.gz";
-      sha256 = "sha256-oO0bQLHVl7NA8JrgDs68RmcLBstSqsMVudyE/tAon9A=";
+      url = "https://github.com/openai/codex/releases/download/rust-v0.153.1/codex-x86_64-unknown-linux-musl.tar.gz";
+      sha256 = "sha256-CBiM3sQMKQnoSznYTtGtAPA6m/4DRv1CLvWQ+n0jSH8=";
     };
   };
   codex-host-runner = {
     pname = "codex-host-runner";
-    version = "0.152.1";
+    version = "0.153.1";
     src = fetchurl {
-      url = "https://github.com/openai/codex/releases/download/rust-v0.152.1/codex-code-mode-host-x86_64-unknown-linux-musl.tar.gz";
-      sha256 = "sha256-DxpUTVweia7XaakdjmNCHrju+dtVToYe2QcEEmpBke0=";
+      url = "https://github.com/openai/codex/releases/download/rust-v0.153.1/codex-code-mode-host-x86_64-unknown-linux-musl.tar.gz";
+      sha256 = "sha256-RTnhBlluIDyfburyD+MoqXUUR9fWVhviWWieoHlfg7A=";
     };
   };
   deploy-rs = {
     pname = "deploy-rs";
-    version = "c03082a563c010c03a5c3d5e1507ccd9dd53d341";
+    version = "a591d4600e8ada8b22489093ebf50337f4d98065";
     src = fetchFromGitHub {
       owner = "serokell";
       repo = "deploy-rs";
-      rev = "c03082a563c010c03a5c3d5e1507ccd9dd53d341";
+      rev = "a591d4600e8ada8b22489093ebf50337f4d98065";
       fetchSubmodules = false;
-      sha256 = "sha256-bd0u33vaHEUE09rt10Qb8p6xXltuee3z+kZBi3z7y9A=";
+      sha256 = "sha256-7sprixDLchHgjQt1yNoc91d0L0lnbd1VUb3OPZpsIJk=";
     };
     date = "2026-09-02";
   };
@@ -144,10 +144,10 @@
   };
   microsoft-edge = {
     pname = "microsoft-edge";
-    version = "152.0.4191.53";
+    version = "152.0.4191.62";
     src = fetchurl {
-      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_152.0.4191.53-1_amd64.deb";
-      sha256 = "sha256-szIkRfvmzh4Lz/hOu+Dt6jZeDq9Jix72E23aUt6m46c=";
+      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_152.0.4191.62-1_amd64.deb";
+      sha256 = "sha256-SzUssNgbFRwQcZUZoUFe/ZJXChydV/BV5eXYD2yZug0=";
     };
   };
   opencode = {
