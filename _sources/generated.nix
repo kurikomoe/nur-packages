@@ -23,18 +23,18 @@
   };
   codex = {
     pname = "codex";
-    version = "0.153.3";
+    version = "0.153.4";
     src = fetchurl {
-      url = "https://github.com/openai/codex/releases/download/rust-v0.153.3/codex-x86_64-unknown-linux-musl.tar.gz";
-      sha256 = "sha256-b/lnS7AOFHNMJ0i8h4jqs8tuWsU+vefh54C07Xr0jLo=";
+      url = "https://github.com/openai/codex/releases/download/rust-v0.153.4/codex-x86_64-unknown-linux-musl.tar.gz";
+      sha256 = "sha256-9HlCTsoJJITcQNh64oxE9MxAI0pgBF1hMeSTgA2BSjA=";
     };
   };
   codex-host-runner = {
     pname = "codex-host-runner";
-    version = "0.153.3";
+    version = "0.153.4";
     src = fetchurl {
-      url = "https://github.com/openai/codex/releases/download/rust-v0.153.3/codex-code-mode-host-x86_64-unknown-linux-musl.tar.gz";
-      sha256 = "sha256-EK5jMEXSjZ1dzWqnXYSYaOPOn+pu9OZp61HRJMaa71M=";
+      url = "https://github.com/openai/codex/releases/download/rust-v0.153.4/codex-code-mode-host-x86_64-unknown-linux-musl.tar.gz";
+      sha256 = "sha256-+VgwqGlZCVdmS7/Ge8ywh3OAa2k2cLrxWQgXb4m0zTE=";
     };
   };
   deploy-rs = {
@@ -144,29 +144,29 @@
   };
   microsoft-edge = {
     pname = "microsoft-edge";
-    version = "152.0.4191.62";
+    version = "152.0.4191.66";
     src = fetchurl {
-      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_152.0.4191.62-1_amd64.deb";
-      sha256 = "sha256-SzUssNgbFRwQcZUZoUFe/ZJXChydV/BV5eXYD2yZug0=";
+      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_152.0.4191.66-1_amd64.deb";
+      sha256 = "sha256-GGwZ+dYHnRdO+7TvMxzMHhHRObb3qOo7DbdfmxfiXw0=";
     };
   };
   opencode = {
     pname = "opencode";
-    version = "v1.18.28";
+    version = "v1.18.29";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v1.18.28";
+      rev = "v1.18.29";
       fetchSubmodules = false;
-      sha256 = "sha256-RuKE0unlDJThKpgnEyoR6X9k5bs6Jrv1zhQShSG2dc8=";
+      sha256 = "sha256-lCXlxTOhcX70jxJAbpolyGlIxQK2nst+6bFhq3Xzdmc=";
     };
   };
   opencode-bin = {
     pname = "opencode-bin";
-    version = "v1.18.28";
+    version = "v1.18.29";
     src = fetchurl {
-      url = "https://github.com/anomalyco/opencode/releases/download/v1.18.28/opencode-linux-x64.tar.gz";
-      sha256 = "sha256-Qq3Q+x8Tvf0ThVrcEc2vKUTBSTd6hzcyFozf0jT+x8M=";
+      url = "https://github.com/anomalyco/opencode/releases/download/v1.18.29/opencode-linux-x64.tar.gz";
+      sha256 = "sha256-6oALf/ViJrcJUhJsn8HiUXykxLVoL9nT+eh0SWl6EZQ=";
     };
   };
   pwndbg = {
