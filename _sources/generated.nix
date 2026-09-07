@@ -62,13 +62,13 @@
   };
   devenv = {
     pname = "devenv";
-    version = "v2.2.2";
+    version = "v2.3";
     src = fetchFromGitHub {
       owner = "cachix";
       repo = "devenv";
-      rev = "v2.2.2";
+      rev = "v2.3";
       fetchSubmodules = false;
-      sha256 = "sha256-UXA2rr/JNIrbTrhPcmbC2y4Uit8NzeAMZAlUfBQ45uw=";
+      sha256 = "sha256-ZH5WcgnRjqV1jY4gCHWOv6DlDVgBz+xLIoja/e8cWjw=";
     };
   };
   dotnet-script = {
@@ -122,13 +122,13 @@
   };
   hermes-agent = {
     pname = "hermes-agent";
-    version = "v2026.8.31";
+    version = "v2026.9.7";
     src = fetchFromGitHub {
       owner = "NousResearch";
       repo = "hermes-agent";
-      rev = "v2026.8.31";
+      rev = "v2026.9.7";
       fetchSubmodules = false;
-      sha256 = "sha256-Ii9xP2fKUpvCcwWZuxJ0g3CZ+IL2UZH14pUNvBfdclc=";
+      sha256 = "sha256-2NuDx7rjsoBDO4I/iMoZsJ+5IaAbiNrDc+sFuzOe08w=";
     };
   };
   kratos = {

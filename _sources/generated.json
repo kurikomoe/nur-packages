@@ -114,12 +114,12 @@
             "name": null,
             "owner": "cachix",
             "repo": "devenv",
-            "rev": "v2.2.2",
-            "sha256": "sha256-UXA2rr/JNIrbTrhPcmbC2y4Uit8NzeAMZAlUfBQ45uw=",
+            "rev": "v2.3",
+            "sha256": "sha256-ZH5WcgnRjqV1jY4gCHWOv6DlDVgBz+xLIoja/e8cWjw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2.2.2"
+        "version": "v2.3"
     },
     "dotnet-script": {
         "cargoLock": null,
@@ -227,12 +227,12 @@
             "name": null,
             "owner": "NousResearch",
             "repo": "hermes-agent",
-            "rev": "v2026.8.31",
-            "sha256": "sha256-Ii9xP2fKUpvCcwWZuxJ0g3CZ+IL2UZH14pUNvBfdclc=",
+            "rev": "v2026.9.7",
+            "sha256": "sha256-2NuDx7rjsoBDO4I/iMoZsJ+5IaAbiNrDc+sFuzOe08w=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2026.8.31"
+        "version": "v2026.9.7"
     },
     "kratos": {
         "cargoLock": null,
