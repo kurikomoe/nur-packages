@@ -23,18 +23,18 @@
   };
   codex = {
     pname = "codex";
-    version = "0.153.4";
+    version = "0.154.0";
     src = fetchurl {
-      url = "https://github.com/openai/codex/releases/download/rust-v0.153.4/codex-x86_64-unknown-linux-musl.tar.gz";
-      sha256 = "sha256-9HlCTsoJJITcQNh64oxE9MxAI0pgBF1hMeSTgA2BSjA=";
+      url = "https://github.com/openai/codex/releases/download/rust-v0.154.0/codex-x86_64-unknown-linux-musl.tar.gz";
+      sha256 = "sha256-1+GLJZeujyQvXzHunpDe70jbye3WNNmGj7ZDXQjAfwI=";
     };
   };
   codex-host-runner = {
     pname = "codex-host-runner";
-    version = "0.153.4";
+    version = "0.154.0";
     src = fetchurl {
-      url = "https://github.com/openai/codex/releases/download/rust-v0.153.4/codex-code-mode-host-x86_64-unknown-linux-musl.tar.gz";
-      sha256 = "sha256-+VgwqGlZCVdmS7/Ge8ywh3OAa2k2cLrxWQgXb4m0zTE=";
+      url = "https://github.com/openai/codex/releases/download/rust-v0.154.0/codex-code-mode-host-x86_64-unknown-linux-musl.tar.gz";
+      sha256 = "sha256-po33zKI8bafN4XVnfffeYcc6I0rdEzOhJUuG1kGvAfc=";
     };
   };
   deploy-rs = {
@@ -152,21 +152,21 @@
   };
   opencode = {
     pname = "opencode";
-    version = "v1.18.29";
+    version = "v1.18.30";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v1.18.29";
+      rev = "v1.18.30";
       fetchSubmodules = false;
-      sha256 = "sha256-lCXlxTOhcX70jxJAbpolyGlIxQK2nst+6bFhq3Xzdmc=";
+      sha256 = "sha256-G4qRDwJ6i5SpsiHoej31HRPLOHpkLc66B+UmdzOY1+o=";
     };
   };
   opencode-bin = {
     pname = "opencode-bin";
-    version = "v1.18.29";
+    version = "v1.18.30";
     src = fetchurl {
-      url = "https://github.com/anomalyco/opencode/releases/download/v1.18.29/opencode-linux-x64.tar.gz";
-      sha256 = "sha256-6oALf/ViJrcJUhJsn8HiUXykxLVoL9nT+eh0SWl6EZQ=";
+      url = "https://github.com/anomalyco/opencode/releases/download/v1.18.30/opencode-linux-x64.tar.gz";
+      sha256 = "sha256-VQByRoWBZUlv+FuhwrZI90IejiATv0GJpoDJ/45pnRc=";
     };
   };
   pwndbg = {
