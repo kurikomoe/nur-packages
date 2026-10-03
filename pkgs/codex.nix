@@ -3,9 +3,9 @@
   sources,
   kutils,
   stdenvNoCC,
-  makeBinaryWrapper,
-  bubblewrap,
-  ripgrep,
+  autoPatchelfHook,
+  ncurses,
+  zstd,
   ...
 }: let
   pname = "codex";
@@ -15,11 +15,6 @@
   };
   res = kutils.getResBySystem pname ress;
 
-  runnerRess = rec {
-    x86_64-linux = sources.codex-host-runner;
-  };
-  runnerRes = kutils.getResBySystem "codex-host-runner" runnerRess;
-
   platforms = builtins.attrNames ress;
   mainProgram = "codex";
   hostRunnerProgram = "codex-code-mode-host";
@@ -28,29 +23,48 @@ in
     inherit pname;
     inherit (res) version;
 
-    srcs = [res.src runnerRes.src];
+    src = res.src;
 
-    sourceRoot = ".";
-    nativeBuildInputs = [makeBinaryWrapper];
+    sourceRoot = "source";
+    nativeBuildInputs = [autoPatchelfHook zstd];
+    buildInputs = [ncurses];
+    dontStrip = true;
+
+    unpackPhase = ''
+      runHook preUnpack
+      mkdir source
+      tar -xf "$src" -C source
+      runHook postUnpack
+    '';
 
     installPhase = ''
       runHook preInstall
-      install -Dm755 ${mainProgram}-x86_64-unknown-linux-musl $out/libexec/${mainProgram}
-      makeBinaryWrapper $out/libexec/${mainProgram} $out/bin/${mainProgram} \
-        --prefix PATH : ${lib.makeBinPath [ripgrep bubblewrap]}
-
-      install -Dm755 codex-code-mode-host-x86_64-unknown-linux-musl $out/libexec/${hostRunnerProgram}
-      makeBinaryWrapper $out/libexec/${hostRunnerProgram} $out/bin/${hostRunnerProgram} \
-        --prefix PATH : ${lib.makeBinPath [ripgrep bubblewrap]}
+      # Keep the package layout so Codex can locate all bundled resources.
+      mkdir -p "$out"
+      cp -a . "$out/"
       runHook postInstall
     '';
 
     doInstallCheck = true;
 
     installCheckPhase = ''
-      HOME=$TMPDIR
+      runHook preInstallCheck
+      export HOME="$TMPDIR"
       $out/bin/${mainProgram} --version
       test -x $out/bin/${hostRunnerProgram}
+      $out/codex-path/rg --version
+      $out/codex-resources/bwrap --version
+      $out/codex-resources/zsh/bin/zsh --version
+      # The voice host has no CLI help mode; check its dynamic dependencies.
+      voiceHost="$out/codex-resources/voice/bin/codex-voice-host"
+      test -x "$voiceHost"
+      voiceInterpreter=$(patchelf --print-interpreter "$voiceHost")
+      "$voiceInterpreter" --list "$voiceHost"
+      # Ensure every file from the complete archive is installed.
+      while IFS= read -r -d $'\0' file; do
+        test -f "$out/$file"
+      done < <(find . -type f -print0)
+      runHook postInstallCheck
     '';
 
     meta = with lib; {

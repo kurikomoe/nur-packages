@@ -23,18 +23,10 @@
   };
   codex = {
     pname = "codex";
-    version = "0.154.0";
+    version = "0.160.0";
     src = fetchurl {
-      url = "https://github.com/openai/codex/releases/download/rust-v0.154.0/codex-x86_64-unknown-linux-musl.tar.gz";
-      sha256 = "sha256-1+GLJZeujyQvXzHunpDe70jbye3WNNmGj7ZDXQjAfwI=";
-    };
-  };
-  codex-host-runner = {
-    pname = "codex-host-runner";
-    version = "0.154.0";
-    src = fetchurl {
-      url = "https://github.com/openai/codex/releases/download/rust-v0.154.0/codex-code-mode-host-x86_64-unknown-linux-musl.tar.gz";
-      sha256 = "sha256-po33zKI8bafN4XVnfffeYcc6I0rdEzOhJUuG1kGvAfc=";
+      url = "https://github.com/openai/codex/releases/download/rust-v0.160.0/codex-package-x86_64-unknown-linux-musl.tar.zst";
+      sha256 = "sha256-yYoAA/HIWGdsUvIMk/ODJ2HImeMxxE6hXY4gY0YmpMI=";
     };
   };
   deploy-rs = {
@@ -163,10 +155,10 @@
   };
   opencode-bin = {
     pname = "opencode-bin";
-    version = "v1.18.30";
+    version = "v1.18.34";
     src = fetchurl {
-      url = "https://github.com/anomalyco/opencode/releases/download/v1.18.30/opencode-linux-x64.tar.gz";
-      sha256 = "sha256-VQByRoWBZUlv+FuhwrZI90IejiATv0GJpoDJ/45pnRc=";
+      url = "https://github.com/anomalyco/opencode/releases/download/v1.18.34/opencode-linux-x64.tar.gz";
+      sha256 = "sha256-DyJHlkcibR0t2ZWV0gCC7nvaOHC2LcapC0Hvwacdfpo=";
     };
   };
   pwndbg = {
