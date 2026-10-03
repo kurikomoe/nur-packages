@@ -12,7 +12,8 @@
   ...
 }: let
   system = stdenv.hostPlatform.system;
-  kbuildGoModule = buildGoModule.override {go = go_1_25;};
+  # kbuildGoModule = buildGoModule.override {go = go_1_25;};
+  kbuildGoModule = buildGoModule;
   trzsz-ssh = kbuildGoModule rec {
     inherit (sources.trzsz-ssh) pname version src;
 
