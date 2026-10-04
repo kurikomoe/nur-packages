@@ -15,10 +15,10 @@
   };
   cc-switch-cli = {
     pname = "cc-switch-cli";
-    version = "5.10.4";
+    version = "5.10.5";
     src = fetchurl {
-      url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.10.4/cc-switch-cli-v5.10.4-linux-x64-musl.tar.gz";
-      sha256 = "sha256-qaVp2FywphFpCCpVj4Z4bg5+6cJyWQDn1uh2hz60FsM=";
+      url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.10.5/cc-switch-cli-v5.10.5-linux-x64-musl.tar.gz";
+      sha256 = "sha256-/tpNyg7PAeyQcIFBzDRpcmg8J8EJf7oiI1xQIhQ/gO0=";
     };
   };
   codex = {
@@ -31,36 +31,36 @@
   };
   deploy-rs = {
     pname = "deploy-rs";
-    version = "414ac5f35d79aabe5a0bf52451d8cf61eadf6c88";
+    version = "cf64c8cbadd9b13ea79ba7720aa2930500f2ece7";
     src = fetchFromGitHub {
       owner = "serokell";
       repo = "deploy-rs";
-      rev = "414ac5f35d79aabe5a0bf52451d8cf61eadf6c88";
+      rev = "cf64c8cbadd9b13ea79ba7720aa2930500f2ece7";
       fetchSubmodules = false;
-      sha256 = "sha256-qb9sL86UCUEd3SYAda4ItN1NV0vhMSdbpA64WckvVI0=";
+      sha256 = "sha256-MHycJ+rm2wMrhiO6emgqJUaUbhJU/AvdH8DyUVrU1dw=";
     };
-    date = "2026-09-08";
+    date = "2026-09-28";
   };
   determinate = {
     pname = "determinate";
-    version = "v3.22.3";
+    version = "v3.23.0";
     src = fetchFromGitHub {
       owner = "DeterminateSystems";
       repo = "nix-src";
-      rev = "v3.22.3";
+      rev = "v3.23.0";
       fetchSubmodules = false;
-      sha256 = "sha256-bv8yt03cVAPdAc6/9nntqW2/QJeFsvuuYK0bbT99MDA=";
+      sha256 = "sha256-ldqXsv3UaPHCvvH0nlDvjNF7zM4wJmMjuyRy91/pVFM=";
     };
   };
   devenv = {
     pname = "devenv";
-    version = "v2.3.1";
+    version = "v2.4.0";
     src = fetchFromGitHub {
       owner = "cachix";
       repo = "devenv";
-      rev = "v2.3.1";
+      rev = "v2.4.0";
       fetchSubmodules = false;
-      sha256 = "sha256-zZB/UVcdL0VWuAPEe/ALY7onj8Q18efSUdL3ZJlUspk=";
+      sha256 = "sha256-MCSbrGsgWXod/Qzk4v5tYO/fev1d5OcEGZ2vzVAvMfQ=";
     };
   };
   dotnet-script = {
@@ -114,13 +114,13 @@
   };
   hermes-agent = {
     pname = "hermes-agent";
-    version = "v2026.9.11";
+    version = "v2026.9.24";
     src = fetchFromGitHub {
       owner = "NousResearch";
       repo = "hermes-agent";
-      rev = "v2026.9.11";
+      rev = "v2026.9.24";
       fetchSubmodules = false;
-      sha256 = "sha256-5cuRyXYpkZS83nhw12vq4y33RrNTP3NHDgqGllkm6bI=";
+      sha256 = "sha256-y6NaoG+HCeMPhxRsBXrRFef4hp3FF1svSPNKpI6Xz/E=";
     };
   };
   kratos = {
@@ -136,21 +136,21 @@
   };
   microsoft-edge = {
     pname = "microsoft-edge";
-    version = "152.0.4191.66";
+    version = "154.0.4258.53";
     src = fetchurl {
-      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_152.0.4191.66-1_amd64.deb";
-      sha256 = "sha256-GGwZ+dYHnRdO+7TvMxzMHhHRObb3qOo7DbdfmxfiXw0=";
+      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_154.0.4258.53-1_amd64.deb";
+      sha256 = "sha256-ZGNZA0r/VK63bnZDaldy82a77+p24HzFy2Ds+xGyJ7k=";
     };
   };
   opencode = {
     pname = "opencode";
-    version = "v1.18.30";
+    version = "v2.0.22";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v1.18.30";
+      rev = "v2.0.22";
       fetchSubmodules = false;
-      sha256 = "sha256-G4qRDwJ6i5SpsiHoej31HRPLOHpkLc66B+UmdzOY1+o=";
+      sha256 = "sha256-oKmEStkAGxprPdQCQ8TM4449+FpaV+FnbH6D55137qY=";
     };
   };
   opencode-bin = {
@@ -163,13 +163,13 @@
   };
   pwndbg = {
     pname = "pwndbg";
-    version = "2026.07.29";
+    version = "2026.09.15";
     src = fetchFromGitHub {
       owner = "pwndbg";
       repo = "pwndbg";
-      rev = "2026.07.29";
+      rev = "2026.09.15";
       fetchSubmodules = false;
-      sha256 = "sha256-OkUJtFFvJ00/Ai7DsGqg+KA91Vt+17weJX/hrw0c03c=";
+      sha256 = "sha256-KHpFBdFi2rbwoHZsv9nFcG9qcmw/wCn2AsFS7qUTueg=";
     };
   };
   python = {
