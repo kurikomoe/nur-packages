@@ -23,10 +23,10 @@
   };
   codex = {
     pname = "codex";
-    version = "0.160.0";
+    version = "0.160.1";
     src = fetchurl {
-      url = "https://github.com/openai/codex/releases/download/rust-v0.160.0/codex-package-x86_64-unknown-linux-musl.tar.zst";
-      sha256 = "sha256-yYoAA/HIWGdsUvIMk/ODJ2HImeMxxE6hXY4gY0YmpMI=";
+      url = "https://github.com/openai/codex/releases/download/rust-v0.160.1/codex-package-x86_64-unknown-linux-musl.tar.zst";
+      sha256 = "sha256-Bfknn8+3ZWShgB3YNShqVid8Ck3ZfZT1hUPnGy7V+Aw=";
     };
   };
   deploy-rs = {
@@ -144,13 +144,13 @@
   };
   opencode = {
     pname = "opencode";
-    version = "v2.0.22";
+    version = "v2.0.23";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v2.0.22";
+      rev = "v2.0.23";
       fetchSubmodules = false;
-      sha256 = "sha256-oKmEStkAGxprPdQCQ8TM4449+FpaV+FnbH6D55137qY=";
+      sha256 = "sha256-HW/uDfTRqrZRBBUTQR9ANtXVm0nYcOGl2vdTLjTj4c4=";
     };
   };
   opencode-bin = {
@@ -174,15 +174,15 @@
   };
   python = {
     pname = "python";
-    version = "4d2bd16c09baaa04f4045f16f6a5574654aaba16";
+    version = "5821ac5267b0dc89e48705407206e3c88ee3e0ad";
     src = fetchFromGitHub {
       owner = "cachix";
       repo = "nixpkgs-python";
-      rev = "4d2bd16c09baaa04f4045f16f6a5574654aaba16";
+      rev = "5821ac5267b0dc89e48705407206e3c88ee3e0ad";
       fetchSubmodules = false;
-      sha256 = "sha256-9PEUIbLorWC455Oa/4dxuLh+PFPfENBOgEN52gw+Onk=";
+      sha256 = "sha256-c0b1vHZE46o97uOPvSJXDOrMNn2PNNfz93wYNNoWZsM=";
     };
-    date = "2026-08-11";
+    date = "2026-10-05";
   };
   shellfirm = {
     pname = "shellfirm";

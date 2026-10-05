@@ -37,11 +37,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-yYoAA/HIWGdsUvIMk/ODJ2HImeMxxE6hXY4gY0YmpMI=",
+            "sha256": "sha256-Bfknn8+3ZWShgB3YNShqVid8Ck3ZfZT1hUPnGy7V+Aw=",
             "type": "url",
-            "url": "https://github.com/openai/codex/releases/download/rust-v0.160.0/codex-package-x86_64-unknown-linux-musl.tar.zst"
+            "url": "https://github.com/openai/codex/releases/download/rust-v0.160.1/codex-package-x86_64-unknown-linux-musl.tar.zst"
         },
-        "version": "0.160.0"
+        "version": "0.160.1"
     },
     "deploy-rs": {
         "cargoLock": null,
@@ -269,12 +269,12 @@
             "name": null,
             "owner": "anomalyco",
             "repo": "opencode",
-            "rev": "v2.0.22",
-            "sha256": "sha256-oKmEStkAGxprPdQCQ8TM4449+FpaV+FnbH6D55137qY=",
+            "rev": "v2.0.23",
+            "sha256": "sha256-HW/uDfTRqrZRBBUTQR9ANtXVm0nYcOGl2vdTLjTj4c4=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2.0.22"
+        "version": "v2.0.23"
     },
     "opencode-bin": {
         "cargoLock": null,
@@ -314,7 +314,7 @@
     },
     "python": {
         "cargoLock": null,
-        "date": "2026-08-11",
+        "date": "2026-10-05",
         "extract": null,
         "name": "python",
         "passthru": null,
@@ -326,12 +326,12 @@
             "name": null,
             "owner": "cachix",
             "repo": "nixpkgs-python",
-            "rev": "4d2bd16c09baaa04f4045f16f6a5574654aaba16",
-            "sha256": "sha256-9PEUIbLorWC455Oa/4dxuLh+PFPfENBOgEN52gw+Onk=",
+            "rev": "5821ac5267b0dc89e48705407206e3c88ee3e0ad",
+            "sha256": "sha256-c0b1vHZE46o97uOPvSJXDOrMNn2PNNfz93wYNNoWZsM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "4d2bd16c09baaa04f4045f16f6a5574654aaba16"
+        "version": "5821ac5267b0dc89e48705407206e3c88ee3e0ad"
     },
     "shellfirm": {
         "cargoLock": null,
