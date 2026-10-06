@@ -78,12 +78,12 @@
             "name": null,
             "owner": "DeterminateSystems",
             "repo": "nix-src",
-            "rev": "v3.23.0",
-            "sha256": "sha256-ldqXsv3UaPHCvvH0nlDvjNF7zM4wJmMjuyRy91/pVFM=",
+            "rev": "v3.23.1",
+            "sha256": "sha256-fuoqgE/DZMDByEYZyoOBNUxbf/JUMy2VLT8mFcYe0Fc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v3.23.0"
+        "version": "v3.23.1"
     },
     "devenv": {
         "cargoLock": null,
@@ -249,11 +249,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-ZGNZA0r/VK63bnZDaldy82a77+p24HzFy2Ds+xGyJ7k=",
+            "sha256": "sha256-9CXepZ8Ki6wAIBaFoHDpR1Q8V9E1wTC6c+CGPPLFBrE=",
             "type": "url",
-            "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_154.0.4258.53-1_amd64.deb"
+            "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_154.0.4258.62-1_amd64.deb"
         },
-        "version": "154.0.4258.53"
+        "version": "154.0.4258.62"
     },
     "opencode": {
         "cargoLock": null,
@@ -269,12 +269,12 @@
             "name": null,
             "owner": "anomalyco",
             "repo": "opencode",
-            "rev": "v2.0.23",
-            "sha256": "sha256-HW/uDfTRqrZRBBUTQR9ANtXVm0nYcOGl2vdTLjTj4c4=",
+            "rev": "v2.0.24",
+            "sha256": "sha256-xrHI6e4Wq32QNX+xmpb/Psf3kBFT7Z5grmCnxMFEK5E=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2.0.23"
+        "version": "v2.0.24"
     },
     "opencode-bin": {
         "cargoLock": null,

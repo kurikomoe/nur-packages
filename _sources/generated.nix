@@ -43,13 +43,13 @@
   };
   determinate = {
     pname = "determinate";
-    version = "v3.23.0";
+    version = "v3.23.1";
     src = fetchFromGitHub {
       owner = "DeterminateSystems";
       repo = "nix-src";
-      rev = "v3.23.0";
+      rev = "v3.23.1";
       fetchSubmodules = false;
-      sha256 = "sha256-ldqXsv3UaPHCvvH0nlDvjNF7zM4wJmMjuyRy91/pVFM=";
+      sha256 = "sha256-fuoqgE/DZMDByEYZyoOBNUxbf/JUMy2VLT8mFcYe0Fc=";
     };
   };
   devenv = {
@@ -136,21 +136,21 @@
   };
   microsoft-edge = {
     pname = "microsoft-edge";
-    version = "154.0.4258.53";
+    version = "154.0.4258.62";
     src = fetchurl {
-      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_154.0.4258.53-1_amd64.deb";
-      sha256 = "sha256-ZGNZA0r/VK63bnZDaldy82a77+p24HzFy2Ds+xGyJ7k=";
+      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_154.0.4258.62-1_amd64.deb";
+      sha256 = "sha256-9CXepZ8Ki6wAIBaFoHDpR1Q8V9E1wTC6c+CGPPLFBrE=";
     };
   };
   opencode = {
     pname = "opencode";
-    version = "v2.0.23";
+    version = "v2.0.24";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v2.0.23";
+      rev = "v2.0.24";
       fetchSubmodules = false;
-      sha256 = "sha256-HW/uDfTRqrZRBBUTQR9ANtXVm0nYcOGl2vdTLjTj4c4=";
+      sha256 = "sha256-xrHI6e4Wq32QNX+xmpb/Psf3kBFT7Z5grmCnxMFEK5E=";
     };
   };
   opencode-bin = {
