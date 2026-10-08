@@ -22,11 +22,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-/tpNyg7PAeyQcIFBzDRpcmg8J8EJf7oiI1xQIhQ/gO0=",
+            "sha256": "sha256-JypNVBShvIFXUiJ9MFwk2JS2wvXVm7XjmFMEH/dSp68=",
             "type": "url",
-            "url": "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.10.5/cc-switch-cli-v5.10.5-linux-x64-musl.tar.gz"
+            "url": "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.11.0/cc-switch-cli-v5.11.0-linux-x64-musl.tar.gz"
         },
-        "version": "5.10.5"
+        "version": "5.11.0"
     },
     "codex": {
         "cargoLock": null,
@@ -37,15 +37,15 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-Bfknn8+3ZWShgB3YNShqVid8Ck3ZfZT1hUPnGy7V+Aw=",
+            "sha256": "sha256-7XZTScUAdWOX9TY7xwz9k3JfQoAmTh8EOEZB3wPrgk8=",
             "type": "url",
-            "url": "https://github.com/openai/codex/releases/download/rust-v0.160.1/codex-package-x86_64-unknown-linux-musl.tar.zst"
+            "url": "https://github.com/openai/codex/releases/download/rust-v0.162.0/codex-package-x86_64-unknown-linux-musl.tar.zst"
         },
-        "version": "0.160.1"
+        "version": "0.162.0"
     },
     "deploy-rs": {
         "cargoLock": null,
-        "date": "2026-09-28",
+        "date": "2026-10-07",
         "extract": null,
         "name": "deploy-rs",
         "passthru": null,
@@ -57,12 +57,12 @@
             "name": null,
             "owner": "serokell",
             "repo": "deploy-rs",
-            "rev": "cf64c8cbadd9b13ea79ba7720aa2930500f2ece7",
-            "sha256": "sha256-MHycJ+rm2wMrhiO6emgqJUaUbhJU/AvdH8DyUVrU1dw=",
+            "rev": "45ba3f8c5cb28396fff71671806e2550b464ac86",
+            "sha256": "sha256-TQiEqCAQ4bWppfeRGX4O3lwopsgsd2OvcOHTEQRRwEQ=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "cf64c8cbadd9b13ea79ba7720aa2930500f2ece7"
+        "version": "45ba3f8c5cb28396fff71671806e2550b464ac86"
     },
     "determinate": {
         "cargoLock": null,
@@ -269,12 +269,12 @@
             "name": null,
             "owner": "anomalyco",
             "repo": "opencode",
-            "rev": "v2.0.24",
-            "sha256": "sha256-xrHI6e4Wq32QNX+xmpb/Psf3kBFT7Z5grmCnxMFEK5E=",
+            "rev": "v2.0.26",
+            "sha256": "sha256-umhEz5um90EiBHvVZzQw+HoBFO088ZI1g7Ost9BUxhM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2.0.24"
+        "version": "v2.0.26"
     },
     "opencode-bin": {
         "cargoLock": null,
