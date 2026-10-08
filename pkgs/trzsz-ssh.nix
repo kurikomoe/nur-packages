@@ -8,12 +8,11 @@
   zenity,
   tmux,
   openssh,
-  go_1_25,
+  go,
   ...
 }: let
   system = stdenv.hostPlatform.system;
-  # kbuildGoModule = buildGoModule.override {go = go_1_25;};
-  kbuildGoModule = buildGoModule;
+  kbuildGoModule = buildGoModule.override {inherit go;};
   trzsz-ssh = kbuildGoModule rec {
     inherit (sources.trzsz-ssh) pname version src;
 
