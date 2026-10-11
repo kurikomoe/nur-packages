@@ -82,6 +82,17 @@
       sha256 = "sha256-0+7R0kdCcw+PdX4UfYuacCv86nzJW+LgTVml9drGZXE=";
     };
   };
+  dsh = {
+    pname = "dsh";
+    version = "dsh-v0.2.1-alpha.2";
+    src = fetchFromGitHub {
+      owner = "deepseek-ai";
+      repo = "deepseek-harness";
+      rev = "dsh-v0.2.1-alpha.2";
+      fetchSubmodules = false;
+      sha256 = "sha256-MxxwtEPBG8SK6Rw5CqGalnJ5FWAygzVxklCQab5mpbU=";
+    };
+  };
   font-firacode = {
     pname = "font-firacode";
     version = "6.2";

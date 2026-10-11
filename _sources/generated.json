@@ -141,6 +141,27 @@
         },
         "version": "v0.1.4"
     },
+    "dsh": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "dsh",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "deepseek-ai",
+            "repo": "deepseek-harness",
+            "rev": "dsh-v0.2.1-alpha.2",
+            "sha256": "sha256-MxxwtEPBG8SK6Rw5CqGalnJ5FWAygzVxklCQab5mpbU=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "dsh-v0.2.1-alpha.2"
+    },
     "font-firacode": {
         "cargoLock": null,
         "date": null,

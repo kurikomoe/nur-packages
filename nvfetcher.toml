@@ -124,3 +124,7 @@ fetch.github = "NousResearch/hermes-agent"
 [git-hooks-nix]
 src.manual = "50b9238891e388c9fdc6a5c49e49c42533a1b5ce"
 fetch.github = "cachix/git-hooks.nix"
+
+[dsh]
+src.github_tag = "deepseek-ai/deepseek-harness"
+fetch.github = "deepseek-ai/deepseek-harness"
