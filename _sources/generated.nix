@@ -4,7 +4,8 @@
   fetchurl,
   fetchFromGitHub,
   dockerTools,
-}: {
+}:
+{
   "1password-cli-linux" = {
     pname = "1password-cli-linux";
     version = "2.39.0";
@@ -15,10 +16,10 @@
   };
   cc-switch-cli = {
     pname = "cc-switch-cli";
-    version = "5.11.0";
+    version = "5.11.1";
     src = fetchurl {
-      url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.11.0/cc-switch-cli-v5.11.0-linux-x64-musl.tar.gz";
-      sha256 = "sha256-JypNVBShvIFXUiJ9MFwk2JS2wvXVm7XjmFMEH/dSp68=";
+      url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.11.1/cc-switch-cli-v5.11.1-linux-x64-musl.tar.gz";
+      sha256 = "sha256-y87e4Mh4mEwcJflQlYpkRa4YLWj3HzofQMqK3LXpTgY=";
     };
   };
   codex = {
@@ -160,13 +161,13 @@
   };
   opencode = {
     pname = "opencode";
-    version = "v2.0.26";
+    version = "v2.0.27";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v2.0.26";
+      rev = "v2.0.27";
       fetchSubmodules = false;
-      sha256 = "sha256-umhEz5um90EiBHvVZzQw+HoBFO088ZI1g7Ost9BUxhM=";
+      sha256 = "sha256-C+MOdj8CPcP6cLWJl/KBg8/oR/XVOkn0+d7/54YKuU4=";
     };
   };
   opencode-bin = {

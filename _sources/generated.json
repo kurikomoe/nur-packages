@@ -22,11 +22,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-JypNVBShvIFXUiJ9MFwk2JS2wvXVm7XjmFMEH/dSp68=",
+            "sha256": "sha256-y87e4Mh4mEwcJflQlYpkRa4YLWj3HzofQMqK3LXpTgY=",
             "type": "url",
-            "url": "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.11.0/cc-switch-cli-v5.11.0-linux-x64-musl.tar.gz"
+            "url": "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.11.1/cc-switch-cli-v5.11.1-linux-x64-musl.tar.gz"
         },
-        "version": "5.11.0"
+        "version": "5.11.1"
     },
     "codex": {
         "cargoLock": null,
@@ -299,12 +299,12 @@
             "name": null,
             "owner": "anomalyco",
             "repo": "opencode",
-            "rev": "v2.0.26",
-            "sha256": "sha256-umhEz5um90EiBHvVZzQw+HoBFO088ZI1g7Ost9BUxhM=",
+            "rev": "v2.0.27",
+            "sha256": "sha256-C+MOdj8CPcP6cLWJl/KBg8/oR/XVOkn0+d7/54YKuU4=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2.0.26"
+        "version": "v2.0.27"
     },
     "opencode-bin": {
         "cargoLock": null,
