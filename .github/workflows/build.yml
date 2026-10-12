@@ -102,10 +102,12 @@ jobs:
       - name: Update flake to system nixpkgs
         run: nix flake update --override-input nixpkgs ${{ matrix.nixPath }}
 
+      - name: Update dependency hashes for matrix nixpkgs
+        run: ./nix-update.sh
+
       - name: Build nix packages
         run: |
           nix run github:Mic92/nix-fast-build -- -f .#ci --no-nom --skip-cached --eval-workers 1
-          ./nix-update.sh
 
       # - name: Trigger NUR update
       #   # Don't replace <YOUR_REPO_NAME> here!

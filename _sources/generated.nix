@@ -84,13 +84,18 @@
   };
   dsh = {
     pname = "dsh";
-    version = "dsh-v0.2.1-alpha.2";
-    src = fetchFromGitHub {
-      owner = "deepseek-ai";
-      repo = "deepseek-harness";
-      rev = "dsh-v0.2.1-alpha.2";
-      fetchSubmodules = false;
-      sha256 = "sha256-MxxwtEPBG8SK6Rw5CqGalnJ5FWAygzVxklCQab5mpbU=";
+    version = "0.2.0-rc.2";
+    src = fetchurl {
+      url = "https://registry.npmjs.org/@deepseek-ai/dsh/-/dsh-0.2.0-rc.2.tgz";
+      sha256 = "sha256-vSeEfERc1opWWsH5HAa7vMdjnvkwcfZ4u1nF66/ziFk=";
+    };
+  };
+  dsh-tui = {
+    pname = "dsh-tui";
+    version = "0.14.0";
+    src = fetchurl {
+      url = "https://registry.npmjs.org/@deepseek-harness-tui/dsh-tui/-/dsh-tui-0.14.0.tgz";
+      sha256 = "sha256-a1q1k9+p0fVCMN43Qb/BRitb0LK+Kfqn/p5az0BmbAU=";
     };
   };
   font-firacode = {

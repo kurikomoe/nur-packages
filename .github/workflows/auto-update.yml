@@ -81,9 +81,10 @@ jobs:
           echo "" >> commit_message.txt
 
       - name: Update all deps
+        env:
+          npm_config_cache: ${{ github.workspace }}/@temp/npm-cache
         run: |
-          nix profile install nixpkgs#nvfetcher
-          nix profile install nixpkgs#nix-update
+          mkdir -p @temp
 
           echo "========= Update flake ==============="
           nix flake update
@@ -92,32 +93,33 @@ jobs:
           fi
 
           echo "======== Update nvfetcher ============="
-          nvfetcher --changelog nvfetcher_log.txt || true
-          if [ -s nvfetcher_log.txt ]; then
-             cat nvfetcher_log.txt >> commit_message.txt
-             rm nvfetcher_log.txt
+          nvfetcher_args=(--changelog @temp/nvfetcher_log.txt)
+          if [ -f keyfile.toml ]; then
+             nvfetcher_args+=(-k keyfile.toml)
+          fi
+          nix shell --inputs-from . nixpkgs#nvfetcher nixpkgs#nodejs --command \
+             nvfetcher "${nvfetcher_args[@]}"
+          if [ -s @temp/nvfetcher_log.txt ]; then
+             cat @temp/nvfetcher_log.txt >> commit_message.txt
           fi
 
           echo "========= Update nix-update ==============="
-          chmod +x ./nix-update.sh
           ./nix-update.sh
-
-          nix fmt .
 
       - name: Check for changes
         id: check
         run: |
           CHANGES=$(git status --porcelain)
           if [ -z "$CHANGES" ]; then
-            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
           else
             COUNT=$(echo "$CHANGES" | wc -l)
             FILES=$(echo "$CHANGES" | awk '{print $2}')
             if [ "$COUNT" -eq 1 ] && [ "$FILES" = "flake.lock" ]; then
               echo "Only flake.lock changed. Ignoring."
-              echo "has_changes=false" >> $GITHUB_OUTPUT
+              echo "has_changes=false" >> "$GITHUB_OUTPUT"
             else
-              echo "has_changes=true" >> $GITHUB_OUTPUT
+              echo "has_changes=true" >> "$GITHUB_OUTPUT"
             fi
           fi
           # git status --porcelain
@@ -137,9 +139,11 @@ jobs:
       - name: Read commit message from file
         id: read_commit_message
         run: |
-          echo "COMMIT_MSG<<EOF" >> $GITHUB_ENV
-          cat commit_message.txt >> $GITHUB_ENV
-          echo "EOF" >> $GITHUB_ENV
+          {
+            echo "COMMIT_MSG<<EOF"
+            cat commit_message.txt
+            echo "EOF"
+          } >> "$GITHUB_ENV"
 
       - name: Commit Changes
         uses: EndBug/add-and-commit@v10
@@ -160,6 +164,6 @@ jobs:
 
       - name: Trigger build all
         uses: peter-evans/repository-dispatch@v4
-        if: ${{ !failure()  && steps.check-uncommitted.outputs.has_uncommitted == 'true' }}
+        if: ${{ !failure() && steps.check.outputs.has_changes == 'true' }}
         with:
           event-type: build-all-event

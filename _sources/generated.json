@@ -149,18 +149,27 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
             "name": null,
-            "owner": "deepseek-ai",
-            "repo": "deepseek-harness",
-            "rev": "dsh-v0.2.1-alpha.2",
-            "sha256": "sha256-MxxwtEPBG8SK6Rw5CqGalnJ5FWAygzVxklCQab5mpbU=",
-            "sparseCheckout": [],
-            "type": "github"
+            "sha256": "sha256-vSeEfERc1opWWsH5HAa7vMdjnvkwcfZ4u1nF66/ziFk=",
+            "type": "url",
+            "url": "https://registry.npmjs.org/@deepseek-ai/dsh/-/dsh-0.2.0-rc.2.tgz"
         },
-        "version": "dsh-v0.2.1-alpha.2"
+        "version": "0.2.0-rc.2"
+    },
+    "dsh-tui": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "dsh-tui",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-a1q1k9+p0fVCMN43Qb/BRitb0LK+Kfqn/p5az0BmbAU=",
+            "type": "url",
+            "url": "https://registry.npmjs.org/@deepseek-harness-tui/dsh-tui/-/dsh-tui-0.14.0.tgz"
+        },
+        "version": "0.14.0"
     },
     "font-firacode": {
         "cargoLock": null,

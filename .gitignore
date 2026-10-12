@@ -1,6 +1,10 @@
+FINDINGS.md
+MEMORY.md
+
 .output/
 .refs/
 .temp/
+@temp/
 refs/
 
 @workspace/

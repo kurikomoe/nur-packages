@@ -26,6 +26,7 @@
   python-set = kcallPackage ./pkgs/python/default.nix {};
   trzsz-set = kcallPackage ./pkgs/trzsz-ssh.nix {};
   hermes-agent-set = kcallPackage ./pkgs/hermes-agent.nix {};
+  dsh = kcallPackage ./pkgs/ai/dsh/dsh.nix {};
 in
   {}
   // font-set
@@ -39,6 +40,8 @@ in
     opencode = kcallPackage ./pkgs/opencode.nix {};
     opencode-bin = kcallPackage ./pkgs/opencode-bin.nix {};
     codex = kcallPackage ./pkgs/codex.nix {};
+    inherit dsh;
+    dsh-tui = kcallPackage ./pkgs/ai/dsh/dsh-tui.nix {inherit dsh;};
     "cc-switch-cli" = kcallPackage ./pkgs/cc-switch-cli.nix {};
     dotnet-script = kcallPackage ./pkgs/dotnet-script.nix {};
     shellfirm = kcallPackage ./pkgs/shellfirm.nix {};
