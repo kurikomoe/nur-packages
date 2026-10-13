@@ -8,10 +8,10 @@
 {
   "1password-cli-linux" = {
     pname = "1password-cli-linux";
-    version = "2.39.0";
+    version = "2.40.0";
     src = fetchTarball {
-      url = "https://cache.agilebits.com/dist/1P/op2/pkg/v2.39.0/op_linux_amd64_v2.39.0.zip";
-      sha256 = "sha256-i2lzaEoJP/Re3DJvTgHNwZ9UXXxHKd6UIF3CmASt2N8=";
+      url = "https://cache.agilebits.com/dist/1P/op2/pkg/v2.40.0/op_linux_amd64_v2.40.0.zip";
+      sha256 = "sha256-ZZrxhmqYSFv0H8j1RsJ3XdZ5OgL0aaYKva8z9SUl7lo=";
     };
   };
   cc-switch-cli = {
@@ -44,13 +44,13 @@
   };
   determinate = {
     pname = "determinate";
-    version = "v3.23.1";
+    version = "v3.23.2";
     src = fetchFromGitHub {
       owner = "DeterminateSystems";
       repo = "nix-src";
-      rev = "v3.23.1";
+      rev = "v3.23.2";
       fetchSubmodules = false;
-      sha256 = "sha256-fuoqgE/DZMDByEYZyoOBNUxbf/JUMy2VLT8mFcYe0Fc=";
+      sha256 = "sha256-Ir2Kf9gGrXqh48My/k5xMzKbWS9JSthDPjdBOmhnzrE=";
     };
   };
   devenv = {
@@ -93,10 +93,10 @@
   };
   dsh-tui = {
     pname = "dsh-tui";
-    version = "0.14.0";
+    version = "0.15.0";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@deepseek-harness-tui/dsh-tui/-/dsh-tui-0.14.0.tgz";
-      sha256 = "sha256-a1q1k9+p0fVCMN43Qb/BRitb0LK+Kfqn/p5az0BmbAU=";
+      url = "https://registry.npmjs.org/@deepseek-harness-tui/dsh-tui/-/dsh-tui-0.15.0.tgz";
+      sha256 = "sha256-VR/TOlBBcXKAf7O13LJL8JzFr3OJCpxUUHwED6ZdeAQ=";
     };
   };
   font-firacode = {
@@ -161,13 +161,13 @@
   };
   opencode = {
     pname = "opencode";
-    version = "v2.0.27";
+    version = "v2.0.28";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v2.0.27";
+      rev = "v2.0.28";
       fetchSubmodules = false;
-      sha256 = "sha256-C+MOdj8CPcP6cLWJl/KBg8/oR/XVOkn0+d7/54YKuU4=";
+      sha256 = "sha256-7bpaROwB9JYucjqOKh92oWi2iuYmo7pXyUxYKgj4OkI=";
     };
   };
   opencode-bin = {
