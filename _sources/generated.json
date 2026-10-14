@@ -299,12 +299,12 @@
             "name": null,
             "owner": "anomalyco",
             "repo": "opencode",
-            "rev": "v2.0.28",
-            "sha256": "sha256-7bpaROwB9JYucjqOKh92oWi2iuYmo7pXyUxYKgj4OkI=",
+            "rev": "v2.0.29",
+            "sha256": "sha256-qfT8gQCyGahr5v7v95wNArXrBOAnfQZja1WyJkaCpJI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2.0.28"
+        "version": "v2.0.29"
     },
     "opencode-bin": {
         "cargoLock": null,
