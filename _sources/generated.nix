@@ -4,7 +4,8 @@
   fetchurl,
   fetchFromGitHub,
   dockerTools,
-}: {
+}:
+{
   "1password-cli-linux" = {
     pname = "1password-cli-linux";
     version = "2.40.0";
@@ -15,10 +16,10 @@
   };
   cc-switch-cli = {
     pname = "cc-switch-cli";
-    version = "5.11.1";
+    version = "5.11.2";
     src = fetchurl {
-      url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.11.1/cc-switch-cli-v5.11.1-linux-x64-musl.tar.gz";
-      sha256 = "sha256-y87e4Mh4mEwcJflQlYpkRa4YLWj3HzofQMqK3LXpTgY=";
+      url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.11.2/cc-switch-cli-v5.11.2-linux-x64-musl.tar.gz";
+      sha256 = "sha256-uwJV43iUxH8L6nIWBcLwKsemnWmQEbsWNtt1HhddK6o=";
     };
   };
   codex = {
@@ -43,13 +44,13 @@
   };
   determinate = {
     pname = "determinate";
-    version = "v3.23.2";
+    version = "v3.23.3";
     src = fetchFromGitHub {
       owner = "DeterminateSystems";
       repo = "nix-src";
-      rev = "v3.23.2";
+      rev = "v3.23.3";
       fetchSubmodules = false;
-      sha256 = "sha256-Ir2Kf9gGrXqh48My/k5xMzKbWS9JSthDPjdBOmhnzrE=";
+      sha256 = "sha256-+wZuesAaCfqohENc3UCsKiNbdarDZp+8oyiLRPUfdj4=";
     };
   };
   devenv = {
@@ -92,10 +93,10 @@
   };
   dsh-tui = {
     pname = "dsh-tui";
-    version = "0.15.0";
+    version = "0.16.1";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@deepseek-harness-tui/dsh-tui/-/dsh-tui-0.15.0.tgz";
-      sha256 = "sha256-VR/TOlBBcXKAf7O13LJL8JzFr3OJCpxUUHwED6ZdeAQ=";
+      url = "https://registry.npmjs.org/@deepseek-harness-tui/dsh-tui/-/dsh-tui-0.16.1.tgz";
+      sha256 = "sha256-IUSzF9DCWuTSaI8e8sc7wsleEhCFrFl30AQH3NKxM24=";
     };
   };
   font-firacode = {
@@ -152,21 +153,21 @@
   };
   microsoft-edge = {
     pname = "microsoft-edge";
-    version = "155.0.4283.45";
+    version = "155.0.4283.62";
     src = fetchurl {
-      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_155.0.4283.45-1_amd64.deb";
-      sha256 = "sha256-NayIGJ7ZG2DP9Eb7YCDKYFE84g+YUBDTxbmWEV4+xKQ=";
+      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_155.0.4283.62-1_amd64.deb";
+      sha256 = "sha256-PlODTZ1uUFvFfmv/RNks/ozwvtkGTojvxbDY8cdfcPo=";
     };
   };
   opencode = {
     pname = "opencode";
-    version = "v2.0.29";
+    version = "v2.0.32";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v2.0.29";
+      rev = "v2.0.32";
       fetchSubmodules = false;
-      sha256 = "sha256-qfT8gQCyGahr5v7v95wNArXrBOAnfQZja1WyJkaCpJI=";
+      sha256 = "sha256-KATNzF7z3PoUo30KC13Gm8uC6HA2a9bmJCZRfqY5D44=";
     };
   };
   opencode-bin = {
