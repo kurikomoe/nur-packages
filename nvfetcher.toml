@@ -4,6 +4,12 @@ src.from_pattern = "^(v([0-9\\.]+))$"
 src.to_pattern = "\\1"
 fetch.github = "kaplanelad/shellfirm"
 
+[tgt]
+# The release tags do not contain the upstream flake.
+src.git = "https://github.com/FedericoBruzzone/tgt.git"
+src.branch = "main"
+fetch.github = "FedericoBruzzone/tgt"
+
 [kratos]
 src.github_tag = "go-kratos/kratos"
 src.from_pattern = "^(([0-9\\.]+))$"

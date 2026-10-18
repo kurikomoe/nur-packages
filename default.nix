@@ -45,6 +45,7 @@ in
     "cc-switch-cli" = kcallPackage ./pkgs/cc-switch-cli.nix {};
     dotnet-script = kcallPackage ./pkgs/dotnet-script.nix {};
     shellfirm = kcallPackage ./pkgs/shellfirm.nix {};
+    tgt = kcallPackage ./pkgs/tgt.nix {};
     microsoft-edge = kcallPackage ./pkgs/microsoft-edge/package.nix {};
     pwndbg = kcallPackage ./pkgs/pwndbg.nix {};
     determinate = kcallPackage ./pkgs/determinate.nix {};
