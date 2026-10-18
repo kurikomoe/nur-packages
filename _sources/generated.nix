@@ -4,8 +4,7 @@
   fetchurl,
   fetchFromGitHub,
   dockerTools,
-}:
-{
+}: {
   "1password-cli-linux" = {
     pname = "1password-cli-linux";
     version = "2.40.0";
@@ -24,10 +23,10 @@
   };
   codex = {
     pname = "codex";
-    version = "0.162.1";
+    version = "0.163.0";
     src = fetchurl {
-      url = "https://github.com/openai/codex/releases/download/rust-v0.162.1/codex-package-x86_64-unknown-linux-musl.tar.zst";
-      sha256 = "sha256-vSTQK+Z4iUtHvFZb0tqNR6BeOn3Qtu9mqpVymbJOyPI=";
+      url = "https://github.com/openai/codex/releases/download/rust-v0.163.0/codex-package-x86_64-unknown-linux-musl.tar.zst";
+      sha256 = "sha256-3yLawfJLeSfoF+ixEwZ/vhyqWGq6dVQkf6vUlGTPnJY=";
     };
   };
   deploy-rs = {
@@ -211,6 +210,18 @@
       fetchSubmodules = false;
       sha256 = "sha256-nfNK7r+y9KGYb1txHPtUXP7SnipHg94SF3IQhZwZcD0=";
     };
+  };
+  tgt = {
+    pname = "tgt";
+    version = "3069815a4b980171285f8c7715b76823ef56e450";
+    src = fetchFromGitHub {
+      owner = "FedericoBruzzone";
+      repo = "tgt";
+      rev = "3069815a4b980171285f8c7715b76823ef56e450";
+      fetchSubmodules = false;
+      sha256 = "sha256-SEecVxgdI5uV4HMwdXqSXcLlsj7VGuXmRiJXK7L+ggc=";
+    };
+    date = "2026-10-13";
   };
   trzsz = {
     pname = "trzsz";

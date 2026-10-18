@@ -37,11 +37,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-vSTQK+Z4iUtHvFZb0tqNR6BeOn3Qtu9mqpVymbJOyPI=",
+            "sha256": "sha256-3yLawfJLeSfoF+ixEwZ/vhyqWGq6dVQkf6vUlGTPnJY=",
             "type": "url",
-            "url": "https://github.com/openai/codex/releases/download/rust-v0.162.1/codex-package-x86_64-unknown-linux-musl.tar.zst"
+            "url": "https://github.com/openai/codex/releases/download/rust-v0.163.0/codex-package-x86_64-unknown-linux-musl.tar.zst"
         },
-        "version": "0.162.1"
+        "version": "0.163.0"
     },
     "deploy-rs": {
         "cargoLock": null,
@@ -383,6 +383,27 @@
             "type": "github"
         },
         "version": "v0.3.10"
+    },
+    "tgt": {
+        "cargoLock": null,
+        "date": "2026-10-13",
+        "extract": null,
+        "name": "tgt",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "FedericoBruzzone",
+            "repo": "tgt",
+            "rev": "3069815a4b980171285f8c7715b76823ef56e450",
+            "sha256": "sha256-SEecVxgdI5uV4HMwdXqSXcLlsj7VGuXmRiJXK7L+ggc=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "3069815a4b980171285f8c7715b76823ef56e450"
     },
     "trzsz": {
         "cargoLock": null,

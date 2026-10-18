@@ -54,7 +54,8 @@ in
       test -x $out/bin/${hostRunnerProgram}
       $out/codex-path/rg --version
       $out/codex-resources/bwrap --version
-      $out/codex-resources/zsh/bin/zsh --version
+      # 0.163.0 removed the patched zsh backend and no longer bundles
+      # codex-resources/zsh; shell commands use the standard executor.
       # The voice host has no CLI help mode; check its dynamic dependencies.
       voiceHost="$out/codex-resources/voice/bin/codex-voice-host"
       test -x "$voiceHost"
