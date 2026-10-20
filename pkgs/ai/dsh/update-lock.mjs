@@ -1,5 +1,5 @@
 import { execFileSync } from 'node:child_process';
-import { existsSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -29,13 +29,27 @@ if (previous && matches(JSON.parse(previous).packages?.[''])) {
   process.exit(0);
 }
 
-writeFileSync(join(workDir, 'package.json'), JSON.stringify(manifest, null, 2) + '\n');
-// Retain existing transitive pins that still satisfy the new release.
-if (previous) writeFileSync(join(workDir, 'package-lock.json'), previous);
-execFileSync('npm', [
+const runNpmInstall = () => execFileSync('npm', [
   'install', '--package-lock-only', '--ignore-scripts', '--no-audit', '--no-fund',
   '--cache', cacheDir, '--fetch-retries=1',
 ], { cwd: workDir, stdio: 'inherit' });
+
+writeFileSync(join(workDir, 'package.json'), JSON.stringify(manifest, null, 2) + '\n');
+// Retain existing transitive pins that still satisfy the new release. A stale
+// lock can make npm reject the new release's peer dependencies (ERESOLVE), so
+// retry from scratch when that happens instead of failing the update.
+if (previous) {
+  writeFileSync(join(workDir, 'package-lock.json'), previous);
+  try {
+    runNpmInstall();
+  } catch {
+    console.warn(`dsh ${manifest.version}: previous lock cannot be reused; resolving from scratch`);
+    rmSync(join(workDir, 'package-lock.json'), {force: true});
+    runNpmInstall();
+  }
+} else {
+  runNpmInstall();
+}
 
 const updated = readFileSync(join(workDir, 'package-lock.json'), 'utf8');
 if (!matches(JSON.parse(updated).packages?.[''])) {

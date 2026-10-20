@@ -4,8 +4,7 @@
   fetchurl,
   fetchFromGitHub,
   dockerTools,
-}:
-{
+}: {
   "1password-cli-linux" = {
     pname = "1password-cli-linux";
     version = "2.40.0";
@@ -85,10 +84,10 @@
   };
   dsh = {
     pname = "dsh";
-    version = "0.2.0-rc.2";
+    version = "0.2.1-rc.2";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@deepseek-ai/dsh/-/dsh-0.2.0-rc.2.tgz";
-      sha256 = "sha256-vSeEfERc1opWWsH5HAa7vMdjnvkwcfZ4u1nF66/ziFk=";
+      url = "https://registry.npmjs.org/@deepseek-ai/dsh/-/dsh-0.2.1-rc.2.tgz";
+      sha256 = "sha256-QOPQJcAkDEMW/0Le6b7cdwnA+ziuoQVDtHB27Sr1Lh0=";
     };
   };
   dsh-tui = {

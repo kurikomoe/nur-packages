@@ -15,7 +15,7 @@ in
     pname = "dsh";
     inherit (res) version src;
 
-    npmDepsHash = "sha256-p3D3/jOCTKCsUbNyKb18l51f4nlrswBoPWSe7Ti4xQk=";
+    npmDepsHash = "sha256-KgBeqShDUqd3wyLl+GgYMBmUhv8YB3WIirpTYF8NYvI=";
     npmFlags = ["--ignore-scripts"];
     dontNpmBuild = true;
 
