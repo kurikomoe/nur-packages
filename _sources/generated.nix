@@ -4,7 +4,8 @@
   fetchurl,
   fetchFromGitHub,
   dockerTools,
-}: {
+}:
+{
   "1password-cli-linux" = {
     pname = "1password-cli-linux";
     version = "2.40.0";
@@ -31,15 +32,15 @@
   };
   deploy-rs = {
     pname = "deploy-rs";
-    version = "45ba3f8c5cb28396fff71671806e2550b464ac86";
+    version = "1cec0527bd09074bbee6d4461900ce5d58267217";
     src = fetchFromGitHub {
       owner = "serokell";
       repo = "deploy-rs";
-      rev = "45ba3f8c5cb28396fff71671806e2550b464ac86";
+      rev = "1cec0527bd09074bbee6d4461900ce5d58267217";
       fetchSubmodules = false;
-      sha256 = "sha256-TQiEqCAQ4bWppfeRGX4O3lwopsgsd2OvcOHTEQRRwEQ=";
+      sha256 = "sha256-eINUtQW48bf9G3EYprthHMll8VDKxaXQP52TZFuwMmE=";
     };
-    date = "2026-10-07";
+    date = "2026-10-20";
   };
   determinate = {
     pname = "determinate";
@@ -160,13 +161,13 @@
   };
   opencode = {
     pname = "opencode";
-    version = "v2.0.32";
+    version = "v2.1.1";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v2.0.32";
+      rev = "v2.1.1";
       fetchSubmodules = false;
-      sha256 = "sha256-KATNzF7z3PoUo30KC13Gm8uC6HA2a9bmJCZRfqY5D44=";
+      sha256 = "sha256-CoujRYCvqFXDJ6bzMxinT8CSPyKiLSAzCINjVaZBm/Y=";
     };
   };
   opencode-bin = {
@@ -190,15 +191,15 @@
   };
   python = {
     pname = "python";
-    version = "5821ac5267b0dc89e48705407206e3c88ee3e0ad";
+    version = "bea6c222d16b6b8b8d0f658b69e447266acd5461";
     src = fetchFromGitHub {
       owner = "cachix";
       repo = "nixpkgs-python";
-      rev = "5821ac5267b0dc89e48705407206e3c88ee3e0ad";
+      rev = "bea6c222d16b6b8b8d0f658b69e447266acd5461";
       fetchSubmodules = false;
-      sha256 = "sha256-c0b1vHZE46o97uOPvSJXDOrMNn2PNNfz93wYNNoWZsM=";
+      sha256 = "sha256-e/5WngU/ROQs3GlAl0KgvuXRcNmnvkuWM6cM8lTFt1s=";
     };
-    date = "2026-10-05";
+    date = "2026-10-20";
   };
   shellfirm = {
     pname = "shellfirm";
@@ -213,15 +214,15 @@
   };
   tgt = {
     pname = "tgt";
-    version = "3069815a4b980171285f8c7715b76823ef56e450";
+    version = "6b2abb9354515023d3a90853f7d4cc95ba00ce6e";
     src = fetchFromGitHub {
       owner = "FedericoBruzzone";
       repo = "tgt";
-      rev = "3069815a4b980171285f8c7715b76823ef56e450";
+      rev = "6b2abb9354515023d3a90853f7d4cc95ba00ce6e";
       fetchSubmodules = false;
-      sha256 = "sha256-SEecVxgdI5uV4HMwdXqSXcLlsj7VGuXmRiJXK7L+ggc=";
+      sha256 = "sha256-B/WxeqOBEx+iobdmz1evMBvkE8qBNZOuPBJywOP/B9I=";
     };
-    date = "2026-10-13";
+    date = "2026-10-19";
   };
   trzsz = {
     pname = "trzsz";

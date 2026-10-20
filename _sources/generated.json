@@ -45,7 +45,7 @@
     },
     "deploy-rs": {
         "cargoLock": null,
-        "date": "2026-10-07",
+        "date": "2026-10-20",
         "extract": null,
         "name": "deploy-rs",
         "passthru": null,
@@ -57,12 +57,12 @@
             "name": null,
             "owner": "serokell",
             "repo": "deploy-rs",
-            "rev": "45ba3f8c5cb28396fff71671806e2550b464ac86",
-            "sha256": "sha256-TQiEqCAQ4bWppfeRGX4O3lwopsgsd2OvcOHTEQRRwEQ=",
+            "rev": "1cec0527bd09074bbee6d4461900ce5d58267217",
+            "sha256": "sha256-eINUtQW48bf9G3EYprthHMll8VDKxaXQP52TZFuwMmE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "45ba3f8c5cb28396fff71671806e2550b464ac86"
+        "version": "1cec0527bd09074bbee6d4461900ce5d58267217"
     },
     "determinate": {
         "cargoLock": null,
@@ -299,12 +299,12 @@
             "name": null,
             "owner": "anomalyco",
             "repo": "opencode",
-            "rev": "v2.0.32",
-            "sha256": "sha256-KATNzF7z3PoUo30KC13Gm8uC6HA2a9bmJCZRfqY5D44=",
+            "rev": "v2.1.1",
+            "sha256": "sha256-CoujRYCvqFXDJ6bzMxinT8CSPyKiLSAzCINjVaZBm/Y=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2.0.32"
+        "version": "v2.1.1"
     },
     "opencode-bin": {
         "cargoLock": null,
@@ -344,7 +344,7 @@
     },
     "python": {
         "cargoLock": null,
-        "date": "2026-10-05",
+        "date": "2026-10-20",
         "extract": null,
         "name": "python",
         "passthru": null,
@@ -356,12 +356,12 @@
             "name": null,
             "owner": "cachix",
             "repo": "nixpkgs-python",
-            "rev": "5821ac5267b0dc89e48705407206e3c88ee3e0ad",
-            "sha256": "sha256-c0b1vHZE46o97uOPvSJXDOrMNn2PNNfz93wYNNoWZsM=",
+            "rev": "bea6c222d16b6b8b8d0f658b69e447266acd5461",
+            "sha256": "sha256-e/5WngU/ROQs3GlAl0KgvuXRcNmnvkuWM6cM8lTFt1s=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "5821ac5267b0dc89e48705407206e3c88ee3e0ad"
+        "version": "bea6c222d16b6b8b8d0f658b69e447266acd5461"
     },
     "shellfirm": {
         "cargoLock": null,
@@ -386,7 +386,7 @@
     },
     "tgt": {
         "cargoLock": null,
-        "date": "2026-10-13",
+        "date": "2026-10-19",
         "extract": null,
         "name": "tgt",
         "passthru": null,
@@ -398,12 +398,12 @@
             "name": null,
             "owner": "FedericoBruzzone",
             "repo": "tgt",
-            "rev": "3069815a4b980171285f8c7715b76823ef56e450",
-            "sha256": "sha256-SEecVxgdI5uV4HMwdXqSXcLlsj7VGuXmRiJXK7L+ggc=",
+            "rev": "6b2abb9354515023d3a90853f7d4cc95ba00ce6e",
+            "sha256": "sha256-B/WxeqOBEx+iobdmz1evMBvkE8qBNZOuPBJywOP/B9I=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "3069815a4b980171285f8c7715b76823ef56e450"
+        "version": "6b2abb9354515023d3a90853f7d4cc95ba00ce6e"
     },
     "trzsz": {
         "cargoLock": null,
