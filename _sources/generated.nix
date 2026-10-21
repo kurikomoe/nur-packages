@@ -161,13 +161,13 @@
   };
   opencode = {
     pname = "opencode";
-    version = "v2.1.1";
+    version = "v2.1.2";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v2.1.1";
+      rev = "v2.1.2";
       fetchSubmodules = false;
-      sha256 = "sha256-CoujRYCvqFXDJ6bzMxinT8CSPyKiLSAzCINjVaZBm/Y=";
+      sha256 = "sha256-4/DXi+46Y7PVz6SR+O5KyEfq3Lwg2BCZeevsEtkerDc=";
     };
   };
   opencode-bin = {
@@ -180,26 +180,26 @@
   };
   pwndbg = {
     pname = "pwndbg";
-    version = "2026.09.15";
+    version = "2026.10.22";
     src = fetchFromGitHub {
       owner = "pwndbg";
       repo = "pwndbg";
-      rev = "2026.09.15";
+      rev = "2026.10.22";
       fetchSubmodules = false;
-      sha256 = "sha256-KHpFBdFi2rbwoHZsv9nFcG9qcmw/wCn2AsFS7qUTueg=";
+      sha256 = "sha256-IUbwGnRiQVWr40YN9ZQoVV4TZSZxUKOKo27Dzwo1OqM=";
     };
   };
   python = {
     pname = "python";
-    version = "bea6c222d16b6b8b8d0f658b69e447266acd5461";
+    version = "1d93c2606aa444dda1c76e65fed693e98991d781";
     src = fetchFromGitHub {
       owner = "cachix";
       repo = "nixpkgs-python";
-      rev = "bea6c222d16b6b8b8d0f658b69e447266acd5461";
+      rev = "1d93c2606aa444dda1c76e65fed693e98991d781";
       fetchSubmodules = false;
-      sha256 = "sha256-e/5WngU/ROQs3GlAl0KgvuXRcNmnvkuWM6cM8lTFt1s=";
+      sha256 = "sha256-svljlpycnpwtpCSAqBVLMS8rFTtFvkjkKF7IjFzDP5c=";
     };
-    date = "2026-10-20";
+    date = "2026-10-21";
   };
   shellfirm = {
     pname = "shellfirm";

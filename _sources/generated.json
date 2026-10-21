@@ -299,12 +299,12 @@
             "name": null,
             "owner": "anomalyco",
             "repo": "opencode",
-            "rev": "v2.1.1",
-            "sha256": "sha256-CoujRYCvqFXDJ6bzMxinT8CSPyKiLSAzCINjVaZBm/Y=",
+            "rev": "v2.1.2",
+            "sha256": "sha256-4/DXi+46Y7PVz6SR+O5KyEfq3Lwg2BCZeevsEtkerDc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2.1.1"
+        "version": "v2.1.2"
     },
     "opencode-bin": {
         "cargoLock": null,
@@ -335,16 +335,16 @@
             "name": null,
             "owner": "pwndbg",
             "repo": "pwndbg",
-            "rev": "2026.09.15",
-            "sha256": "sha256-KHpFBdFi2rbwoHZsv9nFcG9qcmw/wCn2AsFS7qUTueg=",
+            "rev": "2026.10.22",
+            "sha256": "sha256-IUbwGnRiQVWr40YN9ZQoVV4TZSZxUKOKo27Dzwo1OqM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "2026.09.15"
+        "version": "2026.10.22"
     },
     "python": {
         "cargoLock": null,
-        "date": "2026-10-20",
+        "date": "2026-10-21",
         "extract": null,
         "name": "python",
         "passthru": null,
@@ -356,12 +356,12 @@
             "name": null,
             "owner": "cachix",
             "repo": "nixpkgs-python",
-            "rev": "bea6c222d16b6b8b8d0f658b69e447266acd5461",
-            "sha256": "sha256-e/5WngU/ROQs3GlAl0KgvuXRcNmnvkuWM6cM8lTFt1s=",
+            "rev": "1d93c2606aa444dda1c76e65fed693e98991d781",
+            "sha256": "sha256-svljlpycnpwtpCSAqBVLMS8rFTtFvkjkKF7IjFzDP5c=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "bea6c222d16b6b8b8d0f658b69e447266acd5461"
+        "version": "1d93c2606aa444dda1c76e65fed693e98991d781"
     },
     "shellfirm": {
         "cargoLock": null,
