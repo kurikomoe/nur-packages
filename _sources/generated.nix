@@ -16,10 +16,10 @@
   };
   cc-switch-cli = {
     pname = "cc-switch-cli";
-    version = "5.11.2";
+    version = "5.11.3";
     src = fetchurl {
-      url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.11.2/cc-switch-cli-v5.11.2-linux-x64-musl.tar.gz";
-      sha256 = "sha256-uwJV43iUxH8L6nIWBcLwKsemnWmQEbsWNtt1HhddK6o=";
+      url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.11.3/cc-switch-cli-v5.11.3-linux-x64-musl.tar.gz";
+      sha256 = "sha256-QlMYc0RMiztBrFlppwdSVQ70wwdDjXyn7kW83fIBBhw=";
     };
   };
   codex = {
@@ -44,13 +44,13 @@
   };
   determinate = {
     pname = "determinate";
-    version = "v3.23.3";
+    version = "v3.24.0";
     src = fetchFromGitHub {
       owner = "DeterminateSystems";
       repo = "nix-src";
-      rev = "v3.23.3";
+      rev = "v3.24.0";
       fetchSubmodules = false;
-      sha256 = "sha256-+wZuesAaCfqohENc3UCsKiNbdarDZp+8oyiLRPUfdj4=";
+      sha256 = "sha256-wBbomknnynmW74SjD4xRgpymGxJx96aUtYr3Dnyi4/Y=";
     };
   };
   devenv = {
@@ -161,13 +161,13 @@
   };
   opencode = {
     pname = "opencode";
-    version = "v2.1.2";
+    version = "v2.1.3";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v2.1.2";
+      rev = "v2.1.3";
       fetchSubmodules = false;
-      sha256 = "sha256-4/DXi+46Y7PVz6SR+O5KyEfq3Lwg2BCZeevsEtkerDc=";
+      sha256 = "sha256-b4+ZFgnlAuQMkRXBnYsEcHdhPsTfCZnEYArzdWP2TK4=";
     };
   };
   opencode-bin = {
@@ -191,15 +191,15 @@
   };
   python = {
     pname = "python";
-    version = "1d93c2606aa444dda1c76e65fed693e98991d781";
+    version = "756ccb6d10b9ef13908ebf5e70be0384ed053ec8";
     src = fetchFromGitHub {
       owner = "cachix";
       repo = "nixpkgs-python";
-      rev = "1d93c2606aa444dda1c76e65fed693e98991d781";
+      rev = "756ccb6d10b9ef13908ebf5e70be0384ed053ec8";
       fetchSubmodules = false;
       sha256 = "sha256-svljlpycnpwtpCSAqBVLMS8rFTtFvkjkKF7IjFzDP5c=";
     };
-    date = "2026-10-21";
+    date = "2026-10-22";
   };
   shellfirm = {
     pname = "shellfirm";
