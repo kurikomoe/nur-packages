@@ -24,10 +24,10 @@
   };
   codex = {
     pname = "codex";
-    version = "0.163.0";
+    version = "0.164.0";
     src = fetchurl {
-      url = "https://github.com/openai/codex/releases/download/rust-v0.163.0/codex-package-x86_64-unknown-linux-musl.tar.zst";
-      sha256 = "sha256-3yLawfJLeSfoF+ixEwZ/vhyqWGq6dVQkf6vUlGTPnJY=";
+      url = "https://github.com/openai/codex/releases/download/rust-v0.164.0/codex-package-x86_64-unknown-linux-musl.tar.zst";
+      sha256 = "sha256-eAGuRzFjleOmOPthlkqfKPhKZkfBse2QMy5Na22gRtg=";
     };
   };
   deploy-rs = {
@@ -161,13 +161,13 @@
   };
   opencode = {
     pname = "opencode";
-    version = "v2.1.3";
+    version = "v2.1.4";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v2.1.3";
+      rev = "v2.1.4";
       fetchSubmodules = false;
-      sha256 = "sha256-b4+ZFgnlAuQMkRXBnYsEcHdhPsTfCZnEYArzdWP2TK4=";
+      sha256 = "sha256-ggL24qwcafvNzn1g0/UYk1PcHy8OJeLARZSicET10Zo=";
     };
   };
   opencode-bin = {
