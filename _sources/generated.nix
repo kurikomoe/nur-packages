@@ -153,10 +153,10 @@
   };
   microsoft-edge = {
     pname = "microsoft-edge";
-    version = "155.0.4283.62";
+    version = "156.0.4314.42";
     src = fetchurl {
-      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_155.0.4283.62-1_amd64.deb";
-      sha256 = "sha256-PlODTZ1uUFvFfmv/RNks/ozwvtkGTojvxbDY8cdfcPo=";
+      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_156.0.4314.42-1_amd64.deb";
+      sha256 = "sha256-qGQvgp4QX+ekrEQFSOb6frcmtJ//j/xqJ/PQ+yWltAU=";
     };
   };
   opencode = {
@@ -237,13 +237,13 @@
   };
   trzsz-ssh = {
     pname = "trzsz-ssh";
-    version = "v0.1.26";
+    version = "v0.1.27";
     src = fetchFromGitHub {
       owner = "trzsz";
       repo = "trzsz-ssh";
-      rev = "v0.1.26";
+      rev = "v0.1.27";
       fetchSubmodules = false;
-      sha256 = "sha256-96xISHU0/C473Ohi3obsO1ihkxa0Q7Z39JIKzt5R7iM=";
+      sha256 = "sha256-wiObvHGSJdf8qXO1u7PvLdaQ1cvkLAgmQoGkw3hUMkQ=";
     };
   };
 }

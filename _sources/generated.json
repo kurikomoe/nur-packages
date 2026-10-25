@@ -279,11 +279,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-PlODTZ1uUFvFfmv/RNks/ozwvtkGTojvxbDY8cdfcPo=",
+            "sha256": "sha256-qGQvgp4QX+ekrEQFSOb6frcmtJ//j/xqJ/PQ+yWltAU=",
             "type": "url",
-            "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_155.0.4283.62-1_amd64.deb"
+            "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_156.0.4314.42-1_amd64.deb"
         },
-        "version": "155.0.4283.62"
+        "version": "156.0.4314.42"
     },
     "opencode": {
         "cargoLock": null,
@@ -440,11 +440,11 @@
             "name": null,
             "owner": "trzsz",
             "repo": "trzsz-ssh",
-            "rev": "v0.1.26",
-            "sha256": "sha256-96xISHU0/C473Ohi3obsO1ihkxa0Q7Z39JIKzt5R7iM=",
+            "rev": "v0.1.27",
+            "sha256": "sha256-wiObvHGSJdf8qXO1u7PvLdaQ1cvkLAgmQoGkw3hUMkQ=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.1.26"
+        "version": "v0.1.27"
     }
 }
