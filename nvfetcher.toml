@@ -81,7 +81,10 @@ src.include_regex = "v\\d+\\.\\d+(\\.\\d+)?"
 fetch.github = "cachix/devenv"
 
 [python]
-src.git = "https://github.com/cachix/nixpkgs-python.git"
+# Pin to a known-good revision before Python 3.11.18/3.12.16: those releases
+# moved knownfiles behind a win32 guard, which no longer matches nixpkgs'
+# mimetypes.patch.
+src.manual = "756ccb6d10b9ef13908ebf5e70be0384ed053ec8"
 fetch.github = "cachix/nixpkgs-python"
 
 [font-firacode]

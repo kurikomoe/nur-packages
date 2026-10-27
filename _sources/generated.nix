@@ -4,8 +4,7 @@
   fetchurl,
   fetchFromGitHub,
   dockerTools,
-}:
-{
+}: {
   "1password-cli-linux" = {
     pname = "1password-cli-linux";
     version = "2.40.0";
@@ -199,7 +198,6 @@
       fetchSubmodules = false;
       sha256 = "sha256-svljlpycnpwtpCSAqBVLMS8rFTtFvkjkKF7IjFzDP5c=";
     };
-    date = "2026-10-22";
   };
   shellfirm = {
     pname = "shellfirm";

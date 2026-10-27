@@ -3,6 +3,7 @@
   stdenv,
   sources,
   buildGoModule,
+  buildGo126Module,
   fetchFromGitHub,
   makeWrapper,
   zenity,
@@ -13,7 +14,8 @@
 }: let
   system = stdenv.hostPlatform.system;
   kbuildGoModule = buildGoModule.override {inherit go;};
-  trzsz-ssh = kbuildGoModule rec {
+  # trzsz-ssh 0.1.27 requires Go >= 1.26; nixos-25.11 still defaults to Go 1.25.
+  trzsz-ssh = buildGo126Module rec {
     inherit (sources.trzsz-ssh) pname version src;
 
     nativeBuildInputs = [makeWrapper];
