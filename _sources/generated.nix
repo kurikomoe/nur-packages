@@ -4,7 +4,8 @@
   fetchurl,
   fetchFromGitHub,
   dockerTools,
-}: {
+}:
+{
   "1password-cli-linux" = {
     pname = "1password-cli-linux";
     version = "2.40.0";
@@ -23,10 +24,10 @@
   };
   codex = {
     pname = "codex";
-    version = "0.164.0";
+    version = "0.165.0";
     src = fetchurl {
-      url = "https://github.com/openai/codex/releases/download/rust-v0.164.0/codex-package-x86_64-unknown-linux-musl.tar.zst";
-      sha256 = "sha256-eAGuRzFjleOmOPthlkqfKPhKZkfBse2QMy5Na22gRtg=";
+      url = "https://github.com/openai/codex/releases/download/rust-v0.165.0/codex-package-x86_64-unknown-linux-musl.tar.zst";
+      sha256 = "sha256-/wXBX9Y6BzSwtCMbxN3fDFmvBtynnApefFX5do2xqSw=";
     };
   };
   deploy-rs = {
@@ -43,13 +44,13 @@
   };
   determinate = {
     pname = "determinate";
-    version = "v3.24.0";
+    version = "v3.24.1";
     src = fetchFromGitHub {
       owner = "DeterminateSystems";
       repo = "nix-src";
-      rev = "v3.24.0";
+      rev = "v3.24.1";
       fetchSubmodules = false;
-      sha256 = "sha256-wBbomknnynmW74SjD4xRgpymGxJx96aUtYr3Dnyi4/Y=";
+      sha256 = "sha256-pDSWr7TQd9V9thIxlsqHzVGkuymDkckQpgaXLf7EuJ0=";
     };
   };
   devenv = {
@@ -152,21 +153,21 @@
   };
   microsoft-edge = {
     pname = "microsoft-edge";
-    version = "156.0.4314.42";
+    version = "156.0.4314.50";
     src = fetchurl {
-      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_156.0.4314.42-1_amd64.deb";
-      sha256 = "sha256-qGQvgp4QX+ekrEQFSOb6frcmtJ//j/xqJ/PQ+yWltAU=";
+      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_156.0.4314.50-1_amd64.deb";
+      sha256 = "sha256-DQvGMDqLk1Qk4gr6cRbGHdfnzLyiScPPSYA640Pqz40=";
     };
   };
   opencode = {
     pname = "opencode";
-    version = "v2.1.4";
+    version = "v2.2.0";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v2.1.4";
+      rev = "v2.2.0";
       fetchSubmodules = false;
-      sha256 = "sha256-ggL24qwcafvNzn1g0/UYk1PcHy8OJeLARZSicET10Zo=";
+      sha256 = "sha256-fIko/sSjsKLbGKmOmi9RxLGIyYQWatvo/ZK0jamIS7Y=";
     };
   };
   opencode-bin = {
@@ -212,15 +213,15 @@
   };
   tgt = {
     pname = "tgt";
-    version = "6b2abb9354515023d3a90853f7d4cc95ba00ce6e";
+    version = "ffa4856b39101bf63982007016725b2d355069ba";
     src = fetchFromGitHub {
       owner = "FedericoBruzzone";
       repo = "tgt";
-      rev = "6b2abb9354515023d3a90853f7d4cc95ba00ce6e";
+      rev = "ffa4856b39101bf63982007016725b2d355069ba";
       fetchSubmodules = false;
-      sha256 = "sha256-B/WxeqOBEx+iobdmz1evMBvkE8qBNZOuPBJywOP/B9I=";
+      sha256 = "sha256-1OuOp1dNGX6k6kiWEanbuXEFtvf0n/usvap5SHCF7hY=";
     };
-    date = "2026-10-19";
+    date = "2026-10-26";
   };
   trzsz = {
     pname = "trzsz";

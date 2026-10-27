@@ -37,11 +37,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-eAGuRzFjleOmOPthlkqfKPhKZkfBse2QMy5Na22gRtg=",
+            "sha256": "sha256-/wXBX9Y6BzSwtCMbxN3fDFmvBtynnApefFX5do2xqSw=",
             "type": "url",
-            "url": "https://github.com/openai/codex/releases/download/rust-v0.164.0/codex-package-x86_64-unknown-linux-musl.tar.zst"
+            "url": "https://github.com/openai/codex/releases/download/rust-v0.165.0/codex-package-x86_64-unknown-linux-musl.tar.zst"
         },
-        "version": "0.164.0"
+        "version": "0.165.0"
     },
     "deploy-rs": {
         "cargoLock": null,
@@ -78,12 +78,12 @@
             "name": null,
             "owner": "DeterminateSystems",
             "repo": "nix-src",
-            "rev": "v3.24.0",
-            "sha256": "sha256-wBbomknnynmW74SjD4xRgpymGxJx96aUtYr3Dnyi4/Y=",
+            "rev": "v3.24.1",
+            "sha256": "sha256-pDSWr7TQd9V9thIxlsqHzVGkuymDkckQpgaXLf7EuJ0=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v3.24.0"
+        "version": "v3.24.1"
     },
     "devenv": {
         "cargoLock": null,
@@ -279,11 +279,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-qGQvgp4QX+ekrEQFSOb6frcmtJ//j/xqJ/PQ+yWltAU=",
+            "sha256": "sha256-DQvGMDqLk1Qk4gr6cRbGHdfnzLyiScPPSYA640Pqz40=",
             "type": "url",
-            "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_156.0.4314.42-1_amd64.deb"
+            "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_156.0.4314.50-1_amd64.deb"
         },
-        "version": "156.0.4314.42"
+        "version": "156.0.4314.50"
     },
     "opencode": {
         "cargoLock": null,
@@ -299,12 +299,12 @@
             "name": null,
             "owner": "anomalyco",
             "repo": "opencode",
-            "rev": "v2.1.4",
-            "sha256": "sha256-ggL24qwcafvNzn1g0/UYk1PcHy8OJeLARZSicET10Zo=",
+            "rev": "v2.2.0",
+            "sha256": "sha256-fIko/sSjsKLbGKmOmi9RxLGIyYQWatvo/ZK0jamIS7Y=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2.1.4"
+        "version": "v2.2.0"
     },
     "opencode-bin": {
         "cargoLock": null,
@@ -386,7 +386,7 @@
     },
     "tgt": {
         "cargoLock": null,
-        "date": "2026-10-19",
+        "date": "2026-10-26",
         "extract": null,
         "name": "tgt",
         "passthru": null,
@@ -398,12 +398,12 @@
             "name": null,
             "owner": "FedericoBruzzone",
             "repo": "tgt",
-            "rev": "6b2abb9354515023d3a90853f7d4cc95ba00ce6e",
-            "sha256": "sha256-B/WxeqOBEx+iobdmz1evMBvkE8qBNZOuPBJywOP/B9I=",
+            "rev": "ffa4856b39101bf63982007016725b2d355069ba",
+            "sha256": "sha256-1OuOp1dNGX6k6kiWEanbuXEFtvf0n/usvap5SHCF7hY=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "6b2abb9354515023d3a90853f7d4cc95ba00ce6e"
+        "version": "ffa4856b39101bf63982007016725b2d355069ba"
     },
     "trzsz": {
         "cargoLock": null,
