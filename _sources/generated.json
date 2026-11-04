@@ -7,11 +7,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-ZZrxhmqYSFv0H8j1RsJ3XdZ5OgL0aaYKva8z9SUl7lo=",
+            "sha256": "sha256-8vzb3VEV3LUbY+W5nrDnk/ZqEP5sZ27BC29IAWpISsc=",
             "type": "tarball",
-            "url": "https://cache.agilebits.com/dist/1P/op2/pkg/v2.40.0/op_linux_amd64_v2.40.0.zip"
+            "url": "https://cache.agilebits.com/dist/1P/op2/pkg/v2.41.1/op_linux_amd64_v2.41.1.zip"
         },
-        "version": "2.40.0"
+        "version": "2.41.1"
     },
     "cc-switch-cli": {
         "cargoLock": null,
@@ -37,11 +37,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-/wXBX9Y6BzSwtCMbxN3fDFmvBtynnApefFX5do2xqSw=",
+            "sha256": "sha256-j3rtxOL4U1dc4VQ0lq/Ir1Fmb3Yo+1NYEO2fagE98b4=",
             "type": "url",
-            "url": "https://github.com/openai/codex/releases/download/rust-v0.165.0/codex-package-x86_64-unknown-linux-musl.tar.zst"
+            "url": "https://github.com/openai/codex/releases/download/rust-v0.166.0/codex-package-x86_64-unknown-linux-musl.tar.zst"
         },
-        "version": "0.165.0"
+        "version": "0.166.0"
     },
     "deploy-rs": {
         "cargoLock": null,
@@ -78,12 +78,12 @@
             "name": null,
             "owner": "DeterminateSystems",
             "repo": "nix-src",
-            "rev": "v3.24.1",
-            "sha256": "sha256-pDSWr7TQd9V9thIxlsqHzVGkuymDkckQpgaXLf7EuJ0=",
+            "rev": "v3.24.2",
+            "sha256": "sha256-QY69Nw0WhXSvT2n2ldI5gt0h4ofbAVoi7EYGJGyNLl0=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v3.24.1"
+        "version": "v3.24.2"
     },
     "devenv": {
         "cargoLock": null,
@@ -150,11 +150,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-QOPQJcAkDEMW/0Le6b7cdwnA+ziuoQVDtHB27Sr1Lh0=",
+            "sha256": "sha256-YJh1ZvGeDe0feRjACmXBnFbqJfWXfuC/1Wl8XBE+xOE=",
             "type": "url",
-            "url": "https://registry.npmjs.org/@deepseek-ai/dsh/-/dsh-0.2.1-rc.2.tgz"
+            "url": "https://registry.npmjs.org/@deepseek-ai/dsh/-/dsh-0.2.1-rc.5.tgz"
         },
-        "version": "0.2.1-rc.2"
+        "version": "0.2.1-rc.5"
     },
     "dsh-tui": {
         "cargoLock": null,
@@ -165,11 +165,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-iAAvzIOlEzpb/awk8yudt4bTNaijBGgh1XZz31fzLYs=",
+            "sha256": "sha256-k7iKzV/1kEP4sl7yg1FECKLMIb/l9E5zQJtfIRE+Xs8=",
             "type": "url",
-            "url": "https://registry.npmjs.org/@deepseek-harness-tui/dsh-tui/-/dsh-tui-0.17.0.tgz"
+            "url": "https://registry.npmjs.org/@deepseek-harness-tui/dsh-tui/-/dsh-tui-0.18.0.tgz"
         },
-        "version": "0.17.0"
+        "version": "0.18.0"
     },
     "font-firacode": {
         "cargoLock": null,
@@ -279,11 +279,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-DQvGMDqLk1Qk4gr6cRbGHdfnzLyiScPPSYA640Pqz40=",
+            "sha256": "sha256-rc9M6I4+snYIOlYe/Qywa2gB8J3LZYX2zCPFlzBBTD0=",
             "type": "url",
-            "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_156.0.4314.50-1_amd64.deb"
+            "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_156.0.4314.58-1_amd64.deb"
         },
-        "version": "156.0.4314.50"
+        "version": "156.0.4314.58"
     },
     "opencode": {
         "cargoLock": null,
@@ -299,12 +299,12 @@
             "name": null,
             "owner": "anomalyco",
             "repo": "opencode",
-            "rev": "v2.2.0",
-            "sha256": "sha256-fIko/sSjsKLbGKmOmi9RxLGIyYQWatvo/ZK0jamIS7Y=",
+            "rev": "v2.2.5",
+            "sha256": "sha256-/a1czcXi12KWPXcESqplNdOZcjEs8gWCMO7w4nQYLkw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2.2.0"
+        "version": "v2.2.5"
     },
     "opencode-bin": {
         "cargoLock": null,
@@ -335,12 +335,12 @@
             "name": null,
             "owner": "pwndbg",
             "repo": "pwndbg",
-            "rev": "2026.10.22",
-            "sha256": "sha256-IUbwGnRiQVWr40YN9ZQoVV4TZSZxUKOKo27Dzwo1OqM=",
+            "rev": "2026.10.28",
+            "sha256": "sha256-uiTOnX7CKI9NaBpZv6JEPnNRy/p+OT5Fep3h31OyulM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "2026.10.22"
+        "version": "2026.10.28"
     },
     "python": {
         "cargoLock": null,
@@ -386,7 +386,7 @@
     },
     "tgt": {
         "cargoLock": null,
-        "date": "2026-10-26",
+        "date": "2026-11-02",
         "extract": null,
         "name": "tgt",
         "passthru": null,
@@ -398,12 +398,12 @@
             "name": null,
             "owner": "FedericoBruzzone",
             "repo": "tgt",
-            "rev": "ffa4856b39101bf63982007016725b2d355069ba",
-            "sha256": "sha256-1OuOp1dNGX6k6kiWEanbuXEFtvf0n/usvap5SHCF7hY=",
+            "rev": "f1886b9da10b43fb8da097830217aa41f895ac32",
+            "sha256": "sha256-px34ZLVz35X8UAlrT1pnVgxlgxvr0EIfrfkoiiBOLno=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "ffa4856b39101bf63982007016725b2d355069ba"
+        "version": "f1886b9da10b43fb8da097830217aa41f895ac32"
     },
     "trzsz": {
         "cargoLock": null,
