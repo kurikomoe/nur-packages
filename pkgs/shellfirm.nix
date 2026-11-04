@@ -27,6 +27,19 @@ in
 
     cargoLock.lockFile = "${res.src}/Cargo.lock";
 
+    # Nix runs builders on a PTY with TERM=xterm-256color, so `console`
+    # emits ANSI codes and the banner-layout assertions in
+    # `wrap::prompt::tests` compare against styled text. Keep the test
+    # output plain so the suite is deterministic in the sandbox.
+    NO_COLOR = "1";
+
+    # The bash-hook tests spawn `bash` and exercise the readline mode
+    # (`bind -x`). The stdenv bash is built without readline, so those tests
+    # take the DEBUG-trap fallback and fail. Put the interactive build first.
+    preCheck = ''
+      export PATH="${pkgs.bashInteractive}/bin:$PATH"
+    '';
+
     postInstall = ''
       # === fish plugin ===
       mkdir -p $out/share/fish/vendor_conf.d

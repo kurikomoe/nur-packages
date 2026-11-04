@@ -4,8 +4,7 @@
   fetchurl,
   fetchFromGitHub,
   dockerTools,
-}:
-{
+}: {
   "1password-cli-linux" = {
     pname = "1password-cli-linux";
     version = "2.40.0";
@@ -202,13 +201,13 @@
   };
   shellfirm = {
     pname = "shellfirm";
-    version = "v0.3.10";
+    version = "v0.4.1";
     src = fetchFromGitHub {
       owner = "kaplanelad";
       repo = "shellfirm";
-      rev = "v0.3.10";
+      rev = "v0.4.1";
       fetchSubmodules = false;
-      sha256 = "sha256-nfNK7r+y9KGYb1txHPtUXP7SnipHg94SF3IQhZwZcD0=";
+      sha256 = "sha256-OHsCwMrTWSu8BTlTRM6fPr6zZ4ws73ZhAR6fyowdQoA=";
     };
   };
   tgt = {
