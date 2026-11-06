@@ -37,11 +37,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-j3rtxOL4U1dc4VQ0lq/Ir1Fmb3Yo+1NYEO2fagE98b4=",
+            "sha256": "sha256-n2e4hoixQ1kH4hSIWI/yAR/f8n5YLS05XohVv1Z6jP8=",
             "type": "url",
-            "url": "https://github.com/openai/codex/releases/download/rust-v0.166.0/codex-package-x86_64-unknown-linux-musl.tar.zst"
+            "url": "https://github.com/openai/codex/releases/download/rust-v0.167.0/codex-package-x86_64-unknown-linux-musl.tar.zst"
         },
-        "version": "0.166.0"
+        "version": "0.167.0"
     },
     "deploy-rs": {
         "cargoLock": null,
@@ -150,11 +150,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-YJh1ZvGeDe0feRjACmXBnFbqJfWXfuC/1Wl8XBE+xOE=",
+            "sha256": "sha256-rSGWiu0DN6MmuFNQeiOzDqy77E1nqwfztv3mm3WxnNY=",
             "type": "url",
-            "url": "https://registry.npmjs.org/@deepseek-ai/dsh/-/dsh-0.2.1-rc.5.tgz"
+            "url": "https://registry.npmjs.org/@deepseek-ai/dsh/-/dsh-0.2.2-rc.1.tgz"
         },
-        "version": "0.2.1-rc.5"
+        "version": "0.2.2-rc.1"
     },
     "dsh-tui": {
         "cargoLock": null,
@@ -165,11 +165,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-k7iKzV/1kEP4sl7yg1FECKLMIb/l9E5zQJtfIRE+Xs8=",
+            "sha256": "sha256-paQbJMafxo+GjOTVY3/q7yJ8t7NKF3wGJdk47sqyLac=",
             "type": "url",
-            "url": "https://registry.npmjs.org/@deepseek-harness-tui/dsh-tui/-/dsh-tui-0.18.0.tgz"
+            "url": "https://registry.npmjs.org/@deepseek-harness-tui/dsh-tui/-/dsh-tui-0.19.0.tgz"
         },
-        "version": "0.18.0"
+        "version": "0.19.0"
     },
     "font-firacode": {
         "cargoLock": null,

@@ -24,10 +24,10 @@
   };
   codex = {
     pname = "codex";
-    version = "0.166.0";
+    version = "0.167.0";
     src = fetchurl {
-      url = "https://github.com/openai/codex/releases/download/rust-v0.166.0/codex-package-x86_64-unknown-linux-musl.tar.zst";
-      sha256 = "sha256-j3rtxOL4U1dc4VQ0lq/Ir1Fmb3Yo+1NYEO2fagE98b4=";
+      url = "https://github.com/openai/codex/releases/download/rust-v0.167.0/codex-package-x86_64-unknown-linux-musl.tar.zst";
+      sha256 = "sha256-n2e4hoixQ1kH4hSIWI/yAR/f8n5YLS05XohVv1Z6jP8=";
     };
   };
   deploy-rs = {
@@ -85,18 +85,18 @@
   };
   dsh = {
     pname = "dsh";
-    version = "0.2.1-rc.5";
+    version = "0.2.2-rc.1";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@deepseek-ai/dsh/-/dsh-0.2.1-rc.5.tgz";
-      sha256 = "sha256-YJh1ZvGeDe0feRjACmXBnFbqJfWXfuC/1Wl8XBE+xOE=";
+      url = "https://registry.npmjs.org/@deepseek-ai/dsh/-/dsh-0.2.2-rc.1.tgz";
+      sha256 = "sha256-rSGWiu0DN6MmuFNQeiOzDqy77E1nqwfztv3mm3WxnNY=";
     };
   };
   dsh-tui = {
     pname = "dsh-tui";
-    version = "0.18.0";
+    version = "0.19.0";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@deepseek-harness-tui/dsh-tui/-/dsh-tui-0.18.0.tgz";
-      sha256 = "sha256-k7iKzV/1kEP4sl7yg1FECKLMIb/l9E5zQJtfIRE+Xs8=";
+      url = "https://registry.npmjs.org/@deepseek-harness-tui/dsh-tui/-/dsh-tui-0.19.0.tgz";
+      sha256 = "sha256-paQbJMafxo+GjOTVY3/q7yJ8t7NKF3wGJdk47sqyLac=";
     };
   };
   font-firacode = {
