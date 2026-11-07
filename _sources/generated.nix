@@ -153,21 +153,21 @@
   };
   microsoft-edge = {
     pname = "microsoft-edge";
-    version = "156.0.4314.58";
+    version = "157.0.4341.42";
     src = fetchurl {
-      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_156.0.4314.58-1_amd64.deb";
-      sha256 = "sha256-rc9M6I4+snYIOlYe/Qywa2gB8J3LZYX2zCPFlzBBTD0=";
+      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_157.0.4341.42-1_amd64.deb";
+      sha256 = "sha256-G9b0dTzxOex1HKdLRwVGk8WmwoEoRh7Bw92AwFZA4rk=";
     };
   };
   opencode = {
     pname = "opencode";
-    version = "v2.2.5";
+    version = "v2.2.6";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v2.2.5";
+      rev = "v2.2.6";
       fetchSubmodules = false;
-      sha256 = "sha256-/a1czcXi12KWPXcESqplNdOZcjEs8gWCMO7w4nQYLkw=";
+      sha256 = "sha256-6Of4/r4SKYtxMbHISu8/4yzSpCfHNGuTwfKdAKjNJnM=";
     };
   };
   opencode-bin = {
