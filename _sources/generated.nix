@@ -24,10 +24,10 @@
   };
   codex = {
     pname = "codex";
-    version = "0.167.0";
+    version = "0.167.1";
     src = fetchurl {
-      url = "https://github.com/openai/codex/releases/download/rust-v0.167.0/codex-package-x86_64-unknown-linux-musl.tar.zst";
-      sha256 = "sha256-n2e4hoixQ1kH4hSIWI/yAR/f8n5YLS05XohVv1Z6jP8=";
+      url = "https://github.com/openai/codex/releases/download/rust-v0.167.1/codex-package-x86_64-unknown-linux-musl.tar.zst";
+      sha256 = "sha256-/3KM8ncmOvYTjC96z7DF9ThyuKdB+q8BJ0UTbiczMCE=";
     };
   };
   deploy-rs = {
@@ -153,21 +153,21 @@
   };
   microsoft-edge = {
     pname = "microsoft-edge";
-    version = "157.0.4341.42";
+    version = "157.0.4341.46";
     src = fetchurl {
-      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_157.0.4341.42-1_amd64.deb";
-      sha256 = "sha256-G9b0dTzxOex1HKdLRwVGk8WmwoEoRh7Bw92AwFZA4rk=";
+      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_157.0.4341.46-1_amd64.deb";
+      sha256 = "sha256-siWFUA5tA2bZWcwQz1hk/BooUkuiseuX6tPrfuNRtho=";
     };
   };
   opencode = {
     pname = "opencode";
-    version = "v2.2.6";
+    version = "v2.2.7";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v2.2.6";
+      rev = "v2.2.7";
       fetchSubmodules = false;
-      sha256 = "sha256-6Of4/r4SKYtxMbHISu8/4yzSpCfHNGuTwfKdAKjNJnM=";
+      sha256 = "sha256-JPCR867ZoMbYNrCvAa3OnilsxVcktD3mHCGpR6o/nlw=";
     };
   };
   opencode-bin = {
@@ -213,15 +213,15 @@
   };
   tgt = {
     pname = "tgt";
-    version = "f1886b9da10b43fb8da097830217aa41f895ac32";
+    version = "88c13248b75d380782c8f22ab32234d6a0362c22";
     src = fetchFromGitHub {
       owner = "FedericoBruzzone";
       repo = "tgt";
-      rev = "f1886b9da10b43fb8da097830217aa41f895ac32";
+      rev = "88c13248b75d380782c8f22ab32234d6a0362c22";
       fetchSubmodules = false;
-      sha256 = "sha256-px34ZLVz35X8UAlrT1pnVgxlgxvr0EIfrfkoiiBOLno=";
+      sha256 = "sha256-ZdAWwq4OGOlk881/2HSHEasxZp4orwqyTTT0zwCfcc4=";
     };
-    date = "2026-11-02";
+    date = "2026-11-10";
   };
   trzsz = {
     pname = "trzsz";
