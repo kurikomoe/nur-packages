@@ -37,11 +37,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-/3KM8ncmOvYTjC96z7DF9ThyuKdB+q8BJ0UTbiczMCE=",
+            "sha256": "sha256-bQK6/wUoGOjCrOPiLBvZ7DcjUkaG5Yb8E0LkyqBGiac=",
             "type": "url",
-            "url": "https://github.com/openai/codex/releases/download/rust-v0.167.1/codex-package-x86_64-unknown-linux-musl.tar.zst"
+            "url": "https://github.com/openai/codex/releases/download/rust-v0.169.0/codex-package-x86_64-unknown-linux-musl.tar.zst"
         },
-        "version": "0.167.1"
+        "version": "0.169.0"
     },
     "deploy-rs": {
         "cargoLock": null,
@@ -165,11 +165,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-paQbJMafxo+GjOTVY3/q7yJ8t7NKF3wGJdk47sqyLac=",
+            "sha256": "sha256-GvLJHe+YCiQTvvLX6pcXbM7Etvzz1tbibpZZoK3sSkw=",
             "type": "url",
-            "url": "https://registry.npmjs.org/@deepseek-harness-tui/dsh-tui/-/dsh-tui-0.19.0.tgz"
+            "url": "https://registry.npmjs.org/@deepseek-harness-tui/dsh-tui/-/dsh-tui-0.20.0.tgz"
         },
-        "version": "0.19.0"
+        "version": "0.20.0"
     },
     "font-firacode": {
         "cargoLock": null,
@@ -279,11 +279,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-siWFUA5tA2bZWcwQz1hk/BooUkuiseuX6tPrfuNRtho=",
+            "sha256": "sha256-NI0/4L6ZichpTGbVZtEY26JzBEWZ4/UP0h9HtQ15LVU=",
             "type": "url",
-            "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_157.0.4341.46-1_amd64.deb"
+            "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_157.0.4341.57-1_amd64.deb"
         },
-        "version": "157.0.4341.46"
+        "version": "157.0.4341.57"
     },
     "opencode": {
         "cargoLock": null,
@@ -299,12 +299,12 @@
             "name": null,
             "owner": "anomalyco",
             "repo": "opencode",
-            "rev": "v2.2.7",
-            "sha256": "sha256-JPCR867ZoMbYNrCvAa3OnilsxVcktD3mHCGpR6o/nlw=",
+            "rev": "v2.3.0",
+            "sha256": "sha256-7vw0TcaFsMN+XbZoU1gwHE1r8ppPPK0CTQqPbVQozT8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2.2.7"
+        "version": "v2.3.0"
     },
     "opencode-bin": {
         "cargoLock": null,

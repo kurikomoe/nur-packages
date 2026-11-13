@@ -24,10 +24,10 @@
   };
   codex = {
     pname = "codex";
-    version = "0.167.1";
+    version = "0.169.0";
     src = fetchurl {
-      url = "https://github.com/openai/codex/releases/download/rust-v0.167.1/codex-package-x86_64-unknown-linux-musl.tar.zst";
-      sha256 = "sha256-/3KM8ncmOvYTjC96z7DF9ThyuKdB+q8BJ0UTbiczMCE=";
+      url = "https://github.com/openai/codex/releases/download/rust-v0.169.0/codex-package-x86_64-unknown-linux-musl.tar.zst";
+      sha256 = "sha256-bQK6/wUoGOjCrOPiLBvZ7DcjUkaG5Yb8E0LkyqBGiac=";
     };
   };
   deploy-rs = {
@@ -93,10 +93,10 @@
   };
   dsh-tui = {
     pname = "dsh-tui";
-    version = "0.19.0";
+    version = "0.20.0";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@deepseek-harness-tui/dsh-tui/-/dsh-tui-0.19.0.tgz";
-      sha256 = "sha256-paQbJMafxo+GjOTVY3/q7yJ8t7NKF3wGJdk47sqyLac=";
+      url = "https://registry.npmjs.org/@deepseek-harness-tui/dsh-tui/-/dsh-tui-0.20.0.tgz";
+      sha256 = "sha256-GvLJHe+YCiQTvvLX6pcXbM7Etvzz1tbibpZZoK3sSkw=";
     };
   };
   font-firacode = {
@@ -153,21 +153,21 @@
   };
   microsoft-edge = {
     pname = "microsoft-edge";
-    version = "157.0.4341.46";
+    version = "157.0.4341.57";
     src = fetchurl {
-      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_157.0.4341.46-1_amd64.deb";
-      sha256 = "sha256-siWFUA5tA2bZWcwQz1hk/BooUkuiseuX6tPrfuNRtho=";
+      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_157.0.4341.57-1_amd64.deb";
+      sha256 = "sha256-NI0/4L6ZichpTGbVZtEY26JzBEWZ4/UP0h9HtQ15LVU=";
     };
   };
   opencode = {
     pname = "opencode";
-    version = "v2.2.7";
+    version = "v2.3.0";
     src = fetchFromGitHub {
       owner = "anomalyco";
       repo = "opencode";
-      rev = "v2.2.7";
+      rev = "v2.3.0";
       fetchSubmodules = false;
-      sha256 = "sha256-JPCR867ZoMbYNrCvAa3OnilsxVcktD3mHCGpR6o/nlw=";
+      sha256 = "sha256-7vw0TcaFsMN+XbZoU1gwHE1r8ppPPK0CTQqPbVQozT8=";
     };
   };
   opencode-bin = {
