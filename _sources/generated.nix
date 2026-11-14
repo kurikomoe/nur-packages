@@ -93,10 +93,10 @@
   };
   dsh-tui = {
     pname = "dsh-tui";
-    version = "0.20.0";
+    version = "0.20.1";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@deepseek-harness-tui/dsh-tui/-/dsh-tui-0.20.0.tgz";
-      sha256 = "sha256-GvLJHe+YCiQTvvLX6pcXbM7Etvzz1tbibpZZoK3sSkw=";
+      url = "https://registry.npmjs.org/@deepseek-harness-tui/dsh-tui/-/dsh-tui-0.20.1.tgz";
+      sha256 = "sha256-++iMqcJpe8/159y3GCxhdFzyVpNZCeP2a3KjklyqKDg=";
     };
   };
   font-firacode = {
@@ -153,10 +153,10 @@
   };
   microsoft-edge = {
     pname = "microsoft-edge";
-    version = "157.0.4341.57";
+    version = "157.0.4341.60";
     src = fetchurl {
-      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_157.0.4341.57-1_amd64.deb";
-      sha256 = "sha256-NI0/4L6ZichpTGbVZtEY26JzBEWZ4/UP0h9HtQ15LVU=";
+      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_157.0.4341.60-1_amd64.deb";
+      sha256 = "sha256-SSstM22cM3gU23LFEpOAcDjuAQRlRCfyg/00S8oXxQA=";
     };
   };
   opencode = {
