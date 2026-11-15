@@ -120,13 +120,13 @@
   };
   goctl = {
     pname = "goctl";
-    version = "v1.10.3";
+    version = "v1.11.0";
     src = fetchFromGitHub {
       owner = "zeromicro";
       repo = "go-zero";
-      rev = "v1.10.3";
+      rev = "v1.11.0";
       fetchSubmodules = false;
-      sha256 = "sha256-y3eYLBm7Zj0x3qf3D5CQMuvOUdaXnXY2mFF74p4nzYo=";
+      sha256 = "sha256-fzvYlFIfFymQihyyD9z+kbhX279m3ZRIusKM/9fjXQY=";
     };
   };
   hermes-agent = {
