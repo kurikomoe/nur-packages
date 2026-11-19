@@ -48,7 +48,7 @@ in
     tgt = kcallPackage ./pkgs/tgt.nix {};
     microsoft-edge = kcallPackage ./pkgs/microsoft-edge/package.nix {};
     pwndbg = kcallPackage ./pkgs/pwndbg.nix {};
-    determinate = kcallPackage ./pkgs/determinate.nix {};
+    # determinate = kcallPackage ./pkgs/determinate.nix {};
     deploy-rs = kcallPackage ./pkgs/deploy-rs.nix {};
     git-hooks = kcallPackage ./pkgs/git-hooks.nix {};
 
