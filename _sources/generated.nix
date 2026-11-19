@@ -24,10 +24,10 @@
   };
   codex = {
     pname = "codex";
-    version = "0.169.1";
+    version = "0.170.0";
     src = fetchurl {
-      url = "https://github.com/openai/codex/releases/download/rust-v0.169.1/codex-package-x86_64-unknown-linux-musl.tar.zst";
-      sha256 = "sha256-ZUzFLZjyuQUipRhYuKj2W6tBR8YaNMAjjmtnZV7CHhs=";
+      url = "https://github.com/openai/codex/releases/download/rust-v0.170.0/codex-package-x86_64-unknown-linux-musl.tar.zst";
+      sha256 = "sha256-4vmhSMhiMzhADSguIzp6ggJLS/c4A8QAw/r3qEFd3Ks=";
     };
   };
   deploy-rs = {
@@ -44,13 +44,13 @@
   };
   determinate = {
     pname = "determinate";
-    version = "v3.24.2";
+    version = "v3.24.3";
     src = fetchFromGitHub {
       owner = "DeterminateSystems";
       repo = "nix-src";
-      rev = "v3.24.2";
+      rev = "v3.24.3";
       fetchSubmodules = false;
-      sha256 = "sha256-QY69Nw0WhXSvT2n2ldI5gt0h4ofbAVoi7EYGJGyNLl0=";
+      sha256 = "sha256-mZiNGyjdUVlfEvllLQKVK0ZbkxWIAC42jjERazi+lfU=";
     };
   };
   devenv = {
@@ -85,18 +85,18 @@
   };
   dsh = {
     pname = "dsh";
-    version = "0.2.2-rc.1";
+    version = "0.2.2-rc.5";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@deepseek-ai/dsh/-/dsh-0.2.2-rc.1.tgz";
-      sha256 = "sha256-rSGWiu0DN6MmuFNQeiOzDqy77E1nqwfztv3mm3WxnNY=";
+      url = "https://registry.npmjs.org/@deepseek-ai/dsh/-/dsh-0.2.2-rc.5.tgz";
+      sha256 = "sha256-Z9paPEWPRs0njg7satDjpE6Z/RMIfG8RobNiJokApSw=";
     };
   };
   dsh-tui = {
     pname = "dsh-tui";
-    version = "0.20.1";
+    version = "0.20.2";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@deepseek-harness-tui/dsh-tui/-/dsh-tui-0.20.1.tgz";
-      sha256 = "sha256-++iMqcJpe8/159y3GCxhdFzyVpNZCeP2a3KjklyqKDg=";
+      url = "https://registry.npmjs.org/@deepseek-harness-tui/dsh-tui/-/dsh-tui-0.20.2.tgz";
+      sha256 = "sha256-8ompSAXU4jPGT/X6o749wvNlJYG/c/D5Bhguw6dEm6M=";
     };
   };
   font-firacode = {
@@ -202,13 +202,13 @@
   };
   shellfirm = {
     pname = "shellfirm";
-    version = "v0.4.1";
+    version = "933719aeed9c1bb6c27b67bdd016e034710a7135";
     src = fetchFromGitHub {
-      owner = "kaplanelad";
+      owner = "kurikomoe";
       repo = "shellfirm";
-      rev = "v0.4.1";
+      rev = "933719aeed9c1bb6c27b67bdd016e034710a7135";
       fetchSubmodules = false;
-      sha256 = "sha256-OHsCwMrTWSu8BTlTRM6fPr6zZ4ws73ZhAR6fyowdQoA=";
+      sha256 = "sha256-7qvmVfHmAuMwhkR2O74dqPqd3Ackyf2kNthop9WQc2g=";
     };
   };
   tgt = {

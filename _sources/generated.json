@@ -37,11 +37,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-ZUzFLZjyuQUipRhYuKj2W6tBR8YaNMAjjmtnZV7CHhs=",
+            "sha256": "sha256-4vmhSMhiMzhADSguIzp6ggJLS/c4A8QAw/r3qEFd3Ks=",
             "type": "url",
-            "url": "https://github.com/openai/codex/releases/download/rust-v0.169.1/codex-package-x86_64-unknown-linux-musl.tar.zst"
+            "url": "https://github.com/openai/codex/releases/download/rust-v0.170.0/codex-package-x86_64-unknown-linux-musl.tar.zst"
         },
-        "version": "0.169.1"
+        "version": "0.170.0"
     },
     "deploy-rs": {
         "cargoLock": null,
@@ -78,12 +78,12 @@
             "name": null,
             "owner": "DeterminateSystems",
             "repo": "nix-src",
-            "rev": "v3.24.2",
-            "sha256": "sha256-QY69Nw0WhXSvT2n2ldI5gt0h4ofbAVoi7EYGJGyNLl0=",
+            "rev": "v3.24.3",
+            "sha256": "sha256-mZiNGyjdUVlfEvllLQKVK0ZbkxWIAC42jjERazi+lfU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v3.24.2"
+        "version": "v3.24.3"
     },
     "devenv": {
         "cargoLock": null,
@@ -150,11 +150,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-rSGWiu0DN6MmuFNQeiOzDqy77E1nqwfztv3mm3WxnNY=",
+            "sha256": "sha256-Z9paPEWPRs0njg7satDjpE6Z/RMIfG8RobNiJokApSw=",
             "type": "url",
-            "url": "https://registry.npmjs.org/@deepseek-ai/dsh/-/dsh-0.2.2-rc.1.tgz"
+            "url": "https://registry.npmjs.org/@deepseek-ai/dsh/-/dsh-0.2.2-rc.5.tgz"
         },
-        "version": "0.2.2-rc.1"
+        "version": "0.2.2-rc.5"
     },
     "dsh-tui": {
         "cargoLock": null,
@@ -165,11 +165,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-++iMqcJpe8/159y3GCxhdFzyVpNZCeP2a3KjklyqKDg=",
+            "sha256": "sha256-8ompSAXU4jPGT/X6o749wvNlJYG/c/D5Bhguw6dEm6M=",
             "type": "url",
-            "url": "https://registry.npmjs.org/@deepseek-harness-tui/dsh-tui/-/dsh-tui-0.20.1.tgz"
+            "url": "https://registry.npmjs.org/@deepseek-harness-tui/dsh-tui/-/dsh-tui-0.20.2.tgz"
         },
-        "version": "0.20.1"
+        "version": "0.20.2"
     },
     "font-firacode": {
         "cargoLock": null,
@@ -375,14 +375,14 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "owner": "kaplanelad",
+            "owner": "kurikomoe",
             "repo": "shellfirm",
-            "rev": "v0.4.1",
-            "sha256": "sha256-OHsCwMrTWSu8BTlTRM6fPr6zZ4ws73ZhAR6fyowdQoA=",
+            "rev": "933719aeed9c1bb6c27b67bdd016e034710a7135",
+            "sha256": "sha256-7qvmVfHmAuMwhkR2O74dqPqd3Ackyf2kNthop9WQc2g=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.4.1"
+        "version": "933719aeed9c1bb6c27b67bdd016e034710a7135"
     },
     "tgt": {
         "cargoLock": null,
