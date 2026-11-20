@@ -24,10 +24,10 @@
   };
   codex = {
     pname = "codex";
-    version = "0.170.0";
+    version = "0.171.0";
     src = fetchurl {
-      url = "https://github.com/openai/codex/releases/download/rust-v0.170.0/codex-package-x86_64-unknown-linux-musl.tar.zst";
-      sha256 = "sha256-4vmhSMhiMzhADSguIzp6ggJLS/c4A8QAw/r3qEFd3Ks=";
+      url = "https://github.com/openai/codex/releases/download/rust-v0.171.0/codex-package-x86_64-unknown-linux-musl.tar.zst";
+      sha256 = "sha256-hn4PY4oDu7+SLh93q9cNIuKD4qU/kygfygCayNDe5OA=";
     };
   };
   deploy-rs = {
@@ -153,10 +153,10 @@
   };
   microsoft-edge = {
     pname = "microsoft-edge";
-    version = "157.0.4341.60";
+    version = "158.0.4370.33";
     src = fetchurl {
-      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_157.0.4341.60-1_amd64.deb";
-      sha256 = "sha256-SSstM22cM3gU23LFEpOAcDjuAQRlRCfyg/00S8oXxQA=";
+      url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_158.0.4370.33-1_amd64.deb";
+      sha256 = "sha256-m84X0qg+EEvGdRAiGAxzKYc3nXigBSIdZ3qB+2WQaMs=";
     };
   };
   opencode = {
