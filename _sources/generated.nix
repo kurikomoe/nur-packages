@@ -202,13 +202,13 @@
   };
   shellfirm = {
     pname = "shellfirm";
-    version = "933719aeed9c1bb6c27b67bdd016e034710a7135";
+    version = "v0.4.2";
     src = fetchFromGitHub {
-      owner = "kurikomoe";
+      owner = "kaplanelad";
       repo = "shellfirm";
-      rev = "933719aeed9c1bb6c27b67bdd016e034710a7135";
+      rev = "v0.4.2";
       fetchSubmodules = false;
-      sha256 = "sha256-7qvmVfHmAuMwhkR2O74dqPqd3Ackyf2kNthop9WQc2g=";
+      sha256 = "sha256-aE2WP2h+8wxuENA92VV633fvfyWqmcm1qIMPZZxjrEo=";
     };
   };
   tgt = {

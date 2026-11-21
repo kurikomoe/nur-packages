@@ -375,14 +375,14 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "owner": "kurikomoe",
+            "owner": "kaplanelad",
             "repo": "shellfirm",
-            "rev": "933719aeed9c1bb6c27b67bdd016e034710a7135",
-            "sha256": "sha256-7qvmVfHmAuMwhkR2O74dqPqd3Ackyf2kNthop9WQc2g=",
+            "rev": "v0.4.2",
+            "sha256": "sha256-aE2WP2h+8wxuENA92VV633fvfyWqmcm1qIMPZZxjrEo=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "933719aeed9c1bb6c27b67bdd016e034710a7135"
+        "version": "v0.4.2"
     },
     "tgt": {
         "cargoLock": null,
