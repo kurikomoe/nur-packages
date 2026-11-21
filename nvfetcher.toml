@@ -1,12 +1,9 @@
-# [shellfirm]
-# src.github_tag = "kaplanelad/shellfirm"
-# src.from_pattern = "^(v([0-9\\.]+))$"
-# src.to_pattern = "\\1"
-# fetch.github = "kaplanelad/shellfirm"
-
 [shellfirm]
-src.manual  = "933719aeed9c1bb6c27b67bdd016e034710a7135"
-fetch.github = "kurikomoe/shellfirm"
+# src.manual  = "933719aeed9c1bb6c27b67bdd016e034710a7135"
+src.github_tag = "kaplanelad/shellfirm"
+src.from_pattern = "^(v([0-9\\.]+))$"
+src.to_pattern = "\\1"
+fetch.github = "kaplanelad/shellfirm"
 
 [tgt]
 # The release tags do not contain the upstream flake.
