@@ -4,7 +4,8 @@
   fetchurl,
   fetchFromGitHub,
   dockerTools,
-}: {
+}:
+{
   "1password-cli-linux" = {
     pname = "1password-cli-linux";
     version = "2.41.1";
@@ -179,6 +180,7 @@
     cargoLock."Cargo.lock" = {
       lockFile = ./. + "/sha256-FE+B7DWXT_hoyZw6v01vg4xHhPLM+1nI_dXsahAzLhk=/Cargo.lock";
       outputHashes = {
+        
       };
     };
     date = "2026-09-23";
