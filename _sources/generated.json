@@ -28,6 +28,21 @@
         },
         "version": "5.11.4"
     },
+    "claude-code": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "claude-code",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-ot8fQbsAJQmSkmQg0AY/ibEny4Gr3ShNvvuAxQ/x0CY=",
+            "type": "url",
+            "url": "https://downloads.claude.ai/claude-code-releases/2.1.332/linux-x64/claude"
+        },
+        "version": "2.1.332"
+    },
     "codex": {
         "cargoLock": null,
         "date": null,
@@ -284,6 +299,32 @@
             "url": "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_158.0.4370.33-1_amd64.deb"
         },
         "version": "158.0.4370.33"
+    },
+    "nsproxy-rs": {
+        "cargoLock": {
+            "Cargo.lock": [
+                "sha256-FE+B7DWXT_hoyZw6v01vg4xHhPLM+1nI_dXsahAzLhk=/Cargo.lock",
+                {}
+            ]
+        },
+        "date": "2026-09-23",
+        "extract": null,
+        "name": "nsproxy-rs",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "rmb122",
+            "repo": "nsproxy-rs",
+            "rev": "344a32210058cd54ff799c1bb415ebabaa80b2f7",
+            "sha256": "sha256-FE+B7DWXT/hoyZw6v01vg4xHhPLM+1nI/dXsahAzLhk=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "344a32210058cd54ff799c1bb415ebabaa80b2f7"
     },
     "opencode": {
         "cargoLock": null,

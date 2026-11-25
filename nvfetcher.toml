@@ -111,6 +111,15 @@ src.from_pattern = "^v(([0-9\\.]+))$"
 src.to_pattern = "\\1"
 fetch.url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v$ver/cc-switch-cli-v$ver-linux-x64-musl.tar.gz"
 
+[claude-code]
+src.cmd = "curl -fsSL https://downloads.claude.ai/claude-code-releases/latest"
+fetch.url = "https://downloads.claude.ai/claude-code-releases/$ver/linux-x64/claude"
+
+[nsproxy-rs]
+src.git = "https://github.com/rmb122/nsproxy-rs.git"
+fetch.github = "rmb122/nsproxy-rs"
+cargo_lock = ["Cargo.lock"]
+
 [codex]
 src.github_tag = "openai/codex"
 src.include_regex = "^rust-v\\d+\\.\\d+\\.\\d+$"

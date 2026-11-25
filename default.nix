@@ -40,6 +40,7 @@ in
     opencode = kcallPackage ./pkgs/opencode.nix {};
     opencode-bin = kcallPackage ./pkgs/opencode-bin.nix {};
     codex = kcallPackage ./pkgs/codex.nix {};
+    claude-code = kcallPackage ./pkgs/ai/claude {};
     inherit dsh;
     dsh-tui = kcallPackage ./pkgs/ai/dsh/dsh-tui.nix {inherit dsh;};
     "cc-switch-cli" = kcallPackage ./pkgs/cc-switch-cli.nix {};

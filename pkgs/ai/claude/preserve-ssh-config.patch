@@ -1,0 +1,20 @@
+--- a/src/namespace.rs
++++ b/src/namespace.rs
+@@ -226,17 +226,6 @@
+         tracing::debug!(source = ?bind.source, target = ?bind.target, "file bind-mounted");
+     }
+ 
+-    // WORKAROUND: ssh complains about "Bad owner or permissions" on config files
+-    // because inside the user namespace, file owners map to nobody (65534).
+-    // Mount a tmpfs over ssh_config.d to hide the problematic files.
+-    let _ = nix::mount::mount(
+-        Some("tmpfs"),
+-        "/etc/ssh/ssh_config.d",
+-        Some("tmpfs"),
+-        nix::mount::MsFlags::empty(),
+-        None::<&str>,
+-    );
+-
+     tracing::debug!("mount namespace set up; DNS → {}", DNS_ADDR);
+     Ok(())
+ }

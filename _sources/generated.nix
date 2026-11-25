@@ -4,8 +4,7 @@
   fetchurl,
   fetchFromGitHub,
   dockerTools,
-}:
-{
+}: {
   "1password-cli-linux" = {
     pname = "1password-cli-linux";
     version = "2.41.1";
@@ -20,6 +19,14 @@
     src = fetchurl {
       url = "https://github.com/SaladDay/cc-switch-cli/releases/download/v5.11.4/cc-switch-cli-v5.11.4-linux-x64-musl.tar.gz";
       sha256 = "sha256-AnqMaLHuhRI+3pZr504bCOv7K5niVJ41wbwma6n6MZE=";
+    };
+  };
+  claude-code = {
+    pname = "claude-code";
+    version = "2.1.332";
+    src = fetchurl {
+      url = "https://downloads.claude.ai/claude-code-releases/2.1.332/linux-x64/claude";
+      sha256 = "sha256-ot8fQbsAJQmSkmQg0AY/ibEny4Gr3ShNvvuAxQ/x0CY=";
     };
   };
   codex = {
@@ -158,6 +165,23 @@
       url = "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_158.0.4370.33-1_amd64.deb";
       sha256 = "sha256-m84X0qg+EEvGdRAiGAxzKYc3nXigBSIdZ3qB+2WQaMs=";
     };
+  };
+  nsproxy-rs = {
+    pname = "nsproxy-rs";
+    version = "344a32210058cd54ff799c1bb415ebabaa80b2f7";
+    src = fetchFromGitHub {
+      owner = "rmb122";
+      repo = "nsproxy-rs";
+      rev = "344a32210058cd54ff799c1bb415ebabaa80b2f7";
+      fetchSubmodules = false;
+      sha256 = "sha256-FE+B7DWXT/hoyZw6v01vg4xHhPLM+1nI/dXsahAzLhk=";
+    };
+    cargoLock."Cargo.lock" = {
+      lockFile = ./. + "/sha256-FE+B7DWXT_hoyZw6v01vg4xHhPLM+1nI_dXsahAzLhk=/Cargo.lock";
+      outputHashes = {
+      };
+    };
+    date = "2026-09-23";
   };
   opencode = {
     pname = "opencode";
