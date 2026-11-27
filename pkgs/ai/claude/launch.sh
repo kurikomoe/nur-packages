@@ -16,6 +16,7 @@ strict=$(boolean CLAUDE_NIX_STRICT "${CLAUDE_NIX_STRICT-$strictDefault}")
 http=$(boolean CLAUDE_NIX_HTTP_ENV "${CLAUDE_NIX_HTTP_ENV-$httpDefault}")
 region=$(boolean CLAUDE_NIX_ENVIRONMENT "${CLAUDE_NIX_ENVIRONMENT-$regionDefault}")
 files=$(boolean CLAUDE_NIX_SYSTEM_FILES "${CLAUDE_NIX_SYSTEM_FILES-$filesDefault}")
+checkCountry=$(boolean CLAUDE_NIX_CHECK_COUNTRY "${CLAUDE_NIX_CHECK_COUNTRY-$checkCountryDefault}")
 socks=${CLAUDE_NIX_SOCKS_PROXY-$socksDefault}
 proxy=${CLAUDE_NIX_HTTP_PROXY-$httpProxyDefault}
 port=${CLAUDE_NIX_HTTP_LISTEN_PORT-$listenDefault}
@@ -64,5 +65,7 @@ if (( http )); then
 fi
 export DISABLE_AUTOUPDATER=1 DISABLE_INSTALLATION_CHECKS=1 USE_BUILTIN_RIPGREP=0
 export PATH="$runtimePath${PATH:+:$PATH}"
+proxyLog=${CLAUDE_NIX_PROXY_LOG-}
+unset "${!CLAUDE_NIX_@}"
 exec "${regionEnv[@]}" "${net[@]}" "$setprivBin" --inh-caps=-all --ambient-caps=-all -- \
-  @out@/libexec/session "$strict" "$files" "$http" "$port" "$proxy" "$@"
+  @out@/libexec/session "$strict" "$files" "$http" "$port" "$proxy" "$checkCountry" "$proxyLog" "$@"

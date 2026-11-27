@@ -18,12 +18,17 @@
 | `network.httpProxy`（仅开启 HTTP 变量时） | `CLAUDE_NIX_HTTP_PROXY` | `http://127.0.0.1:8899` |
 | `network.httpListenPort`（双开时） | `CLAUDE_NIX_HTTP_LISTEN_PORT` | `8899` |
 | `environment.enable` / `environment.systemFiles` | `CLAUDE_NIX_ENVIRONMENT` / `CLAUDE_NIX_SYSTEM_FILES` | 均开启 |
+| `environment.checkCountry` | `CLAUDE_NIX_CHECK_COUNTRY` | 开启 |
 | `environment.locale` / `environment.timeZone` | `CLAUDE_NIX_LOCALE` / `CLAUDE_NIX_TIMEZONE` | `en_US.UTF-8` / `Asia/Tokyo` |
 | `environment.language`（语言列表） | `CLAUDE_NIX_LANGUAGE`（冒号分隔） | 从 locale 推导 |
 
 例如 `CLAUDE_NIX_STRICT=0 claude` 使用宿主 HTTP 代理。两个网络开关都设为 0 时继承调用者网络环境。地区配置独立生效，覆盖会话内的 libc locale、gettext、时区以及常用系统配置文件。关闭 `systemFiles` 可仅设置环境变量。项目文件和宿主帐号仍可能包含地区信息。
 
-按代理出口城市手动选择 IANA 时区。比如纽约出口可用 `CLAUDE_NIX_TIMEZONE=America/New_York claude`，语言默认英语。法兰克福出口可用 `CLAUDE_NIX_TIMEZONE=Europe/Berlin CLAUDE_NIX_LOCALE=de_DE.UTF-8 claude`。在 NixOS 上，会话内的 `/etc/localtime`、`/etc/static` 及当前、启动和系统 profile 的 `etc` 目录使用同一套地区设置。清除 `TZ` 后，程序仍能从系统时区文件取得正确的夏令时规则。直接查询宿主服务时，得到的是该服务自己的设置。
+每次启动时，包装器在会话网络和代理就绪后，通过 HTTPS 请求 `api.anthropic.com/cdn-cgi/trace`，将返回的出口国家码与 IANA `zone.tab` 中的时区国家比较。同一国家的时区均可，例如美国出口可以配 `America/New_York` 或 `America/Los_Angeles`。国家不符、查询超时（8 秒）或无法判定国家时，启动器报错退出。检查只采样该域名本次请求的出口，使用自定义 API 域名和代理分流时需考虑各域名的路由。
+
+地区覆盖关闭时仍会检查继承的 `TZ`；未设置 `TZ` 时从 `/etc/localtime` 的 zoneinfo 链接取名。请选择 `zone.tab` 中的地理名称，比如 `Asia/Tokyo`。离线运行或使用 `Etc/UTC` 等无国家的时区时，可以显式设置 `CLAUDE_NIX_CHECK_COUNTRY=0`。两个入口都会在解析选项后清理包装器专用的 `CLAUDE_NIX_*` 环境变量。Claude 和子进程仍会获得生效的 `TZ`、locale、代理变量和用户传入的 Claude 配置。
+
+在 NixOS 上，会话内的 `/etc/localtime`、`/etc/static` 及当前、启动和系统 profile 的 `etc` 目录使用同一套地区设置。清除 `TZ` 后，程序仍能从系统时区文件取得正确的夏令时规则。直接查询宿主服务时，得到的是该服务自己的设置。
 
 Claude 内置 sandbox 继续执行域名策略。对经过上游代理的连接，最终解析域名的代理需负责检查受限本地地址。通过 Docker、Nix daemon 等宿主服务代发的流量遵循该服务的网络策略。[Claude sandbox 网络说明](https://code.claude.com/docs/en/sandboxing#network-isolation)
 

@@ -38,6 +38,8 @@ class Session:
     system_files: bool
     http_proxy: str | None
     listen_port: int | None
+    check_country: bool
+    proxy_log: str | None
 
 
 def configure_region() -> bool:
@@ -103,6 +105,7 @@ def launch(args: list[str]):
     """Resolve user options on the host before entering the network namespace."""
     strict = switch("STRICT", DEFAULTS["strictDefault"])
     http = switch("HTTP_ENV", DEFAULTS["httpDefault"])
+    check_country = switch("CHECK_COUNTRY", DEFAULTS["checkCountryDefault"])
     files = configure_region()
     prefix = []
     if strict:
@@ -140,7 +143,13 @@ def launch(args: list[str]):
     os.environ["PATH"] = os.pathsep.join(
         filter(None, [DEFAULTS["runtimePath"], os.getenv("PATH")])
     )
-    state = json.dumps(asdict(Session(strict, files, proxy, port)))
+    proxy_log = os.getenv("CLAUDE_NIX_PROXY_LOG") if port is not None else None
+    for key in list(os.environ):
+        if key.startswith("CLAUDE_NIX_"):
+            del os.environ[key]
+    state = json.dumps(
+        asdict(Session(strict, files, proxy, port, check_country, proxy_log))
+    )
     execute(
         [
             *prefix,
@@ -258,7 +267,7 @@ def is_listening(endpoint):
     return False
 
 
-def start_http_proxy(port: int):
+def start_http_proxy(port: int, path: str | None):
     config = f"""Port {port}
 Listen 127.0.0.1
 Allow 127.0.0.1
@@ -269,7 +278,6 @@ DisableViaHeader Yes
 """
     # Keep the helper out of the TUI's terminal process group. setpriv
     # still terminates it when this PID (later Claude) exits.
-    path = os.environ.get("CLAUDE_NIX_PROXY_LOG")
     log_fd = (
         os.open(path, os.O_WRONLY | os.O_CREAT | os.O_APPEND, 0o600)
         if path
@@ -317,14 +325,75 @@ DisableViaHeader Yes
     raise RuntimeError(f"HTTP proxy failed to start on 127.0.0.1:{port}; {detail}")
 
 
+def timezone_country() -> tuple[str, str]:
+    zone = os.environ.get("TZ", "/etc/localtime").removeprefix(":")
+    if zone.startswith("/"):
+        path = Path(zone)
+        # Stop at the named location: Copenhagen can itself link to Berlin.
+        while path.is_file() and "/zoneinfo/" not in str(path) and path.is_symlink():
+            path = path.parent / path.readlink()
+        if path.is_file():
+            zone = str(path).partition("/zoneinfo/")[2] or zone
+    zone = zone.removeprefix("posix/").removeprefix("right/")
+    # zone.tab retains each named location's country even when multiple
+    # countries share identical clock rules and the TZif files are hardlinks.
+    table = Path(DEFAULTS["zoneDir"]) / "zone.tab"
+    for line in table.read_text().splitlines():
+        if line and not line.startswith("#"):
+            country, _, name, *_ = line.split("\t")
+            if name == zone:
+                return zone, country
+    raise ValueError(
+        f"cannot determine country for TZ={zone!r}; choose a geographic name from zone.tab"
+    )
+
+
+def check_exit_country():
+    zone, country = timezone_country()
+    # Probe the API hostname so a domain-based proxy rule applies to this request.
+    # -q disables .curlrc (which could change the proxy, TLS or request headers).
+    result = subprocess.run(
+        [
+            DEFAULTS["curlBin"],
+            "-q",
+            "--silent",
+            "--max-time",
+            "8",
+            "--max-filesize",
+            "4096",
+            "--write-out",
+            "\\n%{http_code}",
+            "https://api.anthropic.com/cdn-cgi/trace",
+        ],
+        check=False,
+        capture_output=True,
+    )
+    body, _, status = result.stdout.rpartition(b"\n")
+    if result.returncode or status != b"200":
+        raise RuntimeError(
+            "exit country lookup at api.anthropic.com failed "
+            f"(curl {result.returncode}, HTTP {status.decode('ascii', 'replace')})"
+        )
+    locations = [line[4:] for line in body.splitlines() if line.startswith(b"loc=")]
+    if len(locations) != 1 or not re.fullmatch(rb"[A-Z]{2}", locations[0]):
+        raise RuntimeError("exit country lookup returned no unique country code")
+    observed = locations[0].decode("ascii")
+    if observed != country:
+        raise RuntimeError(
+            f"exit country {observed} does not match TZ={zone} ({country})"
+        )
+
+
 def run_claude(session: Session, args: list[str]):
     if session.listen_port is not None:
-        start_http_proxy(session.listen_port)
+        start_http_proxy(session.listen_port, session.proxy_log)
     # These client settings belong to Claude and its children.
     if session.http_proxy is not None:
         for key in ("http_proxy", "https_proxy", "HTTP_PROXY", "HTTPS_PROXY"):
             os.environ[key] = session.http_proxy
         os.environ["no_proxy"] = os.environ["NO_PROXY"] = "localhost,127.0.0.1,::1"
+    if session.check_country:
+        check_exit_country()
     execute([LIBEXEC / "claude", *args], argv0=OUT / "bin/claude")
 
 
@@ -332,7 +401,9 @@ def main():
     # Private entry points are selected by the installed filename; every
     # argument of the public 'claude' command belongs to Claude itself.
     stage = Path(sys.argv[0])
-    if stage == LIBEXEC / "claude-session":
+    if stage == LIBEXEC / "claude-check-country":
+        check_exit_country()
+    elif stage == LIBEXEC / "claude-session":
         enter_view(Session(**json.loads(sys.argv[1])), sys.argv[2:])
     elif stage == LIBEXEC / "claude-run":
         run_claude(Session(**json.loads(sys.argv[1])), sys.argv[2:])

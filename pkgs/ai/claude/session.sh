@@ -2,8 +2,8 @@
 # Deprecated: retained for the claude-legacy entry point. See launcher.py.
 set -euo pipefail
 source @config@
-strict=$1 files=$2 http=$3 port=$4 proxy=$5
-shift 5
+strict=$1 files=$2 http=$3 port=$4 proxy=$5 checkCountry=$6 proxyLog=$7
+shift 7
 view=()
 
 # Rebuild only the directory entries that contain an override. Retaining
@@ -72,4 +72,4 @@ fi
 if (( ${#view[@]} )); then
   view=("$bwrapBin" --dev-bind / / "${view[@]}" --chdir "$PWD" --)
 fi
-exec "${view[@]}" @out@/libexec/run "$strict" "$http" "$port" "$proxy" "$@"
+exec "${view[@]}" @out@/libexec/run "$strict" "$http" "$port" "$proxy" "$checkCountry" "$proxyLog" "$@"

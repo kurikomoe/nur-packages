@@ -6,6 +6,7 @@ trap 'printf "FAIL %s:%s: %s\n" "$0" "$LINENO" "$BASH_COMMAND" >&2' ERR
 case ${1-} in
   check)
     zone=$2 winter=$3 summer=$4
+    [[ -z ${!CLAUDE_NIX_@} && $CLAUDE_CODE_TEST_SENTINEL == preserved ]]
     [[ $TZ == "$zone" && $LANG == de_DE.UTF-8 && $LC_ALL == "$LANG" && $LANGUAGE == de_DE:de ]]
     [[ $(env -u TZ -u TZDIR date -d 2024-01-15T12:00Z +%z) == "$winter" ]]
     [[ $(env -u TZ -u TZDIR date -d 2024-07-15T12:00Z +%z) == "$summer" ]]
@@ -39,6 +40,8 @@ export LANG=C LC_ALL=C LANGUAGE=C TZ=Etc/UTC
 export LOCALE_ARCHIVE_2_27=/dev/null
 export CLAUDE_NIX_STRICT=0 CLAUDE_NIX_HTTP_ENV=0 CLAUDE_NIX_ENVIRONMENT=1 CLAUDE_NIX_SYSTEM_FILES=1
 export CLAUDE_NIX_LOCALE=de_DE.UTF-8
+export CLAUDE_NIX_CHECK_COUNTRY=0
+export CLAUDE_NIX_PROXY_LOG=/dev/null CLAUDE_CODE_TEST_SENTINEL=preserved
 unset CLAUDE_NIX_LANGUAGE
 for launcher in claude claude-legacy; do
   # Keep the installed launch chain, substituting a local probe for Claude.

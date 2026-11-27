@@ -8,6 +8,7 @@
   python3,
   bash,
   coreutils,
+  curl,
   glibc,
   glibcLocales,
   tzdata,
@@ -56,6 +57,7 @@
     {
       enable = true;
       systemFiles = true;
+      checkCountry = true;
       locale = "en_US.UTF-8";
       language = null; # Derived from the effective locale when unset.
       timeZone = "Asia/Tokyo";
@@ -66,6 +68,7 @@
     httpDefault = lib.boolToString net.httpEnv;
     regionDefault = lib.boolToString region.enable;
     filesDefault = lib.boolToString region.systemFiles;
+    checkCountryDefault = lib.boolToString region.checkCountry;
     socksDefault = net.socksProxy;
     httpProxyDefault = net.httpProxy;
     listenDefault = toString net.httpListenPort;
@@ -78,6 +81,7 @@
     zoneDir = "${tzdata}/share/zoneinfo";
     localeArchive = "${glibcLocales}/lib/locale/locale-archive";
     localeBin = "${lib.getBin glibc}/bin/locale";
+    curlBin = "${lib.getExe curl}";
     nsproxyBin = "${nsproxy}/bin/nsproxy";
     tinyproxyBin = "${tinyproxy}/bin/tinyproxy";
     bwrapBin = "${bubblewrap}/bin/bwrap";
@@ -106,6 +110,7 @@ in
       chmod +x "$out/bin/claude"
       ln -s ../bin/claude "$out/libexec/claude-session"
       ln -s ../bin/claude "$out/libexec/claude-run"
+      ln -s ../bin/claude "$out/libexec/claude-check-country"
 
       for spec in 'launch.sh bin/claude-legacy' 'session.sh libexec/session' 'run.sh libexec/run'; do
         read -r srcName dest <<< "$spec"
@@ -120,8 +125,9 @@ in
     doInstallCheck = true;
     installCheckPhase = ''
       runHook preInstallCheck
+      ${python3.interpreter} -I ${./tests/country.py} "$out/bin/claude"
       for launcher in claude claude-legacy; do
-        HOME="$TMPDIR" CLAUDE_NIX_STRICT=0 CLAUDE_NIX_HTTP_ENV=0 CLAUDE_NIX_SYSTEM_FILES=0 \
+        HOME="$TMPDIR" CLAUDE_NIX_STRICT=0 CLAUDE_NIX_HTTP_ENV=0 CLAUDE_NIX_SYSTEM_FILES=0 CLAUDE_NIX_CHECK_COUNTRY=0 \
           "$out/bin/$launcher" --version | grep -F "$version"
       done
       runHook postInstallCheck

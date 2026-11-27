@@ -2,14 +2,14 @@
 # Deprecated: retained for the claude-legacy entry point. See launcher.py.
 set -euo pipefail
 source @config@
-strict=$1 http=$2 port=$3 proxy=$4
-shift 4
+strict=$1 http=$2 port=$3 proxy=$4 checkCountry=$5 proxyLog=$6
+shift 6
 
 if (( strict && http )); then
   # The forwarder dials its targets normally inside the TUN namespace.
   # Start it before exporting proxy variables to avoid a forwarding loop.
   (umask 077; exec "$setsidBin" "$setprivBin" --pdeathsig TERM -- "$tinyproxyBin" -d -c /dev/stdin \
-    >>"${CLAUDE_NIX_PROXY_LOG:-/dev/null}" 2>&1) <<<"Port $port
+    >>"${proxyLog:-/dev/null}" 2>&1) <<<"Port $port
 Listen 127.0.0.1
 Allow 127.0.0.1
 Timeout 600
@@ -36,5 +36,8 @@ fi
 if (( http )); then
   export http_proxy="$proxy" https_proxy="$proxy" HTTP_PROXY="$proxy" HTTPS_PROXY="$proxy"
   export no_proxy="localhost,127.0.0.1,::1" NO_PROXY="localhost,127.0.0.1,::1"
+fi
+if (( checkCountry )); then
+  @out@/libexec/claude-check-country
 fi
 exec -a @out@/bin/claude-legacy @out@/libexec/claude "$@"
